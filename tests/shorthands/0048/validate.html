@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../validate.css">
+    <title>Validate: font longhands with font-kerning</title>
+  </head>
+  <body>
+    <div class="compare">
+      <div><h2>Source (unminified)</h2>
+    <style>
+      .source a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+        font-family: Georgia, serif;
+        font-kerning: none;
+      }
+    </style>
+    <div class="source"><a>AVATAR WAY</a></div>
+      </div>
+      <div><h2>Expected (minified)</h2>
+    <style>
+      .expected a {
+        font: 14px/1.4 Georgia, serif;
+        font-kerning: none;
+      }
+    </style>
+    <div class="expected"><a>AVATAR WAY</a></div>
+      </div>
+    </div>
+    <p>
+      Both lines above should look identical. Kerning should be disabled
+      (letter spacing between AV, WA pairs should not be adjusted). If they
+      differ, the minification is invalid.
+    </p>
+  </body>
+</html>

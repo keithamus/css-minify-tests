@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../validate.css">
+    <title>Validate: Digit-start identifier must keep escape</title>
+  </head>
+  <body>
+    <div class="compare">
+      <div><h2>Source (unminified)</h2>
+    <style>
+      .source .\31 23 {
+        color: red;
+      }
+    </style>
+    <div class="source"><span class="123">Test element</span></div>
+      </div>
+      <div><h2>Expected (minified)</h2>
+    <style>
+      .expected .\31 23 {
+        color: red;
+      }
+    </style>
+    <div class="expected"><span class="123">Test element</span></div>
+      </div>
+    </div>
+    <p>
+      Both elements above should look identical. If they differ, the
+      minification is invalid.
+    </p>
+  </body>
+</html>

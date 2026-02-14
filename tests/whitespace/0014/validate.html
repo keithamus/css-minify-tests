@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: background ) followed by keyword</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+.source.test {
+  width: 200px;
+  height: 100px;
+  background: url(bg.png) no-repeat;
+  border: 1px solid black;
+}
+</style>
+<div class="source test"></div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+.expected.test{width:200px;height:100px;background:url(bg.png)no-repeat;border:1px solid black}
+</style>
+<div class="expected test"></div>
+  </div>
+</div>
+
+<p>Both boxes should have identical background settings (no-repeat, centered).</p>
+</body>
+</html>

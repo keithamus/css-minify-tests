@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: color-mix with none channel</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+.source a { color: color-mix(in srgb, rgb(none 0 0) 50%, rgb(200 0 0) 50%); }
+</style>
+<div class="source"><a href="#">Test element</a></div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+.expected a { color: #c80000; }
+</style>
+<div class="expected"><a href="#">Test element</a></div>
+  </div>
+</div>
+
+
+<p>Both links should be identical dark red (#c80000). The none channel is replaced by the other color's R value (200) during interpolation.</p>
+</body>
+</html>

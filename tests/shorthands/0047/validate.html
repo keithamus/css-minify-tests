@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../validate.css">
+    <title>Validate: font shorthand intentionally resets font-variant-numeric</title>
+  </head>
+  <body>
+    <div class="compare">
+      <div><h2>Source (unminified)</h2>
+    <style>
+      .source a {
+        font-variant-numeric: tabular-nums;
+        font: italic 16px/1.5 Arial, sans-serif;
+      }
+    </style>
+    <div class="source"><a>0123456789</a></div>
+      </div>
+      <div><h2>Expected (minified)</h2>
+    <style>
+      .expected a {
+        font: italic 16px/1.5 Arial, sans-serif;
+      }
+    </style>
+    <div class="expected"><a>0123456789</a></div>
+      </div>
+    </div>
+    <p>
+      Both lines above should look identical. The font-variant-numeric is dead
+      code because the font shorthand resets it. Numbers should use default
+      (proportional) figures. If they differ, the minification is invalid.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: 0% in keyframes must keep unit</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+@keyframes fade-source {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+.source a { animation: fade-source 2s infinite; display: block; }
+</style>
+<div class="source"><a>Fading element</a></div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+@keyframes fade-expected{0%{opacity:0}50%{opacity:.5}}
+.expected a{animation:fade-expected 2s infinite;display:block}
+</style>
+<div class="expected"><a>Fading element</a></div>
+  </div>
+</div>
+
+<p>Both elements should fade identically. The 0% selector must retain its percent sign.</p>
+</body>
+</html>

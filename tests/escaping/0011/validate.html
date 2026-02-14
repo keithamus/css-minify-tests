@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../validate.css">
+    <title>Validate: Hex escape in standard property name</title>
+  </head>
+  <body>
+    <div class="compare">
+      <div><h2>Source (unminified)</h2>
+    <style>
+      .source {
+        \63 olor: red;
+      }
+    </style>
+    <div class="source">Test element</div>
+      </div>
+      <div><h2>Expected (minified)</h2>
+    <style>
+      .expected {
+        color: red;
+      }
+    </style>
+    <div class="expected">Test element</div>
+      </div>
+    </div>
+    <p>
+      Both elements above should have red text. If they differ, the
+      minification is invalid.
+    </p>
+  </body>
+</html>

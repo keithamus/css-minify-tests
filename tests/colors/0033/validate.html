@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: color-mix elide default oklab</title></head>
+<body>
+<style>:root { --a: red; --b: blue; }</style>
+<div class="compare">
+  <div><h2>Source (with in oklab)</h2>
+<style>
+.source a {
+  color: color-mix(in oklab, var(--a), var(--b));
+}
+</style>
+<div class="source"><a>Test element</a></div>
+  </div>
+  <div><h2>Expected (without in oklab)</h2>
+<style>
+.expected a{color:color-mix(var(--a),var(--b))}
+</style>
+<div class="expected"><a>Test element</a></div>
+  </div>
+</div>
+
+<p>Both elements above should look identical. If they differ, the minification is invalid.</p>
+</body>
+</html>

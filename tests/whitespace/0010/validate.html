@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: @supports and combinator space preservation</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+@supports (display: grid) and (gap: 10px) {
+  .source.test { color: red; }
+}
+</style>
+<div class="source test">This text should be red (grid and gap are supported)</div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+@supports (display:grid) and (gap:10px){.expected.test{color:red}}
+</style>
+<div class="expected test">This text should be red (grid and gap are supported)</div>
+  </div>
+</div>
+
+<p>Both lines above should be red. If either is black, the minification is invalid.</p>
+</body>
+</html>

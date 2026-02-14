@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: Modern rgb() with alpha to 8-digit hex</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+.source a { background-color: rgb(143 101 98 / 43%); }
+</style>
+<div class="source"><a href="#">Test element</a></div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+.expected a { background-color: #8f65626e; }
+</style>
+<div class="expected"><a href="#">Test element</a></div>
+  </div>
+</div>
+
+
+<p>Both elements above should look identical (muted brownish-red with ~43% opacity).</p>
+</body>
+</html>

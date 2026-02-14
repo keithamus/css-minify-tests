@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: default gradient direction omission</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+.source a { background: linear-gradient(to bottom, red, blue); display: inline-block; width: 100px; height: 100px; }
+</style>
+<div class="source"><a href="#">Test</a></div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+.expected a { background: linear-gradient(red,#00f); display: inline-block; width: 100px; height: 100px; }
+</style>
+<div class="expected"><a href="#">Test</a></div>
+  </div>
+</div>
+
+
+<p>Both boxes should show an identical top-to-bottom red-to-blue gradient. "to bottom" is the default direction and can be omitted.</p>
+</body>
+</html>

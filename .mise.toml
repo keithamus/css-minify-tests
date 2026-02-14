@@ -1,0 +1,17 @@
+[tools]
+node = "25.3.0"
+npm = "11.6.4"
+
+[tasks.install]
+run = "npm i"
+alias = "i"
+
+[tasks.test]
+run = "npm t"
+alias = "t"
+
+[tasks.fmt]
+run = "npm run fmt"
+
+[tasks.new-test]
+run = "npm run new-test"

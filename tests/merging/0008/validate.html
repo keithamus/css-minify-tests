@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: Non-adjacent @media merge unsafe</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+@media (width >= 1px) {
+  .source a { color: red; }
+}
+.source a { color: green; }
+@media (width >= 1px) {
+  .source a { background: #0b0; }
+}
+</style>
+<div class="source"><a>Should be green text on green background</a></div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+@media (width>=1px){.expected a{color:red}}.expected a{color:green}@media (width>=1px){.expected a{background:#0b0}}
+</style>
+<div class="expected"><a>Should be green text on green background</a></div>
+  </div>
+</div>
+
+<p>Both links should show green text. Merging the @media blocks would move color:red after color:green, changing text to red.</p>
+</body>
+</html>

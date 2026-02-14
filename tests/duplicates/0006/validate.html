@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: !important duplicate declarations</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+.source a {
+  color: red !important;
+  color: blue;
+}
+</style>
+<div class="source"><a>Test element</a></div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+.expected a{color:red!important}
+</style>
+<div class="expected"><a>Test element</a></div>
+  </div>
+</div>
+
+
+<p>Both elements should be red. The !important declaration wins over the later non-important one.</p>
+</body>
+</html>

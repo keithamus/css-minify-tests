@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: Merge rules unsafe with all:revert-layer</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+.source .foo {
+  color: red;
+}
+.source .bar {
+  all: revert-layer;
+  color: red;
+}
+</style>
+<div class="source">
+  <span class="foo">Foo should be red</span>
+  <span class="bar">Bar should be red</span>
+</div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+.expected .foo{color:red}.expected .bar{all:revert-layer;color:red}
+</style>
+<div class="expected">
+  <span class="foo">Foo should be red</span>
+  <span class="bar">Bar should be red</span>
+</div>
+  </div>
+</div>
+
+
+<p>Both sections should show red text. Merging the color declarations and placing all:revert-layer after would reset the color for .bar.</p>
+</body>
+</html>

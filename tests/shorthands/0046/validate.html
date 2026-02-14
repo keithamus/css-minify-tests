@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../validate.css">
+    <title>Validate: font longhands then font-feature-settings</title>
+  </head>
+  <body>
+    <div class="compare">
+      <div><h2>Source (unminified)</h2>
+    <style>
+      .source a {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: Arial, sans-serif;
+        font-feature-settings: "smcp" 1;
+      }
+    </style>
+    <div class="source"><a>Test element</a></div>
+      </div>
+      <div><h2>Expected (minified)</h2>
+    <style>
+      .expected a {
+        font: italic 700 16px/1.5 Arial, sans-serif;
+        font-feature-settings: "smcp" 1;
+      }
+    </style>
+    <div class="expected"><a>Test element</a></div>
+      </div>
+    </div>
+    <p>
+      Both lines above should look identical. font-feature-settings should
+      enable small caps via OpenType. If they differ, the minification is
+      invalid.
+    </p>
+  </body>
+</html>

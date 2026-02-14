@@ -1,0 +1,3 @@
+tests/**/source.css
+tests/**/expected.css
+tests/**/validate.html

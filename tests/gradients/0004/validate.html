@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: redundant gradient stop positions</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+.source a { background: linear-gradient(red 0%, blue 100%); display: inline-block; width: 100px; height: 100px; }
+</style>
+<div class="source"><a href="#">Test</a></div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+.expected a { background: linear-gradient(red,#00f); display: inline-block; width: 100px; height: 100px; }
+</style>
+<div class="expected"><a href="#">Test</a></div>
+  </div>
+</div>
+
+
+<p>Both boxes should show an identical red-to-blue gradient. Removing 0% from the first stop and 100% from the last stop are safe because these are the default positions.</p>
+</body>
+</html>

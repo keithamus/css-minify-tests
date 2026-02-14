@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: rgb() none resolves to 0</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+.source a { color: rgb(none 128 0); }
+</style>
+<div class="source"><a href="#">Test element</a></div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+.expected a { color: green; }
+</style>
+<div class="expected"><a href="#">Test element</a></div>
+  </div>
+</div>
+
+
+<p>Both links should be identical green. Outside interpolation, `none` resolves to 0, so `rgb(none 128 0)` = `rgb(0 128 0)` = green.</p>
+</body>
+</html>
