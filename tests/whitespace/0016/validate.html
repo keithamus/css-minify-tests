@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: descendant combinator space</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+div.source p.test {
+  color: red;
+}
+</style>
+<div class="source"><p class="test">This text should be red (descendant of div)</p></div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+div.expected p.test{color:red}
+</style>
+<div class="expected"><p class="test">This text should be red (descendant of div)</p></div>
+  </div>
+</div>
+
+<p>Both lines above should be red. If either is black, the minification is invalid.</p>
+</body>
+</html>

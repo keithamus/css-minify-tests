@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: transform adjacent functions</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+.source.test {
+  width: 50px;
+  height: 50px;
+  background: red;
+  transform: rotate(45deg) scale(2);
+}
+</style>
+<div style="padding:80px"><div class="source test"></div></div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+.expected.test{width:50px;height:50px;background:red;transform:rotate(45deg)scale(2)}
+</style>
+<div style="padding:80px"><div class="expected test"></div></div>
+  </div>
+</div>
+
+<p>Both red squares should be rotated 45 degrees and scaled to 2x.</p>
+</body>
+</html>

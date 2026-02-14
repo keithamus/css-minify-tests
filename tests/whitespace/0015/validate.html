@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: font shorthand / separator</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+.source.test {
+  font: 16px / 1.5 sans-serif;
+}
+</style>
+<div class="source test">The quick brown fox jumps over the lazy dog. This line tests font-size 16px with line-height 1.5.</div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+.expected.test{font:16px/1.5 sans-serif}
+</style>
+<div class="expected test">The quick brown fox jumps over the lazy dog. This line tests font-size 16px with line-height 1.5.</div>
+  </div>
+</div>
+
+<p>Both paragraphs should have identical font size (16px), line height (1.5), and font family (sans-serif).</p>
+</body>
+</html>

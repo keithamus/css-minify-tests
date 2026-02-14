@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../validate.css">
+    <title>Validate: Hex escape in attribute selector name</title>
+  </head>
+  <body>
+    <div class="compare">
+      <div><h2>Source (unminified)</h2>
+    <style>
+      .source a[hr\65 f="x"] {
+        color: red;
+      }
+    </style>
+    <div class="source"><a href="x">Test element</a></div>
+      </div>
+      <div><h2>Expected (minified)</h2>
+    <style>
+      .expected a[href="x"] {
+        color: red;
+      }
+    </style>
+    <div class="expected"><a href="x">Test element</a></div>
+      </div>
+    </div>
+    <p>
+      Both elements above should look identical. If they differ, the
+      minification is invalid.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../../validate.css"><title>Validate: calc sum flattening</title></head>
+<body>
+<div class="compare">
+  <div><h2>Source (unminified)</h2>
+<style>
+.source a { width: calc(calc(10px + 20px) + calc(30px + 40px)); background: #ccc; height: 20px; display: block; }
+</style>
+<div class="source"><a>Test element</a></div>
+  </div>
+  <div><h2>Expected (minified)</h2>
+<style>
+.expected a { width: 100px; background: #ccc; height: 20px; display: block; }
+</style>
+<div class="expected"><a>Test element</a></div>
+  </div>
+</div>
+
+
+<p>Both boxes above should look identical. If they differ, the minification is invalid.</p>
+</body>
+</html>

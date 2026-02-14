@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../validate.css">
+    <title>Validate: Escape sequence resolution in strings</title>
+  </head>
+  <body>
+    <div class="compare">
+      <div><h2>Source (unminified)</h2>
+    <style>
+      .source a::before {
+        content: "\66 oo";
+      }
+    </style>
+    <div class="source"><a>Test element</a></div>
+      </div>
+      <div><h2>Expected (minified)</h2>
+    <style>
+      .expected a::before {
+        content: "foo";
+      }
+    </style>
+    <div class="expected"><a>Test element</a></div>
+      </div>
+    </div>
+    <p>
+      Both elements above should show "foo" as a pseudo-element. If they differ,
+      the minification is invalid.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "css-minify-tests",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Correctness tests for CSS minifiers",
+  "scripts": {
+    "fmt": "npx prettier --write .",
+    "test": "node ./run-tests.js",
+    "test:debug": "DEBUG=true node ./run-tests.js",
+    "new-test": "bash -c 'd=tests/$1/$(printf \"%04d\" $(($(ls tests/$1 2>/dev/null|sort -n|tail -1)+1))) && mkdir -p $d && touch $d/source.css $d/expected.css $d/README.md && echo \"Created $d\" && ${EDITOR:-vim} $d/source.css $d/expected.css $d/README.md' --"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "csskit": "^0.0.17",
+    "cssnano": "^7.1.0",
+    "csso": "^5.0.5",
+    "esbuild": "^0.27.3",
+    "lightningcss": "^1.30.0",
+    "postcss": "^8.5.0"
+  }
+}
