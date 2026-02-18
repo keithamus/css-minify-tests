@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { minify, minifiers, getVersions } from "./lib/minify.js";
 import { resultsAsHTML } from "./lib/results-as-html.js";
+import { appendHistory } from "./lib/history.js";
 import { traverseDir } from "./lib/traverse-dir.js";
 
 const debugMode = !!process.env.DEBUG;
@@ -240,5 +241,6 @@ if (debugInfo.length > 0) {
 }
 
 const versions = getVersions(minifiers);
-await resultsAsHTML(results, versions, "index.html");
+const history = await appendHistory(results, versions);
+await resultsAsHTML(results, versions, history, "index.html");
 console.log("HTML report written to index.html");
