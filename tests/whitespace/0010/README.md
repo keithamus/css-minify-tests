@@ -1,6 +1,7 @@
-# @supports -- space around `and` combinator required
+# @supports -- space after `and` combinator required
 
-`@supports (X) and (Y)` requires spaces around `and`. Without a space after
-`and`, the tokenizer produces a function token `and(` instead of the keyword
-`and` followed by `(`, causing the entire @supports rule to be dropped by the
-parser.
+`@supports (X) and (Y)` can be minified to `@supports(X)and (Y)`. Spaces after
+`and` are required to disambiguate between a Function token and an Ident, but
+the space before `and` can be dropped, as `)and` & `) and` tokenise identically.
+Additionally `(`s are not allowed in identifiers, so `@supports(` tokenises
+identically to `@supports (`.
