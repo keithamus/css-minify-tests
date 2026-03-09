@@ -1,5 +1,4 @@
-# Zero flex-basis can be omitted
+# Drop unit from zero-length flex-basis
 
-`flex: 0 0 0px` shortens to `flex: 0 0`. When flex-grow and flex-shrink are
-specified as numbers, the omitted flex-basis defaults to `0%`, which is
-equivalent to `0px` (both resolve to zero length).
+`flex-basis: 0px` can be shortened to `flex-basis: 0`. Unitless zero is valid
+for `<length>` values, and `0px` and `0` resolve identically.

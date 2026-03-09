@@ -1,4 +1,3 @@
-# Zero-unit strip + shorthand collapse
+# Zero-unit strip in padding
 
-`padding: 0px 10px 0px 10px` requires both `0px` -> `0` conversion and
-4-to-2 shorthand collapse.
+`padding-block: 0px 10px` can strip `0px` to `0`
