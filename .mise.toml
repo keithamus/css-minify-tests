@@ -1,5 +1,5 @@
 [tools]
-node = "25.8.2"
+node = "25.9.0"
 npm = "11.12.1"
 
 [tasks.install]
