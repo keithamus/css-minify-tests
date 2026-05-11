@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "clean-css": "^5.3.3",
-    "csskit": "^0.0.20",
+    "csskit": "^0.0.21",
     "cssnano": "^8.0.0",
     "csso": "^5.0.5",
     "esbuild": "^0.28.0",
