@@ -1,6 +1,6 @@
 [tools]
 node = "25.9.0"
-npm = "11.13.0"
+npm = "11.14.1"
 
 [tasks.install]
 run = "npm i"
