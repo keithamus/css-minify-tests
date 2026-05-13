@@ -1,3 +1,6 @@
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
+
 [tasks.install]
 run = "npm i"
 alias = "i"
