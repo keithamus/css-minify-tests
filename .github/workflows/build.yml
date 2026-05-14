@@ -1,8 +1,5 @@
 name: Test & Deploy
 
-env:
-  PROTO_TELEMETRY: false
-
 on:
   push:
     branches: [main]
@@ -23,10 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-
-      - uses: moonrepo/setup-toolchain@v0
-        with:
-          auto-install: true
+      - uses: jdx/mise-action@v4
 
       - run: npm it
 
