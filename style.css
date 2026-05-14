@@ -160,6 +160,10 @@ tr:has(details) summary {
   font-size: 0.875rem;
 }
 
+details > h1 {
+  font-size: 1.2rem;
+}
+
 details > summary + * {
   margin-top: 0.5rem;
 }
@@ -168,6 +172,15 @@ details > p {
   margin: 0 0 0.75rem;
   color: var(--fg-muted);
   font-style: italic;
+}
+
+details > p > code {
+  background: #1E1E1E;
+  border-radius: 0.25rem;
+  padding: 0rem 0.3rem 0.1rem;
+  color: #D4D4D4;
+  font-size: 0.9rem;
+  font-style: normal;
 }
 
 details > div {
