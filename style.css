@@ -218,6 +218,11 @@ details iframe {
 .detail-outputs {
   display: grid;
   gap: 0.5rem;
+  font-size: 0.7rem;
+  h4 {
+    display: flex;
+    gap: 4px;
+  }
 }
 
 @media (max-width: 640px) {
