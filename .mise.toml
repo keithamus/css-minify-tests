@@ -1,6 +1,5 @@
-[tools]
-node = "25.9.0"
-npm = "11.14.1"
+[settings]
+idiomatic_version_file_enable_tools = ["node", "npm"]
 
 [tasks.install]
 run = "npm i"
