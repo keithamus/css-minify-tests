@@ -1,1 +1,1 @@
-@position-try --top{position-area:top}a{position-area:bottom;position-try-fallbacks:--top}
+@position-try --left{position-area:left}a{position-area:left;position-try-fallbacks:--left,--undefined}

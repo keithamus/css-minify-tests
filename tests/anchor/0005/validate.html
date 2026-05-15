@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../validate.css">
+    <title>Validate: Unresolved position-try-fallbacks</title>
+    <style>
+      .container {
+        width: 300px;
+        margin: 0px auto;
+        overflow: auto;
+      }
+      .source, .expected {
+        width: 300%;
+      }
+      .anchor {
+        width: fit-content;
+        font-size: 2em;
+      }
+      .test {
+        position: fixed;
+      }
+      .container, .anchor, .test {
+        border: 1px solid currentColor;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h2>Source (unminified)</h2>
+        <style>
+          /* Simulated separate stylesheet with missing @position-try */
+          @position-try --source-right {
+            position-area: right;
+          }
+          .source .anchor {
+            anchor-name: --source-anchor;
+          }
+          .source .test {
+            position-anchor: --source-anchor;
+          }
+        </style>
+        <style>
+          @position-try --source-left {
+            position-area: left;
+          }
+          .source .test {
+            position-area: left;
+            position-try-fallbacks: --source-left, --source-right;
+          }
+        </style>
+        <div class="container">
+          <div class="source">
+            <div class="anchor">⚓︎</div>
+            <a class="test">Shifts based on scroll</a>
+          </div>
+        </div>
+      </div>
+      <div class="expected-container">
+        <h2>Expected (minified)</h2>
+        <style>
+          /* Simulated separate stylesheet with missing @position-try */
+          @position-try --expected-right {
+            position-area: right;
+          }
+          .expected .anchor {
+            anchor-name: --expected-anchor;
+          }
+          .expected .test {
+            position-anchor: --expected-anchor;
+          }
+        </style>
+        <style>
+          @position-try --expected-left{position-area:left}.expected .test{position-area:left;position-try-fallbacks:--expected-left,--expected-right}
+        </style>
+        <div class="container">
+          <div class="expected">
+            <div class="anchor">⚓︎</div>
+            <a class="test">Shifts based on scroll</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p>
+      Scrolling to the right, then back to the left, in both boxes should change the position of text and match when minified.
+      Removing <code>,--expected-right</code> from the minified version results in different positioning behavior.
+    </p>
+  </body>
+</html>
