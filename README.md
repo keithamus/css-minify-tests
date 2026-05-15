@@ -44,6 +44,9 @@ the actual vs expected diff for every mismatch.
 - [csso](https://www.npmjs.com/package/csso)
 - [esbuild](https://www.npmjs.com/package/esbuild)
 - [lightningcss](https://www.npmjs.com/package/lightningcss)
+- [sass](https://www.npmjs.com/package/sass)
+
+[See results](https://www.keithcirkel.co.uk/css-minify-tests)
 
 ## Quick start
 
