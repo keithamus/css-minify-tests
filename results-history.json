@@ -41,12 +41,12 @@
     }
   },
   {
-    "date": "2026-05-17T14:23:43.687Z",
+    "date": "2026-05-16T19:14:10.542Z",
     "testCount": 398,
     "minifiers": {
       "clean-css": {
         "version": "5.3.3",
-        "pass": 149,
+        "pass": 150,
         "total": 398
       },
       "csskit": {
@@ -56,7 +56,7 @@
       },
       "cssnano": {
         "version": "8.0.1",
-        "pass": 207,
+        "pass": 208,
         "total": 398
       },
       "csso": {
@@ -71,12 +71,12 @@
       },
       "lightningcss": {
         "version": "1.32.0",
-        "pass": 274,
+        "pass": 273,
         "total": 398
       },
       "sass": {
         "version": "1.99.0",
-        "pass": 119,
+        "pass": 120,
         "total": 398
       }
     }
