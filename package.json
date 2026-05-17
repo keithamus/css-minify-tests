@@ -4,6 +4,7 @@
   "type": "module",
   "description": "Correctness tests for CSS minifiers",
   "scripts": {
+    "start": "http-server",
     "fmt": "npx prettier --write .",
     "test": "node ./run-tests.js",
     "test:debug": "DEBUG=true node ./run-tests.js",
@@ -15,6 +16,7 @@
     "cssnano": "^8.0.0",
     "csso": "^5.0.5",
     "esbuild": "^0.28.0",
+    "http-server": "^14.1.1",
     "lightningcss": "^1.30.0",
     "marked": "^18.0.3",
     "postcss": "^8.5.0",

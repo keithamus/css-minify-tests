@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-05-17T17:40:59.467Z",
+    "date": "2026-05-17T18:34:32.450Z",
     "testCount": 398,
     "minifiers": {
       "clean-css": {
@@ -196,6 +196,11 @@
         "version": "1.32.0",
         "pass": 272,
         "total": 398
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
+        "total": 398
       }
     }
   },
@@ -231,6 +236,11 @@
       "lightningcss": {
         "version": "1.32.0",
         "pass": 273,
+        "total": 398
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
         "total": 398
       }
     }
@@ -268,6 +278,11 @@
         "version": "1.32.0",
         "pass": 273,
         "total": 396
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
+        "total": 396
       }
     }
   },
@@ -303,6 +318,11 @@
       "lightningcss": {
         "version": "1.32.0",
         "pass": 273,
+        "total": 396
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
         "total": 396
       }
     }
@@ -340,6 +360,11 @@
         "version": "1.32.0",
         "pass": 273,
         "total": 396
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
+        "total": 396
       }
     }
   },
@@ -375,6 +400,11 @@
       "lightningcss": {
         "version": "1.32.0",
         "pass": 273,
+        "total": 396
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
         "total": 396
       }
     }
@@ -412,6 +442,11 @@
         "version": "1.32.0",
         "pass": 273,
         "total": 396
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
+        "total": 396
       }
     }
   },
@@ -447,6 +482,11 @@
       "lightningcss": {
         "version": "1.32.0",
         "pass": 273,
+        "total": 396
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
         "total": 396
       }
     }
@@ -484,6 +524,11 @@
         "version": "1.32.0",
         "pass": 273,
         "total": 396
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
+        "total": 396
       }
     }
   },
@@ -519,6 +564,11 @@
       "lightningcss": {
         "version": "1.32.0",
         "pass": 273,
+        "total": 396
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
         "total": 396
       }
     }
@@ -556,6 +606,11 @@
         "version": "1.32.0",
         "pass": 273,
         "total": 389
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
+        "total": 389
       }
     }
   },
@@ -591,6 +646,11 @@
       "lightningcss": {
         "version": "1.32.0",
         "pass": 273,
+        "total": 389
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
         "total": 389
       }
     }
@@ -628,6 +688,11 @@
         "version": "1.32.0",
         "pass": 271,
         "total": 387
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
+        "total": 387
       }
     }
   },
@@ -663,6 +728,11 @@
       "lightningcss": {
         "version": "1.32.0",
         "pass": 266,
+        "total": 384
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
         "total": 384
       }
     }
@@ -700,6 +770,11 @@
         "version": "1.31.1",
         "pass": 265,
         "total": 384
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
+        "total": 384
       }
     }
   },
@@ -736,6 +811,11 @@
         "version": "1.31.1",
         "pass": 261,
         "total": 371
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
+        "total": 371
       }
     }
   },
@@ -771,6 +851,11 @@
       "lightningcss": {
         "version": "1.31.1",
         "pass": 261,
+        "total": 371
+      },
+      "sass": {
+        "version": "1.99.0",
+        "pass": 0,
         "total": 371
       }
     }
