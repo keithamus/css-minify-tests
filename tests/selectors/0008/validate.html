@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../validate.css">
+    <title>Validate: :nth-child(1n) shorthand</title>
+  </head>
+  <body>
+    <div class="compare">
+      <div>
+        <h2>Source (unminified)</h2>
+        <style>
+          .source .test:nth-child(1n) {
+            color: red;
+          }
+        </style>
+        <style>
+          /* Other stylesheet targeting same element with less specificity */
+          .source .test {
+            color: tan;
+          }
+        </style>
+        <div class="source">
+          <p class="test">This text should be red.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Expected (minified)</h2>
+        <style>
+          .expected .test:nth-child(n){color:red}
+        </style>
+        <style>
+          /* Other stylesheet targeting same element with less specificity */
+          .expected .test{color:tan}
+        </style>
+        <div class="expected">
+          <p class="test">This text should be red.</p>
+        </div>
+      </div>
+    </div>
+    <p>Both lines above should be red. If the minified version is tan, then the minification is incorrect.</p>
+  </body>
+</html>
