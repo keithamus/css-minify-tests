@@ -244,3 +244,13 @@ const versions = getVersions(minifiers);
 const history = await appendHistory(results, versions);
 await resultsAsHTML(results, versions, history, "index.html");
 console.log("HTML report written to index.html");
+const resultsJson = {};
+for (const [groupName, group] of Object.entries(results.tests)) {
+  for (const [testPath, test] of Object.entries(group.tests)) {
+    resultsJson[testPath] = {};
+    for (const [minifier, r] of Object.entries(test.minifiers)) {
+      resultsJson[testPath][minifier] = r.na ? null : r.pass === r.checks;
+    }
+  }
+}
+await fs.writeFile("results.json", JSON.stringify(resultsJson, null, 2) + "\n");
