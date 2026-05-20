@@ -8,9 +8,7 @@ on:
 
 permissions:
   contents: write
-  pages: write
   id-token: write
-  pull-requests: write
 
 concurrency:
   group: ${{ github.ref == 'refs/heads/main' && 'pages' || format('ci-{0}', github.ref) }}
@@ -65,6 +63,8 @@ jobs:
 
   pr-comment:
     if: github.event_name == 'pull_request'
+    permissions:
+      pull-requests: write
     needs: pr-baseline
     runs-on: ubuntu-latest
     steps:
@@ -85,6 +85,8 @@ jobs:
 
       - name: Post or update PR comment
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           script: |
             const fs = require('fs');
@@ -114,6 +116,8 @@ jobs:
 
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      pages: write
     needs: test
     runs-on: ubuntu-latest
     environment:
