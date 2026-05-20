@@ -200,6 +200,7 @@ details h4 {
 }
 
 details pre {
+  height: calc(100% - 1rem);
   margin: 0;
   padding: 0.5rem 0.75rem;
   background: var(--neutral-2);
@@ -236,6 +237,10 @@ details iframe {
     display: flex;
     gap: 4px;
   }
+}
+
+.detail-fail > pre {
+  background: color-mix(in lab, var(--fail-bg) 100%, #1E1E1E 50%) !important;
 }
 
 @media (max-width: 640px) {
