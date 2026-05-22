@@ -6,6 +6,7 @@ h1:not(:link),
 [href]:not(:link),
 [href="#"]:not(:link),
 a[href]:not(:link),
-area[href="#"]:not(:link) {
+area[href="#"]:not(:link),
+:where(:not(:link)) {
   color: red;
 }

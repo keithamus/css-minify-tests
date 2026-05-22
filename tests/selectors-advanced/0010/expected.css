@@ -1,1 +1,1 @@
-a:visited,area:visited,link:visited,.foo:not(:link),h1:not(:link),[href]:not(:link),[href="#"]:not(:link),a[href]:visited,area[href="#"]:visited{color:red}
+a:visited,area:visited,link:visited,.foo:not(:link),h1:not(:link),[href]:not(:link),[href="#"]:not(:link),a[href]:visited,area[href="#"]:visited,:where(:not(:link)){color:red}
