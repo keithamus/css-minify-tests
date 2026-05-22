@@ -1,3 +1,13 @@
-a:not(:link) {
+a:not(:link),
+area:not(:link),
+link:not(:link),
+.foo:not(:link),
+h1:not(:link),
+[href]:not(:link),
+[href="#"]:not(:link),
+a[href]:not(:link),
+area[href="#"]:not(:link),
+:where(:not(:link)),
+a:where(:not(:link)) {
   color: red;
 }
