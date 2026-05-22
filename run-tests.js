@@ -4,6 +4,7 @@ import { minify, minifiers, getVersions } from "./lib/minify.js";
 import { resultsAsHTML } from "./lib/results-as-html.js";
 import { appendHistory } from "./lib/history.js";
 import { traverseDir } from "./lib/traverse-dir.js";
+import sass from "./lib/minifiers/sass.js";
 
 const debugMode = !!process.env.DEBUG;
 
@@ -51,6 +52,16 @@ const results = {
 };
 
 const debugInfo = [];
+let validateStylesheet = "";
+try {
+  validateStylesheet = await fs.readFile(
+    path.resolve(".", "validate.css"),
+    "utf-8"
+  );
+  validateStylesheet = sass(validateStylesheet);
+} catch (error) {
+  console.log({ error });
+}
 
 for (const minifierName of minifiers) {
   let minifierPasses = 0;
@@ -93,6 +104,10 @@ for (const minifierName of minifiers) {
           validate = await fs.readFile(
             path.join("tests", testPath, "validate.html"),
             "utf-8",
+          );
+          validate = validate.replace(
+            `<link rel="stylesheet" href="../../../validate.css">`,
+            `<style>${validateStylesheet}</style>`
           );
         } catch {}
         results.tests[testGroup.name].tests[testPath] = {
