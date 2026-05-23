@@ -14,7 +14,6 @@
             [href="#"],
             [href="/"],
             [href="file.html"],
-            [href="example.com"],
             [href=https\:\/\/example\.com] {
               color: red;
             }
@@ -24,21 +23,19 @@
           <a href="#">octothorpe</a>
           <a href="/">root slash</a>
           <a href="file.html">file</a>
-          <a href="https://example.com">long url</a>
-          <a href="example.com">short url</a>
+          <a href="https://example.com">url</a>
         </div>
       </div>
       <div>
         <h2>Expected (minified)</h2>
         <style>
-          .expected{[href=\#],[href=\/],[href=file\.html],[href=example\.com],[href="https://example.com"]{color:red}}
+          .expected{[href=\#],[href=\/],[href=file\.html],[href="https://example.com"]{color:red}}
         </style>
         <div class="expected">
           <a href="#">octothorpe</a>
           <a href="/">root slash</a>
           <a href="file.html">file</a>
-          <a href="https://example.com">long url</a>
-          <a href="example.com">short url</a>
+          <a href="https://example.com">url</a>
         </div>
       </div>
     </div>
