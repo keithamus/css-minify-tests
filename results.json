@@ -1034,6 +1034,15 @@
     "lightningcss": true,
     "sass": false
   },
+  "escaping/0013": {
+    "clean-css": false,
+    "csskit": false,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": false
+  },
   "font-face/0001": {
     "clean-css": true,
     "csskit": true,
