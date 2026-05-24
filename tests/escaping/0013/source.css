@@ -1,0 +1,6 @@
+[href="#"],
+[href="/"],
+[href="file.html"],
+[href=https\:\/\/example\.com] {
+  color: red;
+}

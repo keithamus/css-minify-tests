@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../validate.css">
+    <title>Validate: Escaping HREF attribute values</title>
+  </head>
+  <body>
+    <div class="compare">
+      <div>
+        <h2>Source (unminified)</h2>
+        <style>
+          .source {
+            [href="#"],
+            [href="/"],
+            [href="file.html"],
+            [href=https\:\/\/example\.com] {
+              color: red;
+            }
+          }
+        </style>
+        <div class="source">
+          <a href="#">octothorpe</a>
+          <a href="/">root slash</a>
+          <a href="file.html">file</a>
+          <a href="https://example.com">url</a>
+        </div>
+      </div>
+      <div>
+        <h2>Expected (minified)</h2>
+        <style>
+          .expected{[href=\#],[href=\/],[href=file\.html],[href="https://example.com"]{color:red}}
+        </style>
+        <div class="expected">
+          <a href="#">octothorpe</a>
+          <a href="/">root slash</a>
+          <a href="file.html">file</a>
+          <a href="https://example.com">url</a>
+        </div>
+      </div>
+    </div>
+    <p>
+      All above examples should have red text. If they differ, the
+      minification is invalid.
+    </p>
+  </body>
+</html>
