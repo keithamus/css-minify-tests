@@ -1,1 +1,1 @@
-input:valid{color:red}
+button:valid,fieldset:valid,form:valid,input:valid,select:valid,textarea:valid,div:not(:invalid),custom-element:not(:invalid),.foo:not(:invalid){color:red}
