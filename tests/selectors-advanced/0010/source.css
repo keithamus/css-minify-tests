@@ -4,9 +4,9 @@ link:not(:link),
 .foo:not(:link),
 h1:not(:link),
 [href]:not(:link),
-[href="#"]:not(:link),
+[href="/foo.html#bar"]:not(:link),
 a[href]:not(:link),
-area[href="#"]:not(:link),
+area[href="/foo.html#bar"]:not(:link),
 :where(:not(:link)),
 a:where(:not(:link)) {
   color: red;
