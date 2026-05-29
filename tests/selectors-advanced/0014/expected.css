@@ -1,1 +1,1 @@
-:is(:visited,.bar,.example,.foo,a,h1,h2,p){color:red}
+:is(.bar,.example,.foo,:visited,a,h1,h2,p){color:red}
