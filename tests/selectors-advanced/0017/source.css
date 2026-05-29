@@ -1,0 +1,3 @@
+:is(h2, :link, h1, :visited, h1, :any-link, div) {
+  color: red;
+}
