@@ -1,0 +1,3 @@
+:is(:visited, :link, :where(.link)) {
+  color: red;
+}
