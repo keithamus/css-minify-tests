@@ -659,6 +659,36 @@
     "lightningcss": true,
     "sass": true
   },
+  "colors/0060": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "colors/0061": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "colors/0062": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": false,
+    "sass": false
+  },
   "comments/0001": {
     "clean-css": true,
     "csskit": true,
