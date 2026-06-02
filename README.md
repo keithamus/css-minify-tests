@@ -40,6 +40,7 @@ the actual vs expected diff for every mismatch.
 
 - [clean-css](https://www.npmjs.com/package/clean-css)
 - [csskit](https://www.npmjs.com/package/csskit)
+- [CSSLOP](https://www.npmjs.com/package/@thejaredwilcurt/csslop)
 - [cssnano](https://www.npmjs.com/package/cssnano)
 - [csso](https://www.npmjs.com/package/csso)
 - [esbuild](https://www.npmjs.com/package/esbuild)
