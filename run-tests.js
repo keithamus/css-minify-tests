@@ -6,6 +6,8 @@ import { appendHistory } from "./lib/history.js";
 import { traverseDir } from "./lib/traverse-dir.js";
 import sass from "./lib/minifiers/sass.js";
 
+const __dirname = import.meta.dirname;
+
 const debugMode = !!process.env.DEBUG;
 
 const testGroups = new Map();
@@ -268,4 +270,5 @@ for (const [groupName, group] of Object.entries(results.tests)) {
     }
   }
 }
-await fs.writeFile("results.json", JSON.stringify(resultsJson, null, 2) + "\n");
+const outputFile = path.join(__dirname, "data", "results.json");
+await fs.writeFile(outputFile, JSON.stringify(resultsJson, null, 2) + "\n");

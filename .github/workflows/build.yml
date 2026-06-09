@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: pr-results
-          path: results.json
+          path: data/results.json
 
       - name: Commit results history
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -66,7 +66,7 @@ jobs:
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: baseline-results
-          path: results.json
+          path: data/results.json
 
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'

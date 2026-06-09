@@ -56,7 +56,7 @@ jobs:
 
 
       - name: Generate comment
-        run: node lib/pr-comment.js baseline/results.json pr/results.json > comment.md
+        run: node scripts/pr-comment.js baseline/data/results.json pr/data/results.json > comment.md
 
       - name: Post or update PR comment
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
