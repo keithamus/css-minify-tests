@@ -76,6 +76,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+thead {
+  position: sticky;
+  top: 0px;
+}
 
 h2 {
   margin-top: 3rem;

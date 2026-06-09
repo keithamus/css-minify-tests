@@ -11,7 +11,7 @@
     "new-test": "bash -c 'd=tests/$1/$(printf \"%04d\" $(($(ls tests/$1 2>/dev/null|sort -n|tail -1)+1))) && mkdir -p $d && touch $d/source.css $d/expected.css $d/README.md && echo \"Created $d\" && ${EDITOR:-vim} $d/source.css $d/expected.css $d/README.md' --"
   },
   "devDependencies": {
-    "@thejaredwilcurt/csslop": "^0.0.3",
+    "@thejaredwilcurt/csslop": "^0.0.4",
     "clean-css": "^5.3.3",
     "csskit": "^0.0.24",
     "cssnano": "^8.0.1",
@@ -21,6 +21,8 @@
     "lightningcss": "^1.30.0",
     "marked": "^18.0.4",
     "postcss": "^8.5.15",
+    "pretty-ms": "^9.3.0",
+    "real-world-css-libraries": "^1.0.1",
     "sass": "^1.100.0",
     "shiki": "^4.1.0"
   },
