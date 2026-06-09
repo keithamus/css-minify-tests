@@ -276,7 +276,7 @@
     "results": {
       "clean-css": 19626,
       "csskit": 19605,
-      "csslop": 15984,
+      "csslop": 15986,
       "cssnano": 18475,
       "csso": 18952,
       "esbuild": 19739,
@@ -306,7 +306,7 @@
     "results": {
       "clean-css": 183378,
       "csskit": 183235,
-      "csslop": 181873,
+      "csslop": 181909,
       "cssnano": 182439,
       "csso": 183048,
       "esbuild": 184402,
@@ -390,7 +390,7 @@
     }
   },
   {
-    "name": "Css Social Buttons",
+    "name": "CSS Social Buttons",
     "version": "v1.4.0",
     "size": 49521,
     "results": {
@@ -561,7 +561,7 @@
     "results": {
       "clean-css": 61119,
       "csskit": 61503,
-      "csslop": 58862,
+      "csslop": 58863,
       "cssnano": 60622,
       "csso": 60797,
       "esbuild": 62053,
@@ -621,7 +621,7 @@
     "results": {
       "clean-css": 27567,
       "csskit": "ERROR",
-      "csslop": 38578,
+      "csslop": 38587,
       "cssnano": 38462,
       "csso": 18840,
       "esbuild": 39363,
@@ -696,7 +696,7 @@
     "results": {
       "clean-css": 54613,
       "csskit": 57112,
-      "csslop": 51531,
+      "csslop": 51533,
       "cssnano": 54055,
       "csso": 55557,
       "esbuild": 56314,
@@ -726,7 +726,7 @@
     "results": {
       "clean-css": 26829,
       "csskit": 26797,
-      "csslop": 23365,
+      "csslop": 23369,
       "cssnano": 25231,
       "csso": 26286,
       "esbuild": 27130,
@@ -771,7 +771,7 @@
     "results": {
       "clean-css": 149626,
       "csskit": 150208,
-      "csslop": 140100,
+      "csslop": 140108,
       "cssnano": 147435,
       "csso": 149578,
       "esbuild": 152745,
@@ -1041,7 +1041,7 @@
     "results": {
       "clean-css": "ERROR",
       "csskit": 60735,
-      "csslop": 55477,
+      "csslop": 55765,
       "cssnano": 60588,
       "csso": 44650,
       "esbuild": 61364,
@@ -1266,7 +1266,7 @@
     "results": {
       "clean-css": 38537,
       "csskit": 39077,
-      "csslop": 37264,
+      "csslop": 37268,
       "cssnano": 38267,
       "csso": 39523,
       "esbuild": 39232,
@@ -1971,7 +1971,7 @@
     "results": {
       "clean-css": 5815,
       "csskit": 5792,
-      "csslop": 5566,
+      "csslop": 5568,
       "cssnano": 5785,
       "csso": 5770,
       "esbuild": 5829,
@@ -1992,6 +1992,21 @@
       "esbuild": 7880,
       "lightningcss": "ERROR",
       "sass": 7895
+    }
+  },
+  {
+    "name": "Zotero Dark Theme",
+    "version": "v0.0.0",
+    "size": 13440,
+    "results": {
+      "clean-css": 9130,
+      "csskit": 9715,
+      "csslop": 9113,
+      "cssnano": 9111,
+      "csso": 8068,
+      "esbuild": 9508,
+      "lightningcss": 8914,
+      "sass": 10103
     }
   }
 ]
