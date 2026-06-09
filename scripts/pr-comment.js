@@ -48,9 +48,9 @@ const totals = (results, includedMinifiers = null) => {
   return counts;
 };
 
-let [, , beforeResultsPath, afterResultsPath = "results.json"] = process.argv;
+let [, , beforeResultsPath, afterResultsPath = "data/results.json"] = process.argv;
 if (!beforeResultsPath) {
-  console.error("Usage: node lib/pr-comment.js <before-results.json> [after-results.json]");
+  console.error("Usage: node scripts/pr-comment.js <before-results.json> [after-results.json]");
   process.exit(1);
 }
 
