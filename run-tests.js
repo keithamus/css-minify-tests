@@ -196,7 +196,13 @@ for (const minifierName of minifiers) {
 console.log("\nCSS Minify Tests\n");
 
 const colWidth = 14;
-const testColWidth = 16;
+let testColWidth = 0;
+for (const group of sortedGroups) {
+  if (testColWidth < group.name.length) {
+    testColWidth = group.name.length;
+  }
+}
+
 
 function pad(str, width) {
   return String(str).padEnd(width);
