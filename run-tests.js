@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { minify, minifiers, getVersions } from "./lib/minify.js";
+import { minifiers } from './lib/loaders/loadAllMinifiers.js';
+import { minify, getVersions } from "./lib/minify.js";
 import { resultsAsHTML } from "./lib/results-as-html.js";
 import { appendHistory } from "./lib/history.js";
 import { traverseDir } from "./lib/traverse-dir.js";

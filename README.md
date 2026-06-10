@@ -66,6 +66,7 @@ Want to add your minifier to the suite? See the
 2. Register it in `lib/minify.js`.
 3. Add the npm package to `devDependencies`.
 4. Run `npm test` and open a PR.
+5. Update the README to add it to the list of "Tested minifiers"
 
 ## Contributing
 

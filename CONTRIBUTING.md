@@ -165,16 +165,16 @@ If the minifier is a CLI binary rather than a JS API, see
 
 ### 3. Register the adapter
 
-In `lib/minify.js`:
+In `lib/loaders/loadAllMinifiers.js`:
 
 1. Import the adapter at the top of the file.
 2. Add an entry to the `registry` Map. The key is the npm package name (used
    for version lookups and display).
 
 ```js
-import myMinifier from "./minifiers/my-minifier.js";
+import myMinifier from "../minifiers/my-minifier.js";
 
-const registry = new Map([
+export const registry = new Map([
   // ... existing entries ...
   ["my-minifier", myMinifier],
 ]);
