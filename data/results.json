@@ -271,7 +271,7 @@
   },
   "colors/0021": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": false,
@@ -301,7 +301,7 @@
   },
   "colors/0024": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -661,7 +661,7 @@
   },
   "colors/0060": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -671,7 +671,7 @@
   },
   "colors/0061": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -2000,6 +2000,26 @@
     "sass": true
   },
   "selectors/0015": {
+    "clean-css": true,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
+  },
+  "selectors/0016": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": false
+  },
+  "selectors/0017": {
     "clean-css": true,
     "csskit": true,
     "csslop": true,
