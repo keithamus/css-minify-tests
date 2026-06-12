@@ -5,11 +5,11 @@
     "size": 13747,
     "results": {
       "clean-css": 10141,
-      "csskit": 10047,
+      "csskit": 10046,
       "csslop": 9381,
       "cssnano": 10083,
       "csso": 10192,
-      "esbuild": 10060,
+      "esbuild": 10059,
       "lightningcss": 10004,
       "sass": 10398
     }
@@ -20,11 +20,11 @@
     "size": 9989,
     "results": {
       "clean-css": 5772,
-      "csskit": 5641,
+      "csskit": 5640,
       "csslop": 5772,
       "cssnano": 5772,
       "csso": 5768,
-      "esbuild": 5773,
+      "esbuild": 5772,
       "lightningcss": 5772,
       "sass": 5772
     }
@@ -35,11 +35,11 @@
     "size": 23150,
     "results": {
       "clean-css": 19136,
-      "csskit": 19581,
+      "csskit": 19580,
       "csslop": 17654,
       "cssnano": 19105,
       "csso": 19073,
-      "esbuild": 19251,
+      "esbuild": 19250,
       "lightningcss": "ERROR",
       "sass": "ERROR"
     }
@@ -50,13 +50,13 @@
     "size": 9256,
     "results": {
       "clean-css": 7225,
-      "csskit": 6659,
+      "csskit": 6658,
       "csslop": 6611,
       "cssnano": 7215,
       "csso": 6631,
-      "esbuild": 7216,
+      "esbuild": 7215,
       "lightningcss": 6627,
-      "sass": 6665
+      "sass": 6664
     }
   },
   {
@@ -65,13 +65,13 @@
     "size": 409926,
     "results": {
       "clean-css": 315879,
-      "csskit": 336987,
+      "csskit": 336986,
       "csslop": 324108,
       "cssnano": 311452,
       "csso": 315667,
-      "esbuild": 320008,
+      "esbuild": 320007,
       "lightningcss": 313923,
-      "sass": 343910
+      "sass": 343909
     }
   },
   {
@@ -80,11 +80,11 @@
     "size": 95377,
     "results": {
       "clean-css": 74512,
-      "csskit": 74390,
+      "csskit": 74389,
       "csslop": 36221,
       "cssnano": 71725,
       "csso": 73222,
-      "esbuild": 73462,
+      "esbuild": 73461,
       "lightningcss": 23943,
       "sass": 77691
     }
@@ -95,11 +95,11 @@
     "size": 67468,
     "results": {
       "clean-css": 50273,
-      "csskit": 50649,
+      "csskit": 50648,
       "csslop": 17396,
       "cssnano": 50178,
       "csso": 49294,
-      "esbuild": 50201,
+      "esbuild": 50200,
       "lightningcss": 41118,
       "sass": 50896
     }
@@ -110,11 +110,11 @@
     "size": 38452,
     "results": {
       "clean-css": 28360,
-      "csskit": 28185,
+      "csskit": 28184,
       "csslop": 14423,
       "cssnano": 28178,
       "csso": 27879,
-      "esbuild": 28155,
+      "esbuild": 28154,
       "lightningcss": 10128,
       "sass": 28566
     }
@@ -125,13 +125,13 @@
     "size": 9073,
     "results": {
       "clean-css": 7786,
-      "csskit": 7938,
+      "csskit": 7937,
       "csslop": 7379,
       "cssnano": 7558,
       "csso": 7544,
-      "esbuild": 7713,
+      "esbuild": 7712,
       "lightningcss": 7426,
-      "sass": 7814
+      "sass": 7813
     }
   },
   {
@@ -140,11 +140,11 @@
     "size": 7577,
     "results": {
       "clean-css": 6556,
-      "csskit": 6696,
+      "csskit": 6695,
       "csslop": 6456,
       "cssnano": 6476,
       "csso": 6516,
-      "esbuild": 6602,
+      "esbuild": 6601,
       "lightningcss": 6489,
       "sass": 6650
     }
@@ -155,11 +155,11 @@
     "size": 47232,
     "results": {
       "clean-css": 15772,
-      "csskit": 15941,
+      "csskit": 15940,
       "csslop": 15689,
       "cssnano": 43633,
       "csso": 15526,
-      "esbuild": 15886,
+      "esbuild": 15885,
       "lightningcss": 15832,
       "sass": 16429
     }
@@ -170,11 +170,11 @@
     "size": 107060,
     "results": {
       "clean-css": 88176,
-      "csskit": 89187,
+      "csskit": 89186,
       "csslop": 85341,
       "cssnano": 87684,
       "csso": 87717,
-      "esbuild": 88572,
+      "esbuild": 88571,
       "lightningcss": 88073,
       "sass": 89420
     }
@@ -185,11 +185,11 @@
     "size": 5533,
     "results": {
       "clean-css": 3287,
-      "csskit": 3281,
+      "csskit": 3280,
       "csslop": 2815,
       "cssnano": 3268,
       "csso": 3281,
-      "esbuild": 3297,
+      "esbuild": 3296,
       "lightningcss": 3324,
       "sass": 3313
     }
@@ -200,11 +200,11 @@
     "size": 21368,
     "results": {
       "clean-css": 7610,
-      "csskit": 8749,
+      "csskit": 8748,
       "csslop": 7555,
       "cssnano": 7457,
       "csso": 7380,
-      "esbuild": 7655,
+      "esbuild": 7654,
       "lightningcss": 7629,
       "sass": 8803
     }
@@ -215,13 +215,13 @@
     "size": 200387,
     "results": {
       "clean-css": 160082,
-      "csskit": 160454,
+      "csskit": 160453,
       "csslop": 147604,
       "cssnano": 157988,
       "csso": 160404,
-      "esbuild": 161002,
+      "esbuild": 161001,
       "lightningcss": 143919,
-      "sass": 163489
+      "sass": 163488
     }
   },
   {
@@ -230,13 +230,13 @@
     "size": 280308,
     "results": {
       "clean-css": 230252,
-      "csskit": 230386,
+      "csskit": 230385,
       "csslop": 220735,
       "cssnano": 228921,
       "csso": 228303,
-      "esbuild": 232386,
+      "esbuild": 232385,
       "lightningcss": 227135,
-      "sass": 235235
+      "sass": 235234
     }
   },
   {
@@ -245,11 +245,11 @@
     "size": 42334,
     "results": {
       "clean-css": 31411,
-      "csskit": 34740,
+      "csskit": 34739,
       "csslop": 26016,
       "cssnano": 32197,
       "csso": 30935,
-      "esbuild": 34803,
+      "esbuild": 34802,
       "lightningcss": 24577,
       "sass": 36906
     }
@@ -260,13 +260,13 @@
     "size": 160807,
     "results": {
       "clean-css": 70321,
-      "csskit": 95430,
+      "csskit": 95429,
       "csslop": 70316,
       "cssnano": 71362,
       "csso": 88137,
-      "esbuild": 92471,
+      "esbuild": 92470,
       "lightningcss": 70634,
-      "sass": 97745
+      "sass": 97744
     }
   },
   {
@@ -275,11 +275,11 @@
     "size": 24284,
     "results": {
       "clean-css": 19626,
-      "csskit": 19605,
+      "csskit": 19604,
       "csslop": 15986,
       "cssnano": 18475,
       "csso": 18952,
-      "esbuild": 19739,
+      "esbuild": 19738,
       "lightningcss": 17529,
       "sass": 19261
     }
@@ -290,11 +290,11 @@
     "size": 23296,
     "results": {
       "clean-css": 17924,
-      "csskit": 17929,
+      "csskit": 17928,
       "csslop": 17406,
       "cssnano": 17654,
       "csso": 18898,
-      "esbuild": 18016,
+      "esbuild": 18015,
       "lightningcss": 17661,
       "sass": 18172
     }
@@ -305,11 +305,11 @@
     "size": 233717,
     "results": {
       "clean-css": 183378,
-      "csskit": 183235,
+      "csskit": 183234,
       "csslop": 181909,
       "cssnano": 182439,
       "csso": 183048,
-      "esbuild": 184402,
+      "esbuild": 184401,
       "lightningcss": 183393,
       "sass": 185630
     }
@@ -320,13 +320,13 @@
     "size": 17050,
     "results": {
       "clean-css": 12603,
-      "csskit": 12817,
+      "csskit": 12816,
       "csslop": 11347,
       "cssnano": 12592,
       "csso": 12523,
-      "esbuild": 12750,
+      "esbuild": 12749,
       "lightningcss": 10773,
-      "sass": 12786
+      "sass": 12785
     }
   },
   {
@@ -335,11 +335,11 @@
     "size": 4735,
     "results": {
       "clean-css": 3471,
-      "csskit": 3573,
+      "csskit": 3572,
       "csslop": 3505,
       "cssnano": 2709,
       "csso": 3432,
-      "esbuild": 3442,
+      "esbuild": 3441,
       "lightningcss": 3497,
       "sass": 4179
     }
@@ -350,11 +350,11 @@
     "size": 23574,
     "results": {
       "clean-css": 8999,
-      "csskit": 20243,
+      "csskit": 20242,
       "csslop": 19856,
       "cssnano": 16766,
       "csso": 6676,
-      "esbuild": 20294,
+      "esbuild": 20293,
       "lightningcss": 20398,
       "sass": 21123
     }
@@ -365,11 +365,11 @@
     "size": 22330,
     "results": {
       "clean-css": 17013,
-      "csskit": 17672,
+      "csskit": 17671,
       "csslop": 15121,
       "cssnano": 16600,
       "csso": 16997,
-      "esbuild": 16934,
+      "esbuild": 16933,
       "lightningcss": 16140,
       "sass": "ERROR"
     }
@@ -380,11 +380,11 @@
     "size": 23103,
     "results": {
       "clean-css": 5872,
-      "csskit": 5680,
+      "csskit": 5679,
       "csslop": 5613,
       "cssnano": 5791,
       "csso": 5779,
-      "esbuild": 6088,
+      "esbuild": 6087,
       "lightningcss": 6006,
       "sass": 5968
     }
@@ -395,13 +395,13 @@
     "size": 49521,
     "results": {
       "clean-css": 46025,
-      "csskit": 45413,
+      "csskit": 45412,
       "csslop": 42474,
       "cssnano": 45101,
       "csso": 46496,
-      "esbuild": 46346,
+      "esbuild": 46345,
       "lightningcss": 43359,
-      "sass": 46630
+      "sass": 46629
     }
   },
   {
@@ -410,11 +410,11 @@
     "size": 143659,
     "results": {
       "clean-css": 111745,
-      "csskit": 122298,
+      "csskit": 122297,
       "csslop": 62321,
       "cssnano": 120966,
       "csso": 107066,
-      "esbuild": 121207,
+      "esbuild": 121206,
       "lightningcss": 28531,
       "sass": 123186
     }
@@ -425,13 +425,13 @@
     "size": 33239,
     "results": {
       "clean-css": 26284,
-      "csskit": 26429,
+      "csskit": 26428,
       "csslop": 13227,
       "cssnano": 25326,
       "csso": 25803,
-      "esbuild": 26194,
+      "esbuild": 26193,
       "lightningcss": 24213,
-      "sass": 27233
+      "sass": 27232
     }
   },
   {
@@ -440,11 +440,11 @@
     "size": 8075,
     "results": {
       "clean-css": 4243,
-      "csskit": 4212,
+      "csskit": 4211,
       "csslop": 3040,
       "cssnano": 4214,
       "csso": 4130,
-      "esbuild": 4217,
+      "esbuild": 4216,
       "lightningcss": 3487,
       "sass": 4281
     }
@@ -455,11 +455,11 @@
     "size": 293404,
     "results": {
       "clean-css": 238475,
-      "csskit": 237980,
+      "csskit": 237979,
       "csslop": 217041,
       "cssnano": 207316,
       "csso": 201411,
-      "esbuild": 240350,
+      "esbuild": 240349,
       "lightningcss": 199739,
       "sass": 241974
     }
@@ -470,11 +470,11 @@
     "size": 28706,
     "results": {
       "clean-css": 25106,
-      "csskit": 24301,
+      "csskit": 24300,
       "csslop": 12265,
       "cssnano": 24976,
       "csso": 25007,
-      "esbuild": 25074,
+      "esbuild": 25073,
       "lightningcss": 24744,
       "sass": 25133
     }
@@ -485,11 +485,11 @@
     "size": 68690,
     "results": {
       "clean-css": 62136,
-      "csskit": 62560,
+      "csskit": 62559,
       "csslop": 59549,
       "cssnano": 50326,
       "csso": 61982,
-      "esbuild": 62479,
+      "esbuild": 62478,
       "lightningcss": 59842,
       "sass": 62617
     }
@@ -500,13 +500,13 @@
     "size": 53970,
     "results": {
       "clean-css": 7678,
-      "csskit": 7738,
+      "csskit": 7737,
       "csslop": 7508,
       "cssnano": 107837,
       "csso": 7597,
-      "esbuild": 7775,
+      "esbuild": 7774,
       "lightningcss": 7488,
-      "sass": 7824
+      "sass": 7823
     }
   },
   {
@@ -515,11 +515,11 @@
     "size": 21440,
     "results": {
       "clean-css": 11126,
-      "csskit": 11174,
+      "csskit": 11173,
       "csslop": 11048,
       "cssnano": 10703,
       "csso": 10885,
-      "esbuild": 11329,
+      "esbuild": 11328,
       "lightningcss": 10939,
       "sass": 11313
     }
@@ -530,11 +530,11 @@
     "size": 6132,
     "results": {
       "clean-css": 2105,
-      "csskit": 2132,
+      "csskit": 2131,
       "csslop": 2111,
       "cssnano": 2192,
       "csso": 2093,
-      "esbuild": 2210,
+      "esbuild": 2209,
       "lightningcss": 2164,
       "sass": 2221
     }
@@ -545,11 +545,11 @@
     "size": 59294,
     "results": {
       "clean-css": 50058,
-      "csskit": 49588,
+      "csskit": 49587,
       "csslop": 44639,
       "cssnano": 48960,
       "csso": 49814,
-      "esbuild": 49570,
+      "esbuild": 49569,
       "lightningcss": 48261,
       "sass": 50756
     }
@@ -560,11 +560,11 @@
     "size": 78045,
     "results": {
       "clean-css": 61119,
-      "csskit": 61503,
+      "csskit": 61502,
       "csslop": 58863,
       "cssnano": 60622,
       "csso": 60797,
-      "esbuild": 62053,
+      "esbuild": 62052,
       "lightningcss": 65571,
       "sass": "ERROR"
     }
@@ -575,11 +575,11 @@
     "size": 149789,
     "results": {
       "clean-css": 116791,
-      "csskit": 119792,
+      "csskit": 119791,
       "csslop": 85914,
       "cssnano": 116981,
       "csso": 112457,
-      "esbuild": 118330,
+      "esbuild": 118329,
       "lightningcss": 75530,
       "sass": 120317
     }
@@ -590,13 +590,13 @@
     "size": 96797,
     "results": {
       "clean-css": 71548,
-      "csskit": 70787,
+      "csskit": 70786,
       "csslop": 68163,
       "cssnano": 69507,
       "csso": 71430,
-      "esbuild": 71439,
+      "esbuild": 71438,
       "lightningcss": 69741,
-      "sass": 72208
+      "sass": 72207
     }
   },
   {
@@ -605,11 +605,11 @@
     "size": 3543,
     "results": {
       "clean-css": 1342,
-      "csskit": 247,
+      "csskit": 245,
       "csslop": 1148,
       "cssnano": "ERROR",
       "csso": 1188,
-      "esbuild": 1669,
+      "esbuild": 1668,
       "lightningcss": "ERROR",
       "sass": "ERROR"
     }
@@ -624,7 +624,7 @@
       "csslop": 38587,
       "cssnano": 38462,
       "csso": 18840,
-      "esbuild": 39363,
+      "esbuild": 39362,
       "lightningcss": "ERROR",
       "sass": "ERROR"
     }
@@ -635,13 +635,13 @@
     "size": 243978,
     "results": {
       "clean-css": 181879,
-      "csskit": 183234,
+      "csskit": 183233,
       "csslop": 131385,
       "cssnano": "ERROR",
       "csso": 179093,
-      "esbuild": 183748,
+      "esbuild": 183747,
       "lightningcss": 173050,
-      "sass": 187025
+      "sass": 187024
     }
   },
   {
@@ -650,11 +650,11 @@
     "size": 11006,
     "results": {
       "clean-css": 7120,
-      "csskit": 7442,
+      "csskit": 7441,
       "csslop": 5950,
       "cssnano": 7071,
       "csso": 7088,
-      "esbuild": 7093,
+      "esbuild": 7092,
       "lightningcss": 5465,
       "sass": 7114
     }
@@ -665,11 +665,11 @@
     "size": 112042,
     "results": {
       "clean-css": 76345,
-      "csskit": 74140,
+      "csskit": 74139,
       "csslop": 76292,
       "cssnano": 75782,
       "csso": 75516,
-      "esbuild": 78225,
+      "esbuild": 78224,
       "lightningcss": 68459,
       "sass": 87046
     }
@@ -680,13 +680,13 @@
     "size": 161298,
     "results": {
       "clean-css": 123428,
-      "csskit": 130972,
+      "csskit": 130971,
       "csslop": 116178,
       "cssnano": 121007,
       "csso": 122377,
-      "esbuild": 125638,
+      "esbuild": 125637,
       "lightningcss": "ERROR",
-      "sass": 131612
+      "sass": 131611
     }
   },
   {
@@ -695,11 +695,11 @@
     "size": 96841,
     "results": {
       "clean-css": 54613,
-      "csskit": 57112,
+      "csskit": 57111,
       "csslop": 51533,
       "cssnano": 54055,
       "csso": 55557,
-      "esbuild": 56314,
+      "esbuild": 56313,
       "lightningcss": "ERROR",
       "sass": 57605
     }
@@ -710,11 +710,11 @@
     "size": 12006,
     "results": {
       "clean-css": 7901,
-      "csskit": 9376,
+      "csskit": 9375,
       "csslop": 5829,
       "cssnano": 7788,
       "csso": 7768,
-      "esbuild": 7937,
+      "esbuild": 7936,
       "lightningcss": 5010,
       "sass": 9404
     }
@@ -725,11 +725,11 @@
     "size": 31067,
     "results": {
       "clean-css": 26829,
-      "csskit": 26797,
+      "csskit": 26796,
       "csslop": 23369,
       "cssnano": 25231,
       "csso": 26286,
-      "esbuild": 27130,
+      "esbuild": 27129,
       "lightningcss": 26325,
       "sass": 27204
     }
@@ -740,11 +740,11 @@
     "size": 52213,
     "results": {
       "clean-css": 41378,
-      "csskit": 41967,
+      "csskit": 41966,
       "csslop": 33968,
       "cssnano": "ERROR",
       "csso": 41059,
-      "esbuild": 41745,
+      "esbuild": 41744,
       "lightningcss": 40687,
       "sass": "ERROR"
     }
@@ -755,11 +755,11 @@
     "size": 45359,
     "results": {
       "clean-css": 36116,
-      "csskit": 38101,
+      "csskit": 38100,
       "csslop": 34453,
       "cssnano": 26071,
       "csso": 34957,
-      "esbuild": 34947,
+      "esbuild": 34946,
       "lightningcss": 34733,
       "sass": 34959
     }
@@ -770,13 +770,13 @@
     "size": 167127,
     "results": {
       "clean-css": 149626,
-      "csskit": 150208,
+      "csskit": 150207,
       "csslop": 140108,
       "cssnano": 147435,
       "csso": 149578,
-      "esbuild": 152745,
+      "esbuild": 152744,
       "lightningcss": "ERROR",
-      "sass": 152298
+      "sass": 152297
     }
   },
   {
@@ -785,11 +785,11 @@
     "size": 10139,
     "results": {
       "clean-css": 4748,
-      "csskit": 4929,
+      "csskit": 4928,
       "csslop": 4717,
       "cssnano": 4948,
       "csso": 4748,
-      "esbuild": 5060,
+      "esbuild": 5059,
       "lightningcss": 5059,
       "sass": 5146
     }
@@ -800,7 +800,7 @@
     "size": 7473,
     "results": {
       "clean-css": 3434,
-      "csskit": 3288,
+      "csskit": 3287,
       "csslop": 3108,
       "cssnano": "ERROR",
       "csso": 2933,
@@ -815,11 +815,11 @@
     "size": 10831,
     "results": {
       "clean-css": 7230,
-      "csskit": 7308,
+      "csskit": 7307,
       "csslop": 6785,
       "cssnano": 7229,
       "csso": 7373,
-      "esbuild": 7447,
+      "esbuild": 7446,
       "lightningcss": 7183,
       "sass": 7584
     }
@@ -830,11 +830,11 @@
     "size": 5233,
     "results": {
       "clean-css": 1266,
-      "csskit": 1093,
+      "csskit": 1092,
       "csslop": 1215,
       "cssnano": 1234,
       "csso": 1269,
-      "esbuild": 1244,
+      "esbuild": 1243,
       "lightningcss": 1217,
       "sass": 1326
     }
@@ -845,13 +845,13 @@
     "size": 77539,
     "results": {
       "clean-css": 60960,
-      "csskit": 63684,
+      "csskit": 63683,
       "csslop": 55339,
       "cssnano": 60454,
       "csso": 59119,
-      "esbuild": 63058,
+      "esbuild": 63057,
       "lightningcss": 58068,
-      "sass": 65089
+      "sass": 65088
     }
   },
   {
@@ -860,13 +860,13 @@
     "size": 16330,
     "results": {
       "clean-css": 13029,
-      "csskit": 13013,
+      "csskit": 13012,
       "csslop": 9029,
       "cssnano": 12802,
       "csso": 12408,
-      "esbuild": 12798,
+      "esbuild": 12797,
       "lightningcss": 9743,
-      "sass": 12971
+      "sass": 12970
     }
   },
   {
@@ -875,11 +875,11 @@
     "size": 15056,
     "results": {
       "clean-css": 13405,
-      "csskit": 12859,
+      "csskit": 12858,
       "csslop": 7210,
       "cssnano": 12401,
       "csso": 13390,
-      "esbuild": 13072,
+      "esbuild": 13071,
       "lightningcss": 8507,
       "sass": 13913
     }
@@ -890,11 +890,11 @@
     "size": 190180,
     "results": {
       "clean-css": 176419,
-      "csskit": 187318,
+      "csskit": 187317,
       "csslop": 112023,
       "cssnano": 184766,
       "csso": 177347,
-      "esbuild": 186540,
+      "esbuild": 186539,
       "lightningcss": 79408,
       "sass": 190346
     }
@@ -905,11 +905,11 @@
     "size": 56509,
     "results": {
       "clean-css": 39220,
-      "csskit": 42485,
+      "csskit": 42484,
       "csslop": 22409,
       "cssnano": 40731,
       "csso": 38048,
-      "esbuild": 41567,
+      "esbuild": 41566,
       "lightningcss": 20263,
       "sass": 43271
     }
@@ -920,11 +920,11 @@
     "size": 8259,
     "results": {
       "clean-css": 6945,
-      "csskit": 6860,
+      "csskit": 6859,
       "csslop": 6626,
       "cssnano": 6730,
       "csso": 6669,
-      "esbuild": 6882,
+      "esbuild": 6881,
       "lightningcss": 6843,
       "sass": 6995
     }
@@ -935,11 +935,11 @@
     "size": 3693,
     "results": {
       "clean-css": 3047,
-      "csskit": 3139,
+      "csskit": 3138,
       "csslop": 2761,
       "cssnano": 2841,
       "csso": 3037,
-      "esbuild": 3120,
+      "esbuild": 3119,
       "lightningcss": 3159,
       "sass": 3139
     }
@@ -950,13 +950,13 @@
     "size": 311662,
     "results": {
       "clean-css": 252550,
-      "csskit": 258150,
+      "csskit": 258149,
       "csslop": 231196,
       "cssnano": 248258,
       "csso": 252766,
-      "esbuild": 253588,
+      "esbuild": 253587,
       "lightningcss": 230137,
-      "sass": 259777
+      "sass": 259776
     }
   },
   {
@@ -965,11 +965,11 @@
     "size": 1107,
     "results": {
       "clean-css": 773,
-      "csskit": 774,
+      "csskit": 773,
       "csslop": 747,
       "cssnano": 772,
       "csso": 747,
-      "esbuild": 774,
+      "esbuild": 773,
       "lightningcss": 773,
       "sass": 773
     }
@@ -980,13 +980,13 @@
     "size": 20474,
     "results": {
       "clean-css": 14945,
-      "csskit": 17295,
+      "csskit": 17294,
       "csslop": 10040,
       "cssnano": 17121,
       "csso": 17215,
-      "esbuild": 17474,
+      "esbuild": 17473,
       "lightningcss": "ERROR",
-      "sass": 17860
+      "sass": 17859
     }
   },
   {
@@ -995,11 +995,11 @@
     "size": 8537,
     "results": {
       "clean-css": 5817,
-      "csskit": 6277,
+      "csskit": 6276,
       "csslop": 5668,
       "cssnano": 5272,
       "csso": 6005,
-      "esbuild": 6055,
+      "esbuild": 6054,
       "lightningcss": 5867,
       "sass": 6178
     }
@@ -1010,13 +1010,13 @@
     "size": 55940,
     "results": {
       "clean-css": 46654,
-      "csskit": 47231,
+      "csskit": 47230,
       "csslop": 44688,
       "cssnano": 45661,
       "csso": 46079,
-      "esbuild": 47178,
+      "esbuild": 47177,
       "lightningcss": 46299,
-      "sass": 47095
+      "sass": 47094
     }
   },
   {
@@ -1025,11 +1025,11 @@
     "size": 622,
     "results": {
       "clean-css": 478,
-      "csskit": 409,
+      "csskit": 408,
       "csslop": 469,
       "cssnano": 476,
       "csso": 479,
-      "esbuild": 479,
+      "esbuild": 478,
       "lightningcss": 477,
       "sass": 483
     }
@@ -1040,11 +1040,11 @@
     "size": 76016,
     "results": {
       "clean-css": "ERROR",
-      "csskit": 60735,
+      "csskit": 60734,
       "csslop": 55765,
       "cssnano": 60588,
       "csso": 44650,
-      "esbuild": 61364,
+      "esbuild": 61363,
       "lightningcss": 60852,
       "sass": 69210
     }
@@ -1055,13 +1055,13 @@
     "size": 13762,
     "results": {
       "clean-css": 10691,
-      "csskit": 10659,
+      "csskit": 10658,
       "csslop": 9602,
       "cssnano": 10350,
       "csso": 11352,
-      "esbuild": 10836,
+      "esbuild": 10835,
       "lightningcss": 9005,
-      "sass": 10796
+      "sass": 10795
     }
   },
   {
@@ -1070,11 +1070,11 @@
     "size": 2797,
     "results": {
       "clean-css": 2020,
-      "csskit": 2218,
+      "csskit": 2217,
       "csslop": 1558,
       "cssnano": 2218,
       "csso": 2004,
-      "esbuild": 2219,
+      "esbuild": 2218,
       "lightningcss": 2056,
       "sass": 2224
     }
@@ -1085,11 +1085,11 @@
     "size": 1222,
     "results": {
       "clean-css": 605,
-      "csskit": 619,
+      "csskit": 618,
       "csslop": 611,
       "cssnano": 607,
       "csso": 611,
-      "esbuild": 611,
+      "esbuild": 610,
       "lightningcss": 607,
       "sass": 619
     }
@@ -1100,11 +1100,11 @@
     "size": 10267,
     "results": {
       "clean-css": 8002,
-      "csskit": 8139,
+      "csskit": 8138,
       "csslop": 7973,
       "cssnano": 8005,
       "csso": 7804,
-      "esbuild": 8172,
+      "esbuild": 8171,
       "lightningcss": 8097,
       "sass": 8208
     }
@@ -1115,7 +1115,7 @@
     "size": 6505,
     "results": {
       "clean-css": 0,
-      "csskit": 2186,
+      "csskit": 2185,
       "csslop": 133,
       "cssnano": 0,
       "csso": 0,
@@ -1130,11 +1130,11 @@
     "size": 308246,
     "results": {
       "clean-css": 283568,
-      "csskit": 277499,
+      "csskit": 277498,
       "csslop": 279427,
       "cssnano": 282832,
       "csso": 279501,
-      "esbuild": 283174,
+      "esbuild": 283173,
       "lightningcss": 277460,
       "sass": 283885
     }
@@ -1145,11 +1145,11 @@
     "size": 6138,
     "results": {
       "clean-css": 1742,
-      "csskit": 1764,
+      "csskit": 1763,
       "csslop": 1695,
       "cssnano": 1792,
       "csso": 1692,
-      "esbuild": 1816,
+      "esbuild": 1815,
       "lightningcss": 1937,
       "sass": 1819
     }
@@ -1160,11 +1160,11 @@
     "size": 2036,
     "results": {
       "clean-css": 1737,
-      "csskit": 1552,
+      "csskit": 1551,
       "csslop": 1698,
       "cssnano": 1633,
       "csso": 1738,
-      "esbuild": 1699,
+      "esbuild": 1698,
       "lightningcss": 1699,
       "sass": 1794
     }
@@ -1175,11 +1175,11 @@
     "size": 17815,
     "results": {
       "clean-css": 13856,
-      "csskit": 12270,
+      "csskit": 12269,
       "csslop": 13515,
       "cssnano": 12016,
       "csso": 13856,
-      "esbuild": 12858,
+      "esbuild": 12857,
       "lightningcss": 12601,
       "sass": 12880
     }
@@ -1190,11 +1190,11 @@
     "size": 43210,
     "results": {
       "clean-css": 20582,
-      "csskit": 21298,
+      "csskit": 21297,
       "csslop": 20310,
       "cssnano": 21038,
       "csso": 19984,
-      "esbuild": 21077,
+      "esbuild": 21076,
       "lightningcss": 20983,
       "sass": 21764
     }
@@ -1205,13 +1205,13 @@
     "size": 155954,
     "results": {
       "clean-css": 132186,
-      "csskit": 131765,
+      "csskit": 131764,
       "csslop": 132623,
       "cssnano": 123610,
       "csso": 130283,
-      "esbuild": 127355,
+      "esbuild": 127354,
       "lightningcss": 131741,
-      "sass": 135480
+      "sass": 135479
     }
   },
   {
@@ -1220,11 +1220,11 @@
     "size": 1521,
     "results": {
       "clean-css": 1078,
-      "csskit": 1064,
+      "csskit": 1063,
       "csslop": 1070,
       "cssnano": 1071,
       "csso": 1076,
-      "esbuild": 1074,
+      "esbuild": 1073,
       "lightningcss": 1073,
       "sass": 1078
     }
@@ -1235,11 +1235,11 @@
     "size": 20080,
     "results": {
       "clean-css": 4608,
-      "csskit": 13104,
+      "csskit": 13103,
       "csslop": 9034,
       "cssnano": 4727,
       "csso": 4602,
-      "esbuild": 8595,
+      "esbuild": 8594,
       "lightningcss": 4659,
       "sass": 16072
     }
@@ -1250,13 +1250,13 @@
     "size": 32662,
     "results": {
       "clean-css": 24203,
-      "csskit": 23006,
+      "csskit": 23005,
       "csslop": 19831,
       "cssnano": 24020,
       "csso": 22943,
-      "esbuild": 24276,
+      "esbuild": 24275,
       "lightningcss": 20756,
-      "sass": 23465
+      "sass": 23464
     }
   },
   {
@@ -1265,13 +1265,13 @@
     "size": 58813,
     "results": {
       "clean-css": 38537,
-      "csskit": 39077,
+      "csskit": 39076,
       "csslop": 37268,
       "cssnano": 38267,
       "csso": 39523,
-      "esbuild": 39232,
+      "esbuild": 39231,
       "lightningcss": 37843,
-      "sass": 39535
+      "sass": 39534
     }
   },
   {
@@ -1280,13 +1280,13 @@
     "size": 97069,
     "results": {
       "clean-css": 86572,
-      "csskit": 86102,
+      "csskit": 86101,
       "csslop": 82607,
       "cssnano": 84126,
       "csso": 87845,
-      "esbuild": 87253,
+      "esbuild": 87252,
       "lightningcss": 86900,
-      "sass": 87531
+      "sass": 87530
     }
   },
   {
@@ -1295,11 +1295,11 @@
     "size": 6107,
     "results": {
       "clean-css": 4732,
-      "csskit": 4827,
+      "csskit": 4826,
       "csslop": 4741,
       "cssnano": 4793,
       "csso": 4825,
-      "esbuild": 4826,
+      "esbuild": 4825,
       "lightningcss": "ERROR",
       "sass": 4886
     }
@@ -1310,11 +1310,11 @@
     "size": 10914,
     "results": {
       "clean-css": 6924,
-      "csskit": 7163,
+      "csskit": 7162,
       "csslop": 6909,
       "cssnano": 7069,
       "csso": 7034,
-      "esbuild": 7177,
+      "esbuild": 7176,
       "lightningcss": 7185,
       "sass": 7270
     }
@@ -1325,13 +1325,13 @@
     "size": 17006,
     "results": {
       "clean-css": 7797,
-      "csskit": 7777,
+      "csskit": 7776,
       "csslop": 7365,
       "cssnano": 7855,
       "csso": 7807,
-      "esbuild": 7947,
+      "esbuild": 7946,
       "lightningcss": 7431,
-      "sass": 8123
+      "sass": 8122
     }
   },
   {
@@ -1340,11 +1340,11 @@
     "size": 22629,
     "results": {
       "clean-css": 18276,
-      "csskit": 18743,
+      "csskit": 18742,
       "csslop": 16033,
       "cssnano": 18722,
       "csso": 17379,
-      "esbuild": 18916,
+      "esbuild": 18915,
       "lightningcss": 14704,
       "sass": 19231
     }
@@ -1355,13 +1355,13 @@
     "size": 26207,
     "results": {
       "clean-css": 15422,
-      "csskit": 15479,
+      "csskit": 15478,
       "csslop": 15520,
       "cssnano": 15379,
       "csso": 15743,
-      "esbuild": 15683,
+      "esbuild": 15682,
       "lightningcss": 15511,
-      "sass": 15734
+      "sass": 15733
     }
   },
   {
@@ -1370,11 +1370,11 @@
     "size": 5098,
     "results": {
       "clean-css": 2087,
-      "csskit": 2748,
+      "csskit": 2747,
       "csslop": 1969,
       "cssnano": 2087,
       "csso": 2058,
-      "esbuild": 2088,
+      "esbuild": 2087,
       "lightningcss": 2087,
       "sass": 2824
     }
@@ -1385,13 +1385,13 @@
     "size": 24863,
     "results": {
       "clean-css": 20036,
-      "csskit": 19423,
+      "csskit": 19422,
       "csslop": 18057,
       "cssnano": 19845,
       "csso": 19947,
-      "esbuild": 20004,
+      "esbuild": 20003,
       "lightningcss": 18313,
-      "sass": 20034
+      "sass": 20033
     }
   },
   {
@@ -1400,13 +1400,13 @@
     "size": 21954,
     "results": {
       "clean-css": 8304,
-      "csskit": 11047,
+      "csskit": 11046,
       "csslop": 11046,
       "cssnano": 8304,
       "csso": 7925,
-      "esbuild": 14111,
+      "esbuild": 14110,
       "lightningcss": 8009,
-      "sass": 11575
+      "sass": 11574
     }
   },
   {
@@ -1415,11 +1415,11 @@
     "size": 4038,
     "results": {
       "clean-css": 738,
-      "csskit": 772,
+      "csskit": 771,
       "csslop": 765,
       "cssnano": 765,
       "csso": 751,
-      "esbuild": 766,
+      "esbuild": 765,
       "lightningcss": 765,
       "sass": 767
     }
@@ -1430,11 +1430,11 @@
     "size": 15985,
     "results": {
       "clean-css": 11839,
-      "csskit": 11800,
+      "csskit": 11799,
       "csslop": 5832,
       "cssnano": 11723,
       "csso": 11057,
-      "esbuild": 11706,
+      "esbuild": 11705,
       "lightningcss": 4340,
       "sass": 11879
     }
@@ -1445,11 +1445,11 @@
     "size": 2416,
     "results": {
       "clean-css": 1263,
-      "csskit": 1266,
+      "csskit": 1265,
       "csslop": 1258,
       "cssnano": 1261,
       "csso": 1264,
-      "esbuild": 1264,
+      "esbuild": 1263,
       "lightningcss": 1296,
       "sass": 1266
     }
@@ -1460,13 +1460,13 @@
     "size": 70886,
     "results": {
       "clean-css": 51410,
-      "csskit": 52658,
+      "csskit": 52657,
       "csslop": 50565,
       "cssnano": 51274,
       "csso": 51322,
-      "esbuild": 51908,
+      "esbuild": 51907,
       "lightningcss": 50500,
-      "sass": 52537
+      "sass": 52536
     }
   },
   {
@@ -1475,13 +1475,13 @@
     "size": 63129,
     "results": {
       "clean-css": 44951,
-      "csskit": 47136,
+      "csskit": 47135,
       "csslop": 44401,
       "cssnano": 45017,
       "csso": 44798,
-      "esbuild": 45508,
+      "esbuild": 45507,
       "lightningcss": 44642,
-      "sass": 46886
+      "sass": 46885
     }
   },
   {
@@ -1490,11 +1490,11 @@
     "size": 6769,
     "results": {
       "clean-css": 2236,
-      "csskit": 2342,
+      "csskit": 2341,
       "csslop": 2224,
       "cssnano": 2286,
       "csso": 2256,
-      "esbuild": 2297,
+      "esbuild": 2296,
       "lightningcss": 2418,
       "sass": 2322
     }
@@ -1505,11 +1505,11 @@
     "size": 4098,
     "results": {
       "clean-css": 2995,
-      "csskit": 3117,
+      "csskit": 3116,
       "csslop": 3023,
       "cssnano": 3029,
       "csso": 2818,
-      "esbuild": 3074,
+      "esbuild": 3073,
       "lightningcss": 3327,
       "sass": 3147
     }
@@ -1520,13 +1520,13 @@
     "size": 7267,
     "results": {
       "clean-css": 2187,
-      "csskit": 2181,
+      "csskit": 2180,
       "csslop": 2018,
       "cssnano": 2179,
       "csso": 2155,
-      "esbuild": 2181,
+      "esbuild": 2180,
       "lightningcss": 2052,
-      "sass": 2187
+      "sass": 2186
     }
   },
   {
@@ -1535,11 +1535,11 @@
     "size": 3161,
     "results": {
       "clean-css": 2099,
-      "csskit": 2097,
+      "csskit": 2096,
       "csslop": 1843,
       "cssnano": 2070,
       "csso": 2095,
-      "esbuild": 2070,
+      "esbuild": 2069,
       "lightningcss": 2005,
       "sass": 2118
     }
@@ -1550,11 +1550,11 @@
     "size": 113246,
     "results": {
       "clean-css": 94865,
-      "csskit": 93821,
+      "csskit": 93820,
       "csslop": 89989,
       "cssnano": 91463,
       "csso": 94308,
-      "esbuild": 94020,
+      "esbuild": 94019,
       "lightningcss": 91235,
       "sass": 97168
     }
@@ -1565,11 +1565,11 @@
     "size": 51645,
     "results": {
       "clean-css": 32817,
-      "csskit": 33416,
+      "csskit": 33415,
       "csslop": 26982,
       "cssnano": 32880,
       "csso": 32213,
-      "esbuild": 33352,
+      "esbuild": 33351,
       "lightningcss": 22944,
       "sass": 33752
     }
@@ -1580,11 +1580,11 @@
     "size": 2513,
     "results": {
       "clean-css": 1673,
-      "csskit": 1673,
+      "csskit": 1672,
       "csslop": 1652,
       "cssnano": 1672,
       "csso": 1658,
-      "esbuild": 1669,
+      "esbuild": 1668,
       "lightningcss": 1660,
       "sass": 1674
     }
@@ -1595,13 +1595,13 @@
     "size": 12973,
     "results": {
       "clean-css": 10955,
-      "csskit": 10205,
+      "csskit": 10204,
       "csslop": 10187,
       "cssnano": 10943,
       "csso": 10186,
-      "esbuild": 10944,
+      "esbuild": 10943,
       "lightningcss": 10182,
-      "sass": 10210
+      "sass": 10209
     }
   },
   {
@@ -1610,11 +1610,11 @@
     "size": 14088,
     "results": {
       "clean-css": 9654,
-      "csskit": 9857,
+      "csskit": 9856,
       "csslop": 9694,
       "cssnano": 9640,
       "csso": 9579,
-      "esbuild": 9853,
+      "esbuild": 9852,
       "lightningcss": 9694,
       "sass": 9893
     }
@@ -1625,11 +1625,11 @@
     "size": 9952,
     "results": {
       "clean-css": 5834,
-      "csskit": 6000,
+      "csskit": 5999,
       "csslop": 5646,
       "cssnano": 5852,
       "csso": 5807,
-      "esbuild": 5875,
+      "esbuild": 5874,
       "lightningcss": 5722,
       "sass": 5891
     }
@@ -1640,11 +1640,11 @@
     "size": 1793,
     "results": {
       "clean-css": 1362,
-      "csskit": 1367,
+      "csskit": 1366,
       "csslop": 1317,
       "cssnano": 1222,
       "csso": 1369,
-      "esbuild": 1369,
+      "esbuild": 1368,
       "lightningcss": 1342,
       "sass": 1371
     }
@@ -1655,13 +1655,13 @@
     "size": 62360,
     "results": {
       "clean-css": 46336,
-      "csskit": 46037,
+      "csskit": 46036,
       "csslop": 43514,
       "cssnano": 45677,
       "csso": 45780,
-      "esbuild": 46267,
+      "esbuild": 46266,
       "lightningcss": 44257,
-      "sass": 46895
+      "sass": 46894
     }
   },
   {
@@ -1670,11 +1670,11 @@
     "size": 25863,
     "results": {
       "clean-css": 20776,
-      "csskit": 20947,
+      "csskit": 20946,
       "csslop": 20096,
       "cssnano": 19562,
       "csso": 20457,
-      "esbuild": 20960,
+      "esbuild": 20959,
       "lightningcss": 20456,
       "sass": 21278
     }
@@ -1685,13 +1685,13 @@
     "size": 34970,
     "results": {
       "clean-css": 27828,
-      "csskit": 27897,
+      "csskit": 27896,
       "csslop": 27024,
       "cssnano": 27573,
       "csso": 27844,
-      "esbuild": 28310,
+      "esbuild": 28309,
       "lightningcss": 27655,
-      "sass": 28128
+      "sass": 28127
     }
   },
   {
@@ -1700,11 +1700,11 @@
     "size": 14783,
     "results": {
       "clean-css": 9496,
-      "csskit": 9497,
+      "csskit": 9496,
       "csslop": 7895,
       "cssnano": 9464,
       "csso": 9223,
-      "esbuild": 9467,
+      "esbuild": 9466,
       "lightningcss": 9436,
       "sass": 9584
     }
@@ -1715,11 +1715,11 @@
     "size": 17664,
     "results": {
       "clean-css": 14549,
-      "csskit": 14681,
+      "csskit": 14680,
       "csslop": 13403,
       "cssnano": 14313,
       "csso": 13808,
-      "esbuild": 14538,
+      "esbuild": 14537,
       "lightningcss": 14412,
       "sass": 14691
     }
@@ -1730,11 +1730,11 @@
     "size": 11041,
     "results": {
       "clean-css": 9402,
-      "csskit": 9787,
+      "csskit": 9786,
       "csslop": 8224,
       "cssnano": "ERROR",
       "csso": 9329,
-      "esbuild": 9683,
+      "esbuild": 9682,
       "lightningcss": "ERROR",
       "sass": "ERROR"
     }
@@ -1745,11 +1745,11 @@
     "size": 114983,
     "results": {
       "clean-css": 73999,
-      "csskit": 75330,
+      "csskit": 75329,
       "csslop": 71354,
       "cssnano": 72657,
       "csso": 76267,
-      "esbuild": 75207,
+      "esbuild": 75206,
       "lightningcss": "ERROR",
       "sass": 76981
     }
@@ -1760,11 +1760,11 @@
     "size": 2901,
     "results": {
       "clean-css": 944,
-      "csskit": 950,
+      "csskit": 949,
       "csslop": 888,
       "cssnano": 942,
       "csso": 944,
-      "esbuild": 946,
+      "esbuild": 945,
       "lightningcss": 859,
       "sass": 947
     }
@@ -1775,11 +1775,11 @@
     "size": 7274,
     "results": {
       "clean-css": 5221,
-      "csskit": 5219,
+      "csskit": 5218,
       "csslop": 5091,
       "cssnano": 5204,
       "csso": 5196,
-      "esbuild": 5218,
+      "esbuild": 5217,
       "lightningcss": 5161,
       "sass": 5207
     }
@@ -1790,11 +1790,11 @@
     "size": 6291,
     "results": {
       "clean-css": 5156,
-      "csskit": 5392,
+      "csskit": 5391,
       "csslop": 3497,
       "cssnano": 5331,
       "csso": 5137,
-      "esbuild": 5427,
+      "esbuild": 5426,
       "lightningcss": 5282,
       "sass": 5441
     }
@@ -1805,11 +1805,11 @@
     "size": 11212,
     "results": {
       "clean-css": 8340,
-      "csskit": 8386,
+      "csskit": 8385,
       "csslop": 7874,
       "cssnano": 8155,
       "csso": 8119,
-      "esbuild": 8318,
+      "esbuild": 8317,
       "lightningcss": 8311,
       "sass": 8410
     }
@@ -1820,13 +1820,13 @@
     "size": 46295,
     "results": {
       "clean-css": 34197,
-      "csskit": 33746,
+      "csskit": 33745,
       "csslop": 31420,
       "cssnano": 33685,
       "csso": 30864,
-      "esbuild": 34362,
+      "esbuild": 34361,
       "lightningcss": 32564,
-      "sass": 34817
+      "sass": 34816
     }
   },
   {
@@ -1835,11 +1835,11 @@
     "size": 17423,
     "results": {
       "clean-css": 9328,
-      "csskit": 14517,
+      "csskit": 14516,
       "csslop": 12847,
       "cssnano": 14819,
       "csso": 8529,
-      "esbuild": 15569,
+      "esbuild": 15568,
       "lightningcss": 15252,
       "sass": "ERROR"
     }
@@ -1854,9 +1854,9 @@
       "csslop": 279312,
       "cssnano": 275665,
       "csso": 279768,
-      "esbuild": 281132,
+      "esbuild": 281131,
       "lightningcss": 281124,
-      "sass": 284486
+      "sass": 284485
     }
   },
   {
@@ -1865,11 +1865,11 @@
     "size": 12210,
     "results": {
       "clean-css": 9159,
-      "csskit": 9245,
+      "csskit": 9244,
       "csslop": 8541,
       "cssnano": 8981,
       "csso": 9061,
-      "esbuild": 9296,
+      "esbuild": 9295,
       "lightningcss": 9026,
       "sass": 9273
     }
@@ -1880,11 +1880,11 @@
     "size": 71707,
     "results": {
       "clean-css": 57864,
-      "csskit": 57325,
+      "csskit": 57324,
       "csslop": 48063,
       "cssnano": 55248,
       "csso": 54624,
-      "esbuild": 56901,
+      "esbuild": 56900,
       "lightningcss": 27319,
       "sass": 60598
     }
@@ -1895,11 +1895,11 @@
     "size": 4735,
     "results": {
       "clean-css": 3471,
-      "csskit": 3573,
+      "csskit": 3572,
       "csslop": 3505,
       "cssnano": 2709,
       "csso": 3432,
-      "esbuild": 3442,
+      "esbuild": 3441,
       "lightningcss": 3497,
       "sass": 4179
     }
@@ -1910,13 +1910,13 @@
     "size": 32362,
     "results": {
       "clean-css": 17126,
-      "csskit": 26973,
+      "csskit": 26972,
       "csslop": 21905,
       "cssnano": 22854,
       "csso": 21202,
-      "esbuild": 26068,
+      "esbuild": 26067,
       "lightningcss": 24428,
-      "sass": 27388
+      "sass": 27387
     }
   },
   {
@@ -1925,13 +1925,13 @@
     "size": 175928,
     "results": {
       "clean-css": 148831,
-      "csskit": 149532,
+      "csskit": 149531,
       "csslop": 127795,
       "cssnano": 149226,
       "csso": 146557,
-      "esbuild": 151549,
+      "esbuild": 151548,
       "lightningcss": 57969,
-      "sass": 150425
+      "sass": 150424
     }
   },
   {
@@ -1940,11 +1940,11 @@
     "size": 22908,
     "results": {
       "clean-css": 16445,
-      "csskit": 16711,
+      "csskit": 16710,
       "csslop": 15237,
       "cssnano": 14954,
       "csso": 16468,
-      "esbuild": 14837,
+      "esbuild": 14836,
       "lightningcss": 15516,
       "sass": 17371
     }
@@ -1955,13 +1955,13 @@
     "size": 4547,
     "results": {
       "clean-css": 3397,
-      "csskit": 3717,
+      "csskit": 3716,
       "csslop": 2608,
       "cssnano": 3453,
       "csso": 3236,
-      "esbuild": 3748,
+      "esbuild": 3747,
       "lightningcss": 3214,
-      "sass": 3794
+      "sass": 3793
     }
   },
   {
@@ -1970,11 +1970,11 @@
     "size": 8355,
     "results": {
       "clean-css": 5815,
-      "csskit": 5792,
+      "csskit": 5791,
       "csslop": 5568,
       "cssnano": 5785,
       "csso": 5770,
-      "esbuild": 5829,
+      "esbuild": 5828,
       "lightningcss": 5720,
       "sass": 5855
     }
@@ -1985,11 +1985,11 @@
     "size": 10548,
     "results": {
       "clean-css": 7855,
-      "csskit": 7847,
+      "csskit": 7846,
       "csslop": 7499,
       "cssnano": 5670,
       "csso": 7734,
-      "esbuild": 7880,
+      "esbuild": 7879,
       "lightningcss": "ERROR",
       "sass": 7895
     }
@@ -2000,11 +2000,11 @@
     "size": 13440,
     "results": {
       "clean-css": 9130,
-      "csskit": 9715,
+      "csskit": 9714,
       "csslop": 9113,
       "cssnano": 9111,
       "csso": 8068,
-      "esbuild": 9508,
+      "esbuild": 9507,
       "lightningcss": 8914,
       "sass": 10103
     }
