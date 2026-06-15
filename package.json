@@ -13,7 +13,7 @@
   "devDependencies": {
     "@thejaredwilcurt/csslop": "^0.0.5",
     "clean-css": "^5.3.3",
-    "csskit": "^0.0.24",
+    "csskit": "^0.0.25",
     "cssnano": "^8.0.1",
     "csso": "^5.0.5",
     "esbuild": "^0.28.0",
