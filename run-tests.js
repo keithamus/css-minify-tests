@@ -1,11 +1,12 @@
-import fs from "node:fs/promises";
-import path from "node:path";
-import { minifiers } from "./lib/loaders/loadAllMinifiers.js";
-import { minify, getVersions } from "./lib/minify.js";
-import { resultsAsHTML } from "./lib/results-as-html.js";
-import { appendHistory } from "./lib/history.js";
-import { traverseDir } from "./lib/traverse-dir.js";
-import sass from "./lib/minifiers/sass.js";
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+import { minifiers } from './lib/loaders/loadAllMinifiers.js';
+import { validateCss } from './lib/loaders/validateStylesheet.js';
+import { minify, getVersions } from './lib/minify.js';
+import { resultsAsHTML } from './lib/results-as-html.js';
+import { appendHistory } from './lib/history.js';
+import { traverseDir } from './lib/traverse-dir.js';
 
 const __dirname = import.meta.dirname;
 
@@ -13,7 +14,7 @@ const debugMode = !!process.env.DEBUG;
 
 const testGroups = new Map();
 const testsSeen = new Set();
-const testFiles = new Set(await traverseDir("./tests"));
+const testFiles = new Set(await traverseDir('./tests'));
 
 for (const testFile of testFiles) {
   const testFileParsed = path.parse(testFile);
@@ -26,9 +27,9 @@ for (const testFile of testFiles) {
   }
   testsSeen.add(test);
 
-  const hasSource = testFiles.has(path.join(testFileParsed.dir, "source.css"));
+  const hasSource = testFiles.has(path.join(testFileParsed.dir, 'source.css'));
   const hasExpected = testFiles.has(
-    path.join(testFileParsed.dir, "expected.css"),
+    path.join(testFileParsed.dir, 'expected.css'),
   );
 
   if (hasSource && hasExpected) {
@@ -55,16 +56,6 @@ const results = {
 };
 
 const debugInfo = [];
-let validateStylesheet = "";
-try {
-  validateStylesheet = await fs.readFile(
-    path.resolve(".", "validate.css"),
-    "utf-8"
-  );
-  validateStylesheet = sass(validateStylesheet);
-} catch (error) {
-  console.log({ error });
-}
 
 for (const minifierName of minifiers) {
   let minifierPasses = 0;
@@ -86,31 +77,31 @@ for (const minifierName of minifiers) {
     for (const testPath of testGroup.tests) {
       if (!results.tests[testGroup.name].tests[testPath]) {
         const source = await fs.readFile(
-          path.join("tests", testPath, "source.css"),
-          "utf-8",
+          path.join('tests', testPath, 'source.css'),
+          'utf-8',
         );
         const expected = (
           await fs.readFile(
-            path.join("tests", testPath, "expected.css"),
-            "utf-8",
+            path.join('tests', testPath, 'expected.css'),
+            'utf-8',
           )
-        ).replace(/\n$/, "");
-        let readme = "";
+        ).replace(/\n$/, '');
+        let readme = '';
         try {
           readme = await fs.readFile(
-            path.join("tests", testPath, "README.md"),
-            "utf-8",
+            path.join('tests', testPath, 'README.md'),
+            'utf-8',
           );
         } catch {}
-        let validate = "";
+        let validate = '';
         try {
           validate = await fs.readFile(
-            path.join("tests", testPath, "validate.html"),
-            "utf-8",
+            path.join('tests', testPath, 'validate.html'),
+            'utf-8',
           );
           validate = validate.replace(
-            `<link rel="stylesheet" href="../../../validate.css">`,
-            `<style>${validateStylesheet}</style>`
+            '<link rel="stylesheet" href="../../../validate.css">',
+            `<style>${validateCss}</style>`
           );
         } catch {}
         results.tests[testGroup.name].tests[testPath] = {
@@ -161,7 +152,7 @@ for (const minifierName of minifiers) {
         continue;
       }
 
-      const normalizedActual = actual.replace(/\n$/, "");
+      const normalizedActual = actual.replace(/\n$/, '');
 
       if (normalizedActual === expected) {
         pass = 1;
@@ -194,7 +185,7 @@ for (const minifierName of minifiers) {
   };
 }
 
-console.log("\nCSS Minify Tests\n");
+console.log('\nCSS Minify Tests\n');
 
 const colWidth = 14;
 let testColWidth = 0;
@@ -205,33 +196,33 @@ for (const group of sortedGroups) {
 }
 
 
-function pad(str, width) {
+function pad (str, width) {
   return String(str).padEnd(width);
 }
 
-function padCenter(str, width) {
+function padCenter (str, width) {
   const s = String(str);
   const left = Math.floor((width - s.length) / 2);
   return (
-    " ".repeat(Math.max(0, left)) +
+    ' '.repeat(Math.max(0, left)) +
     s +
-    " ".repeat(Math.max(0, width - s.length - left))
+    ' '.repeat(Math.max(0, width - s.length - left))
   );
 }
 
-process.stdout.write(pad("", testColWidth));
+process.stdout.write(pad('', testColWidth));
 for (const m of minifiers) {
   process.stdout.write(padCenter(m, colWidth));
 }
 console.log();
 
-process.stdout.write(pad("", testColWidth));
+process.stdout.write(pad('', testColWidth));
 for (const m of minifiers) {
-  process.stdout.write(padCenter("─".repeat(m.length + 2), colWidth));
+  process.stdout.write(padCenter('─'.repeat(m.length + 2), colWidth));
 }
 console.log();
 
-process.stdout.write(pad("TOTAL", testColWidth));
+process.stdout.write(pad('TOTAL', testColWidth));
 for (const m of minifiers) {
   const r = results.minifiers[m];
   process.stdout.write(padCenter(`${r.pass} / ${r.checks}`, colWidth));
@@ -244,7 +235,7 @@ for (const group of sortedGroups) {
   for (const m of minifiers) {
     const r = results.tests[group.name].minifiers[m];
     if (r.na) {
-      process.stdout.write(padCenter("N/A", colWidth));
+      process.stdout.write(padCenter('N/A', colWidth));
     } else {
       process.stdout.write(padCenter(`${r.pass}/${r.checks}`, colWidth));
     }
@@ -255,7 +246,7 @@ for (const group of sortedGroups) {
 console.log();
 
 if (debugInfo.length > 0) {
-  console.log("Mismatches:\n");
+  console.log('Mismatches:\n');
   for (const info of debugInfo) {
     console.log(`  ${info.minifier} | ${info.test}`);
     console.log(`    expected: ${JSON.stringify(info.expected)}`);
@@ -266,8 +257,8 @@ if (debugInfo.length > 0) {
 
 const versions = getVersions(minifiers);
 const history = await appendHistory(results, versions);
-await resultsAsHTML(results, versions, history, "index.html");
-console.log("HTML report written to index.html");
+await resultsAsHTML(results, versions, history, 'index.html');
+console.log('HTML report written to index.html');
 const resultsJson = {};
 for (const [groupName, group] of Object.entries(results.tests)) {
   for (const [testPath, test] of Object.entries(group.tests)) {
@@ -277,5 +268,5 @@ for (const [groupName, group] of Object.entries(results.tests)) {
     }
   }
 }
-const outputFile = path.join(__dirname, "data", "results.json");
-await fs.writeFile(outputFile, JSON.stringify(resultsJson, null, 2) + "\n");
+const outputFile = path.join(__dirname, 'data', 'results.json');
+await fs.writeFile(outputFile, JSON.stringify(resultsJson, null, 2) + '\n');
