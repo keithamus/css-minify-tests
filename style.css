@@ -154,7 +154,7 @@ tr:has(details) td {
 }
 
 tr:has(details) details {
-  padding: 0.25rem 1rem 1rem;
+  padding: 0.25rem 1rem 0.5rem 1rem;
 }
 
 tr:has(details) summary {
@@ -240,6 +240,15 @@ details iframe {
   h4 {
     display: flex;
     gap: 4px;
+  }
+}
+.detail-durations {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  > div {
+    padding-top: 0.75rem;
+    text-align: center;
   }
 }
 
