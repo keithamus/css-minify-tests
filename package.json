@@ -5,7 +5,6 @@
   "description": "Correctness tests for CSS minifiers",
   "scripts": {
     "start": "http-server",
-    "fmt": "npx prettier --write .",
     "test": "cross-env NO_COLOR=1 node ./run-tests.js",
     "test:debug": "cross-env DEBUG=true node ./run-tests.js",
     "new-test": "bash -c 'd=tests/$1/$(printf \"%04d\" $(($(ls tests/$1 2>/dev/null|sort -n|tail -1)+1))) && mkdir -p $d && touch $d/source.css $d/expected.css $d/README.md && echo \"Created $d\" && ${EDITOR:-vim} $d/source.css $d/expected.css $d/README.md' --"
@@ -29,7 +28,7 @@
   },
   "allowScripts": {
     "@parcel/watcher@2.5.6": true,
-    "esbuild@0.28.0": true
+    "esbuild@0.28.1": true
   },
   "devEngines": {
     "runtime": {
