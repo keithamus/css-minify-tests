@@ -5,30 +5,30 @@
   "description": "Correctness tests for CSS minifiers",
   "scripts": {
     "start": "http-server",
-    "fmt": "npx prettier --write .",
-    "test": "node ./run-tests.js",
-    "test:debug": "DEBUG=true node ./run-tests.js",
+    "test": "cross-env NO_COLOR=1 node ./run-tests.js",
+    "test:debug": "cross-env DEBUG=true node ./run-tests.js",
     "new-test": "bash -c 'd=tests/$1/$(printf \"%04d\" $(($(ls tests/$1 2>/dev/null|sort -n|tail -1)+1))) && mkdir -p $d && touch $d/source.css $d/expected.css $d/README.md && echo \"Created $d\" && ${EDITOR:-vim} $d/source.css $d/expected.css $d/README.md' --"
   },
   "devDependencies": {
     "@thejaredwilcurt/csslop": "^0.0.5",
     "clean-css": "^5.3.3",
-    "csskit": "^0.0.24",
-    "cssnano": "^8.0.1",
+    "cross-env": "^10.1.0",
+    "csskit": "^0.0.25",
+    "cssnano": "^8.0.2",
     "csso": "^5.0.5",
-    "esbuild": "^0.28.0",
+    "esbuild": "^0.28.1",
     "http-server": "^14.1.1",
     "lightningcss": "^1.30.0",
     "marked": "^18.0.5",
     "postcss": "^8.5.15",
     "pretty-ms": "^9.3.0",
     "real-world-css-libraries": "^1.0.2",
-    "sass": "^1.100.0",
+    "sass": "^1.101.0",
     "shiki": "^4.2.0"
   },
   "allowScripts": {
     "@parcel/watcher@2.5.6": true,
-    "esbuild@0.28.0": true
+    "esbuild@0.28.1": true
   },
   "devEngines": {
     "runtime": {

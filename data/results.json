@@ -807,7 +807,7 @@
     "csso": true,
     "esbuild": false,
     "lightningcss": true,
-    "sass": false
+    "sass": true
   },
   "counter-style/0002": {
     "clean-css": true,
