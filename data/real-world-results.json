@@ -620,7 +620,7 @@
     "size": 58457,
     "results": {
       "clean-css": 27567,
-      "csskit": "ERROR",
+      "csskit": 39632,
       "csslop": 38587,
       "cssnano": 38462,
       "csso": 18840,
@@ -1850,7 +1850,7 @@
     "size": 400726,
     "results": {
       "clean-css": 280294,
-      "csskit": "ERROR",
+      "csskit": 285176,
       "csslop": 279312,
       "cssnano": 275665,
       "csso": 279768,
