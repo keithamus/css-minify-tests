@@ -22,11 +22,17 @@ const config = [
     },
     // project specific rules/settings
     rules: {
+      'import-x/no-cycle': 'off',
+      'import-x/no-extraneous-dependencies': 'off'
+    }
+  },
+  {
+    // This lightningcss module doesn't play nice with these rules
+    files: ['./lib/minifiers/lightningcss.js'],
+    rules: {
       'import-x/named': 'off',
       'import-x/namespace': 'off',
-      'import-x/no-cycle': 'off',
-      'import-x/no-deprecated': 'off',
-      'import-x/no-extraneous-dependencies': 'off'
+      'import-x/no-deprecated': 'off'
     }
   }
 ];
