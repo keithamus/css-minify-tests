@@ -42,11 +42,17 @@ const totals = (results, includedMinifiers = null) => {
   const counts = {};
   for (const minifierResults of Object.values(results)) {
     for (const [m, pass] of Object.entries(minifierResults)) {
-      if (includedMinifiers && !includedMinifiers.includes(m)) {continue;}
-      if (!counts[m]) {counts[m] = { pass: 0, total: 0 };}
+      if (includedMinifiers && !includedMinifiers.includes(m)) {
+        continue;
+      }
+      if (!counts[m]) {
+        counts[m] = { pass: 0, total: 0 };
+      }
       if (pass !== null) {
         counts[m].total++;
-        if (pass) {counts[m].pass++;}
+        if (pass) {
+          counts[m].pass++;
+        }
       }
     }
   }
@@ -81,12 +87,13 @@ for (const [testPath, afterMinifierResults] of Object.entries(afterResults)) {
     const beforeMinifierResults = beforeResults[testPath];
     const changed = minifiers
       .filter((m) => !newMinifiers.includes(m))
-      .some(
-        (m) =>
-          (beforeMinifierResults[m] ?? null) !==
-          (afterMinifierResults[m] ?? null)
-      );
-    if (changed) {changedTests.push(testPath);}
+      .some((m) => (
+        (beforeMinifierResults[m] ?? null) !==
+        (afterMinifierResults[m] ?? null)
+      ));
+    if (changed) {
+      changedTests.push(testPath);
+    }
   }
 }
 
@@ -94,10 +101,9 @@ const existingMinifiers = minifiers.filter((m) => !newMinifiers.includes(m));
 const beforeTotals = totals(beforeResults, existingMinifiers);
 const afterTotals = totals(afterResults);
 
-const totalDiff = existingMinifiers.reduce(
-  (s, m) => s + (afterTotals[m]?.pass ?? 0) - (beforeTotals[m]?.pass ?? 0),
-  0
-);
+const totalDiff = existingMinifiers.reduce((s, m) => {
+  return s + (afterTotals[m]?.pass ?? 0) - (beforeTotals[m]?.pass ?? 0);
+}, 0);
 
 const lines = ['<!-- pr-comment-results -->', ''];
 
@@ -143,7 +149,9 @@ if (!hasChanges) {
     mdTable({
       Minifier: minifiers.map(minifierLabel),
       Before: minifiers.map((m) => {
-        if (newMinifiers.includes(m)) {return '—';}
+        if (newMinifiers.includes(m)) {
+          return '—';
+        }
         const b = beforeTotals[m] ?? { pass: 0, total: 0 };
         return `${b.pass}/${b.total}`;
       }),
@@ -152,7 +160,9 @@ if (!hasChanges) {
         return `${a.pass}/${a.total}`;
       }),
       Change: minifiers.map((m) => {
-        if (newMinifiers.includes(m)) {return '✨ new';}
+        if (newMinifiers.includes(m)) {
+          return '✨ new';
+        }
         const b = beforeTotals[m] ?? { pass: 0, total: 0 };
         const a = afterTotals[m] ?? { pass: 0, total: 0 };
         const diff = a.pass - b.pass;
