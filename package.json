@@ -6,6 +6,7 @@
   "scripts": {
     "start": "http-server",
     "lint": "eslint *.js lib scripts",
+    "fix": "npm run lint -- --fix",
     "test": "cross-env NO_COLOR=1 node ./run-tests.js",
     "test:debug": "cross-env DEBUG=true node ./run-tests.js",
     "new-test": "bash -c 'd=tests/$1/$(printf \"%04d\" $(($(ls tests/$1 2>/dev/null|sort -n|tail -1)+1))) && mkdir -p $d && touch $d/source.css $d/expected.css $d/README.md && echo \"Created $d\" && ${EDITOR:-vim} $d/source.css $d/expected.css $d/README.md' --"
