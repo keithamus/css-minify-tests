@@ -21,7 +21,9 @@ jobs:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
       - uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925 # v4.1.0
 
-      - run: npm it
+      - run: npm i
+      - run: npm run lint
+      - run: npm t
 
       - name: Upload PR results
         if: github.event_name == 'pull_request'
@@ -61,7 +63,9 @@ jobs:
           ref: main
       - uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925 # v4.1.0
 
-      - run: npm it
+      - run: npm i
+      - run: npm run lint
+      - run: npm t
 
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
