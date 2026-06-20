@@ -209,9 +209,7 @@ window.realModal = {
     preEl.innerText = 'Loading...';
     modalEl.showModal();
   },
-  /**
-   * Closes the modal.
-   */
+  /** Closes the modal. */
   hideModal: function () {
     const modalEl = this.getModal();
     modalEl.close();
