@@ -1,6 +1,0 @@
-/*!
- * HTML-Sheets-of-Paper (https://github.com/delight-im/HTML-Sheets-of-Paper)
- * Copyright (c) delight.im (https://www.delight.im/)
- * Licensed under the MIT License (https://opensource.org/licenses/MIT)
- */
-html,body{background-color:#eee;margin:0;padding:0;font-family:Roboto,-apple-system,San Francisco,Segoe UI,Helvetica Neue,sans-serif;font-size:12pt}*{box-sizing:border-box}.page{background:#fff;outline:0;margin:1cm auto;box-shadow:0 4px 5px #4b4b4b33}div.page-break{page-break-after:always}@media screen{div.page-break:before{content:"";background-color:#fff;height:.8cm;margin-left:.5cm;margin-right:.5cm;display:block;box-shadow:0 6px 5px #4b4b4b33}div.page-break{background:#eee;height:1.8cm;margin:1.2cm -2.5cm 2cm;display:block}}h1{page-break-before:always}h1,h2,h3,h4,h5,h6{page-break-after:avoid}p{margin:0}p+p{margin-top:.5cm}a{color:#000;text-decoration:none}table{page-break-inside:avoid}@page{orphans:4;widows:2}@media print{html,body{background-color:#fff}.page{page-break-after:always;width:initial!important;min-height:initial!important;border:initial!important;border-radius:initial!important;background:initial!important;box-shadow:initial!important;margin:0!important;padding:0!important}}
