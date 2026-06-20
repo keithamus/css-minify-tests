@@ -159,20 +159,46 @@ window.realModal = {
     close: 'real-moadal-close-button',
     pre: 'real-minified-output'
   },
+  /**
+   * Gets the Modal Container DOM node.
+   *
+   * @return {HTMLElement} Reference to DOM node
+   */
   getModal: function () {
     return document.getElementById(this.elementsMap.container);
   },
+  /**
+   * Gets the Modal Title DOM node.
+   *
+   * @return {HTMLElement} Reference to DOM node
+   */
   getModalTitle: function () {
     return document.getElementById(this.elementsMap.title);
   },
+  /**
+   * Gets the Modal Close button DOM node.
+   *
+   * @return {HTMLElement} Reference to DOM node
+   */
   getXButton: function () {
     return document.getElementById(this.elementsMap.close);
   },
+  /**
+   * Gets the Modal <pre> DOM node.
+   *
+   * @return {HTMLElement} Reference to DOM node
+   */
   getOutputBox: function () {
     return document.getElementById(this.elementsMap.pre);
   },
 
   // Modal state/visibility
+  /**
+   * Updates the Modal title, sets the loading state and shows the modal.
+   *
+   * @param {string} minifierName  Name of the minifier ('csso', 'sass', etc)
+   * @param {string} fileName      Minified CSS filename ('bttn-v0.2.4.css')
+   */
   resetAndOpenModal: function (minifierName, fileName) {
     const modalEl = this.getModal();
     const titleEl = this.getModalTitle();
@@ -183,12 +209,22 @@ window.realModal = {
     preEl.innerText = 'Loading...';
     modalEl.showModal();
   },
+  /**
+   * Closes the modal.
+   */
   hideModal: function () {
     const modalEl = this.getModal();
     modalEl.close();
   },
 
   // Loading data, logic composition
+  /**
+   * Loads the minified CSS file for a given minifier from a network call, then
+   * places the contents inside the modal with syntax highlighting.
+   *
+   * @param {string} minifierName  Name of the minifier ('csso', 'sass', etc)
+   * @param {string} fileName      Minified CSS filename ('bttn-v0.2.4.css')
+   */
   getMinifiedCSS: function (minifierName, fileName) {
     const url = [
       'minified',
@@ -200,11 +236,18 @@ window.realModal = {
         return response.text();
       })
       .then((CSS) => {
-        const highlightedCode = hljs.highlight(CSS, { language: 'css' }).value;
+        const options = { language: 'css' };
+        const highlightedCode = window.hljs.highlight(CSS, options).value;
         const preEl = this.getOutputBox();
         preEl.innerHTML = highlightedCode;
       });
   },
+  /**
+   * Resets the modal, shows it, loads CSS data for the modal.
+   *
+   * @param {string} minifierName  Name of the minifier ('csso', 'sass', etc)
+   * @param {string} fileName      Minified CSS filename ('bttn-v0.2.4.css')
+   */
   showMinifiedCSS: async function (minifierName, fileName) {
     this.resetAndOpenModal(minifierName, fileName);
     this.getMinifiedCSS(minifierName, fileName);

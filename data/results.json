@@ -721,7 +721,7 @@
   },
   "comments/0004": {
     "clean-css": true,
-    "csskit": true,
+    "csskit": false,
     "csslop": true,
     "cssnano": false,
     "csso": true,
@@ -731,7 +731,7 @@
   },
   "comments/0005": {
     "clean-css": false,
-    "csskit": true,
+    "csskit": false,
     "csslop": true,
     "cssnano": false,
     "csso": false,

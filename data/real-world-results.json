@@ -710,7 +710,7 @@
     "size": 3543,
     "results": {
       "clean-css": 1342,
-      "csskit": 245,
+      "csskit": "ERROR",
       "csslop": 1148,
       "cssnano": "ERROR",
       "csso": 1188,
