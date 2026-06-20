@@ -1,0 +1,6 @@
+Expected expression.
+    ╷
+166 │     color: /*[[base-color]]*/;
+    │                              ^
+    ╵
+  - 166:30  root stylesheet

@@ -13,6 +13,9 @@ document.addEventListener(
   "toggle",
   (e) => {
     const root = e.target.closest("table");
+    if (!root) {
+      return;
+    }
     const btn = document.querySelector(`button[commandfor='${root.id}']`);
     const globalButton = document.querySelector('button[commandfor="results"]');
     for (const d of root.querySelectorAll("details")) {
@@ -130,3 +133,66 @@ window.addEventListener("hashchange", openHash);
       });
     });
 })();
+
+
+/* CSS Modal */
+
+window.realModal = {
+  // Native elements bindings
+  elementsMap: {
+    container: 'real-css-preview',
+    title: 'real-modal-title',
+    close: 'real-moadal-close-button',
+    pre: 'real-minified-output'
+  },
+  getModal: function () {
+    return document.getElementById(this.elementsMap.container);
+  },
+  getModalTitle: function () {
+    return document.getElementById(this.elementsMap.title);
+  },
+  getXButton: function () {
+    return document.getElementById(this.elementsMap.close);
+  },
+  getOutputBox: function () {
+    return document.getElementById(this.elementsMap.pre);
+  },
+
+  // Modal state/visibility
+  resetAndOpenModal: function (minifierName, fileName) {
+    const modalEl = this.getModal();
+    const titleEl = this.getModalTitle();
+    const preEl = this.getOutputBox();
+
+    // Reset the loading state before opening
+    titleEl.innerText = minifierName + '/' + fileName;
+    preEl.innerText = 'Loading...';
+    modalEl.showModal();
+  },
+  hideModal: function () {
+    const modalEl = this.getModal();
+    modalEl.close();
+  },
+
+  // Loading data, logic composition
+  getMinifiedCSS: function (minifierName, fileName) {
+    const url = [
+      'minified',
+      minifierName,
+      fileName
+    ].join('/');
+    fetch(url)
+      .then((response) => {
+        return response.text();
+      })
+      .then((CSS) => {
+        const highlightedCode = hljs.highlight(CSS, { language: 'css' }).value;
+        const preEl = this.getOutputBox();
+        preEl.innerHTML = highlightedCode;
+      });
+  },
+  showMinifiedCSS: async function (minifierName, fileName) {
+    this.resetAndOpenModal(minifierName, fileName);
+    this.getMinifiedCSS(minifierName, fileName);
+  }
+};

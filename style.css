@@ -256,6 +256,32 @@ details iframe {
   background: color-mix(in lab, var(--fail-bg) 100%, #1E1E1E 50%) !important;
 }
 
+:is(html, body):has(dialog[open]) {
+  overflow: hidden;
+}
+dialog::backdrop {
+  background-color: #000C;
+  pointer-events: none;
+}
+dialog[open] {
+  animation-name: dialogEnter;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes dialogEnter{
+  0% {
+    opacity: 0;
+    scale: 0.98;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
 @media (max-width: 640px) {
   body {
     padding: 0.5rem;

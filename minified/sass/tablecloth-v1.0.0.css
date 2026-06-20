@@ -1,0 +1,6 @@
+expected "{".
+    ╷
+109 │ .table-dark  border-top: 0;
+    │                           ^
+    ╵
+  - 109:27  root stylesheet

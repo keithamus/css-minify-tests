@@ -1,0 +1,9 @@
+Unexpected
+
+  × Unexpected `Kind::Ident`
+  help: This is not correct CSS syntax.
+
+ExpectedEnd
+
+  × Expected this to be the end of the file, but there was more content.
+  help: This is likely a problem with the parser. Please submit a bug report!

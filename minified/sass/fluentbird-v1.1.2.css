@@ -1,0 +1,6 @@
+expected "{".
+    ╷
+355 │     / content: radial-gradient; /
+    │                               ^
+    ╵
+  - 355:31  root stylesheet

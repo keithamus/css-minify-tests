@@ -1,0 +1,6 @@
+Expected expression.
+    ╷
+291 │   animation-duration: --value(--animation-duration-*, [duration], "initial", [*]);
+    │                                                     ^
+    ╵
+  - 291:53  root stylesheet

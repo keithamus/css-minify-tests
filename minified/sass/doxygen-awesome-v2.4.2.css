@@ -1,0 +1,10 @@
+Missing argument $color.
+  ╷
+715│         filter: invert() hue-rotate(180deg);
+  │                 ^^^^^^^^ invocation
+  ╵
+  ┌──> sass:color
+1 │ @function invert($color, $weight: 100%, $space: null) {
+  │           ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ declaration
+  ╵
+  - 715:17  root stylesheet
