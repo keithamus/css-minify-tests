@@ -1,3 +1,8 @@
+/**
+ * @file Loads all tests and minifiers, runs minifiers through tests, reports
+ *       outcome in console, updates /data/*.json files, and creates webites.
+ */
+
 import {
   reportTestResults,
   totalsFromAllTests
