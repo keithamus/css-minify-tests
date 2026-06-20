@@ -5,18 +5,29 @@
   "description": "Correctness tests for CSS minifiers",
   "scripts": {
     "start": "http-server",
+    "lint": "eslint *.js lib scripts",
+    "fix": "npm run lint -- --fix",
     "test": "cross-env NO_COLOR=1 node ./run-tests.js",
     "test:debug": "cross-env DEBUG=true node ./run-tests.js",
     "new-test": "bash -c 'd=tests/$1/$(printf \"%04d\" $(($(ls tests/$1 2>/dev/null|sort -n|tail -1)+1))) && mkdir -p $d && touch $d/source.css $d/expected.css $d/README.md && echo \"Created $d\" && ${EDITOR:-vim} $d/source.css $d/expected.css $d/README.md' --"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "@thejaredwilcurt/csslop": "^0.0.5",
     "clean-css": "^5.3.3",
     "cross-env": "^10.1.0",
-    "csskit": "^0.0.25",
+    "csskit": "^0.0.26",
     "cssnano": "^8.0.2",
     "csso": "^5.0.5",
     "esbuild": "^0.28.1",
+    "eslint": "^10.5.0",
+    "eslint-config-tjw-base": "^5.0.0",
+    "eslint-config-tjw-import-x": "^1.0.1",
+    "eslint-config-tjw-jsdoc": "^2.0.1",
+    "eslint-plugin-import-x": "^4.16.2",
+    "eslint-plugin-jsdoc": "^63.0.6",
+    "globals": "^17.6.0",
     "http-server": "^14.1.1",
     "lightningcss": "^1.30.0",
     "marked": "^18.0.5",
@@ -28,12 +39,13 @@
   },
   "allowScripts": {
     "@parcel/watcher@2.5.6": true,
-    "esbuild@0.28.1": true
+    "esbuild@0.28.1": true,
+    "unrs-resolver@1.12.2": true
   },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "26.3.0"
+      "version": "26.3.1"
     },
     "packageManager": {
       "name": "npm",
