@@ -1059,6 +1059,26 @@
     "lightningcss": true,
     "sass": true
   },
+  "empty-rules/0005": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
+  },
+  "empty-rules/0006": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
+  },
   "escaping/0001": {
     "clean-css": false,
     "csskit": true,
@@ -1760,6 +1780,16 @@
     "sass": true
   },
   "nesting/0019": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0020": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,
