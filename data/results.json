@@ -1059,6 +1059,26 @@
     "lightningcss": true,
     "sass": true
   },
+  "empty-rules/0005": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
+  },
+  "empty-rules/0006": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
+  },
   "escaping/0001": {
     "clean-css": false,
     "csskit": true,

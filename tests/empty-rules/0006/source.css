@@ -1,0 +1,13 @@
+kbd {}
+ul li:nth-of-type(2n) {}
+fieldset > legend {}
+input[type="checkbox"] {}
+input[type=radio] {}
+legend, option {}
+*, *:before, *:after {}
+button.secondary {}
+#unique {}
+details[open] {}
+:focus {}
+a[href*=".pdf"]:after {}
+:is(html, body):has(:modal) {}
