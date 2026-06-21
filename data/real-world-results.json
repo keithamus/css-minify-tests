@@ -1,5 +1,20 @@
 [
   {
+    "name": "30 Days 30 Submits #18",
+    "version": "v0.0.0",
+    "size": 3581,
+    "results": {
+      "clean-css": 2629,
+      "csskit": 2610,
+      "csslop": 2331,
+      "cssnano": 2548,
+      "csso": 2350,
+      "esbuild": 2637,
+      "lightningcss": 2623,
+      "sass": 2708
+    }
+  },
+  {
     "name": "3D transforms",
     "version": "v0.0.0",
     "size": 13747,
@@ -75,6 +90,21 @@
     }
   },
   {
+    "name": "AMOLED-cord",
+    "version": "v5.0.11",
+    "size": 29321,
+    "results": {
+      "clean-css": 25636,
+      "csskit": 26378,
+      "csslop": 22870,
+      "cssnano": 24555,
+      "csso": 24705,
+      "esbuild": 25575,
+      "lightningcss": 25338,
+      "sass": 26877
+    }
+  },
+  {
     "name": "Animate",
     "version": "v4.1.1",
     "size": 95377,
@@ -87,6 +117,21 @@
       "esbuild": 73461,
       "lightningcss": 23943,
       "sass": 77691
+    }
+  },
+  {
+    "name": "Animating Hamburger Icons",
+    "version": "v0.1.0",
+    "size": 14685,
+    "results": {
+      "clean-css": 9030,
+      "csskit": 9054,
+      "csslop": 7465,
+      "cssnano": 8929,
+      "csso": 8844,
+      "esbuild": 9000,
+      "lightningcss": 6975,
+      "sass": 9094
     }
   },
   {
@@ -210,7 +255,22 @@
     }
   },
   {
-    "name": "Bootstrap",
+    "name": "Bootplus",
+    "version": "v1.0.5",
+    "size": 147117,
+    "results": {
+      "clean-css": 102771,
+      "csskit": 119613,
+      "csslop": 93777,
+      "cssnano": 110504,
+      "csso": 110077,
+      "esbuild": 117202,
+      "lightningcss": "ERROR",
+      "sass": 122319
+    }
+  },
+  {
+    "name": "Bootstrap 4",
     "version": "v4.6.2",
     "size": 200387,
     "results": {
@@ -225,7 +285,7 @@
     }
   },
   {
-    "name": "Bootstrap",
+    "name": "Bootstrap 5",
     "version": "v5.3.8",
     "size": 280308,
     "results": {
@@ -300,6 +360,21 @@
     }
   },
   {
+    "name": "CleanSlate",
+    "version": "v0.10.1",
+    "size": 20469,
+    "results": {
+      "clean-css": 13671,
+      "csskit": 15118,
+      "csslop": 11908,
+      "cssnano": 13909,
+      "csso": 25701,
+      "esbuild": 14791,
+      "lightningcss": 12381,
+      "sass": 15529
+    }
+  },
+  {
     "name": "CodeFrame",
     "version": "v4.0.9",
     "size": 233717,
@@ -312,6 +387,21 @@
       "esbuild": 184401,
       "lightningcss": 183393,
       "sass": 185630
+    }
+  },
+  {
+    "name": "Colofilter",
+    "version": "v0.0.0",
+    "size": 7119,
+    "results": {
+      "clean-css": 5874,
+      "csskit": 6326,
+      "csslop": 4356,
+      "cssnano": 5812,
+      "csso": 5730,
+      "esbuild": 5991,
+      "lightningcss": 4919,
+      "sass": 6108
     }
   },
   {
@@ -600,18 +690,48 @@
     }
   },
   {
+    "name": "Enferno",
+    "version": "v13.1.1",
+    "size": 1478,
+    "results": {
+      "clean-css": 1028,
+      "csskit": 980,
+      "csslop": 924,
+      "cssnano": 980,
+      "csso": 1042,
+      "esbuild": 987,
+      "lightningcss": 969,
+      "sass": 1053
+    }
+  },
+  {
     "name": "Evil",
     "version": "v0.0.0",
     "size": 3543,
     "results": {
       "clean-css": 1342,
-      "csskit": 245,
+      "csskit": "ERROR",
       "csslop": 1148,
       "cssnano": "ERROR",
       "csso": 1188,
       "esbuild": 1668,
       "lightningcss": "ERROR",
       "sass": "ERROR"
+    }
+  },
+  {
+    "name": "Facebook Buttons",
+    "version": "v1.0.0",
+    "size": 6656,
+    "results": {
+      "clean-css": 3818,
+      "csskit": 4098,
+      "csslop": 3142,
+      "cssnano": 4040,
+      "csso": 4077,
+      "esbuild": 4120,
+      "lightningcss": "ERROR",
+      "sass": 4173
     }
   },
   {
@@ -627,6 +747,21 @@
       "esbuild": 39362,
       "lightningcss": "ERROR",
       "sass": "ERROR"
+    }
+  },
+  {
+    "name": "Fileicon",
+    "version": "v0.1.1",
+    "size": 2690,
+    "results": {
+      "clean-css": 2224,
+      "csskit": 2105,
+      "csslop": 2015,
+      "cssnano": 2161,
+      "csso": 2222,
+      "esbuild": 2214,
+      "lightningcss": 2069,
+      "sass": 2201
     }
   },
   {
@@ -660,6 +795,21 @@
     }
   },
   {
+    "name": "FluentBird",
+    "version": "v1.1.2",
+    "size": 30985,
+    "results": {
+      "clean-css": 22271,
+      "csskit": 23045,
+      "csslop": 19851,
+      "cssnano": "ERROR",
+      "csso": 20247,
+      "esbuild": 22731,
+      "lightningcss": "ERROR",
+      "sass": "ERROR"
+    }
+  },
+  {
     "name": "Font Awesome",
     "version": "v7.2.0",
     "size": 112042,
@@ -687,6 +837,21 @@
       "esbuild": 125637,
       "lightningcss": "ERROR",
       "sass": 131611
+    }
+  },
+  {
+    "name": "Freebies",
+    "version": "v0.0.0",
+    "size": 25163,
+    "results": {
+      "clean-css": 11971,
+      "csskit": 12033,
+      "csslop": 11888,
+      "cssnano": 11927,
+      "csso": 11956,
+      "esbuild": 12022,
+      "lightningcss": 11929,
+      "sass": 12133
     }
   },
   {
@@ -735,6 +900,21 @@
     }
   },
   {
+    "name": "gitweb-theme",
+    "version": "v0.0.0",
+    "size": 17107,
+    "results": {
+      "clean-css": 12264,
+      "csskit": 12822,
+      "csslop": 11802,
+      "cssnano": 12281,
+      "csso": 12300,
+      "esbuild": 12724,
+      "lightningcss": 12420,
+      "sass": 12966
+    }
+  },
+  {
     "name": "google-type",
     "version": "v0.0.0",
     "size": 52213,
@@ -747,6 +927,21 @@
       "esbuild": 41744,
       "lightningcss": 40687,
       "sass": "ERROR"
+    }
+  },
+  {
+    "name": "Gridism",
+    "version": "v0.2.2",
+    "size": 3475,
+    "results": {
+      "clean-css": 1775,
+      "csskit": 1751,
+      "csslop": 1725,
+      "cssnano": 1765,
+      "csso": 1783,
+      "esbuild": 1790,
+      "lightningcss": "ERROR",
+      "sass": 1801
     }
   },
   {
@@ -825,6 +1020,21 @@
     }
   },
   {
+    "name": "Holmes",
+    "version": "v6.8.12",
+    "size": 12464,
+    "results": {
+      "clean-css": 7284,
+      "csskit": 7404,
+      "csslop": 6896,
+      "cssnano": 7033,
+      "csso": 7410,
+      "esbuild": 7275,
+      "lightningcss": 7172,
+      "sass": 7448
+    }
+  },
+  {
     "name": "HTML Sheets of Paper",
     "version": "v0.0.0",
     "size": 5233,
@@ -885,6 +1095,96 @@
     }
   },
   {
+    "name": "Justified",
+    "version": "v0.0.0",
+    "size": 196,
+    "results": {
+      "clean-css": 150,
+      "csskit": 150,
+      "csslop": 149,
+      "cssnano": 149,
+      "csso": 149,
+      "esbuild": 150,
+      "lightningcss": 150,
+      "sass": 150
+    }
+  },
+  {
+    "name": "Kickoff",
+    "version": "v8.0.0",
+    "size": 255488,
+    "results": {
+      "clean-css": 47224,
+      "csskit": 46842,
+      "csslop": 43762,
+      "cssnano": 211066,
+      "csso": 45543,
+      "esbuild": 47102,
+      "lightningcss": 37458,
+      "sass": 47694
+    }
+  },
+  {
+    "name": "KNACSS",
+    "version": "v8.2.0",
+    "size": 31390,
+    "results": {
+      "clean-css": "ERROR",
+      "csskit": 22988,
+      "csslop": 22893,
+      "cssnano": 22829,
+      "csso": "ERROR",
+      "esbuild": 23354,
+      "lightningcss": 22976,
+      "sass": 25708
+    }
+  },
+  {
+    "name": "Less Framework",
+    "version": "v0.0.0",
+    "size": 3648,
+    "results": {
+      "clean-css": 1425,
+      "csskit": 1545,
+      "csslop": 1370,
+      "cssnano": 1441,
+      "csso": 1434,
+      "esbuild": 1456,
+      "lightningcss": 1403,
+      "sass": 1458
+    }
+  },
+  {
+    "name": "Linktree",
+    "version": "v0.0.0",
+    "size": 45800,
+    "results": {
+      "clean-css": 39651,
+      "csskit": 39691,
+      "csslop": 37609,
+      "cssnano": 21676,
+      "csso": 21604,
+      "esbuild": 39746,
+      "lightningcss": 39657,
+      "sass": 39807
+    }
+  },
+  {
+    "name": "littlebox",
+    "version": "v0.0.4",
+    "size": 130429,
+    "results": {
+      "clean-css": 97095,
+      "csskit": 100604,
+      "csslop": 89861,
+      "cssnano": 86675,
+      "csso": 83007,
+      "esbuild": 99780,
+      "lightningcss": 88313,
+      "sass": 99538
+    }
+  },
+  {
     "name": "Load Awesome",
     "version": "v1.1.0",
     "size": 190180,
@@ -930,6 +1230,21 @@
     }
   },
   {
+    "name": "Lynx",
+    "version": "v1.4.0",
+    "size": 33290,
+    "results": {
+      "clean-css": 24042,
+      "csskit": 24096,
+      "csslop": 22111,
+      "cssnano": 22865,
+      "csso": 23990,
+      "esbuild": 24223,
+      "lightningcss": 22567,
+      "sass": 24287
+    }
+  },
+  {
     "name": "markdown-css",
     "version": "v0.0.0",
     "size": 3693,
@@ -957,6 +1272,21 @@
       "esbuild": 253587,
       "lightningcss": 230137,
       "sass": 259776
+    }
+  },
+  {
+    "name": "medium.css",
+    "version": "v1.0.2",
+    "size": 5403,
+    "results": {
+      "clean-css": 3931,
+      "csskit": 3948,
+      "csslop": 3643,
+      "cssnano": 3908,
+      "csso": 3846,
+      "esbuild": 3941,
+      "lightningcss": 3607,
+      "sass": 4000
     }
   },
   {
@@ -1170,6 +1500,21 @@
     }
   },
   {
+    "name": "Obnoxious",
+    "version": "v3.5.2",
+    "size": 19795,
+    "results": {
+      "clean-css": 13993,
+      "csskit": 13939,
+      "csslop": 13718,
+      "cssnano": 13852,
+      "csso": 13996,
+      "esbuild": 13852,
+      "lightningcss": 13654,
+      "sass": 14321
+    }
+  },
+  {
     "name": "Obsidian Colored Sidebar",
     "version": "v2.0.0",
     "size": 17815,
@@ -1197,6 +1542,36 @@
       "esbuild": 21076,
       "lightningcss": 20983,
       "sass": 21764
+    }
+  },
+  {
+    "name": "Obsidian Notebook Themes",
+    "version": "v2.2.3",
+    "size": 8571,
+    "results": {
+      "clean-css": 6253,
+      "csskit": 6013,
+      "csslop": 6260,
+      "cssnano": 5984,
+      "csso": 5979,
+      "esbuild": 6248,
+      "lightningcss": 6149,
+      "sass": 6259
+    }
+  },
+  {
+    "name": "OffCanvasMenuEffects",
+    "version": "v0.0.0",
+    "size": 13905,
+    "results": {
+      "clean-css": 10667,
+      "csskit": 10626,
+      "csslop": 6075,
+      "cssnano": 7879,
+      "csso": 9531,
+      "esbuild": 8914,
+      "lightningcss": 3909,
+      "sass": 12642
     }
   },
   {
@@ -1350,6 +1725,36 @@
     }
   },
   {
+    "name": "Progress Tracker",
+    "version": "v3.0.0",
+    "size": 9293,
+    "results": {
+      "clean-css": 7391,
+      "csskit": 7340,
+      "csslop": 6654,
+      "cssnano": 7298,
+      "csso": 7361,
+      "esbuild": 7417,
+      "lightningcss": 7175,
+      "sass": 7458
+    }
+  },
+  {
+    "name": "ProxMorph",
+    "version": "v2.7.3",
+    "size": 117568,
+    "results": {
+      "clean-css": 64070,
+      "csskit": 65059,
+      "csslop": 63316,
+      "cssnano": 61968,
+      "csso": 62597,
+      "esbuild": 64673,
+      "lightningcss": 63076,
+      "sass": 66933
+    }
+  },
+  {
     "name": "Pure",
     "version": "v3.0.0",
     "size": 26207,
@@ -1455,7 +1860,7 @@
     }
   },
   {
-    "name": "Responsive",
+    "name": "Responsive 4",
     "version": "v4.1.4",
     "size": 70886,
     "results": {
@@ -1470,7 +1875,7 @@
     }
   },
   {
-    "name": "Responsive",
+    "name": "Responsive 5",
     "version": "v5.0.0",
     "size": 63129,
     "results": {
@@ -1530,6 +1935,21 @@
     }
   },
   {
+    "name": "SAPC-APCA",
+    "version": "v0.0.0",
+    "size": 137080,
+    "results": {
+      "clean-css": 84846,
+      "csskit": 86697,
+      "csslop": 83100,
+      "cssnano": 83708,
+      "csso": 84242,
+      "esbuild": 85937,
+      "lightningcss": "ERROR",
+      "sass": 89020
+    }
+  },
+  {
     "name": "Select",
     "version": "v3.2.0",
     "size": 3161,
@@ -1545,6 +1965,21 @@
     }
   },
   {
+    "name": "Select2 Bootstrap",
+    "version": "v1.2.5",
+    "size": 2991,
+    "results": {
+      "clean-css": 2283,
+      "csskit": 2264,
+      "csslop": 2090,
+      "cssnano": 2266,
+      "csso": 2324,
+      "esbuild": 2298,
+      "lightningcss": 1964,
+      "sass": 2330
+    }
+  },
+  {
     "name": "Shards",
     "version": "v3.0.0",
     "size": 113246,
@@ -1557,6 +1992,21 @@
       "esbuild": 94019,
       "lightningcss": 91235,
       "sass": 97168
+    }
+  },
+  {
+    "name": "Shina Fox",
+    "version": "v0.1.0",
+    "size": 30871,
+    "results": {
+      "clean-css": 22133,
+      "csskit": 23018,
+      "csslop": 21344,
+      "cssnano": 21623,
+      "csso": 22143,
+      "esbuild": 22548,
+      "lightningcss": 21711,
+      "sass": 23440
     }
   },
   {
@@ -1620,6 +2070,21 @@
     }
   },
   {
+    "name": "SimpTip",
+    "version": "v1.0.4",
+    "size": 12957,
+    "results": {
+      "clean-css": 10907,
+      "csskit": 11050,
+      "csslop": 10431,
+      "cssnano": 10832,
+      "csso": 10994,
+      "esbuild": 11078,
+      "lightningcss": 9086,
+      "sass": 11143
+    }
+  },
+  {
     "name": "Skeleton",
     "version": "v2.0.4",
     "size": 9952,
@@ -1632,6 +2097,21 @@
       "esbuild": 5874,
       "lightningcss": 5722,
       "sass": 5891
+    }
+  },
+  {
+    "name": "Social Sign-in Buttons",
+    "version": "v0.0.0",
+    "size": 9395,
+    "results": {
+      "clean-css": 6790,
+      "csskit": 6845,
+      "csslop": 3845,
+      "cssnano": 6570,
+      "csso": 6815,
+      "esbuild": 6814,
+      "lightningcss": "ERROR",
+      "sass": 7005
     }
   },
   {
@@ -1662,6 +2142,21 @@
       "esbuild": 46266,
       "lightningcss": 44257,
       "sass": 46894
+    }
+  },
+  {
+    "name": "Spicetify Bloom",
+    "version": "v0.0.0",
+    "size": 79673,
+    "results": {
+      "clean-css": 63732,
+      "csskit": 65080,
+      "csslop": 61556,
+      "cssnano": 63095,
+      "csso": 62929,
+      "esbuild": 64766,
+      "lightningcss": 60014,
+      "sass": 66043
     }
   },
   {
@@ -1710,6 +2205,51 @@
     }
   },
   {
+    "name": "StackOverflow-Dark",
+    "version": "v5.1.2",
+    "size": 182559,
+    "results": {
+      "clean-css": 132202,
+      "csskit": 140824,
+      "csslop": 139865,
+      "cssnano": 131425,
+      "csso": "ERROR",
+      "esbuild": 146670,
+      "lightningcss": "ERROR",
+      "sass": "ERROR"
+    }
+  },
+  {
+    "name": "Swagger UI Themes 2",
+    "version": "v2.1.0",
+    "size": 59809,
+    "results": {
+      "clean-css": 44352,
+      "csskit": 53465,
+      "csslop": 37441,
+      "cssnano": 49667,
+      "csso": 43921,
+      "esbuild": 53502,
+      "lightningcss": 46845,
+      "sass": 54336
+    }
+  },
+  {
+    "name": "Swagger UI Themes 3",
+    "version": "v3.0.1",
+    "size": 36041,
+    "results": {
+      "clean-css": 25732,
+      "csskit": 29420,
+      "csslop": 21710,
+      "cssnano": 27637,
+      "csso": 25669,
+      "esbuild": 29170,
+      "lightningcss": 21353,
+      "sass": 30165
+    }
+  },
+  {
     "name": "System",
     "version": "v0.1.11",
     "size": 17664,
@@ -1755,6 +2295,21 @@
     }
   },
   {
+    "name": "The 50 Front-end Project #44",
+    "version": "v0.0.0",
+    "size": 9443,
+    "results": {
+      "clean-css": 6887,
+      "csskit": 6934,
+      "csslop": 6658,
+      "cssnano": 6895,
+      "csso": 6529,
+      "esbuild": 7016,
+      "lightningcss": 6867,
+      "sass": 7033
+    }
+  },
+  {
     "name": "The New CSS Reset",
     "version": "v1.11.3",
     "size": 2901,
@@ -1782,6 +2337,21 @@
       "esbuild": 5217,
       "lightningcss": 5161,
       "sass": 5207
+    }
+  },
+  {
+    "name": "Tocas",
+    "version": "v5.7.0",
+    "size": 406431,
+    "results": {
+      "clean-css": 294154,
+      "csskit": 288660,
+      "csslop": 263568,
+      "cssnano": 287831,
+      "csso": 285454,
+      "esbuild": 293879,
+      "lightningcss": 283025,
+      "sass": 290826
     }
   },
   {
@@ -1860,6 +2430,36 @@
     }
   },
   {
+    "name": "Utility OpenType",
+    "version": "v0.1.4",
+    "size": 12886,
+    "results": {
+      "clean-css": 10797,
+      "csskit": 10743,
+      "csslop": 10345,
+      "cssnano": 10786,
+      "csso": 10723,
+      "esbuild": 10859,
+      "lightningcss": 10917,
+      "sass": 10896
+    }
+  },
+  {
+    "name": "Vim CSS3 Syntax",
+    "version": "v2.10.0",
+    "size": 32219,
+    "results": {
+      "clean-css": 26419,
+      "csskit": 26963,
+      "csslop": 17697,
+      "cssnano": "ERROR",
+      "csso": 20863,
+      "esbuild": 27024,
+      "lightningcss": "ERROR",
+      "sass": "ERROR"
+    }
+  },
+  {
     "name": "VitePress",
     "version": "v1.6.4",
     "size": 12210,
@@ -1902,6 +2502,21 @@
       "esbuild": 3441,
       "lightningcss": 3497,
       "sass": 4179
+    }
+  },
+  {
+    "name": "Waffle Grid",
+    "version": "v1.3.6",
+    "size": 8722,
+    "results": {
+      "clean-css": 6976,
+      "csskit": 6796,
+      "csslop": 6409,
+      "cssnano": 6688,
+      "csso": 6798,
+      "esbuild": 6684,
+      "lightningcss": 6269,
+      "sass": 6688
     }
   },
   {
@@ -1950,6 +2565,36 @@
     }
   },
   {
+    "name": "Wenk",
+    "version": "v1.0.8",
+    "size": 3061,
+    "results": {
+      "clean-css": 717,
+      "csskit": 1792,
+      "csslop": 1758,
+      "cssnano": 1744,
+      "csso": 215,
+      "esbuild": 1955,
+      "lightningcss": 1738,
+      "sass": 2222
+    }
+  },
+  {
+    "name": "Windows 95",
+    "version": "v0.0.0",
+    "size": 7254,
+    "results": {
+      "clean-css": 5443,
+      "csskit": 5473,
+      "csslop": 4629,
+      "cssnano": 5371,
+      "csso": 5210,
+      "esbuild": 5496,
+      "lightningcss": 5354,
+      "sass": 5541
+    }
+  },
+  {
     "name": "Windows 98",
     "version": "v0.0.1",
     "size": 4547,
@@ -1980,6 +2625,21 @@
     }
   },
   {
+    "name": "Woah",
+    "version": "v1.3.1",
+    "size": 19423,
+    "results": {
+      "clean-css": 11607,
+      "csskit": 12407,
+      "csslop": 12067,
+      "cssnano": 12361,
+      "csso": 11037,
+      "esbuild": 12472,
+      "lightningcss": 11599,
+      "sass": 13234
+    }
+  },
+  {
     "name": "WTF Forms",
     "version": "v2.2.0",
     "size": 10548,
@@ -1992,6 +2652,36 @@
       "esbuild": 7879,
       "lightningcss": "ERROR",
       "sass": 7895
+    }
+  },
+  {
+    "name": "YaCy",
+    "version": "v4.1.2",
+    "size": 23758,
+    "results": {
+      "clean-css": 15773,
+      "csskit": 18504,
+      "csslop": 12715,
+      "cssnano": 17733,
+      "csso": 18289,
+      "esbuild": 18942,
+      "lightningcss": 14687,
+      "sass": 19041
+    }
+  },
+  {
+    "name": "Yue",
+    "version": "v1.1.1",
+    "size": 2636,
+    "results": {
+      "clean-css": 2141,
+      "csskit": 2134,
+      "csslop": 1997,
+      "cssnano": 2091,
+      "csso": 2081,
+      "esbuild": 2137,
+      "lightningcss": 2133,
+      "sass": 2141
     }
   },
   {
