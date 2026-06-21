@@ -1769,6 +1769,16 @@
     "lightningcss": false,
     "sass": false
   },
+  "nesting/0020": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "page/0001": {
     "clean-css": true,
     "csskit": true,
