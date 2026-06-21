@@ -42,7 +42,7 @@ jobs:
 
       - name: Prepare pages artifact
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: mkdir -p _site && cp index.html style.css script.js _site/
+        run: mkdir -p _site && cp index.html style.css script.js _site/ && cp -r minified/ _site/minified/
 
       - name: Setup Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'

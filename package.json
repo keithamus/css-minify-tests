@@ -33,7 +33,7 @@
     "marked": "^18.0.5",
     "postcss": "^8.5.15",
     "pretty-ms": "^9.3.0",
-    "real-world-css-libraries": "^1.0.2",
+    "real-world-css-libraries": "^1.0.5",
     "sass": "^1.101.0",
     "shiki": "^4.2.0"
   },
