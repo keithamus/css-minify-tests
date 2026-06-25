@@ -1,0 +1,3 @@
+:where(:hover):where(a) {
+  color: red;
+}
