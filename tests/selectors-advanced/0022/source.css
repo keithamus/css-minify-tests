@@ -1,0 +1,3 @@
+:where(div):where(span) {
+  color: red;
+}
