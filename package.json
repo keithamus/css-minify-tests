@@ -14,7 +14,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@thejaredwilcurt/csslop": "^0.0.7",
+    "@thejaredwilcurt/csslop": "^0.0.8",
     "clean-css": "^5.3.3",
     "cross-env": "^10.1.0",
     "csskit": "^0.0.26",
@@ -25,9 +25,9 @@
     "eslint-config-tjw-base": "^5.0.0",
     "eslint-config-tjw-import-x": "^1.0.1",
     "eslint-config-tjw-jsdoc": "^2.0.1",
-    "eslint-plugin-import-x": "^4.16.2",
-    "eslint-plugin-jsdoc": "^63.0.7",
-    "globals": "^17.6.0",
+    "eslint-plugin-import-x": "^4.17.0",
+    "eslint-plugin-jsdoc": "^63.0.8",
+    "globals": "^17.7.0",
     "http-server": "^14.1.1",
     "lightningcss": "^1.30.0",
     "marked": "^18.0.5",
@@ -35,7 +35,7 @@
     "pretty-ms": "^9.3.0",
     "real-world-css-libraries": "^1.0.5",
     "sass": "^1.101.0",
-    "shiki": "^4.2.0"
+    "shiki": "^4.3.0"
   },
   "allowScripts": {
     "@parcel/watcher@2.5.6": true,
