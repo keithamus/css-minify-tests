@@ -1,3 +1,5 @@
-.nav .item, .footer, .nav .item {
+.nav .item,
+.footer,
+.nav .item {
   color: red;
 }

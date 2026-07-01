@@ -1,0 +1,4 @@
+.foo {
+  --foo: hsla(var(--my-h),var(--my-s),var(--my-l),0.5);
+  --bar: rgba(var(--my-r),var(--my-g),var(--my-b),0.5);
+}

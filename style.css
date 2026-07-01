@@ -211,7 +211,7 @@ details pre {
   border-radius: 0.25rem;
   overflow-x: auto;
   white-space: pre-wrap;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .detail-error {

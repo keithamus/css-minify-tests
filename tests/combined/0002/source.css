@@ -1,0 +1,13 @@
+.a { color: #F00; }
+.b { color: rgba(255, 0, 0, 1); }
+.c { color: red; }
+.d { color: #FF0000; }
+.e { color: #FF0000FF; }
+.f { color: RGBA(255, 0, 0, 1.0); }
+.g { color: rgb(255, 0, 0); }
+.h { color: RGB(255 0 0); }
+.i { color: rgba(255 0 0 / 1); }
+.j { color: hsl(0 100 50); }
+.k { color: HSL(0, 100%, 50%); }
+.l { color: hwb(0 0 0); }
+.m { color: HWB(0 0% 0%); }

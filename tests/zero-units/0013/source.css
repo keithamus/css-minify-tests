@@ -1,0 +1,6 @@
+.a {
+  transition: color 0ms;
+}
+.b {
+  transition: background 0s;
+}
