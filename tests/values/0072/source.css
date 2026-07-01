@@ -1,0 +1,24 @@
+.a {
+  background-position: left;
+}
+.b {
+  background-position: center;
+}
+.c {
+  background-position: bottom;
+}
+.d {
+  background-position: left top;
+}
+.e {
+  background-position: center center;
+}
+.f {
+  background-position: right bottom;
+}
+.g {
+  background-position: top 10px;
+}
+.h {
+  background-position: right 10% bottom 20%;
+}
