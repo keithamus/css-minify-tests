@@ -1,0 +1,7 @@
+:root {
+  --dropShadow: 0.02em -0.02em 0.015em #45A6,
+               -0.02em  0.02em 0.015em #45A6,
+               -0.02em -0.02em 0.020em #DEFA,
+                0.02em  0.02em 0.030em #106A,
+                0.10em  0.10em 0.090em #246A;
+}

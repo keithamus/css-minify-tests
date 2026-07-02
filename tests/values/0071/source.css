@@ -1,0 +1,15 @@
+.a {
+  transition-duration: 0ms;
+}
+.b {
+  transition: color 99ms;
+}
+.c {
+  transition: color 100ms;
+}
+.d {
+  transition-duration: 2000ms;
+}
+.e {
+  transition-delay: 1234ms;
+}
