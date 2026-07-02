@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-07-01T13:03:32.946Z",
+    "date": "2026-07-02T12:07:25.350Z",
     "testCount": 440,
     "minifiers": {
       "clean-css": {
@@ -20,7 +20,7 @@
       },
       "cssnano": {
         "version": "8.0.2",
-        "pass": 221,
+        "pass": 210,
         "total": 440
       },
       "csso": {
