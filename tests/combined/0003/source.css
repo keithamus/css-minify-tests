@@ -1,0 +1,13 @@
+.foo {
+  color: #001;
+}
+.foo h1,
+.foo h2 {
+  color: #002;
+}
+.foo h1 {
+  color: #003;
+}
+.foo h2 {
+  color: #004;
+}
