@@ -156,7 +156,7 @@ window.realModal = {
   elementsMap: {
     container: 'real-css-preview',
     title: 'real-modal-title',
-    select: 'real-seleect',
+    select: 'real-select',
     close: 'real-moadal-close-button',
     pre: 'real-minified-output',
     compareBox: 'real-comparison'
