@@ -1,0 +1,5 @@
+:root {
+  --foo: /*base-color*/;
+  --bar: 12/* some text */12;
+  --black: #000;
+}
