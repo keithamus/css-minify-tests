@@ -225,14 +225,14 @@ window.realModal = {
     const titleEl = this.getModalTitle();
     const selectEl = this.getSelect();
     const preEl = this.getOutputBox();
-    const compareBox = this.getComparisonBox();
+    const compareBoxEl = this.getComparisonBox();
 
     // Reset the loading state before opening
     titleEl.innerText = minifierName + '/' + fileName;
     selectEl.value = '';
     preEl.innerText = this.constants.LOADING;
-    compareBox.innerText = this.constants.LOADING;
-    compareBox.classList.add('real-hide');
+    compareBoxEl.innerText = this.constants.LOADING;
+    compareBoxEl.classList.add('real-hide');
     modalEl.showModal();
   },
   /** Closes the modal. */
