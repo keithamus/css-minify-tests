@@ -156,8 +156,13 @@ window.realModal = {
   elementsMap: {
     container: 'real-css-preview',
     title: 'real-modal-title',
+    select: 'real-seleect',
     close: 'real-moadal-close-button',
-    pre: 'real-minified-output'
+    pre: 'real-minified-output',
+    compareBox: 'real-comparison'
+  },
+  constants: {
+    LOADING: 'Loading...'
   },
   /**
    * Gets the Modal Container DOM node.
@@ -176,6 +181,14 @@ window.realModal = {
     return document.getElementById(this.elementsMap.title);
   },
   /**
+   * Gets the <select> dropdown element.
+   *
+   * @return {HTMLElement} Reference to DOM node
+   */
+  getSelect: function () {
+    return document.getElementById(this.elementsMap.select);
+  },
+  /**
    * Gets the Modal Close button DOM node.
    *
    * @return {HTMLElement} Reference to DOM node
@@ -191,6 +204,14 @@ window.realModal = {
   getOutputBox: function () {
     return document.getElementById(this.elementsMap.pre);
   },
+  /**
+   * Gets the second Modal <pre> DOM node.
+   *
+   * @return {HTMLElement} Reference to DOM node
+   */
+  getComparisonBox: function () {
+    return document.getElementById(this.elementsMap.compareBox);
+  },
 
   // Modal state/visibility
   /**
@@ -202,11 +223,16 @@ window.realModal = {
   resetAndOpenModal: function (minifierName, fileName) {
     const modalEl = this.getModal();
     const titleEl = this.getModalTitle();
+    const selectEl = this.getSelect();
     const preEl = this.getOutputBox();
+    const compareBox = this.getComparisonBox();
 
     // Reset the loading state before opening
     titleEl.innerText = minifierName + '/' + fileName;
-    preEl.innerText = 'Loading...';
+    selectEl.value = '';
+    preEl.innerText = this.constants.LOADING;
+    compareBox.innerText = this.constants.LOADING;
+    compareBox.classList.add('real-hide');
     modalEl.showModal();
   },
   /** Closes the modal. */
@@ -215,13 +241,36 @@ window.realModal = {
     modalEl.close();
   },
 
+  /**
+   * Loads in the content for, and shows, the comparison box with a different
+   * minifiers result.
+   *
+   * @param {object} $event  Native browser onchange event
+   */
+  showComparison: async function ($event) {
+    const minifierName = $event?.target?.value;
+    const compareBoxEl = this.getComparisonBox();
+    if (minifierName) {
+      compareBoxEl.classList.remove('real-hide');
+      const modalTitleEl = this.getModalTitle();
+      const title = modalTitleEl.innerText;
+      const fileName = title.split('/')[1];
+      const minifiedCSS = await this.getMinifiedCSS(minifierName, fileName);
+      compareBoxEl.innerHTML = minifiedCSS;
+    } else {
+      compareBoxEl.classList.add('real-hide');
+      compareBoxEl.innerHTML = this.constants.LOADING;
+    }
+  },
+
   // Loading data, logic composition
   /**
    * Loads the minified CSS file for a given minifier from a network call, then
    * places the contents inside the modal with syntax highlighting.
    *
-   * @param {string} minifierName  Name of the minifier ('csso', 'sass', etc)
-   * @param {string} fileName      Minified CSS filename ('bttn-v0.2.4.css')
+   * @param  {string}          minifierName  Name of the minifier ('csso', 'sass', etc)
+   * @param  {string}          fileName      Minified CSS filename ('bttn-v0.2.4.css')
+   * @return {Promise<string>}               The CSS as syntax highlighted markup
    */
   getMinifiedCSS: function (minifierName, fileName) {
     const url = [
@@ -229,15 +278,14 @@ window.realModal = {
       minifierName,
       fileName
     ].join('/');
-    fetch(url)
+    return fetch(url)
       .then((response) => {
         return response.text();
       })
       .then((CSS) => {
         const options = { language: 'css' };
         const highlightedCode = window.hljs.highlight(CSS, options).value;
-        const preEl = this.getOutputBox();
-        preEl.innerHTML = highlightedCode;
+        return highlightedCode;
       });
   },
   /**
@@ -248,6 +296,8 @@ window.realModal = {
    */
   showMinifiedCSS: async function (minifierName, fileName) {
     this.resetAndOpenModal(minifierName, fileName);
-    this.getMinifiedCSS(minifierName, fileName);
+    const minifiedCSS = await this.getMinifiedCSS(minifierName, fileName);
+    const preEl = this.getOutputBox();
+    preEl.innerHTML = minifiedCSS;
   }
 };
