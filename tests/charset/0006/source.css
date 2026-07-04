@@ -5,7 +5,7 @@
 @charset 'ISO-8859-15';
 
 .bar {
-  font-weight: bold;
+  color: tan;
 }
 
 @charset 'ISO-8859-1';

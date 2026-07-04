@@ -69,6 +69,46 @@
     "lightningcss": false,
     "sass": false
   },
+  "charset/0003": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "charset/0004": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": true,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": true
+  },
+  "charset/0005": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "charset/0006": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "colors/0001": {
     "clean-css": true,
     "csskit": true,
@@ -709,6 +749,16 @@
     "lightningcss": true,
     "sass": false
   },
+  "combined/0003": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "comments/0001": {
     "clean-css": true,
     "csskit": true,
@@ -750,6 +800,26 @@
     "sass": false
   },
   "comments/0005": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "comments/0006": {
+    "clean-css": true,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
+  },
+  "comments/0007": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,
@@ -1039,6 +1109,16 @@
     "lightningcss": true,
     "sass": false
   },
+  "duplicates/0020": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": true,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "empty-rules/0001": {
     "clean-css": true,
     "csskit": false,
@@ -1098,6 +1178,16 @@
     "esbuild": true,
     "lightningcss": true,
     "sass": true
+  },
+  "empty-rules/0007": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
   },
   "escaping/0001": {
     "clean-css": false,
@@ -1220,6 +1310,16 @@
     "sass": false
   },
   "escaping/0013": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": false
+  },
+  "escaping/0014": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,
@@ -3623,10 +3723,10 @@
     "clean-css": false,
     "csskit": false,
     "csslop": true,
-    "cssnano": true,
+    "cssnano": false,
     "csso": false,
     "esbuild": false,
-    "lightningcss": false,
+    "lightningcss": true,
     "sass": false
   },
   "values/0035": {
