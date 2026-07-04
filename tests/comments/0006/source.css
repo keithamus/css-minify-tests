@@ -1,0 +1,10 @@
+@keyframes fade {
+  0% {
+    /* A comment */
+    opacity: 1;
+  }
+  to {
+    /* A comment */
+    opacity: 0;
+  }
+}

@@ -1,0 +1,15 @@
+.foo {
+  color: red;
+}
+
+@charset 'ISO-8859-15';
+
+.bar {
+  color: tan;
+}
+
+@charset 'ISO-8859-1';
+
+.baz {
+  background: red;
+}

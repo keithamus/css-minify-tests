@@ -1,0 +1,6 @@
+p[style$="maroon;"] {
+  background: red;
+}
+p[style="color:maroon;padding:1px;"] {
+  background: tan;
+}

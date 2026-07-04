@@ -81,7 +81,7 @@
     "results": {
       "clean-css": 315879,
       "csskit": 336986,
-      "csslop": 322310,
+      "csslop": 316405,
       "cssnano": 309033,
       "csso": 315667,
       "esbuild": 320007,
@@ -291,7 +291,7 @@
     "results": {
       "clean-css": 102771,
       "csskit": 119613,
-      "csslop": 93472,
+      "csslop": 88436,
       "cssnano": 88317,
       "csso": 110077,
       "esbuild": 117202,
@@ -306,7 +306,7 @@
     "results": {
       "clean-css": 160082,
       "csskit": 160453,
-      "csslop": 147244,
+      "csslop": 147222,
       "cssnano": 142961,
       "csso": 160404,
       "esbuild": 161001,
@@ -351,7 +351,7 @@
     "results": {
       "clean-css": 70321,
       "csskit": 95429,
-      "csslop": 70300,
+      "csslop": 70232,
       "cssnano": 71014,
       "csso": 88137,
       "esbuild": 92470,
@@ -396,7 +396,7 @@
     "results": {
       "clean-css": 17924,
       "csskit": 17928,
-      "csslop": 17313,
+      "csslop": 17279,
       "cssnano": 17719,
       "csso": 18898,
       "esbuild": 18015,
@@ -531,7 +531,7 @@
     "results": {
       "clean-css": 17013,
       "csskit": 17671,
-      "csslop": 15080,
+      "csslop": 15066,
       "cssnano": 16158,
       "csso": 16997,
       "esbuild": 16933,
@@ -621,7 +621,7 @@
     "results": {
       "clean-css": 238475,
       "csskit": 237979,
-      "csslop": 216254,
+      "csslop": 216147,
       "cssnano": 197252,
       "csso": 201411,
       "esbuild": 240349,
@@ -726,7 +726,7 @@
     "results": {
       "clean-css": 61119,
       "csskit": 61502,
-      "csslop": 58611,
+      "csslop": 58560,
       "cssnano": 60797,
       "csso": 60797,
       "esbuild": 62052,
@@ -846,7 +846,7 @@
     "results": {
       "clean-css": 143635,
       "csskit": "ERROR",
-      "csslop": 140312,
+      "csslop": 139963,
       "cssnano": "ERROR",
       "csso": 142134,
       "esbuild": 145949,
@@ -936,7 +936,7 @@
     "results": {
       "clean-css": 76345,
       "csskit": 74139,
-      "csslop": 76290,
+      "csslop": 76197,
       "cssnano": 75782,
       "csso": 75516,
       "esbuild": 78224,
@@ -951,7 +951,7 @@
     "results": {
       "clean-css": 123428,
       "csskit": 130971,
-      "csslop": 115558,
+      "csslop": 115530,
       "cssnano": 106507,
       "csso": 122377,
       "esbuild": 125637,
@@ -981,7 +981,7 @@
     "results": {
       "clean-css": 54613,
       "csskit": 57111,
-      "csslop": 51417,
+      "csslop": 51358,
       "cssnano": 47831,
       "csso": 55557,
       "esbuild": 56313,
@@ -1011,7 +1011,7 @@
     "results": {
       "clean-css": 26829,
       "csskit": 26796,
-      "csslop": 23367,
+      "csslop": 23338,
       "cssnano": 24578,
       "csso": 26286,
       "esbuild": 27129,
@@ -1041,7 +1041,7 @@
     "results": {
       "clean-css": 41378,
       "csskit": 41966,
-      "csslop": 33773,
+      "csslop": 33779,
       "cssnano": "ERROR",
       "csso": 41059,
       "esbuild": 41744,
@@ -1086,7 +1086,7 @@
     "results": {
       "clean-css": 149626,
       "csskit": 150207,
-      "csslop": 134541,
+      "csslop": 134519,
       "cssnano": 135158,
       "csso": 149578,
       "esbuild": 152744,
@@ -1131,7 +1131,7 @@
     "results": {
       "clean-css": 7230,
       "csskit": 7307,
-      "csslop": 6623,
+      "csslop": 6606,
       "cssnano": 7229,
       "csso": 7373,
       "esbuild": 7446,
@@ -1326,7 +1326,7 @@
     "results": {
       "clean-css": 176419,
       "csskit": 187317,
-      "csslop": 112218,
+      "csslop": 112182,
       "cssnano": 78828,
       "csso": 177347,
       "esbuild": 186539,
@@ -1401,7 +1401,7 @@
     "results": {
       "clean-css": 252550,
       "csskit": 258149,
-      "csslop": 230331,
+      "csslop": 230311,
       "cssnano": 219931,
       "csso": 252766,
       "esbuild": 253587,
@@ -1506,7 +1506,7 @@
     "results": {
       "clean-css": "ERROR",
       "csskit": 60734,
-      "csslop": 55629,
+      "csslop": 55615,
       "cssnano": 60624,
       "csso": 44650,
       "esbuild": 61363,
@@ -1566,7 +1566,7 @@
     "results": {
       "clean-css": 12247,
       "csskit": 14038,
-      "csslop": 13661,
+      "csslop": 13525,
       "cssnano": 14021,
       "csso": 11888,
       "esbuild": 14068,
@@ -1626,7 +1626,7 @@
     "results": {
       "clean-css": 283568,
       "csskit": 277498,
-      "csslop": 279250,
+      "csslop": 279180,
       "cssnano": 281510,
       "csso": 279501,
       "esbuild": 283173,
@@ -1656,7 +1656,7 @@
     "results": {
       "clean-css": 1737,
       "csskit": 1551,
-      "csslop": 1662,
+      "csslop": 1637,
       "cssnano": 1633,
       "csso": 1738,
       "esbuild": 1698,
@@ -1671,7 +1671,7 @@
     "results": {
       "clean-css": 13993,
       "csskit": 13939,
-      "csslop": 13718,
+      "csslop": 13700,
       "cssnano": 13852,
       "csso": 13996,
       "esbuild": 13852,
@@ -1701,7 +1701,7 @@
     "results": {
       "clean-css": 20582,
       "csskit": 21297,
-      "csslop": 19509,
+      "csslop": 19469,
       "cssnano": 21038,
       "csso": 19984,
       "esbuild": 21076,
@@ -1761,7 +1761,7 @@
     "results": {
       "clean-css": 24582,
       "csskit": 26403,
-      "csslop": 24670,
+      "csslop": 24665,
       "cssnano": 24703,
       "csso": 24496,
       "esbuild": 24582,
@@ -1806,7 +1806,7 @@
     "results": {
       "clean-css": 126183,
       "csskit": 126607,
-      "csslop": 119486,
+      "csslop": 119429,
       "cssnano": 123063,
       "csso": 122211,
       "esbuild": 126812,
@@ -1821,7 +1821,7 @@
     "results": {
       "clean-css": 24203,
       "csskit": 23005,
-      "csslop": 19831,
+      "csslop": 19779,
       "cssnano": 21926,
       "csso": 22943,
       "esbuild": 24275,
@@ -1896,7 +1896,7 @@
     "results": {
       "clean-css": 7797,
       "csskit": 7776,
-      "csslop": 7222,
+      "csslop": 7204,
       "cssnano": 7454,
       "csso": 7807,
       "esbuild": 7946,
@@ -1956,7 +1956,7 @@
     "results": {
       "clean-css": 64070,
       "csskit": 65059,
-      "csslop": 61980,
+      "csslop": 61621,
       "cssnano": 62023,
       "csso": 62597,
       "esbuild": 64673,
@@ -2121,7 +2121,7 @@
     "results": {
       "clean-css": 2995,
       "csskit": 3116,
-      "csslop": 3023,
+      "csslop": 2933,
       "cssnano": 3029,
       "csso": 2818,
       "esbuild": 3073,
@@ -2151,7 +2151,7 @@
     "results": {
       "clean-css": 84846,
       "csskit": 86697,
-      "csslop": 82965,
+      "csslop": 82813,
       "cssnano": 83492,
       "csso": 84242,
       "esbuild": 85937,
@@ -2196,7 +2196,7 @@
     "results": {
       "clean-css": 94865,
       "csskit": 93820,
-      "csslop": 89008,
+      "csslop": 88988,
       "cssnano": 90031,
       "csso": 94308,
       "esbuild": 94019,
@@ -2361,7 +2361,7 @@
     "results": {
       "clean-css": 46336,
       "csskit": 46036,
-      "csslop": 43400,
+      "csslop": 43371,
       "cssnano": 43749,
       "csso": 45780,
       "esbuild": 46266,
@@ -2376,7 +2376,7 @@
     "results": {
       "clean-css": 63732,
       "csskit": 65080,
-      "csslop": 61075,
+      "csslop": 60989,
       "cssnano": 62037,
       "csso": 62929,
       "esbuild": 64766,
@@ -2421,7 +2421,7 @@
     "results": {
       "clean-css": 9496,
       "csskit": 9496,
-      "csslop": 7894,
+      "csslop": 7892,
       "cssnano": 9464,
       "csso": 9223,
       "esbuild": 9466,
@@ -2436,7 +2436,7 @@
     "results": {
       "clean-css": 132202,
       "csskit": 140824,
-      "csslop": 139861,
+      "csslop": 139792,
       "cssnano": 130658,
       "csso": "ERROR",
       "esbuild": 146670,
@@ -2451,7 +2451,7 @@
     "results": {
       "clean-css": 44352,
       "csskit": 53465,
-      "csslop": 36765,
+      "csslop": 34826,
       "cssnano": 48962,
       "csso": 43921,
       "esbuild": 53502,
@@ -2466,7 +2466,7 @@
     "results": {
       "clean-css": 25732,
       "csskit": 29420,
-      "csslop": 20672,
+      "csslop": 20107,
       "cssnano": 23825,
       "csso": 25669,
       "esbuild": 29170,
@@ -2931,7 +2931,7 @@
     "results": {
       "clean-css": 11607,
       "csskit": 12407,
-      "csslop": 12064,
+      "csslop": 12036,
       "cssnano": 12361,
       "csso": 11037,
       "esbuild": 12472,
