@@ -1,0 +1,8 @@
+p {
+  background: linear-gradient(
+    red 0%,
+    red 50%,
+    tan 50%,
+    tan 100%
+  );
+}
