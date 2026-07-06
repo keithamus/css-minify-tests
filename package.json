@@ -14,11 +14,11 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@thejaredwilcurt/csslop": "^0.0.11",
+    "@thejaredwilcurt/csslop": "^0.0.12",
     "autoprefixer": "^10.5.2",
     "clean-css": "^5.3.3",
     "cross-env": "^10.1.0",
-    "csskit": "^0.0.26",
+    "csskit": "^0.0.27",
     "cssnano": "^8.0.2",
     "cssnano-preset-advanced": "^8.0.2",
     "csso": "^5.0.5",
