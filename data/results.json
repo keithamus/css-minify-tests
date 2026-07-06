@@ -759,6 +759,16 @@
     "lightningcss": false,
     "sass": false
   },
+  "combined/0004": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "comments/0001": {
     "clean-css": true,
     "csskit": true,
@@ -1115,6 +1125,26 @@
     "csslop": true,
     "cssnano": false,
     "csso": true,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "duplicates/0021": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": false,
+    "esbuild": true,
+    "lightningcss": false,
+    "sass": false
+  },
+  "duplicates/0022": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
     "esbuild": false,
     "lightningcss": false,
     "sass": false
@@ -1493,7 +1523,7 @@
     "clean-css": false,
     "csskit": false,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": false,
     "esbuild": true,
     "lightningcss": false,
@@ -1507,6 +1537,26 @@
     "csso": false,
     "esbuild": false,
     "lightningcss": true,
+    "sass": false
+  },
+  "gradients/0006": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "gradients/0007": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
     "sass": false
   },
   "import/0001": {
@@ -3200,6 +3250,26 @@
     "sass": false
   },
   "shorthands/0074": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "shorthands/0075": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": false
+  },
+  "shorthands/0076": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,

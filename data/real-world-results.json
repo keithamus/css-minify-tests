@@ -51,7 +51,7 @@
     "results": {
       "clean-css": 19136,
       "csskit": 19580,
-      "csslop": 17469,
+      "csslop": 17476,
       "cssnano": 19040,
       "csso": 19073,
       "esbuild": 19250,
@@ -81,7 +81,7 @@
     "results": {
       "clean-css": 315879,
       "csskit": 336986,
-      "csslop": 316405,
+      "csslop": 316331,
       "cssnano": 309033,
       "csso": 315667,
       "esbuild": 320007,
@@ -111,7 +111,7 @@
     "results": {
       "clean-css": 25636,
       "csskit": 26378,
-      "csslop": 22228,
+      "csslop": 22153,
       "cssnano": 24555,
       "csso": 24705,
       "esbuild": 25575,
@@ -231,7 +231,7 @@
     "results": {
       "clean-css": 88176,
       "csskit": 89186,
-      "csslop": 85028,
+      "csslop": 85031,
       "cssnano": 87767,
       "csso": 87717,
       "esbuild": 88571,
@@ -246,7 +246,7 @@
     "results": {
       "clean-css": 7084,
       "csskit": 7060,
-      "csslop": 5951,
+      "csslop": 5883,
       "cssnano": 7122,
       "csso": 7063,
       "esbuild": 7207,
@@ -291,7 +291,7 @@
     "results": {
       "clean-css": 102771,
       "csskit": 119613,
-      "csslop": 88436,
+      "csslop": 88190,
       "cssnano": 88317,
       "csso": 110077,
       "esbuild": 117202,
@@ -306,7 +306,7 @@
     "results": {
       "clean-css": 160082,
       "csskit": 160453,
-      "csslop": 147222,
+      "csslop": 146950,
       "cssnano": 142961,
       "csso": 160404,
       "esbuild": 161001,
@@ -321,7 +321,7 @@
     "results": {
       "clean-css": 230252,
       "csskit": 230385,
-      "csslop": 220278,
+      "csslop": 220204,
       "cssnano": 221981,
       "csso": 228303,
       "esbuild": 232385,
@@ -336,7 +336,7 @@
     "results": {
       "clean-css": 31411,
       "csskit": 34739,
-      "csslop": 26016,
+      "csslop": 25995,
       "cssnano": 25102,
       "csso": 30935,
       "esbuild": 34802,
@@ -396,7 +396,7 @@
     "results": {
       "clean-css": 17924,
       "csskit": 17928,
-      "csslop": 17279,
+      "csslop": 17126,
       "cssnano": 17719,
       "csso": 18898,
       "esbuild": 18015,
@@ -411,7 +411,7 @@
     "results": {
       "clean-css": 13671,
       "csskit": 15118,
-      "csslop": 11556,
+      "csslop": 11560,
       "cssnano": 11274,
       "csso": 25701,
       "esbuild": 14791,
@@ -456,7 +456,7 @@
     "results": {
       "clean-css": 5874,
       "csskit": 6326,
-      "csslop": 4278,
+      "csslop": 4286,
       "cssnano": 5032,
       "csso": 5730,
       "esbuild": 5991,
@@ -531,7 +531,7 @@
     "results": {
       "clean-css": 17013,
       "csskit": 17671,
-      "csslop": 15066,
+      "csslop": 15034,
       "cssnano": 16158,
       "csso": 16997,
       "esbuild": 16933,
@@ -561,7 +561,7 @@
     "results": {
       "clean-css": 46025,
       "csskit": 45412,
-      "csslop": 42463,
+      "csslop": 42419,
       "cssnano": 42306,
       "csso": 46496,
       "esbuild": 46345,
@@ -591,7 +591,7 @@
     "results": {
       "clean-css": 26284,
       "csskit": 26428,
-      "csslop": 13211,
+      "csslop": 13225,
       "cssnano": 13895,
       "csso": 25803,
       "esbuild": 26193,
@@ -606,7 +606,7 @@
     "results": {
       "clean-css": 4243,
       "csskit": 4211,
-      "csslop": 3040,
+      "csslop": 3047,
       "cssnano": 3483,
       "csso": 4130,
       "esbuild": 4216,
@@ -651,7 +651,7 @@
     "results": {
       "clean-css": 62136,
       "csskit": 62559,
-      "csslop": 59519,
+      "csslop": 59523,
       "cssnano": 47753,
       "csso": 61982,
       "esbuild": 62478,
@@ -711,7 +711,7 @@
     "results": {
       "clean-css": 50058,
       "csskit": 49587,
-      "csslop": 42633,
+      "csslop": 42261,
       "cssnano": 48960,
       "csso": 49814,
       "esbuild": 49569,
@@ -726,7 +726,7 @@
     "results": {
       "clean-css": 61119,
       "csskit": 61502,
-      "csslop": 58560,
+      "csslop": 58526,
       "cssnano": 60797,
       "csso": 60797,
       "esbuild": 62052,
@@ -741,7 +741,7 @@
     "results": {
       "clean-css": 116791,
       "csskit": 119791,
-      "csslop": 86241,
+      "csslop": 86222,
       "cssnano": 74340,
       "csso": 112457,
       "esbuild": 118329,
@@ -756,7 +756,7 @@
     "results": {
       "clean-css": 71548,
       "csskit": 70786,
-      "csslop": 67444,
+      "csslop": 67392,
       "cssnano": 68887,
       "csso": 71430,
       "esbuild": 71438,
@@ -801,7 +801,7 @@
     "results": {
       "clean-css": 3818,
       "csskit": 4098,
-      "csslop": 3142,
+      "csslop": 3145,
       "cssnano": 3005,
       "csso": 4077,
       "esbuild": 4120,
@@ -846,7 +846,7 @@
     "results": {
       "clean-css": 143635,
       "csskit": "ERROR",
-      "csslop": 139963,
+      "csslop": 139376,
       "cssnano": "ERROR",
       "csso": 142134,
       "esbuild": 145949,
@@ -861,7 +861,7 @@
     "results": {
       "clean-css": 5459,
       "csskit": 5801,
-      "csslop": 5695,
+      "csslop": 5679,
       "cssnano": 5653,
       "csso": 5523,
       "esbuild": 5895,
@@ -876,7 +876,7 @@
     "results": {
       "clean-css": 28490,
       "csskit": 38101,
-      "csslop": 36970,
+      "csslop": 36806,
       "cssnano": 36812,
       "csso": 19479,
       "esbuild": 37632,
@@ -891,7 +891,7 @@
     "results": {
       "clean-css": 181879,
       "csskit": 183233,
-      "csslop": 131377,
+      "csslop": 130728,
       "cssnano": "ERROR",
       "csso": 179093,
       "esbuild": 183747,
@@ -921,7 +921,7 @@
     "results": {
       "clean-css": 22271,
       "csskit": 23045,
-      "csslop": 19524,
+      "csslop": 19290,
       "cssnano": "ERROR",
       "csso": 20247,
       "esbuild": 22731,
@@ -951,7 +951,7 @@
     "results": {
       "clean-css": 123428,
       "csskit": 130971,
-      "csslop": 115530,
+      "csslop": 115497,
       "cssnano": 106507,
       "csso": 122377,
       "esbuild": 125637,
@@ -1011,7 +1011,7 @@
     "results": {
       "clean-css": 26829,
       "csskit": 26796,
-      "csslop": 23338,
+      "csslop": 23315,
       "cssnano": 24578,
       "csso": 26286,
       "esbuild": 27129,
@@ -1026,7 +1026,7 @@
     "results": {
       "clean-css": 12264,
       "csskit": 12822,
-      "csslop": 11756,
+      "csslop": 11758,
       "cssnano": 12104,
       "csso": 12300,
       "esbuild": 12724,
@@ -1041,7 +1041,7 @@
     "results": {
       "clean-css": 41378,
       "csskit": 41966,
-      "csslop": 33779,
+      "csslop": 33609,
       "cssnano": "ERROR",
       "csso": 41059,
       "esbuild": 41744,
@@ -1086,7 +1086,7 @@
     "results": {
       "clean-css": 149626,
       "csskit": 150207,
-      "csslop": 134519,
+      "csslop": 130561,
       "cssnano": 135158,
       "csso": 149578,
       "esbuild": 152744,
@@ -1131,7 +1131,7 @@
     "results": {
       "clean-css": 7230,
       "csskit": 7307,
-      "csslop": 6606,
+      "csslop": 6577,
       "cssnano": 7229,
       "csso": 7373,
       "esbuild": 7446,
@@ -1191,7 +1191,7 @@
     "results": {
       "clean-css": 60960,
       "csskit": 63683,
-      "csslop": 55168,
+      "csslop": 55137,
       "cssnano": 56781,
       "csso": 59119,
       "esbuild": 63057,
@@ -1221,7 +1221,7 @@
     "results": {
       "clean-css": 13405,
       "csskit": 12858,
-      "csslop": 7210,
+      "csslop": 7150,
       "cssnano": 7562,
       "csso": 13390,
       "esbuild": 13071,
@@ -1266,7 +1266,7 @@
     "results": {
       "clean-css": "ERROR",
       "csskit": 22988,
-      "csslop": 22792,
+      "csslop": 22776,
       "cssnano": 23056,
       "csso": "ERROR",
       "esbuild": 23354,
@@ -1296,7 +1296,7 @@
     "results": {
       "clean-css": 39651,
       "csskit": 39691,
-      "csslop": 37609,
+      "csslop": 37525,
       "cssnano": 21676,
       "csso": 21604,
       "esbuild": 39746,
@@ -1341,7 +1341,7 @@
     "results": {
       "clean-css": 39220,
       "csskit": 42484,
-      "csslop": 22213,
+      "csslop": 22196,
       "cssnano": 20763,
       "csso": 38048,
       "esbuild": 41566,
@@ -1371,7 +1371,7 @@
     "results": {
       "clean-css": 24042,
       "csskit": 24096,
-      "csslop": 21815,
+      "csslop": 21821,
       "cssnano": 22719,
       "csso": 23990,
       "esbuild": 24223,
@@ -1401,7 +1401,7 @@
     "results": {
       "clean-css": 252550,
       "csskit": 258149,
-      "csslop": 230311,
+      "csslop": 230059,
       "cssnano": 219931,
       "csso": 252766,
       "esbuild": 253587,
@@ -1416,7 +1416,7 @@
     "results": {
       "clean-css": 3931,
       "csskit": 3948,
-      "csslop": 3643,
+      "csslop": 3599,
       "cssnano": 3580,
       "csso": 3846,
       "esbuild": 3941,
@@ -1446,7 +1446,7 @@
     "results": {
       "clean-css": 14945,
       "csskit": 17294,
-      "csslop": 10040,
+      "csslop": 10013,
       "cssnano": 10622,
       "csso": 17215,
       "esbuild": 17473,
@@ -1476,7 +1476,7 @@
     "results": {
       "clean-css": 46654,
       "csskit": 47230,
-      "csslop": 44628,
+      "csslop": 44610,
       "cssnano": 45078,
       "csso": 46079,
       "esbuild": 47177,
@@ -1506,7 +1506,7 @@
     "results": {
       "clean-css": "ERROR",
       "csskit": 60734,
-      "csslop": 55615,
+      "csslop": 55590,
       "cssnano": 60624,
       "csso": 44650,
       "esbuild": 61363,
@@ -1596,7 +1596,7 @@
     "results": {
       "clean-css": 7870,
       "csskit": 12183,
-      "csslop": 11189,
+      "csslop": 11112,
       "cssnano": 11930,
       "csso": 10017,
       "esbuild": 12156,
@@ -1626,7 +1626,7 @@
     "results": {
       "clean-css": 283568,
       "csskit": 277498,
-      "csslop": 279180,
+      "csslop": 279009,
       "cssnano": 281510,
       "csso": 279501,
       "esbuild": 283173,
@@ -1716,7 +1716,7 @@
     "results": {
       "clean-css": 6253,
       "csskit": 6013,
-      "csslop": 6090,
+      "csslop": 6064,
       "cssnano": 5984,
       "csso": 5979,
       "esbuild": 6248,
@@ -1806,7 +1806,7 @@
     "results": {
       "clean-css": 126183,
       "csskit": 126607,
-      "csslop": 119429,
+      "csslop": 119287,
       "cssnano": 123063,
       "csso": 122211,
       "esbuild": 126812,
@@ -1821,7 +1821,7 @@
     "results": {
       "clean-css": 24203,
       "csskit": 23005,
-      "csslop": 19779,
+      "csslop": 19792,
       "cssnano": 21926,
       "csso": 22943,
       "esbuild": 24275,
@@ -1836,7 +1836,7 @@
     "results": {
       "clean-css": 38537,
       "csskit": 39076,
-      "csslop": 37037,
+      "csslop": 37021,
       "cssnano": 38011,
       "csso": 39523,
       "esbuild": 39231,
@@ -1851,7 +1851,7 @@
     "results": {
       "clean-css": 86572,
       "csskit": 86101,
-      "csslop": 81679,
+      "csslop": 81681,
       "cssnano": 83229,
       "csso": 87845,
       "esbuild": 87252,
@@ -1881,7 +1881,7 @@
     "results": {
       "clean-css": 6924,
       "csskit": 7162,
-      "csslop": 6904,
+      "csslop": 6839,
       "cssnano": 7069,
       "csso": 7034,
       "esbuild": 7176,
@@ -1896,7 +1896,7 @@
     "results": {
       "clean-css": 7797,
       "csskit": 7776,
-      "csslop": 7204,
+      "csslop": 7205,
       "cssnano": 7454,
       "csso": 7807,
       "esbuild": 7946,
@@ -1926,7 +1926,7 @@
     "results": {
       "clean-css": 7391,
       "csskit": 7340,
-      "csslop": 6649,
+      "csslop": 6650,
       "cssnano": 7242,
       "csso": 7361,
       "esbuild": 7417,
@@ -1971,7 +1971,7 @@
     "results": {
       "clean-css": 15422,
       "csskit": 15478,
-      "csslop": 15238,
+      "csslop": 15237,
       "cssnano": 15338,
       "csso": 15743,
       "esbuild": 15682,
@@ -2076,7 +2076,7 @@
     "results": {
       "clean-css": 51410,
       "csskit": 52657,
-      "csslop": 50185,
+      "csslop": 50186,
       "cssnano": 50527,
       "csso": 51322,
       "esbuild": 51907,
@@ -2091,7 +2091,7 @@
     "results": {
       "clean-css": 44951,
       "csskit": 47135,
-      "csslop": 44299,
+      "csslop": 44284,
       "cssnano": 44715,
       "csso": 44798,
       "esbuild": 45507,
@@ -2151,7 +2151,7 @@
     "results": {
       "clean-css": 84846,
       "csskit": 86697,
-      "csslop": 82813,
+      "csslop": 82797,
       "cssnano": 83492,
       "csso": 84242,
       "esbuild": 85937,
@@ -2166,7 +2166,7 @@
     "results": {
       "clean-css": 2099,
       "csskit": 2096,
-      "csslop": 1843,
+      "csslop": 1828,
       "cssnano": 2025,
       "csso": 2095,
       "esbuild": 2069,
@@ -2196,7 +2196,7 @@
     "results": {
       "clean-css": 94865,
       "csskit": 93820,
-      "csslop": 88988,
+      "csslop": 88932,
       "cssnano": 90031,
       "csso": 94308,
       "esbuild": 94019,
@@ -2226,7 +2226,7 @@
     "results": {
       "clean-css": 32817,
       "csskit": 33415,
-      "csslop": 26964,
+      "csslop": 26923,
       "cssnano": 23096,
       "csso": 32213,
       "esbuild": 33351,
@@ -2331,7 +2331,7 @@
     "results": {
       "clean-css": 6790,
       "csskit": 6845,
-      "csslop": 3845,
+      "csslop": 3775,
       "cssnano": 3865,
       "csso": 6815,
       "esbuild": 6814,
@@ -2361,7 +2361,7 @@
     "results": {
       "clean-css": 46336,
       "csskit": 46036,
-      "csslop": 43371,
+      "csslop": 43317,
       "cssnano": 43749,
       "csso": 45780,
       "esbuild": 46266,
@@ -2376,7 +2376,7 @@
     "results": {
       "clean-css": 63732,
       "csskit": 65080,
-      "csslop": 60989,
+      "csslop": 60990,
       "cssnano": 62037,
       "csso": 62929,
       "esbuild": 64766,
@@ -2391,7 +2391,7 @@
     "results": {
       "clean-css": 20776,
       "csskit": 20946,
-      "csslop": 19710,
+      "csslop": 19706,
       "cssnano": 19365,
       "csso": 20457,
       "esbuild": 20959,
@@ -2406,7 +2406,7 @@
     "results": {
       "clean-css": 27828,
       "csskit": 27896,
-      "csslop": 26909,
+      "csslop": 26906,
       "cssnano": 27416,
       "csso": 27844,
       "esbuild": 28309,
@@ -2436,7 +2436,7 @@
     "results": {
       "clean-css": 132202,
       "csskit": 140824,
-      "csslop": 139792,
+      "csslop": 139316,
       "cssnano": 130658,
       "csso": "ERROR",
       "esbuild": 146670,
@@ -2466,7 +2466,7 @@
     "results": {
       "clean-css": 25732,
       "csskit": 29420,
-      "csslop": 20107,
+      "csslop": 20110,
       "cssnano": 23825,
       "csso": 25669,
       "esbuild": 29170,
@@ -2481,7 +2481,7 @@
     "results": {
       "clean-css": 14549,
       "csskit": 14680,
-      "csslop": 13352,
+      "csslop": 12839,
       "cssnano": 14220,
       "csso": 13808,
       "esbuild": 14537,
@@ -2496,7 +2496,7 @@
     "results": {
       "clean-css": 9402,
       "csskit": 9786,
-      "csslop": 8191,
+      "csslop": 7764,
       "cssnano": "ERROR",
       "csso": 9329,
       "esbuild": 9682,
@@ -2571,7 +2571,7 @@
     "results": {
       "clean-css": 294154,
       "csskit": 288660,
-      "csslop": 262677,
+      "csslop": 262608,
       "cssnano": 288588,
       "csso": 285454,
       "esbuild": 293879,
@@ -2631,7 +2631,7 @@
     "results": {
       "clean-css": 8340,
       "csskit": 8385,
-      "csslop": 7874,
+      "csslop": 7820,
       "cssnano": 7910,
       "csso": 8119,
       "esbuild": 8317,
@@ -2676,7 +2676,7 @@
     "results": {
       "clean-css": 280294,
       "csskit": 285176,
-      "csslop": 279160,
+      "csslop": 279102,
       "cssnano": 275714,
       "csso": 279768,
       "esbuild": 281131,
@@ -2691,7 +2691,7 @@
     "results": {
       "clean-css": 68668,
       "csskit": 70032,
-      "csslop": 45872,
+      "csslop": 45834,
       "cssnano": 22174,
       "csso": 66389,
       "esbuild": 69781,
@@ -2721,7 +2721,7 @@
     "results": {
       "clean-css": 26419,
       "csskit": 26963,
-      "csslop": 17697,
+      "csslop": 17673,
       "cssnano": "ERROR",
       "csso": 20863,
       "esbuild": 27024,
@@ -2736,7 +2736,7 @@
     "results": {
       "clean-css": 4397,
       "csskit": 3561,
-      "csslop": 3534,
+      "csslop": 3503,
       "cssnano": 2840,
       "csso": 4345,
       "esbuild": 3848,
@@ -2856,7 +2856,7 @@
     "results": {
       "clean-css": 16445,
       "csskit": 16710,
-      "csslop": 15237,
+      "csslop": 14639,
       "cssnano": 14954,
       "csso": 16468,
       "esbuild": 14836,
@@ -2931,7 +2931,7 @@
     "results": {
       "clean-css": 11607,
       "csskit": 12407,
-      "csslop": 12036,
+      "csslop": 11962,
       "cssnano": 12361,
       "csso": 11037,
       "esbuild": 12472,
@@ -2946,7 +2946,7 @@
     "results": {
       "clean-css": 7855,
       "csskit": 7846,
-      "csslop": 7484,
+      "csslop": 7468,
       "cssnano": 5494,
       "csso": 7734,
       "esbuild": 7879,
