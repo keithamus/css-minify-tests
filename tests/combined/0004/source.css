@@ -1,0 +1,11 @@
+p {
+  background: linear-gradient(
+    to bottom,
+    #ff0000 0%,
+    hsl(0, 100%, 50%) 25%,
+    rgb(255, 0, 0) 50%,
+    blue 50%,
+    #0000ff 100%
+  );
+  background-position: right bottom;
+}

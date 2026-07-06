@@ -1,0 +1,11 @@
+a {
+  background-color: red;
+  background-image: linear-gradient(red, tan);
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-origin: padding-box;
+  background-clip: content-box;
+}
