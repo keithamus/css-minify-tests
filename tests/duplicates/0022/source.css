@@ -1,0 +1,6 @@
+h2:before {
+  content: "i";
+}
+h2::before {
+  content: "j";
+}
