@@ -1,4 +1,4 @@
-# Combine background properites into shorthand
+# Combine background properties into shorthand
 
-The background properites shown in this test can all be combined into a single
+The background properties shown in this test can all be combined into a single
 shorthange `background` property.
