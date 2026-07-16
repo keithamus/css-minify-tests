@@ -1,4 +1,4 @@
-# `background-color: initial` must not shorten
+# Shorten `background-color: initial` to use `#0000`
 
 The initial value of `background-color` is `transparent`, which is longer than
 `initial`. So it should not be replaced with the `transparent` keyword. However,
