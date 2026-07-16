@@ -172,12 +172,16 @@ In `lib/loaders/loadAllMinifiers.js`:
    for version lookups and display).
 
 ```js
-import myMinifier from "../minifiers/my-minifier.js";
+import myMinifier from '../minifiers/my-minifier.js';
 
-export const registry = new Map([
-  // ... existing entries ...
-  ["my-minifier", myMinifier],
-]);
+export const registry = Object.freeze({
+  'my-minifier': {
+    title: 'My Minifier',
+    url: 'https://my-minifier.github.io/playground',
+    minify: myMinifier
+  },
+  // ...other existing minifiers
+});
 ```
 
 ### 4. Run the tests
