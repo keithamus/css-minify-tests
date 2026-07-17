@@ -1,0 +1,8 @@
+p {
+  background: radial-gradient(
+    circle farthest-side at 0% 0%,
+    #000 0% 25%,
+    #ff0 50% 100%,
+    #000 100% 100%
+  );
+}
