@@ -1,3 +1,4 @@
 a {
-  width: calc(100% * 2);
+  margin: calc(var(--foo) * 2);
+  padding: calc(var(--foo) / 2);
 }
