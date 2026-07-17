@@ -4383,11 +4383,11 @@
     "clean-css": false,
     "csskit": false,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": true,
     "esbuild": false,
     "lightningcss": false,
-    "sass": false
+    "sass": true
   },
   "whitespace/0013": {
     "clean-css": false,

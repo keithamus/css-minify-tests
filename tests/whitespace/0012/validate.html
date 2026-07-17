@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../../../validate.css">
     <title>Validate: calc() * operator space removal</title>
+    <style>
+      .test {
+        --foo: 100%;
+        background: red;
+        height: 20px;
+      }
+    </style>
   </head>
   <body>
     <div class="compare">
@@ -11,10 +18,7 @@
         <h2>Source (unminified)</h2>
         <style>
         .source.test {
-          --foo: 100%;
           width: calc(var(--foo) * 2);
-          background: red;
-          height: 20px;
         }
         </style>
         <div style="width:50%;overflow:hidden">
@@ -24,7 +28,7 @@
       <div>
         <h2>Expected (minified)</h2>
         <style>
-        .expected.test{--foo:100%;width:calc(var(--foo)*2);background:red;height:20px}
+        .expected.test{width:calc(var(--foo)*2)}
         </style>
         <div style="width:50%;overflow:hidden">
           <div class="expected test"></div>
