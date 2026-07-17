@@ -1579,6 +1579,46 @@
     "lightningcss": false,
     "sass": false
   },
+  "gradients/0008": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "gradients/0009": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "gradients/0010": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "gradients/0011": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "import/0001": {
     "clean-css": false,
     "csskit": true,
