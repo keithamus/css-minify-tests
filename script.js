@@ -64,6 +64,11 @@ window.addEventListener('hashchange', openHash);
   const reversed = [...data].reverse();
   const minifierNames = Object.keys(reversed[0].minifiers);
 
+  // Gets the largest test count and rounds up to nearest 100th
+  const max = Math.ceil(Math.max(...data.map((result) => {
+    return result.testCount;
+  })) / 100) * 100;
+
   const series = minifierNames.map((name) => ({
     name,
     data: reversed
@@ -74,7 +79,7 @@ window.addEventListener('hashchange', openHash);
         }
         return {
           x: new Date(entry.date).getTime(),
-          y: Math.round((m.pass / m.total) * 1000) / 10
+          y: m.pass
         };
       })
       .filter(Boolean)
@@ -104,9 +109,9 @@ window.addEventListener('hashchange', openHash);
       }
     },
     yaxis: {
-      title: { text: 'Pass Rate (%)' },
+      title: { text: 'Total Passing Tests' },
       min: 0,
-      max: 100,
+      max,
       decimalsInFloat: 1
     },
     tooltip: {
