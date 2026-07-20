@@ -4269,6 +4269,26 @@
     "lightningcss": false,
     "sass": false
   },
+  "values-advanced/0001": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": false,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "values-advanced/0002": {
+    "clean-css": true,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": true
+  },
   "whitespace/0001": {
     "clean-css": true,
     "csskit": true,
