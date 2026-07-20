@@ -1,0 +1,4 @@
+div {
+  mask-image: url("masks.svg#mask1");
+  -webkit-mask-image: url("masks.svg#mask1");
+}
