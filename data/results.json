@@ -776,7 +776,7 @@
     "cssnano": false,
     "csso": false,
     "esbuild": false,
-    "lightningcss": false,
+    "lightningcss": true,
     "sass": false
   },
   "combined/0001": {
@@ -796,7 +796,7 @@
     "cssnano": false,
     "csso": false,
     "esbuild": false,
-    "lightningcss": false,
+    "lightningcss": true,
     "sass": false
   },
   "combined/0003": {
