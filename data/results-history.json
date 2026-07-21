@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-07-21T11:56:12.925Z",
+    "date": "2026-07-21T12:24:07.785Z",
     "testCount": 464,
     "minifiers": {
       "clean-css": {
@@ -10,7 +10,7 @@
       },
       "csskit": {
         "version": "0.0.27",
-        "pass": 177,
+        "pass": 178,
         "total": 464
       },
       "csslop": {
@@ -25,17 +25,17 @@
       },
       "csso": {
         "version": "5.0.5",
-        "pass": 165,
+        "pass": 166,
         "total": 464
       },
       "esbuild": {
         "version": "0.28.1",
-        "pass": 197,
+        "pass": 198,
         "total": 464
       },
       "lightningcss": {
         "version": "1.33.0",
-        "pass": 298,
+        "pass": 299,
         "total": 464
       },
       "sass": {

@@ -2241,12 +2241,12 @@
   },
   "selectors/0003": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
     "sass": false
   },
   "selectors/0004": {
