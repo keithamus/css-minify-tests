@@ -1,1 +1,1 @@
-a{width:calc(100%*2)}
+a{margin:calc(var(--foo)*2);padding:calc(var(--foo)/2)}

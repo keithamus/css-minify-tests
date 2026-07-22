@@ -55,7 +55,7 @@
       "cssnano": 19040,
       "csso": 19073,
       "esbuild": 19250,
-      "lightningcss": "ERROR",
+      "lightningcss": 18996,
       "sass": "ERROR"
     }
   },
@@ -295,7 +295,7 @@
       "cssnano": 88317,
       "csso": 110077,
       "esbuild": 117202,
-      "lightningcss": "ERROR",
+      "lightningcss": 79595,
       "sass": 122319
     }
   },
@@ -790,7 +790,7 @@
       "cssnano": "ERROR",
       "csso": 1188,
       "esbuild": 1668,
-      "lightningcss": "ERROR",
+      "lightningcss": 647,
       "sass": "ERROR"
     }
   },
@@ -805,7 +805,7 @@
       "cssnano": 3005,
       "csso": 4077,
       "esbuild": 4120,
-      "lightningcss": "ERROR",
+      "lightningcss": 2533,
       "sass": 4173
     }
   },
@@ -820,7 +820,7 @@
       "cssnano": 38462,
       "csso": 18840,
       "esbuild": 39362,
-      "lightningcss": "ERROR",
+      "lightningcss": 38618,
       "sass": "ERROR"
     }
   },
@@ -850,7 +850,7 @@
       "cssnano": "ERROR",
       "csso": 142134,
       "esbuild": 145949,
-      "lightningcss": "ERROR",
+      "lightningcss": 143328,
       "sass": "ERROR"
     }
   },
@@ -865,7 +865,7 @@
       "cssnano": 5653,
       "csso": 5523,
       "esbuild": 5895,
-      "lightningcss": "ERROR",
+      "lightningcss": 5624,
       "sass": 5982
     }
   },
@@ -880,7 +880,7 @@
       "cssnano": 36812,
       "csso": 19479,
       "esbuild": 37632,
-      "lightningcss": "ERROR",
+      "lightningcss": 36602,
       "sass": "ERROR"
     }
   },
@@ -925,7 +925,7 @@
       "cssnano": "ERROR",
       "csso": 20247,
       "esbuild": 22731,
-      "lightningcss": "ERROR",
+      "lightningcss": 22006,
       "sass": "ERROR"
     }
   },
@@ -955,7 +955,7 @@
       "cssnano": 106507,
       "csso": 122377,
       "esbuild": 125637,
-      "lightningcss": "ERROR",
+      "lightningcss": 109741,
       "sass": 131611
     }
   },
@@ -985,7 +985,7 @@
       "cssnano": 47831,
       "csso": 55557,
       "esbuild": 56313,
-      "lightningcss": "ERROR",
+      "lightningcss": 50780,
       "sass": 57605
     }
   },
@@ -1060,7 +1060,7 @@
       "cssnano": 1708,
       "csso": 1783,
       "esbuild": 1790,
-      "lightningcss": "ERROR",
+      "lightningcss": 1712,
       "sass": 1801
     }
   },
@@ -1090,7 +1090,7 @@
       "cssnano": 135158,
       "csso": 149578,
       "esbuild": 152744,
-      "lightningcss": "ERROR",
+      "lightningcss": 137702,
       "sass": 152297
     }
   },
@@ -1450,7 +1450,7 @@
       "cssnano": 10622,
       "csso": 17215,
       "esbuild": 17473,
-      "lightningcss": "ERROR",
+      "lightningcss": 16343,
       "sass": 17859
     }
   },
@@ -1870,7 +1870,7 @@
       "cssnano": 4736,
       "csso": 4825,
       "esbuild": 4825,
-      "lightningcss": "ERROR",
+      "lightningcss": 4664,
       "sass": 4886
     }
   },
@@ -2155,7 +2155,7 @@
       "cssnano": 83492,
       "csso": 84242,
       "esbuild": 85937,
-      "lightningcss": "ERROR",
+      "lightningcss": 83264,
       "sass": 89020
     }
   },
@@ -2335,7 +2335,7 @@
       "cssnano": 3865,
       "csso": 6815,
       "esbuild": 6814,
-      "lightningcss": "ERROR",
+      "lightningcss": 4324,
       "sass": 7005
     }
   },
@@ -2440,7 +2440,7 @@
       "cssnano": 130658,
       "csso": "ERROR",
       "esbuild": 146670,
-      "lightningcss": "ERROR",
+      "lightningcss": 0,
       "sass": "ERROR"
     }
   },
@@ -2500,7 +2500,7 @@
       "cssnano": "ERROR",
       "csso": 9329,
       "esbuild": 9682,
-      "lightningcss": "ERROR",
+      "lightningcss": 8964,
       "sass": "ERROR"
     }
   },
@@ -2515,7 +2515,7 @@
       "cssnano": 71221,
       "csso": 76267,
       "esbuild": 75206,
-      "lightningcss": "ERROR",
+      "lightningcss": 71373,
       "sass": 76981
     }
   },
@@ -2695,7 +2695,7 @@
       "cssnano": 22174,
       "csso": 66389,
       "esbuild": 69781,
-      "lightningcss": "ERROR",
+      "lightningcss": 27678,
       "sass": 71416
     }
   },
@@ -2725,7 +2725,7 @@
       "cssnano": "ERROR",
       "csso": 20863,
       "esbuild": 27024,
-      "lightningcss": "ERROR",
+      "lightningcss": 26951,
       "sass": "ERROR"
     }
   },
@@ -2950,7 +2950,7 @@
       "cssnano": 5494,
       "csso": 7734,
       "esbuild": 7879,
-      "lightningcss": "ERROR",
+      "lightningcss": 7545,
       "sass": 7895
     }
   },

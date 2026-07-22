@@ -11,3 +11,4 @@
 .k { color: HSL(0, 100%, 50%); }
 .l { color: hwb(0 0 0); }
 .m { color: HWB(0 0% 0%); }
+.n { color: light-dark(#F00, red); }
