@@ -127,7 +127,8 @@ window.addEventListener('hashchange', openHash);
           const entry = reversed[dataPointIndex];
           const m = entry && entry.minifiers[name];
           const extra = m ? ` (${m.pass}/${m.total} v${m.version})` : '';
-          return y.toFixed(1) + '%' + extra;
+          const percent = ((m.pass / m.total) * 100).toFixed(1) + '%';
+          return percent + extra;
         }
       }
     },
