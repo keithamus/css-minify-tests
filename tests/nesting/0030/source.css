@@ -1,6 +1,8 @@
 .foo {
   color: #000;
-  .bar { color: red;}
+  .bar {
+    color: red;
+  }
 }
 .foo .bar {
   color: red;
