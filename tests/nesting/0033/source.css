@@ -1,0 +1,5 @@
+.c, :is(#a:unsupported,.b) {
+  .f, :is(.d:foo,.e) {
+    color: red;
+  }
+}

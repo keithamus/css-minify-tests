@@ -90,7 +90,7 @@ function createNewTest () {
   const testsPath = getTestsPathFromCLIArguments();
   const nextNumber = getNextNumber(testsPath);
   const testPath = createNewTestFolder(testsPath, nextNumber);
-  const files = ['source.css', 'expected.css', 'README.md'];
+  const files = ['expected.css', 'source.css', 'README.md'];
   createTestFiles(testPath, files);
   openFilesInEditor(testPath, files);
 }
