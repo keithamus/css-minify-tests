@@ -1,0 +1,4 @@
+input {
+  &:not(:active) { opacity: .5; }
+  &[disabled] { opacity: .5; }
+}

@@ -1,0 +1,6 @@
+@custom-media --modern (color), (hover);
+@media (--modern) {
+  a {
+    color: red;
+  }
+}
