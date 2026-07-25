@@ -1,0 +1,9 @@
+.a {
+  background-image: url("no-spaces.png");
+}
+.b {
+  mask-image: url('one space.svg');
+}
+.c {
+  background-image: url('more than one space.png');
+}
