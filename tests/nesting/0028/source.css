@@ -2,5 +2,5 @@
   color: red;
 }
 .a ~ .b {
-  color: blue;
+  color: tan;
 }
