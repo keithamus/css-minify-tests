@@ -7,21 +7,27 @@
   </head>
   <body>
     <div class="compare">
-      <div><h2>Source (unminified)</h2>
-    <style>
-      .source .\2d foo {
-        color: red;
-      }
-    </style>
-    <div class="source"><span class="-foo">Test element</span></div>
+      <div>
+        <h2>Source (unminified)</h2>
+        <style>
+          .source custom\2d component {
+            color: red;
+          }
+        </style>
+        <div class="source">
+          <custom-component>Test element</custom-component>
+        </div>
       </div>
-      <div><h2>Expected (minified)</h2>
-    <style>
-      .expected .-foo {
-        color: red;
-      }
-    </style>
-    <div class="expected"><span class="-foo">Test element</span></div>
+      <div>
+        <h2>Expected (minified)</h2>
+        <style>
+          .expected custom-component {
+            color: red;
+          }
+        </style>
+        <div class="expected">
+          <custom-component>Test element</custom-component>
+        </div>
       </div>
     </div>
     <p>
