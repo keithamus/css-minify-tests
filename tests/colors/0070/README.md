@@ -1,5 +1,4 @@
 # Convert LAB color to keyword name when shorter
 
-The LAB color space with percents that exactly produce a color value that is
-equivalent to `rgb(255, 0, 0)`, or `red`. It can safely be converted to this
-shorter color representation.
+LAB color spaces with percents that exactly produce an in-gamut sRGB color value
+should be converted to hex or color keyword, whichever is shortest.
