@@ -2661,7 +2661,7 @@
     "results": {
       "clean-css": 9328,
       "csskit": 14602,
-      "csslop": 12831,
+      "csslop": 12829,
       "cssnano": 14819,
       "csso": 8529,
       "esbuild": 15568,
@@ -2721,7 +2721,7 @@
     "results": {
       "clean-css": 26419,
       "csskit": 26963,
-      "csslop": 17671,
+      "csslop": 17667,
       "cssnano": "ERROR",
       "csso": 20863,
       "esbuild": 27024,
