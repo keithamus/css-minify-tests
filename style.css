@@ -251,6 +251,22 @@ details iframe {
     text-align: center;
   }
 }
+.detail-outputs,
+.detail-durations {
+  margin-left: calc(calc(1 / var(--colCount)) * 100%);
+  grid-template-columns: repeat(var(--minifiersLength), 1fr);
+}
+.details-source-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.details-playground-link {
+  font-size: 0.65rem;
+  font-style: italic;
+  text-decoration: none;
+}
+
 
 .detail-fail > pre {
   background: color-mix(in lab, var(--fail-bg) 100%, #1E1E1E 50%) !important;
