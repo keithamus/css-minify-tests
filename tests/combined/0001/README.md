@@ -19,8 +19,8 @@ revealed after they've had those optimizations.
 Before attempting to pass this test, first pass the tests it combines:
 
 * `colors/0002` - `#FF0000` -> `red`
-* `combined/0002` - `hsl(0 100 50)` -> `red`
-* `combined/0002` - `rgba(255 0 0 / 1)` -> `red`
+* `colors/0075` - `hsl(0 100 50)` -> `red`
+* `colors/0016` - `rgba(255 0 0 / 1)` -> `red`
 * `duplicates/0007` - `a{color:red}a{color:red}` -> `a{color:red}`
 * `selectors-advanced/0001` - `:is(a,b)` -> `a,b`
 * `selectors-advanced/0018` - `:where(.foo):where([bar])` -> `:where(.foo[bar])`

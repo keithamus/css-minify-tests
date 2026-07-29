@@ -1,0 +1,4 @@
+@property --foo {
+  syntax: "<length>";
+  initial-value: 16px;
+}
