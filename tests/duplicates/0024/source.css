@@ -1,0 +1,6 @@
+:is(div, span, div, span) {
+  color: red;
+}
+:is(.bar, .foo, .bar, .foo) {
+  color: tan;
+}

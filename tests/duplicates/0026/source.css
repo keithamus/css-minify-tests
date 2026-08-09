@@ -1,0 +1,8 @@
+:is(
+  :foo,
+  :foo,
+  :hover,
+  :hover
+) {
+  color: red;
+}

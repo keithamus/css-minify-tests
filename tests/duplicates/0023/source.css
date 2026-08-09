@@ -1,0 +1,5 @@
+body {
+  image-rendering: pixelated;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAIAAACepSOSAAAAIklEQVR42mP4DwZpxjMxGQwQCojQGAg5AvowteK1D4hxIQApumnK5mwMyQAAAABJRU5ErkJggg==);
+  mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAIAAACepSOSAAAAIklEQVR42mP4DwZpxjMxGQwQCojQGAg5AvowteK1D4hxIQApumnK5mwMyQAAAABJRU5ErkJggg==);
+}

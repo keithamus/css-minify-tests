@@ -14,44 +14,44 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@thejaredwilcurt/csslop": "^0.0.19",
+    "@thejaredwilcurt/csslop": "^0.0.20",
     "autoprefixer": "^10.5.4",
     "clean-css": "^5.3.3",
     "cross-env": "^10.1.0",
     "csskit": "^0.0.28",
-    "cssnano": "^8.0.2",
-    "cssnano-preset-advanced": "^8.0.2",
+    "cssnano": "^8.0.4",
+    "cssnano-preset-advanced": "^8.0.4",
     "csso": "^5.0.5",
-    "esbuild": "^0.28.1",
-    "eslint": "^10.8.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.8.1",
     "eslint-config-tjw-base": "^5.0.0",
     "eslint-config-tjw-import-x": "^1.0.1",
     "eslint-config-tjw-jsdoc": "^2.0.1",
     "eslint-plugin-import-x": "^4.17.1",
-    "eslint-plugin-jsdoc": "^63.3.2",
-    "globals": "^17.8.0",
+    "eslint-plugin-jsdoc": "^64.0.2",
+    "globals": "^17.9.0",
     "http-server": "^14.1.1",
     "lightningcss": "^1.33.0",
-    "marked": "^18.0.7",
-    "postcss": "^8.5.24",
+    "marked": "^18.0.9",
+    "postcss": "^8.5.26",
     "pretty-ms": "^9.3.0",
     "real-world-css-libraries": "^1.0.6",
     "sass": "^1.102.0",
-    "shiki": "^4.3.1"
+    "shiki": "^4.4.2"
   },
   "allowScripts": {
     "@parcel/watcher@2.5.6": true,
-    "esbuild@0.28.1": true,
+    "esbuild@0.28.2": true,
     "unrs-resolver@1.12.2": true
   },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "26.5.1"
+      "version": "26.7.0"
     },
     "packageManager": {
       "name": "npm",
-      "version": "11.17.0"
+      "version": "12.0.2"
     }
   }
 }

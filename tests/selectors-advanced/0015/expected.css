@@ -1,1 +1,1 @@
-:is(h1,h2){color:red}
+:is(.foo,h1){color:red}
