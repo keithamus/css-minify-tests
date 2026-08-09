@@ -1,0 +1,8 @@
+:is(
+  custom-component,
+  custom-component,
+  div,
+  div
+) {
+  color: red;
+}
