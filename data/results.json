@@ -879,6 +879,46 @@
     "lightningcss": true,
     "sass": false
   },
+  "colors/0078": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": true,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": false
+  },
+  "colors/0079": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "colors/0080": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": true,
+    "lightningcss": false,
+    "sass": false
+  },
+  "colors/0081": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": true,
+    "lightningcss": false,
+    "sass": false
+  },
   "combined/0001": {
     "clean-css": false,
     "csskit": false,
@@ -1296,6 +1336,46 @@
     "cssnano": false,
     "csso": false,
     "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "duplicates/0023": {
+    "clean-css": true,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
+  },
+  "duplicates/0024": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "duplicates/0025": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "duplicates/0026": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": true,
     "lightningcss": false,
     "sass": false
   },
@@ -4423,7 +4503,7 @@
     "clean-css": true,
     "csskit": false,
     "csslop": true,
-    "cssnano": true,
+    "cssnano": false,
     "csso": false,
     "esbuild": false,
     "lightningcss": true,
