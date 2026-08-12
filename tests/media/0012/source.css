@@ -1,0 +1,5 @@
+@media(width>30em) and (orientation: landscape) {
+  a {
+    color: red;
+  }
+}
