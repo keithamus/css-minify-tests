@@ -4911,7 +4911,7 @@
   },
   "whitespace/0015": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,

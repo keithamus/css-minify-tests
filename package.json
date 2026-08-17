@@ -18,7 +18,7 @@
     "autoprefixer": "^10.5.4",
     "clean-css": "^5.3.3",
     "cross-env": "^10.1.0",
-    "csskit": "^0.0.28",
+    "csskit": "^0.0.29",
     "cssnano": "^8.0.5",
     "cssnano-preset-advanced": "^8.0.5",
     "csso": "^5.0.5",
