@@ -1183,7 +1183,7 @@
     "clean-css": true,
     "csskit": true,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": true,
     "esbuild": true,
     "lightningcss": true,
@@ -1918,6 +1918,26 @@
     "esbuild": false,
     "lightningcss": true,
     "sass": false
+  },
+  "layer/0003": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": false
+  },
+  "layer/0004": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": true
   },
   "media/0001": {
     "clean-css": true,
@@ -3790,14 +3810,14 @@
     "sass": false
   },
   "shorthands/0077": {
-    "clean-css": false,
-    "csskit": true,
+    "clean-css": true,
+    "csskit": false,
     "csslop": true,
-    "cssnano": true,
-    "csso": true,
-    "esbuild": true,
-    "lightningcss": true,
-    "sass": true
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
   },
   "shorthands/0078": {
     "clean-css": false,
