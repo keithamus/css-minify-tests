@@ -1369,6 +1369,16 @@
     "lightningcss": true,
     "sass": true
   },
+  "duplicates/0024": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": true,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "empty-rules/0001": {
     "clean-css": true,
     "csskit": false,
