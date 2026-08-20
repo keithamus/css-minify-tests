@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../validate.css" />
+    <title>Validate: @charset label aliasing</title>
+    <link rel="stylesheet" href="data:text/css;base64,QGNoYXJzZXQgIklTTy04ODU5LTEiOwouYTo6YWZ0ZXJ7Y29udGVudDoi6SJ9Cg==" />
+    <link rel="stylesheet" href="data:text/css;base64,QGNoYXJzZXQgImwxIjsuYjo6YWZ0ZXJ7Y29udGVudDoi6SJ9Cg==" />
+  </head>
+  <body>
+    <div class="compare">
+      <div>
+        <h2>Source (unminified)</h2>
+        <div class="a">Decoded byte 0xE9: </div>
+      </div>
+      <div>
+        <h2>Expected (minified)</h2>
+        <div class="b">Decoded byte 0xE9: </div>
+      </div>
+    </div>
+
+    <p>
+      The two stylesheets above are loaded as bytes, each containing the same
+      single byte <code>0xE9</code> inside a <code>content</code> string. One
+      declares <code>@charset "ISO-8859-1"</code>, the other
+      <code>@charset "l1"</code>. Both must render <code>&eacute;</code>. A
+      <code>&#xFFFD;</code> means the label was not recognised and the file was
+      decoded as UTF-8 instead.
+    </p>
+  </body>
+</html>
