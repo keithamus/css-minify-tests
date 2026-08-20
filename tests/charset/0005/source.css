@@ -1,4 +1,4 @@
-@charset "ISO-8859-1";
+@charset "gbk";
 .foo:before {
   content: "\e61d";
 }
