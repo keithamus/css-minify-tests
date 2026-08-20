@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-08-20T12:37:51.565Z",
+    "date": "2026-08-20T12:42:01.586Z",
     "testCount": 514,
     "minifiers": {
       "clean-css": {
@@ -39,7 +39,7 @@
         "total": 514
       },
       "sass": {
-        "version": "1.102.0",
+        "version": "1.103.0",
         "pass": 143,
         "total": 514
       }
