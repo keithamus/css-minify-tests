@@ -1,11 +1,11 @@
 [
   {
-    "date": "2026-08-18T10:14:57.265Z",
+    "date": "2026-08-20T20:45:21.894Z",
     "testCount": 511,
     "minifiers": {
       "clean-css": {
         "version": "5.3.3",
-        "pass": 172,
+        "pass": 171,
         "total": 511
       },
       "csskit": {
@@ -15,7 +15,7 @@
       },
       "csslop": {
         "version": "0.0.21",
-        "pass": 511,
+        "pass": 510,
         "total": 511
       },
       "cssnano": {
