@@ -2,13 +2,13 @@
   color: red;
 }
 
-@charset 'ISO-8859-15';
+@charset "gbk";
 
 .bar {
   color: tan;
 }
 
-@charset 'ISO-8859-1';
+@charset "big5";
 
 .baz {
   background: red;

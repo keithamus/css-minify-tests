@@ -2,16 +2,16 @@
   {
     "name": "TOTALS",
     "version": "v0.0.0",
-    "size": 10301848,
+    "size": 10313682,
     "results": {
-      "clean-css": 7396313,
-      "csskit": 7583035,
-      "csslop": 6715041,
-      "cssnano": 6524524,
-      "csso": 7167839,
-      "esbuild": 7699555,
-      "lightningcss": 6584355,
-      "sass": 7289904
+      "clean-css": 7406466,
+      "csskit": 7593371,
+      "csslop": 6725203,
+      "cssnano": 6534765,
+      "csso": 7178482,
+      "esbuild": 7709875,
+      "lightningcss": 6594663,
+      "sass": 7300248
     }
   },
   {
@@ -267,6 +267,21 @@
       "esbuild": 7207,
       "lightningcss": 7087,
       "sass": 7279
+    }
+  },
+  {
+    "name": "Blueprint",
+    "version": "v0.9.1",
+    "size": 11834,
+    "results": {
+      "clean-css": 10153,
+      "csskit": 10336,
+      "csslop": 10162,
+      "cssnano": 10241,
+      "csso": 10643,
+      "esbuild": 10320,
+      "lightningcss": 10308,
+      "sass": 10344
     }
   },
   {

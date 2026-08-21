@@ -1,5 +1,5 @@
-@charset "ISO-8859-1";
-@charset "ISO-8859-15";
+@charset "gbk";
+@charset "big5";
 a {
   color: red;
 }

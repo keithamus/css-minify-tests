@@ -1,93 +1,93 @@
 [
   {
-    "date": "2026-08-20T12:42:01.586Z",
-    "testCount": 514,
+    "date": "2026-08-21T01:42:26.264Z",
+    "testCount": 518,
     "minifiers": {
       "clean-css": {
         "version": "5.3.3",
         "pass": 173,
-        "total": 514
+        "total": 518
       },
       "csskit": {
         "version": "0.0.29",
         "pass": 204,
-        "total": 514
+        "total": 518
       },
       "csslop": {
-        "version": "0.0.22",
-        "pass": 514,
-        "total": 514
+        "version": "0.0.23",
+        "pass": 518,
+        "total": 518
       },
       "cssnano": {
-        "version": "8.0.6",
-        "pass": 244,
-        "total": 514
+        "version": "8.0.7",
+        "pass": 247,
+        "total": 518
       },
       "csso": {
         "version": "5.0.5",
         "pass": 176,
-        "total": 514
+        "total": 518
       },
       "esbuild": {
         "version": "0.28.2",
         "pass": 221,
-        "total": 514
+        "total": 518
       },
       "lightningcss": {
         "version": "1.33.0",
-        "pass": 312,
-        "total": 514
+        "pass": 315,
+        "total": 518
       },
       "sass": {
-        "version": "1.103.0",
-        "pass": 143,
-        "total": 514
+        "version": "1.103.1",
+        "pass": 146,
+        "total": 518
       }
     }
   },
   {
-    "date": "2026-08-18T10:14:57.265Z",
-    "testCount": 511,
+    "date": "2026-08-20T21:14:03.894Z",
+    "testCount": 515,
     "minifiers": {
       "clean-css": {
         "version": "5.3.3",
         "pass": 172,
-        "total": 511
+        "total": 515
       },
       "csskit": {
         "version": "0.0.29",
         "pass": 204,
-        "total": 511
+        "total": 515
       },
       "csslop": {
         "version": "0.0.21",
         "pass": 511,
-        "total": 511
+        "total": 515
       },
       "cssnano": {
         "version": "8.0.5",
-        "pass": 244,
-        "total": 511
+        "pass": 247,
+        "total": 515
       },
       "csso": {
         "version": "5.0.5",
         "pass": 175,
-        "total": 511
+        "total": 515
       },
       "esbuild": {
         "version": "0.28.2",
         "pass": 221,
-        "total": 511
+        "total": 515
       },
       "lightningcss": {
         "version": "1.33.0",
-        "pass": 312,
-        "total": 511
+        "pass": 315,
+        "total": 515
       },
       "sass": {
         "version": "1.102.0",
-        "pass": 143,
-        "total": 511
+        "pass": 146,
+        "total": 515
       }
     }
   },
