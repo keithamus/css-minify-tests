@@ -1,6 +1,52 @@
 [
   {
-    "date": "2026-08-21T01:52:32.293Z",
+    "date": "2026-08-21T22:42:38.396Z",
+    "testCount": 517,
+    "minifiers": {
+      "clean-css": {
+        "version": "5.3.3",
+        "pass": 173,
+        "total": 517
+      },
+      "csskit": {
+        "version": "0.0.29",
+        "pass": 204,
+        "total": 517
+      },
+      "csslop": {
+        "version": "0.0.23",
+        "pass": 517,
+        "total": 517
+      },
+      "cssnano": {
+        "version": "8.0.7",
+        "pass": 247,
+        "total": 517
+      },
+      "csso": {
+        "version": "5.0.5",
+        "pass": 175,
+        "total": 517
+      },
+      "esbuild": {
+        "version": "0.28.2",
+        "pass": 221,
+        "total": 517
+      },
+      "lightningcss": {
+        "version": "1.33.0",
+        "pass": 315,
+        "total": 517
+      },
+      "sass": {
+        "version": "1.103.1",
+        "pass": 146,
+        "total": 517
+      }
+    }
+  },
+  {
+    "date": "2026-08-21T19:03:46.303Z",
     "testCount": 518,
     "minifiers": {
       "clean-css": {
@@ -14,18 +60,18 @@
         "total": 518
       },
       "csslop": {
-        "version": "0.0.23",
-        "pass": 518,
+        "version": "0.0.21",
+        "pass": 512,
         "total": 518
       },
       "cssnano": {
-        "version": "8.0.7",
-        "pass": 247,
+        "version": "8.0.5",
+        "pass": 249,
         "total": 518
       },
       "csso": {
         "version": "5.0.5",
-        "pass": 176,
+        "pass": 175,
         "total": 518
       },
       "esbuild": {
@@ -35,12 +81,12 @@
       },
       "lightningcss": {
         "version": "1.33.0",
-        "pass": 315,
+        "pass": 318,
         "total": 518
       },
       "sass": {
-        "version": "1.103.1",
-        "pass": 146,
+        "version": "1.102.0",
+        "pass": 148,
         "total": 518
       }
     }
