@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-08-21T01:42:26.264Z",
+    "date": "2026-08-21T01:52:32.293Z",
     "testCount": 518,
     "minifiers": {
       "clean-css": {
@@ -88,6 +88,52 @@
         "version": "1.102.0",
         "pass": 146,
         "total": 515
+      }
+    }
+  },
+  {
+    "date": "2026-08-20T20:45:21.894Z",
+    "testCount": 511,
+    "minifiers": {
+      "clean-css": {
+        "version": "5.3.3",
+        "pass": 171,
+        "total": 511
+      },
+      "csskit": {
+        "version": "0.0.29",
+        "pass": 204,
+        "total": 511
+      },
+      "csslop": {
+        "version": "0.0.21",
+        "pass": 510,
+        "total": 511
+      },
+      "cssnano": {
+        "version": "8.0.5",
+        "pass": 244,
+        "total": 511
+      },
+      "csso": {
+        "version": "5.0.5",
+        "pass": 175,
+        "total": 511
+      },
+      "esbuild": {
+        "version": "0.28.2",
+        "pass": 221,
+        "total": 511
+      },
+      "lightningcss": {
+        "version": "1.33.0",
+        "pass": 312,
+        "total": 511
+      },
+      "sass": {
+        "version": "1.102.0",
+        "pass": 143,
+        "total": 511
       }
     }
   },
