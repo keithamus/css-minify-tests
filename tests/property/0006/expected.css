@@ -1,0 +1,1 @@
+@property --foo{inherits:false}@property --bar{initial-value:red}@property --baz{inherits:false;initial-value:red}
