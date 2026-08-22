@@ -1,4 +1,15 @@
 @property --foo {
-  syntax: "<length>";
-  initial-value: 16px;
+  syntax: "*";
+  inherits: false;
+}
+
+@property --bar {
+  syntax: "*";
+  initial-value: red;
+}
+
+@property --baz {
+  syntax: "*";
+  inherits: false;
+  initial-value: red;
 }

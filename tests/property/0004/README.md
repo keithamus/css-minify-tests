@@ -1,9 +1,3 @@
-# Remove `@property` that only contains a comment
+# Remove comment-only `@property` rule
 
-From [the spec](https://drafts.css-houdini.org/css-properties-values-api/#at-ruledef-property):
-
-> `@property` rules require a `syntax` and `inherits` descriptor. If either are
-missing, the entire rule is invalid and must be ignored. The `initial-value`
-descriptor is optional only if the syntax is the `universal syntax definition`
-(`"*"`), otherwise the descriptor is required; if it is missing, the entire rule
-is invalid and must be ignored.
+A rule with only a comment and no descriptors is equivalent to an unregistered property and can be safely removed. See https://drafts.css-houdini.org/css-properties-values-api-1/#at-property-rule.

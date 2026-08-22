@@ -1,5 +1,3 @@
-# `@property` descriptor preservation
+# Omit default `inherits: true`
 
-All three descriptors (`syntax`, `inherits`, `initial-value`) are required and
-must not be removed or altered. The `syntax` string quotes are required.
-Changing `inherits` silently breaks inheritance behavior.
+The `inherits` descriptor defaults to `true`. When present with meaningful `syntax` and `initial-value`, it can be safely omitted. See https://drafts.css-houdini.org/css-properties-values-api-1/#at-property-rule.

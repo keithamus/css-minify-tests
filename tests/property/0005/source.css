@@ -1,4 +1,12 @@
 @property --foo {
-  inherits: false;
-  initial-value: 16px;
+  inherits: true;
+}
+
+@property --bar {
+  syntax: "*";
+}
+
+@property --baz {
+  syntax: "*";
+  inherits: true;
 }

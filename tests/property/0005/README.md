@@ -1,9 +1,3 @@
-# Remove `@property` missing `syntax` descriptor
+# Remove no-op `@property` rules
 
-From [the spec](https://drafts.css-houdini.org/css-properties-values-api/#at-ruledef-property):
-
-> `@property` rules require a `syntax` and `inherits` descriptor. If either are
-missing, the entire rule is invalid and must be ignored. The `initial-value`
-descriptor is optional only if the syntax is the `universal syntax definition`
-(`"*"`), otherwise the descriptor is required; if it is missing, the entire rule
-is invalid and must be ignored.
+`syntax` defaults to `"*"`, `inherits` defaults to `true`, and `initial-value` defaults to guaranteed-invalid. These three registrations use only default values and are equivalent to unregistered custom properties, so they can be safely removed.
