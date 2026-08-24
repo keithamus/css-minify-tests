@@ -1,1 +1,1 @@
-@property --foo{initial-value:red}
+@property --foo{syntax:"*";inherits:false}
