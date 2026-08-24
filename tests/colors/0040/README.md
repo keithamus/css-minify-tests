@@ -1,6 +1,7 @@
-# Inner colors minified inside color-mix()
+# color-mix() percentages below 100% produce semi-transparent result
 
-`color-mix(in oklch, rgba(255, 255, 255, 1), currentcolor)` — the color-mix
-cannot be statically resolved because `currentcolor` is dynamic, but the inner
-`rgba(255, 255, 255, 1)` can be shortened to `#fff`. Minifiers should optimize
-individual color arguments even when the overall mix must be preserved.
+`color-mix(in srgb, red 30%, blue 30%)` — the percentages sum to 60%, not 100%.
+Per CSS Color 5, the mix is normalized to 50%/50% but the alpha of the result
+is multiplied by `sum / 100 = 0.6`. The result is rgba(128, 0, 128, 0.6),
+i.e. a semi-transparent purple. A minifier that resolves this to opaque `purple`
+would be incorrect: the alpha multiplier would be lost.

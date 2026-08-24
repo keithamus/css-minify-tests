@@ -1,5 +1,5 @@
-# color-mix with var(): minify hsl to named color
+# Named color to hex enables space elision
 
-`hsl(0, 100%, 50%)` inside a `color-mix()` with a `var()` second argument can
-still be shortened to `red`. The var() prevents resolving the mix, but each
-literal color argument is independently minifiable.
+`blue` (4 chars) converts to `#00f` (4 chars) which looks like a no-op, but
+`#` is an unambiguous token start so the preceding space can be dropped:
+`1px solid#00f` saves 1 byte over `1px solid blue`.

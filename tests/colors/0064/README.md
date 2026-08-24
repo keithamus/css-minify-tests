@@ -1,6 +1,4 @@
-# Do not convert effectively transparent colors to transparent
+# Numeric HWB values to color keyword
 
-All colors with an alpha of 0, are equivalent to the keyword `transparent`,
-which according to the spec is technically `#0000`. However, a minifier should
-not convert non-black colors with an alpha of 0 to `#0000`, as that will effect
-the blending of the color when used in transitions.
+If an HWB color uses numeric values that could be represented with a shorter
+hex or color keyword representation, use the shortest option.

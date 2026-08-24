@@ -1,3 +1,4 @@
-a {
-  color: lab(54.291% 64.644% 55.913%);
+div {
+  background: var(--gray);
+  color: var(--grey);
 }

@@ -1,6 +1,4 @@
-# Shorten colors in light-dark functions
+# Color-mix in OKLCH to color keyword
 
-The `light-dark(a, b)` CSS functions allows defining two possible colors based
-on the `color-scheme` setting. These will automatically switch when the
-`color-scheme` changes. Both values should be minified to their shortest
-correct representation.
+If all values in the color mix are the same, they can be merged into a single
+color and reduced to its shortest representation.

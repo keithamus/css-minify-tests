@@ -1,4 +1,3 @@
-a {
-  background: light-dark(var(--foo), var(--foo));
-  color: light-dark(red, red);
+button {
+  outline: transparent;
 }

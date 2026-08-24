@@ -1,6 +1,5 @@
-# color-mix() with percentages summing over 100% must normalize
+# In-gamut display-p3 colour is minified to shortest sRGB form
 
-`color-mix(in srgb, red 80%, blue 40%)` — the percentages sum to 120%.
-Per CSS Color 5 percentage normalization, they scale to 66.67%/33.33%.
-The result is rgb(170, 0, 85) = `#a05`. A minifier that treats the percentages
-at face value without normalizing would produce an incorrect color.
+`color(display-p3 0.5 0.5 0.5)` is a neutral grey that is within the sRGB
+gamut. A minifier should convert it to the shortest sRGB representation
+(the named colour `gray`) rather than keeping the longer display-p3 form.

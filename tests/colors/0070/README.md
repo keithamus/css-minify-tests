@@ -1,4 +1,3 @@
-# Convert LAB color to keyword name when shorter
+# Do not rename grey/gray when used in a custom-property name
 
-LAB color spaces with percents that exactly produce an in-gamut sRGB color value
-should be converted to hex or color keyword, whichever is shortest.
+References to custom property names must not be changed.

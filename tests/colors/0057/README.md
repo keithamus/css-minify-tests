@@ -1,4 +1,4 @@
-# Named colors as quoted strings
+# Convert LAB color to keyword name when shorter
 
-When a quoted string contains a named color (`green`, `rebeccapurple`, `salmon`,
-etc) it should not be minified to hex.
+LAB color spaces with percents that exactly produce an in-gamut sRGB color value
+should be converted to hex or color keyword, whichever is shortest.

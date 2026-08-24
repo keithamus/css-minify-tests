@@ -1,5 +1,5 @@
-# color-mix() with 100% first color eliminates to that color
+# Redundant 50% percentages removed from color-mix()
 
-`color-mix(in srgb, red 100%, blue)` means 100% of the first color and 0% of
-the second. The result is just `red`. Minifiers should detect this and replace
-the entire expression with the shortest form of the first color.
+`color-mix(in srgb, currentcolor 50%, red 50%)` — 50%/50% is the default mix
+ratio, so both percentage arguments are redundant and can be removed. The result
+is `color-mix(in srgb, currentcolor, red)`.

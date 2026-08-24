@@ -1,5 +1,5 @@
-# Named color to hex enables space elision
+# color-mix() with 100% first color eliminates to that color
 
-`blue` (4 chars) converts to `#00f` (4 chars) which looks like a no-op, but
-`#` is an unambiguous token start so the preceding space can be dropped:
-`1px solid#00f` saves 1 byte over `1px solid blue`.
+`color-mix(in srgb, red 100%, blue)` means 100% of the first color and 0% of
+the second. The result is just `red`. Minifiers should detect this and replace
+the entire expression with the shortest form of the first color.

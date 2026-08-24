@@ -1,3 +1,4 @@
-a {
-  color: light-dark(#FF0000, rgb(255, 0, 0));
+.b {
+  color: oklch(62.7955% .257683 29.2339);
+  background: oklch(78.6187% .063821 74.619);
 }

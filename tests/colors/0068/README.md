@@ -1,11 +1,7 @@
-# Remove useless calc's in hsl(from)
+# Low precision OKLCH to color keyword
 
-The calculations used here can all be resolved and simplified during runtime.
-
-* `a{color:hsl(from rebeccapurple calc(h)calc(s*1)calc(l + 0)/calc(1 / 1))}`
-* `a{color:hsl(from rebeccapurple calc(h)calc(s*1)calc(l + 0)/1)}`
-* `a{color:hsl(from rebeccapurple calc(h)calc(s*1)l/1)}`
-* `a{color:hsl(from rebeccapurple calc(h)s l/1)}`
-* `a{color:hsl(from rebeccapurple h s l/1)}`
-* `a{color:rebeccapurple}`
-* `a{color:#639}`
+Lower decimal point precision (DPP) OKLCH representations are perceptually
+identical to their higher precision versions. Given a lower precision OKLCH
+color representation that is equivalent to an RGB color value, in this case
+`rgb(255, 0, 0)`, convert it to its shortest hex or named color keyword
+representation.

@@ -1,9 +1,6 @@
-# color(prophoto-rgb) excess precision rounds to 3 decimal places
+# Do not convert effectively transparent colors to transparent
 
-ProPhoto RGB channels are in the 0–1 range. 3dp is well below the perceptual
-JND.
-
-Both colours here are out-of-gamut for sRGB, so they stay in their native
-colour space. In-gamut colours may be minified to hex.
-
-For a lot more detail on this, read [Too Much Color](https://keithcirkel.co.uk/too-much-color).
+All colors with an alpha of 0, are equivalent to the keyword `transparent`,
+which according to the spec is technically `#0000`. However, a minifier should
+not convert non-black colors with an alpha of 0 to `#0000`, as that will effect
+the blending of the color when used in transitions.

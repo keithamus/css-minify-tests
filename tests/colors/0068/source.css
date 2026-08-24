@@ -1,3 +1,4 @@
-a {
-  color: hsl(from rebeccapurple calc(h) calc(s * 1) calc(l + 0) / calc(1 / 1));
+.c {
+  color: oklch(.628 .2577 29.23);
+  background: oklch(.786 .064 74.6);
 }

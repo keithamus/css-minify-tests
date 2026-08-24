@@ -1,5 +1,5 @@
-# color-mix with var(): minify literal color argument
+# color-mix: elide default oklab interpolation space
 
-`rgba(255, 255, 255, 1.0)` inside a `color-mix()` with a `var()` second
-argument can still be shortened to `#fff`. The var() prevents resolving the
-mix, but the literal color is independently minifiable.
+Per CSS Color 5, `oklab` is the default interpolation method for `color-mix()`
+when none is specified. `in oklab` can be elided, saving 9 bytes. Browsers
+already support the omitted form.

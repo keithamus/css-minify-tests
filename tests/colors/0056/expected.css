@@ -1,1 +1,1 @@
-a{color:gray}
+a{--red:#f01;--h:10;color:hsl(from var(--red)calc(var(--h))calc(s*2)calc(l + 1)/.6)}

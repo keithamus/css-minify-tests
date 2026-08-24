@@ -1,5 +1,4 @@
-# color-mix() all-zero percentages become transparent black
+# RRGGBBAA Hex to color keyword
 
-`color-mix(in srgb, red 0%, green 0%, blue 0%)` has all percentages at 0%,
-so the sum is 0% and leftover is 100%. Per CSS Color 5, when leftover equals
-100% the result is transparent black. The shortest representation is `#0000`.
+If a longform hex can be represented with a shortform hex or color keyword, use
+the shortest representation.

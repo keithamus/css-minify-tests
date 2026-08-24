@@ -1,3 +1,6 @@
-# Collapse whitesparound around calc in an hsl(from)
+# Remove space in border shorthand before hex with alpha
 
-Whitespace around adjacent `calc`'s in an `hsl(from)` can be removed.
+The `#` in a hex color is an unambiguous token start, allowing the preceding
+space to be dropped.
+
+**See also:** colors/0034

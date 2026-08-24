@@ -1,5 +1,11 @@
-# In-gamut oklab colour is minified to hex
+# Remove useless calc's in hsl(from)
 
-`oklab(0.5 -0.1 0.1)` is within the sRGB gamut. A minifier should convert it
-to the shortest sRGB representation (`#3c740a`) rather than keeping the
-longer oklab form.
+The calculations used here can all be resolved and simplified during runtime.
+
+* `a{color:hsl(from rebeccapurple calc(h)calc(s*1)calc(l + 0)/calc(1 / 1))}`
+* `a{color:hsl(from rebeccapurple calc(h)calc(s*1)calc(l + 0)/1)}`
+* `a{color:hsl(from rebeccapurple calc(h)calc(s*1)l/1)}`
+* `a{color:hsl(from rebeccapurple calc(h)s l/1)}`
+* `a{color:hsl(from rebeccapurple h s l/1)}`
+* `a{color:rebeccapurple}`
+* `a{color:#639}`

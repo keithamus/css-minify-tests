@@ -1,5 +1,5 @@
-# Redundant "shorter hue" removed from color-mix()
+# color-mix() with 0% second color eliminates to the first color
 
-`color-mix(in oklch shorter hue, currentcolor, red)` — `shorter` is the default
-hue interpolation method for polar color spaces, so `shorter hue` is redundant
-and can be removed. The result is `color-mix(in oklch, currentcolor, red)`.
+`color-mix(in srgb, red, blue 0%)` means the second color contributes nothing.
+The result is just `red`. Minifiers should detect this and replace the entire
+expression with the shortest form of the first color.

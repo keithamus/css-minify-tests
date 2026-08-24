@@ -1,8 +1,8 @@
-# color(a98-rgb) excess precision rounds to 3 decimal places
+# Always shorten the color keyword transparent to hex
 
-A98 RGB channels are in the 0–1 range. 3dp is well below the perceptual JND.
-
-Both colours here are out-of-gamut for sRGB, so they stay in their native
-colour space. In-gamut colours may be minified to hex.
-
-For a lot more detail on this, read [Too Much Color](https://keithcirkel.co.uk/too-much-color).
+According to the [CSS3 color
+specification](https://www.w3.org/TR/css-color-3/#transparent), the color
+keyword `transparent` is equivalent to `rbga(0, 0, 0, 0)`, which can also be
+written as the shortform hex, `#0000`, which is shorter than the keyword. As
+such, all uses of the word "transparent" as a color keyword should be shortend
+to the hex equivalent.

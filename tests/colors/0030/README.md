@@ -1,5 +1,5 @@
-# display-p3 color must not be converted to sRGB
+# color-mix with var(): minify hsl to named color
 
-`color(display-p3 1 0 0)` is a P3 red that cannot be represented in sRGB.
-Converting to hex or rgb would clamp the value and lose the wider gamut intent.
-The color function and space must be preserved.
+`hsl(0, 100%, 50%)` inside a `color-mix()` with a `var()` second argument can
+still be shortened to `red`. The var() prevents resolving the mix, but each
+literal color argument is independently minifiable.

@@ -1,4 +1,5 @@
-# color-mix identity resolves to the color itself
+# display-p3 color must not be converted to sRGB
 
-`color-mix(in srgb, red, red)` mixes a color with itself at equal proportions.
-The result is always the original color regardless of the interpolation space.
+`color(display-p3 1 0 0)` is a P3 red that cannot be represented in sRGB.
+Converting to hex or rgb would clamp the value and lose the wider gamut intent.
+The color function and space must be preserved.

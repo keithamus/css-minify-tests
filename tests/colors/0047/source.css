@@ -1,4 +1,3 @@
 a {
-  color: lch(54.321 100.456 274.456 / 0.74567);
-  background-color: lab(54.321 -60.456 70.789);
+  color: color-mix(in oklab, red, orange, purple);
 }

@@ -1,5 +1,5 @@
-# Shorten colors in light-dark functions and simplify if useless
+# High precision OKLCH to color keyword
 
-After converting both colors in a `light-dark` function to their shortest
-representation, if the results are identical values, then the entire function
-can be replaced by just the value.
+Given a high precision OKLCH color representation that is equivalent to an RGB
+color value, in this case `rgb(255, 0, 0)`, convert it to its shortest hex or
+named color keyword representation.

@@ -1,3 +1,4 @@
 a {
-  color: color(rec2020 0.93456 0.07891 0.02345);
+  background: light-dark(var(--foo), var(--foo));
+  color: light-dark(red, red);
 }
