@@ -1,0 +1,6 @@
+a {
+  animation-timeline: scroll();
+  animation-range: entry;
+  animation-name: spin;
+  animation-duration: 1s;
+}
