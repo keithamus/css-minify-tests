@@ -2,4 +2,4 @@
 
 border-image is declared before border longhands. A minifier collapsing the
 longhands to `border` must reorder it before `border-image`, since `border`
-resets border-image to its initial value.
+resets `border-image` to its initial value.
