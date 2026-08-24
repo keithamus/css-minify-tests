@@ -1,5 +1,4 @@
 @property --foo {
-  syntax: "*";
-  inherits: false;
-  /* initial-value: 0s; */
+  /* syntax: "*"; */
+  initial-value: red;
 }
