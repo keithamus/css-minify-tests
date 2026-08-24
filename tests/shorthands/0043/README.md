@@ -1,4 +1,5 @@
-# border shorthand intentionally resets border-image
+# Logical longhands to margin-inline shorthand
 
-Declaring border-image then `border` resets border-image to none. The
-border-image declaration is dead code and can be removed.
+`margin-inline-start: 10px; margin-inline-end: 10px` merges into
+`margin-inline: 10px`. When both logical sides are equal, the two-value form
+collapses to a single value.

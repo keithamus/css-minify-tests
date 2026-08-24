@@ -1,3 +1,5 @@
-# Overflow 2-to-1 value collapse
+# Padding longhand merge safe with @property constraint
 
-When overflow-x and overflow-y are the same in a 2-value `overflow`, collapse to a single value.
+When each custom property has an `@property` rule constraining its syntax to
+`<length>`, the value is guaranteed valid at parse time. Invalid values are
+rejected and fall back to `initial-value`, so shorthand merge is safe.

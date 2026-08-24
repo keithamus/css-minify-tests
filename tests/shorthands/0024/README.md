@@ -1,3 +1,5 @@
-# place-content longhand merge (same value)
+# font shorthand must not clobber font-variant-ligatures (reorder required)
 
-When align-content and justify-content are the same, they merge into a single-value `place-content`.
+font-variant-ligatures is declared before font longhands. A minifier collapsing
+the longhands to `font` must reorder it before `font-variant-ligatures`, since
+`font` resets font-variant-ligatures to its initial value (`normal`).

@@ -1,3 +1,4 @@
 a {
-  border: medium solid red;
+  font-weight: bold;
+  font: 14px serif;
 }

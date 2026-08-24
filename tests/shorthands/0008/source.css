@@ -1,4 +1,6 @@
 a {
-  overflow-x: hidden;
-  overflow-y: hidden;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
 }

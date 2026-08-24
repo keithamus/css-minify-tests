@@ -1,3 +1,3 @@
-# Text-decoration longhand to shorthand
+# Columns longhand merge
 
-`text-decoration-line/style/color` collapse into `text-decoration` shorthand, omitting `solid` (the default style).
+column-width and column-count merge into the `columns` shorthand.

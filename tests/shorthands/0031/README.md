@@ -1,3 +1,5 @@
-# Transition longhand merge
+# font shorthand must not clobber font-variation-settings (reorder required)
 
-transition-property, transition-duration, transition-timing-function, and transition-delay merge into `transition`. Default values (`ease` timing, `0s` delay) are omitted.
+font-variation-settings is declared before font longhands. A minifier collapsing
+the longhands to `font` must reorder it before `font-variation-settings`, since
+`font` resets font-variation-settings to its initial value (`normal`).

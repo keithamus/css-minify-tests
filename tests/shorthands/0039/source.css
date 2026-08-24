@@ -1,3 +1,5 @@
 a {
-  gap: 10px 10px;
+  border-width: var(--bw, var(--fallback));
+  border-style: var(--bs, solid);
+  border-color: var(--bc, red);
 }

@@ -1,4 +1,4 @@
 a {
-  mask-border: url(mask.png) 25 round;
-  mask: linear-gradient(#000, #0000);
+  inset-block-start: 10px;
+  inset-block: 20px;
 }

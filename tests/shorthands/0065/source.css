@@ -1,4 +1,0 @@
-a {
-  position-try-order: normal;
-  position-try-fallbacks: flip-block, --custom;
-}

@@ -1,3 +1,6 @@
 a {
-  font: normal normal 16px/1.5 Arial, sans-serif;
+  margin-top: 10px !important;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }

@@ -1,4 +1,3 @@
-# Margin 4-to-2 collapse
+# Gap longhand to shorthand
 
-`margin: 10px 20px 10px 20px` collapses to `margin:10px 20px` when top/bottom
-and left/right pairs match.
+`row-gap` and `column-gap` with the same value can be combined into `gap` shorthand.

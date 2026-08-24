@@ -1,5 +1,5 @@
-# mask longhands before mask-border (safe ordering)
+# border-top-color before border-top is dead code
 
-Mask longhands come before `mask-border`. Collapsing longhands to `mask`
-shorthand is safe since `mask-border` already follows and overrides the implicit
-reset.
+`border-top-color: blue` followed by `border-top: 2px solid red` is dead code
+because `border-top` resets `border-top-color`, `border-top-style`, and
+`border-top-width`.

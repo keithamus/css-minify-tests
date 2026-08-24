@@ -1,3 +1,6 @@
 a {
-  inset: 0px 0px 0px 0px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }

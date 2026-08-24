@@ -1,5 +1,5 @@
-# border longhands with border-image longhands (collapse both)
+# position-try-order + fallbacks to position-try shorthand
 
-Both border and border-image expressed as longhands. Minifier should collapse
-each group into its respective shorthand, with `border` ordered before
-`border-image` to avoid the reset clobbering border-image.
+`position-try-order: normal; position-try-fallbacks: flip-block, --custom`
+merges into `position-try: flip-block, --custom`. The `normal` order is the
+initial value and can be omitted in the shorthand.

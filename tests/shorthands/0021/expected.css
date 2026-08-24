@@ -1,1 +1,1 @@
-a{inset:10px 20px}
+a{border:1px solid red;border-image:url(border.png) 30 round}

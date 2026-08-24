@@ -1,4 +1,3 @@
-# Margin 4-to-1 collapse
+# Overflow longhand to shorthand
 
-`margin: 10px 10px 10px 10px` collapses to `margin:10px` when all four values
-are identical.
+`overflow-x` and `overflow-y` with the same value can be combined into `overflow` shorthand.

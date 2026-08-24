@@ -1,3 +1,5 @@
-# list-style longhand merge
+# mask shorthand must not clobber mask-border (reorder required)
 
-list-style-type, list-style-position, and list-style-image merge into `list-style`. Default values (`disc` type, `none` image) can be omitted.
+`mask-border` is declared before mask longhands. A minifier collapsing the
+longhands to `mask` must reorder it before `mask-border`, since `mask` resets
+mask-border to its initial value.

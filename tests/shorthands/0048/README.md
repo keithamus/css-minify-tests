@@ -1,5 +1,4 @@
-# font longhands with font-kerning longhand (collapse, preserve order)
+# margin-top before margin is dead code
 
-Font longhands and font-kerning are both expressed as longhands. Minifier should
-collapse the font longhands into `font` shorthand, keeping `font` before
-`font-kerning` since `font` resets font-kerning to `auto`.
+`margin-top: 10px` followed by `margin: 20px` is dead code because the
+`margin` shorthand resets all four physical sides.

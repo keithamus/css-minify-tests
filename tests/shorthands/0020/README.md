@@ -1,3 +1,5 @@
-# Border-radius slash syntax collapse
+# border shorthand must not clobber border-image (reorder required)
 
-Both horizontal and vertical radii have identical values across all 4 corners, each side collapses to 1 value. The `/` separator must be preserved.
+border-image is declared before border longhands. A minifier collapsing the
+longhands to `border` must reorder it before `border-image`, since `border`
+resets border-image to its initial value.

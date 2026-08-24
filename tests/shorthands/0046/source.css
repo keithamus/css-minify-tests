@@ -1,8 +1,4 @@
 a {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: Arial, sans-serif;
-  font-feature-settings: "smcp" 1;
+  border-block-start: 1px solid blue;
+  border-block: 2px solid red;
 }

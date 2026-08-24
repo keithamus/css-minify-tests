@@ -1,3 +1,4 @@
 a {
-  margin: 10px 20px 10px 20px;
+  row-gap: 10px;
+  column-gap: 10px;
 }

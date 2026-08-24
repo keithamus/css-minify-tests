@@ -1,3 +1,5 @@
-# Font shorthand default value omission
+# Shorthand plus !important override for mixed importance
 
-`normal` is the default for both font-style and font-weight; both can be omitted from the font shorthand.
+When one longhand has `!important`, the longhands can still be partially merged
+into a shorthand followed by the important longhand override. The `!important`
+declaration wins over the shorthand's reset of the same property.

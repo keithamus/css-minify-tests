@@ -1,3 +1,3 @@
-# Flex longhand to shorthand
+# place-items longhand merge (same value)
 
-`flex-grow`, `flex-shrink`, and `flex-basis` can be combined into `flex` shorthand.
+When align-items and justify-items are the same, they merge into a single-value `place-items`.

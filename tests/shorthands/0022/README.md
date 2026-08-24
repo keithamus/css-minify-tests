@@ -1,3 +1,4 @@
-# Margin 2-to-1 value collapse
+# border shorthand intentionally resets border-image
 
-When both values in a 2-value margin are identical, collapse to a single value.
+Declaring border-image then `border` resets border-image to none. The
+border-image declaration is dead code and can be removed.

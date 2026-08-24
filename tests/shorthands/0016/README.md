@@ -1,3 +1,3 @@
-# Border longhand to shorthand
+# Background longhand merge with defaults
 
-All 12 border longhand properties collapse to a single `border` shorthand.
+Background longhands merge into `background` shorthand. All properties at their default values except background-color are omitted.

@@ -1,6 +1,6 @@
 a {
-  border-width: 1px;
-  border-style: solid;
-  border-color: red;
-  border-image: url(border.png) 30 round;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

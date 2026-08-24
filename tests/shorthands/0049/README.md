@@ -1,5 +1,4 @@
-# mask shorthand must not clobber mask-border (reorder required)
+# border-top-width before border-width is dead code
 
-`mask-border` is declared before mask longhands. A minifier collapsing the
-longhands to `mask` must reorder it before `mask-border`, since `mask` resets
-mask-border to its initial value.
+`border-top-width: 1px` followed by `border-width: 2px` is dead code because
+`border-width` resets all four physical border widths.

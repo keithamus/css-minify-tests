@@ -1,5 +1,4 @@
-# font shorthand must not clobber font-variant-ligatures (reorder required)
+# border-top before border is dead code
 
-font-variant-ligatures is declared before font longhands. A minifier collapsing
-the longhands to `font` must reorder it before `font-variant-ligatures`, since
-`font` resets font-variant-ligatures to its initial value (`normal`).
+`border-top: 1px solid blue` followed by `border: 2px solid red` is dead code
+because the `border` shorthand resets all sides including `border-top`.

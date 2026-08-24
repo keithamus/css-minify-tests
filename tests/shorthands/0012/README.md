@@ -1,3 +1,3 @@
-# Border-radius longhand to shorthand
+# place-self longhand merge (same value)
 
-All four `border-*-radius` longhands with the same value collapse into `border-radius` shorthand.
+When align-self and justify-self are the same, they merge into a single-value `place-self`.

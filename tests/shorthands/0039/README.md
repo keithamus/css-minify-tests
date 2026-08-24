@@ -1,3 +1,5 @@
-# Gap 2-to-1 value collapse
+# Border longhand merge unsafe when any var() fallback is unresolvable
 
-When row-gap and column-gap are the same in a 2-value `gap`, collapse to a single value.
+If even one `var()` has an unresolvable fallback (nested `var()`, no fallback,
+etc.), the longhands cannot be safely merged into `border` shorthand because
+the runtime value may expand to something invalid in shorthand context.

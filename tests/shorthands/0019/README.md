@@ -1,3 +1,3 @@
-# Border-radius 4-to-2 value collapse
+# Animation longhand merge
 
-border-radius follows the same top-right-bottom-left collapsing rules as margin/padding.
+All 8 animation longhands merge into `animation` shorthand. Default values (ease, 0s delay, 1 iteration, normal direction, none fill, running) are omitted.

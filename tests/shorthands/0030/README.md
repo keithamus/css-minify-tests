@@ -1,3 +1,4 @@
-# Font longhand merge
+# mask shorthand intentionally resets mask-border
 
-font-style, font-weight, font-size, line-height, and font-family merge into `font` shorthand. `bold` optimizes to `700`.
+Declaring `mask-border` then `mask` resets `mask-border` to its initial value.
+The `mask-border` declaration is therefore dead code that can be removed.

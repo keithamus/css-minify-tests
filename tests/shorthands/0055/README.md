@@ -1,6 +1,6 @@
-# Border longhand merge unsafe with var()
+# Border shorthand with two border-color values
 
-Merging `border-width`, `border-style`, `border-color` into `border` shorthand
-is unsafe when values use `var()`. The variables may expand to multi-value
-strings (e.g. `--border-width: 0 0 0 1px`) which are valid in longhands but
-not in the shorthand form.
+If you have a singular `border-width` and `border-style`, with two
+`border-color`s, then you can create a border short hand using the first
+available color, then override the border-color and it will still be shorter
+than keeping each properties separate.

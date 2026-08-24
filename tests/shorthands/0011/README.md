@@ -1,3 +1,3 @@
-# Outline longhand to shorthand
+# place-content longhand merge (same value)
 
-`outline-width`, `outline-style`, and `outline-color` can be combined into `outline` shorthand.
+When align-content and justify-content are the same, they merge into a single-value `place-content`.

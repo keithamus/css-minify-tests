@@ -1,5 +1,6 @@
-# border shorthand must not clobber border-image (reorder required)
+# Border longhand merge safe with @property constraint
 
-border-image is declared before border longhands. A minifier collapsing the
-longhands to `border` must reorder it before `border-image`, since `border`
-resets border-image to its initial value.
+When each custom property has an `@property` rule constraining its syntax,
+invalid values are rejected at parse time and fall back to `initial-value`.
+The variable is guaranteed to produce a single valid component, so shorthand
+merge is safe.

@@ -1,3 +1,5 @@
-# Background longhand merge with defaults
+# mask longhands before mask-border (safe ordering)
 
-Background longhands merge into `background` shorthand. All properties at their default values except background-color are omitted.
+Mask longhands come before `mask-border`. Collapsing longhands to `mask`
+shorthand is safe since `mask-border` already follows and overrides the implicit
+reset.

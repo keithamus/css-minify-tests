@@ -1,4 +1,8 @@
 a {
-  align-self: center;
-  justify-self: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  font-feature-settings: "smcp" 1;
 }

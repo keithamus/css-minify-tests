@@ -1,3 +1,4 @@
-# Inset 4-to-2 value collapse
+# border longhands then border-image (safe ordering)
 
-The `inset` shorthand follows the same collapsing rules as margin/padding.
+Border longhands come before border-image. Collapsing longhands to `border`
+shorthand is safe since border-image already follows and overrides the reset.

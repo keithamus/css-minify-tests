@@ -1,3 +1,5 @@
 a {
-  margin: 10px 20px 30px 20px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
 }

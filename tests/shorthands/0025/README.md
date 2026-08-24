@@ -1,3 +1,5 @@
-# place-self longhand merge (same value)
+# font longhands before font-feature-settings (safe ordering)
 
-When align-self and justify-self are the same, they merge into a single-value `place-self`.
+Font longhands come before font-feature-settings. Collapsing longhands to `font`
+shorthand is safe since font-feature-settings already follows and overrides the
+implicit reset.

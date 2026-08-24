@@ -1,1 +1,1 @@
-a{outline:1px solid red}
+a{padding-top:var(--pt,10px);padding-right:var(--pr,20px);padding-bottom:var(--pb,10px);padding-left:var(--pl,20px)}

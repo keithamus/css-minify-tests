@@ -1,3 +1,5 @@
-# Margin with auto values collapse
+# Padding longhand merge unsafe when var() fallback is unresolvable
 
-`margin: 0 auto 0 auto` collapses to `margin: 0 auto`. The `auto` keyword participates in the same collapsing rules as length values.
+When `var()` fallbacks are themselves `var()` references, the final value cannot
+be statically determined. Merging into shorthand is unsafe because the nested
+variable may resolve to an invalid or multi-value result.

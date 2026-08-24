@@ -1,3 +1,3 @@
-# Gap longhand to shorthand
+# Border longhand to shorthand
 
-`row-gap` and `column-gap` with the same value can be combined into `gap` shorthand.
+All 12 border longhand properties collapse to a single `border` shorthand.

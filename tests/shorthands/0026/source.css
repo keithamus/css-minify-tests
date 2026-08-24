@@ -1,4 +1,4 @@
 a {
-  column-gap: 10px;
-  row-gap: 20px;
+  font-variant-numeric: tabular-nums;
+  font: italic 16px/1.5 Arial, sans-serif;
 }

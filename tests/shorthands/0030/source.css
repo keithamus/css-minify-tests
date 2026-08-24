@@ -1,7 +1,4 @@
 a {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: Arial, sans-serif;
+  mask-border: url(mask.png) 25 round;
+  mask: linear-gradient(#000, #0000);
 }

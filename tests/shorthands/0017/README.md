@@ -1,3 +1,3 @@
-# Padding 4-to-2 value collapse
+# Font longhand merge
 
-When top equals bottom and right equals left, padding collapses from 4 values to 2.
+font-style, font-weight, font-size, line-height, and font-family merge into `font` shorthand. `bold` optimizes to `700`.

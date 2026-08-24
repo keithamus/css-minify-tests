@@ -1,3 +1,3 @@
-# Padding 4-value to 1-value collapse
+# Text-decoration longhand to shorthand
 
-`padding: 10px 10px 10px 10px` collapses to `padding: 10px` when all four values are identical.
+`text-decoration-line/style/color` collapse into `text-decoration` shorthand, omitting `solid` (the default style).

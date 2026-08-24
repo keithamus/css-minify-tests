@@ -1,4 +1,5 @@
-# border longhands then border-image (safe ordering)
+# top/right/bottom/left to inset shorthand
 
-Border longhands come before border-image. Collapsing longhands to `border`
-shorthand is safe since border-image already follows and overrides the reset.
+`top: 0; right: 0; bottom: 0; left: 0` merges into `inset: 0`. The `inset`
+shorthand sets all four physical inset properties and is shorter when all
+values are equal.

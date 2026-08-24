@@ -1,3 +1,4 @@
-# Border default width omission
+# Longhand before shorthand is dead code
 
-`medium` is the default border-width value and can be omitted from the `border` shorthand.
+`font-weight: bold` followed by `font: 14px serif` is dead code because the
+`font` shorthand resets `font-weight` to `normal`. The longhand can be removed.

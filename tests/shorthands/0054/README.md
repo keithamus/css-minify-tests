@@ -1,4 +1,4 @@
-# Longhand before shorthand is dead code
+# Combine border sides using shorthand when all match
 
-`font-weight: bold` followed by `font: 14px serif` is dead code because the
-`font` shorthand resets `font-weight` to `normal`. The longhand can be removed.
+If all border sides are defined with the same values, combine them using the
+border shorthand.

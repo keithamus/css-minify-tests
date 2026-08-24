@@ -1,6 +1,20 @@
+@property --bw {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --bs {
+  syntax: "<custom-ident>";
+  inherits: false;
+  initial-value: none;
+}
+@property --bc {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: black;
+}
 a {
-  border-image: url(border.png) 30 round;
-  border-width: 1px;
-  border-style: solid;
-  border-color: red;
+  border-width: var(--bw);
+  border-style: var(--bs);
+  border-color: var(--bc);
 }

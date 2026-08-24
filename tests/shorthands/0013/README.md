@@ -1,3 +1,3 @@
-# Margin longhand to shorthand
+# Gap longhand merge (different values)
 
-Individual `margin-top/right/bottom/left` declarations collapse into `margin` shorthand with symmetric 2-value form.
+When row-gap and column-gap differ, they merge into a 2-value `gap` shorthand (row then column).

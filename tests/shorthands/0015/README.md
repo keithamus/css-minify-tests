@@ -1,3 +1,3 @@
-# Padding longhand to shorthand
+# list-style longhand merge
 
-Four padding longhand properties collapse to `padding` shorthand with value dedup.
+list-style-type, list-style-position, and list-style-image merge into `list-style`. Default values (`disc` type, `none` image) can be omitted.

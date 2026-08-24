@@ -1,3 +1,5 @@
-# place-items longhand merge (same value)
+# border longhands with border-image longhands (collapse both)
 
-When align-items and justify-items are the same, they merge into a single-value `place-items`.
+Both border and border-image expressed as longhands. Minifier should collapse
+each group into its respective shorthand, with `border` ordered before
+`border-image` to avoid the reset clobbering border-image.

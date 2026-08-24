@@ -1,3 +1,4 @@
 a {
-  margin: 10px 10px 10px 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
