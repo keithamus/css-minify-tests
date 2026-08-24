@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-08-24T10:00:26.157Z",
+    "date": "2026-08-24T14:00:57.985Z",
     "testCount": 524,
     "minifiers": {
       "clean-css": {
@@ -15,7 +15,7 @@
       },
       "csslop": {
         "version": "0.0.25",
-        "pass": 517,
+        "pass": 516,
         "total": 524
       },
       "cssnano": {
@@ -35,7 +35,7 @@
       },
       "lightningcss": {
         "version": "1.33.0",
-        "pass": 315,
+        "pass": 314,
         "total": 524
       },
       "sass": {
