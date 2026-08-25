@@ -1,0 +1,14 @@
+.a {
+  mask-border: url(mask.png) 25 / 10px round;
+}
+
+.b {
+  mask-image: url(mask.svg);
+  mask-position: center;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-origin: border-box;
+  mask-clip: border-box;
+  mask-composite: add;
+  mask-mode: alpha;
+}
