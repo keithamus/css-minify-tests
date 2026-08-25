@@ -1,4 +1,4 @@
-# border-top before border is dead code
+# inset-block-start before inset-block is dead code
 
-`border-top: 1px solid blue` followed by `border: 2px solid red` is dead code
-because the `border` shorthand resets all sides including `border-top`.
+`inset-block-start: 10px` followed by `inset-block: 20px` is dead code because
+`inset-block` resets both `inset-block-start` and `inset-block-end`.

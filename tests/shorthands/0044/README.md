@@ -1,5 +1,5 @@
-# position-try-order + fallbacks to position-try shorthand
+# border-top-color before border-top is dead code
 
-`position-try-order: normal; position-try-fallbacks: flip-block, --custom`
-merges into `position-try: flip-block, --custom`. The `normal` order is the
-initial value and can be omitted in the shorthand.
+`border-top-color: blue` followed by `border-top: 2px solid red` is dead code
+because `border-top` resets `border-top-color`, `border-top-style`, and
+`border-top-width`.

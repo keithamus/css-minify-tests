@@ -1,5 +1,6 @@
-# padding-inline-start before padding-inline is dead code
+# Border shorthand with double inherit
 
-`padding-inline-start: 10px` followed by `padding-inline: 20px` is dead code
-because `padding-inline` resets both `padding-inline-start` and
-`padding-inline-end`.
+Converting to shorthand when the border color and style are both `inherit` will
+result in `border:2px inherit inherit`, which is invalid CSS. Instead, just use
+`border:inherit;` as the shorthand. This causes the element to inherit all
+border properties. You can then override the `border-width`.

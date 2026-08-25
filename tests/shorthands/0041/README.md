@@ -1,6 +1,5 @@
-# Border longhand merge safe with @property constraint
+# padding-inline-start before padding-inline is dead code
 
-When each custom property has an `@property` rule constraining its syntax,
-invalid values are rejected at parse time and fall back to `initial-value`.
-The variable is guaranteed to produce a single valid component, so shorthand
-merge is safe.
+`padding-inline-start: 10px` followed by `padding-inline: 20px` is dead code
+because `padding-inline` resets both `padding-inline-start` and
+`padding-inline-end`.

@@ -1,6 +1,5 @@
-# Border longhand merge unsafe even with var() fallback
+# position-try-order + fallbacks to position-try shorthand
 
-A valid fallback does not make merging safe. The fallback only triggers when the
-property is undefined. If the property is defined with an invalid value, the
-fallback is ignored and the entire shorthand declaration fails at computed value
-time.
+`position-try-order: normal; position-try-fallbacks: flip-block, --custom`
+merges into `position-try: flip-block, --custom`. The `normal` order is the
+initial value and can be omitted in the shorthand.

@@ -1,6 +1,4 @@
 a {
-  padding-top: var(--pt, var(--fallback));
-  padding-right: var(--pr, var(--fallback));
-  padding-bottom: var(--pb, var(--fallback));
-  padding-left: var(--pl, var(--fallback));
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
 }

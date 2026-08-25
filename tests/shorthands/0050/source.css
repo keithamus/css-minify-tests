@@ -1,4 +1,5 @@
 a {
-  border-top-color: blue;
-  border-top: 2px solid red;
+  marker-start: url(x);
+  marker-mid: url(x);
+  marker-end: url(x);
 }

@@ -1,4 +1,6 @@
 a {
-  font-weight: bold;
-  font: 14px serif;
+  margin-top: 10px !important;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }

@@ -1,4 +1,6 @@
-a {
-  margin-top: 10px;
-  margin: 20px;
+div {
+  border-top: 1px solid red;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  border-left: 1px solid red;
 }

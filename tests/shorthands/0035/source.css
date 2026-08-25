@@ -1,6 +1,20 @@
+@property --bw {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --bs {
+  syntax: "<custom-ident>";
+  inherits: false;
+  initial-value: none;
+}
+@property --bc {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: black;
+}
 a {
-  margin-top: 10px !important;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  margin-left: 20px;
+  border-width: var(--bw);
+  border-style: var(--bs);
+  border-color: var(--bc);
 }

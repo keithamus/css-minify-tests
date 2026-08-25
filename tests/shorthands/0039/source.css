@@ -1,5 +1,4 @@
 a {
-  border-width: var(--bw, var(--fallback));
-  border-style: var(--bs, solid);
-  border-color: var(--bc, red);
+  border-top: 1px solid blue;
+  border: 2px solid red;
 }

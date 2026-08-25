@@ -1,5 +1,4 @@
-# Padding longhand merge unsafe with var()
+# Longhand before shorthand is dead code
 
-Merging padding-top/right/bottom/left into `padding` shorthand is unsafe when
-values use `var()`. If any variable is undefined or empty, shorthand fallback
-behavior differs from individual longhands.
+`font-weight: bold` followed by `font: 14px serif` is dead code because the
+`font` shorthand resets `font-weight` to `normal`. The longhand can be removed.

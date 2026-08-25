@@ -1,5 +1,6 @@
-# Shorthand plus !important override for mixed importance
+# Border longhand merge safe with @property constraint
 
-When one longhand has `!important`, the longhands can still be partially merged
-into a shorthand followed by the important longhand override. The `!important`
-declaration wins over the shorthand's reset of the same property.
+When each custom property has an `@property` rule constraining its syntax,
+invalid values are rejected at parse time and fall back to `initial-value`.
+The variable is guaranteed to produce a single valid component, so shorthand
+merge is safe.

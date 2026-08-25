@@ -1,4 +1,4 @@
-# margin-top before margin is dead code
+# Combine border sides using shorthand when all match
 
-`margin-top: 10px` followed by `margin: 20px` is dead code because the
-`margin` shorthand resets all four physical sides.
+If all border sides are defined with the same values, combine them using the
+border shorthand.

@@ -1,4 +1,7 @@
-# inset-block-start before inset-block is dead code
+# Merge equal bidirectional gap decoration rules
 
-`inset-block-start: 10px` followed by `inset-block: 20px` is dead code because
-`inset-block` resets both `inset-block-start` and `inset-block-end`.
+CSS Gaps 1 defines the gap decoration shorthands: column-rule, and row-rule
+which set (row|column)-rule-width, (row|column)-rule-style,
+(row|column)-rule-color. The spec also defines the *bidirectional* shorthand
+variants of `rule-width`, `rule-style` and `rule-color`. When column and row
+properties are equal, they can be merged into the bidirectional shorthands.

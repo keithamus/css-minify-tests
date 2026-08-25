@@ -1,5 +1,5 @@
-# Padding longhand merge safe with @property constraint
+# border-block-start before border-block is dead code
 
-When each custom property has an `@property` rule constraining its syntax to
-`<length>`, the value is guaranteed valid at parse time. Invalid values are
-rejected and fall back to `initial-value`, so shorthand merge is safe.
+`border-block-start: 1px solid blue` followed by `border-block: 2px solid red`
+is dead code because `border-block` resets both `border-block-start` and
+`border-block-end`.

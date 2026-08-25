@@ -1,5 +1,4 @@
-# Logical longhands to margin-inline shorthand
+# border-top-width before border-width is dead code
 
-`margin-inline-start: 10px; margin-inline-end: 10px` merges into
-`margin-inline: 10px`. When both logical sides are equal, the two-value form
-collapses to a single value.
+`border-top-width: 1px` followed by `border-width: 2px` is dead code because
+`border-width` resets all four physical border widths.

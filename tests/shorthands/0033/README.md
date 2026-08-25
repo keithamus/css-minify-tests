@@ -1,4 +1,5 @@
-# Longhand before shorthand is dead code
+# Shorthand plus !important override for mixed importance
 
-`font-weight: bold` followed by `font: 14px serif` is dead code because the
-`font` shorthand resets `font-weight` to `normal`. The longhand can be removed.
+When one longhand has `!important`, the longhands can still be partially merged
+into a shorthand followed by the important longhand override. The `!important`
+declaration wins over the shorthand's reset of the same property.

@@ -1,4 +1,6 @@
-# border-top-width before border-width is dead code
+# Border shorthand with two border-color values
 
-`border-top-width: 1px` followed by `border-width: 2px` is dead code because
-`border-width` resets all four physical border widths.
+If you have a singular `border-width` and `border-style`, with two
+`border-color`s, then you can create a border short hand using the first
+available color, then override the border-color and it will still be shorter
+than keeping each properties separate.

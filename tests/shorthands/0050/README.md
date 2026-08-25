@@ -1,5 +1,5 @@
-# border-top-color before border-top is dead code
+# Merge equal SVG marker longhands
 
-`border-top-color: blue` followed by `border-top: 2px solid red` is dead code
-because `border-top` resets `border-top-color`, `border-top-style`, and
-`border-top-width`.
+SVG 2 defines the marker shorthand which sets marker-start, marker-mid, and
+marker-end to the same value. When all three longhands are equal, merge into
+a single marker shorthand.

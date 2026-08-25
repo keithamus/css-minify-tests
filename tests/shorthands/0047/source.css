@@ -1,4 +1,5 @@
-a {
-  padding-inline-start: 10px;
-  padding-inline: 20px;
+div {
+  border-color: inherit;
+  border-style: inherit;
+  border-width: 2px;
 }

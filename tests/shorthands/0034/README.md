@@ -1,6 +1,5 @@
-# Border longhand merge unsafe with var()
+# Padding longhand merge safe with @property constraint
 
-Merging `border-width`, `border-style`, `border-color` into `border` shorthand
-is unsafe when values use `var()`. The variables may expand to multi-value
-strings (e.g. `--border-width: 0 0 0 1px`) which are valid in longhands but
-not in the shorthand form.
+When each custom property has an `@property` rule constraining its syntax to
+`<length>`, the value is guaranteed valid at parse time. Invalid values are
+rejected and fall back to `initial-value`, so shorthand merge is safe.

@@ -1,6 +1,5 @@
-# Padding longhand merge unsafe even with var() fallback
+# top/right/bottom/left to inset shorthand
 
-A valid fallback does not make merging safe. The fallback only triggers when the
-property is undefined. If the property is defined with an invalid value (e.g.
-`--pt: banana`), the fallback is ignored and the entire shorthand declaration
-fails at computed value time.
+`top: 0; right: 0; bottom: 0; left: 0` merges into `inset: 0`. The `inset`
+shorthand sets all four physical inset properties and is shorter when all
+values are equal.
