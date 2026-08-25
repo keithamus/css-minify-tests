@@ -179,6 +179,136 @@
     "lightningcss": true,
     "sass": true
   },
+  "color-rounding/0001": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "color-rounding/0002": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "color-rounding/0003": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "color-rounding/0004": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": true,
+    "csso": false,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": false
+  },
+  "color-rounding/0005": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "color-rounding/0006": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "color-rounding/0007": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "color-rounding/0008": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "color-rounding/0009": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "color-rounding/0010": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "color-rounding/0011": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "color-rounding/0012": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "color-rounding/0013": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "colors/0001": {
     "clean-css": true,
     "csskit": true,
@@ -446,30 +576,10 @@
     "cssnano": false,
     "csso": false,
     "esbuild": false,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0028": {
-    "clean-css": false,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
     "lightningcss": true,
     "sass": false
   },
-  "colors/0029": {
-    "clean-css": false,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0030": {
+  "colors/0028": {
     "clean-css": true,
     "csskit": true,
     "csslop": true,
@@ -479,47 +589,47 @@
     "lightningcss": true,
     "sass": true
   },
-  "colors/0031": {
+  "colors/0029": {
     "clean-css": true,
     "csskit": false,
     "csslop": true,
     "cssnano": true,
     "csso": true,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "colors/0030": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "colors/0031": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
     "esbuild": false,
     "lightningcss": false,
     "sass": false
   },
   "colors/0032": {
-    "clean-css": true,
+    "clean-css": false,
     "csskit": false,
     "csslop": true,
-    "cssnano": true,
-    "csso": true,
+    "cssnano": false,
+    "csso": false,
     "esbuild": false,
     "lightningcss": false,
     "sass": false
   },
   "colors/0033": {
-    "clean-css": false,
-    "csskit": false,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0034": {
-    "clean-css": false,
-    "csskit": false,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0035": {
     "clean-css": true,
     "csskit": false,
     "csslop": true,
@@ -529,7 +639,7 @@
     "lightningcss": false,
     "sass": false
   },
-  "colors/0036": {
+  "colors/0034": {
     "clean-css": false,
     "csskit": true,
     "csslop": true,
@@ -537,6 +647,26 @@
     "csso": false,
     "esbuild": false,
     "lightningcss": true,
+    "sass": false
+  },
+  "colors/0035": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": false
+  },
+  "colors/0036": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
     "sass": false
   },
   "colors/0037": {
@@ -546,15 +676,15 @@
     "cssnano": false,
     "csso": false,
     "esbuild": false,
-    "lightningcss": true,
+    "lightningcss": false,
     "sass": false
   },
   "colors/0038": {
-    "clean-css": false,
+    "clean-css": true,
     "csskit": true,
     "csslop": true,
-    "cssnano": false,
-    "csso": false,
+    "cssnano": true,
+    "csso": true,
     "esbuild": false,
     "lightningcss": false,
     "sass": false
@@ -566,17 +696,17 @@
     "cssnano": false,
     "csso": false,
     "esbuild": false,
-    "lightningcss": false,
+    "lightningcss": true,
     "sass": false
   },
   "colors/0040": {
-    "clean-css": true,
+    "clean-css": false,
     "csskit": true,
     "csslop": true,
-    "cssnano": true,
-    "csso": true,
+    "cssnano": false,
+    "csso": false,
     "esbuild": false,
-    "lightningcss": false,
+    "lightningcss": true,
     "sass": false
   },
   "colors/0041": {
@@ -595,8 +725,8 @@
     "csslop": true,
     "cssnano": false,
     "csso": false,
-    "esbuild": false,
-    "lightningcss": true,
+    "esbuild": true,
+    "lightningcss": false,
     "sass": false
   },
   "colors/0043": {
@@ -606,38 +736,38 @@
     "cssnano": false,
     "csso": false,
     "esbuild": false,
-    "lightningcss": true,
+    "lightningcss": false,
     "sass": false
   },
   "colors/0044": {
-    "clean-css": false,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0045": {
-    "clean-css": false,
+    "clean-css": true,
     "csskit": true,
     "csslop": true,
     "cssnano": true,
-    "csso": false,
+    "csso": true,
     "esbuild": true,
     "lightningcss": true,
-    "sass": false
+    "sass": true
   },
-  "colors/0046": {
-    "clean-css": false,
+  "colors/0045": {
+    "clean-css": true,
     "csskit": true,
     "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
+  },
+  "colors/0046": {
+    "clean-css": true,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
   },
   "colors/0047": {
     "clean-css": false,
@@ -663,9 +793,9 @@
     "clean-css": false,
     "csskit": true,
     "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
     "lightningcss": false,
     "sass": false
   },
@@ -673,7 +803,7 @@
     "clean-css": false,
     "csskit": true,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": false,
     "esbuild": false,
     "lightningcss": false,
@@ -681,17 +811,17 @@
   },
   "colors/0051": {
     "clean-css": false,
-    "csskit": true,
+    "csskit": false,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
+    "esbuild": true,
+    "lightningcss": true,
     "sass": false
   },
   "colors/0052": {
     "clean-css": false,
-    "csskit": true,
+    "csskit": false,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -700,38 +830,38 @@
     "sass": false
   },
   "colors/0053": {
-    "clean-css": false,
+    "clean-css": true,
     "csskit": true,
     "csslop": true,
-    "cssnano": false,
-    "csso": false,
+    "cssnano": true,
+    "csso": true,
     "esbuild": false,
-    "lightningcss": false,
+    "lightningcss": true,
     "sass": false
   },
   "colors/0054": {
     "clean-css": false,
-    "csskit": true,
+    "csskit": false,
     "csslop": true,
     "cssnano": false,
     "csso": false,
     "esbuild": false,
-    "lightningcss": false,
+    "lightningcss": true,
     "sass": false
   },
   "colors/0055": {
     "clean-css": false,
-    "csskit": true,
+    "csskit": false,
     "csslop": true,
     "cssnano": false,
     "csso": false,
-    "esbuild": true,
-    "lightningcss": false,
+    "esbuild": false,
+    "lightningcss": true,
     "sass": false
   },
   "colors/0056": {
     "clean-css": false,
-    "csskit": true,
+    "csskit": false,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -740,24 +870,24 @@
     "sass": false
   },
   "colors/0057": {
-    "clean-css": true,
+    "clean-css": false,
     "csskit": true,
     "csslop": true,
-    "cssnano": true,
-    "csso": true,
+    "cssnano": false,
+    "csso": false,
     "esbuild": true,
-    "lightningcss": true,
-    "sass": true
+    "lightningcss": false,
+    "sass": false
   },
   "colors/0058": {
-    "clean-css": true,
+    "clean-css": false,
     "csskit": true,
     "csslop": true,
-    "cssnano": true,
-    "csso": true,
+    "cssnano": false,
+    "csso": false,
     "esbuild": true,
-    "lightningcss": true,
-    "sass": true
+    "lightningcss": false,
+    "sass": false
   },
   "colors/0059": {
     "clean-css": true,
@@ -770,73 +900,73 @@
     "sass": true
   },
   "colors/0060": {
-    "clean-css": false,
+    "clean-css": true,
     "csskit": true,
     "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
   },
   "colors/0061": {
     "clean-css": false,
     "csskit": true,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
   },
   "colors/0062": {
     "clean-css": false,
     "csskit": true,
     "csslop": true,
     "cssnano": true,
-    "csso": true,
-    "esbuild": true,
-    "lightningcss": false,
-    "sass": false
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": true
   },
   "colors/0063": {
-    "clean-css": false,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": true,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0064": {
-    "clean-css": false,
-    "csskit": false,
-    "csslop": true,
-    "cssnano": true,
-    "csso": false,
-    "esbuild": true,
-    "lightningcss": true,
-    "sass": false
-  },
-  "colors/0065": {
-    "clean-css": false,
-    "csskit": false,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0066": {
     "clean-css": true,
     "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
+  },
+  "colors/0064": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
     "esbuild": false,
     "lightningcss": true,
+    "sass": false
+  },
+  "colors/0065": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": true,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": false
+  },
+  "colors/0066": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
     "sass": false
   },
   "colors/0067": {
@@ -845,8 +975,8 @@
     "csslop": true,
     "cssnano": false,
     "csso": false,
-    "esbuild": false,
-    "lightningcss": true,
+    "esbuild": true,
+    "lightningcss": false,
     "sass": false
   },
   "colors/0068": {
@@ -855,13 +985,13 @@
     "csslop": true,
     "cssnano": false,
     "csso": false,
-    "esbuild": false,
-    "lightningcss": true,
+    "esbuild": true,
+    "lightningcss": false,
     "sass": false
   },
   "colors/0069": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -870,136 +1000,6 @@
     "sass": false
   },
   "colors/0070": {
-    "clean-css": false,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": true,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0071": {
-    "clean-css": false,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": true,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0072": {
-    "clean-css": true,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": true,
-    "csso": true,
-    "esbuild": true,
-    "lightningcss": true,
-    "sass": true
-  },
-  "colors/0073": {
-    "clean-css": true,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": true,
-    "csso": true,
-    "esbuild": true,
-    "lightningcss": true,
-    "sass": true
-  },
-  "colors/0074": {
-    "clean-css": false,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": true,
-    "csso": false,
-    "esbuild": true,
-    "lightningcss": true,
-    "sass": true
-  },
-  "colors/0075": {
-    "clean-css": false,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": true,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": true,
-    "sass": true
-  },
-  "colors/0076": {
-    "clean-css": true,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": true,
-    "csso": true,
-    "esbuild": true,
-    "lightningcss": true,
-    "sass": true
-  },
-  "colors/0077": {
-    "clean-css": false,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": true,
-    "sass": false
-  },
-  "colors/0078": {
-    "clean-css": false,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": true,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": true,
-    "sass": false
-  },
-  "colors/0079": {
-    "clean-css": false,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0080": {
-    "clean-css": false,
-    "csskit": false,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": true,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0081": {
-    "clean-css": false,
-    "csskit": false,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": true,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0082": {
-    "clean-css": false,
-    "csskit": true,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
-  },
-  "colors/0083": {
     "clean-css": true,
     "csskit": true,
     "csslop": true,

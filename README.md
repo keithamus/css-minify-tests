@@ -14,12 +14,13 @@ provides a similar community-driven corpus for CSS tokenizers; a project that
 helped raise the bar for tokenizer correctness across the ecosystem. The hope
 is that this suite can do the same for minification.
 
+
 ## How it works
 
 The suite contains 350 tests organised by category. Each test isolates **one**
 minification technique so failures are easy to diagnose:
 
-```
+```sh
 tests/
   <category>/
     <NNNN>/
@@ -36,18 +37,20 @@ Running `npm test` feeds every `source.css` through each minifier, compares the
 output to `expected.css`, and prints a summary table. `npm run test:debug` shows
 the actual vs expected diff for every mismatch.
 
+
 ## Tested minifiers
 
-- [clean-css](https://www.npmjs.com/package/clean-css)
-- [csskit](https://www.npmjs.com/package/csskit)
-- [CSSLOP](https://www.npmjs.com/package/@thejaredwilcurt/csslop)
-- [cssnano](https://www.npmjs.com/package/cssnano)
-- [csso](https://www.npmjs.com/package/csso)
-- [esbuild](https://www.npmjs.com/package/esbuild)
-- [lightningcss](https://www.npmjs.com/package/lightningcss)
-- [sass](https://www.npmjs.com/package/sass)
+* [clean-css](https://www.npmjs.com/package/clean-css)
+* [csskit](https://www.npmjs.com/package/csskit)
+* [CSSLOP](https://www.npmjs.com/package/@thejaredwilcurt/csslop)
+* [cssnano](https://www.npmjs.com/package/cssnano)
+* [csso](https://www.npmjs.com/package/csso)
+* [esbuild](https://www.npmjs.com/package/esbuild)
+* [lightningcss](https://www.npmjs.com/package/lightningcss)
+* [sass](https://www.npmjs.com/package/sass)
 
 [See results](https://www.keithcirkel.co.uk/css-minify-tests)
+
 
 ## Quick start
 
@@ -56,6 +59,7 @@ npm install
 npm test
 ```
 
+
 ## Adding a minifier
 
 Want to add your minifier to the suite? See the
@@ -63,10 +67,11 @@ Want to add your minifier to the suite? See the
 
 1. Create an adapter in `lib/minifiers/<name>.js` that exports a default
    `minify(source)` function returning the minified CSS string.
-2. Register it in `‎lib/loaders/loadAllMinifiers.js`.
-3. Add the npm package to `devDependencies`.
-4. Run `npm test` and open a PR.
-5. Update the README to add it to the list of "Tested minifiers"
+1. Register it in `‎lib/loaders/loadAllMinifiers.js`.
+1. Add the npm package to `devDependencies`.
+1. Run `npm test` and open a PR.
+1. Update the README to add it to the list of "Tested minifiers"
+
 
 ## Contributing
 
@@ -75,8 +80,9 @@ transformations against the spec, and interpret results. In short:
 
 1. Run `npm run new-test -- section` where `section` is the name of one of the
    sections (or a new section if you can't find an appropriate existing one).
-2. Edit the generated files.
-3. Run `npm test` and open a PR.
+1. Edit the generated files.
+1. Run `npm test` and open a PR.
+
 
 ## License
 

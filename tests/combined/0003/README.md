@@ -7,6 +7,10 @@ as well.
 
 Combines:
 
-* `duplicates/0020` - `h1,h2{color:#001}h1{color:#002}h2{color:#003}` -> `h1{color:#002}h2{color:#003}`
-* `empty-rules/0004` - `a{color:red;b{}}` -> `a{color:red}`
-* `nesting/0020` - `.foo .a{color:red}.foo .b{color:tan}` -> `.foo{.a{color:red}.b{color:tan}}`
+* `duplicates/0020`
+  * `h1,h2{color:#001}h1{color:#002}h2{color:#003}` ->
+    `h1{color:#002}h2{color:#003}`
+* `empty-rules/0004`
+  * `a{color:red;b{}}` -> `a{color:red}`
+* `nesting/0020`
+  * `.foo .a{color:red}.foo .b{color:tan}` -> `.foo{.a{color:red}.b{color:tan}}`

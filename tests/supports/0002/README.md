@@ -1,3 +1,4 @@
-# Remove empty @supports rule
+# Remove empty `@supports` rule
 
-An @supports rule with no content should be removed entirely, like empty style rules.
+An `@supports` rule with no content should be removed entirely, like empty style
+rules.

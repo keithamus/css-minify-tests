@@ -1,0 +1,21 @@
+---
+extends: ./node_modules/tjw-markdownlint-rules/tjwmarkdownlint.yml
+
+# MD007 - Unordered list indentation
+ul-indent:
+  indent: 2
+
+# MD013 - Line length
+line-length:
+  line_length: 80
+  stern: true
+
+# MD044 - Enforce capitalization of proper nouns
+proper-names:
+  names:
+    - JavaScript
+    - css-minify-tests
+    - css-tokenizer-tests
+    - clean-css
+    - .css
+    - CSSLOP

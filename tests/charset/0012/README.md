@@ -1,4 +1,4 @@
-# Never resolve escapes inside a @charset label
+# Never resolve escapes inside a `@charset` label
 
 Engines read `@charset` rules as raw bytes, not CSS strings, therefore escaping
 isn't taken into account. Everything between `@charset "` and `";` is the label.
