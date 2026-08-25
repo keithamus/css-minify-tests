@@ -5,8 +5,12 @@
   "description": "Correctness tests for CSS minifiers",
   "scripts": {
     "start": "http-server",
-    "lint": "eslint *.js lib scripts",
-    "fix": "npm run lint -- --fix",
+    "lint": "npm run lint:md && npm run lint:js",
+    "fix": "npm run lint:md:fix && npm run lint:js:fix",
+    "lint:md": "markdownlint -i \"./node_modules/**/*\" --config ./.markdown-lint.yml ./**/*.md",
+    "lint:js": "eslint *.js lib scripts",
+    "lint:md:fix": "npm run lint:md -- --fix",
+    "lint:js:fix": "npm run lint:js -- --fix",
     "test": "cross-env NO_COLOR=1 node ./run-tests.js",
     "test:debug": "cross-env DEBUG=true node ./run-tests.js",
     "new-test": "node ./scripts/create-test.js"
@@ -32,12 +36,14 @@
     "globals": "^17.11.0",
     "http-server": "^14.1.1",
     "lightningcss": "^1.33.0",
+    "markdownlint-cli": "^0.49.1",
     "marked": "^18.0.10",
     "postcss": "^8.5.26",
     "pretty-ms": "^9.3.0",
     "real-world-css-libraries": "^1.0.8",
     "sass": "^1.103.1",
-    "shiki": "^4.4.3"
+    "shiki": "^4.4.3",
+    "tjw-markdownlint-rules": "^1.1.0"
   },
   "allowScripts": {
     "@parcel/watcher@2.5.6": true,
