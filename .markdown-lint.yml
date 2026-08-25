@@ -10,8 +10,12 @@ line-length:
   line_length: 80
   stern: true
 
-# MD044 - Enforce capitalization of your project's name and other proper nouns
+# MD044 - Enforce capitalization of proper nouns
 proper-names:
   names:
     - JavaScript
-    - Your Project Name
+    - css-minify-tests
+    - css-tokenizer-tests
+    - clean-css
+    - .css
+    - CSSLOP
