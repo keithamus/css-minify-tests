@@ -7,5 +7,5 @@ rounding errors for near-black values at 3dp. Alpha is 0–1, so 3dp applies.
 Both colours here are out-of-gamut for sRGB, so they stay in their native
 colour space. In-gamut colours may be minified to hex.
 
-For a lot more detail on this, read
-[Too Much Color](https://keithcirkel.co.uk/too-much-color).
+For a lot more detail on this, read [Too Much
+Color](https://keithcirkel.co.uk/too-much-color).

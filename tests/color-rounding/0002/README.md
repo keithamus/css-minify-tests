@@ -8,5 +8,5 @@ avoids lossy gamut mapping to sRGB hex. Precision is rounded to 3dp (L/C) and
 percent (`54%`) -- same length but consistent with always preferring numbers
 over percentages since percentages are longer for other components.
 
-For a lot more detail on rounding, read
-[Too Much Color](https://keithcirkel.co.uk/too-much-color).
+For a lot more detail on rounding, read [Too Much
+Color](https://keithcirkel.co.uk/too-much-color).

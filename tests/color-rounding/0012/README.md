@@ -7,5 +7,5 @@ range means 3dp can introduce visible rounding errors, so 4dp is required.
 Both colours here are out-of-gamut for sRGB, so they stay in their native
 colour space. In-gamut colours may be minified to hex.
 
-For a lot more detail on this, read
-[Too Much Color](https://keithcirkel.co.uk/too-much-color).
+For a lot more detail on this, read [Too Much
+Color](https://keithcirkel.co.uk/too-much-color).
