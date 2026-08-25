@@ -37,7 +37,7 @@ If you'd like to add a test, please consider the following a guide for doing so:
 
 Each test covers ONE transformation. Do not combine multiple optimisations in a
 single test. It's likely whitespace will be compressed, but for example try to
-avoid combining declarations what will be minified for a test not focusing on
+avoid combining declarations that will be minified for a test not focusing on
 that.
 
 
@@ -52,7 +52,8 @@ unsafe transformations:
 * `0deg` -> `0` is **often unsafe** (unitless zero is invalid for `<angle>` in
   some contexts)
 * `0fr` -> `0` is **unsafe** (unitless zero is invalid for `<flex>`)
-* `background: none` -> `background: 0 0` is **unsafe** (different initial values)
+* `background: none` -> `background: 0 0` is **unsafe**
+  (different initial values)
 * Merging nested `@media` can change cascade behaviour
 * Stripping `/*!` comments removes licence text
 * Removing quotes from `url()` with special chars breaks parsing
@@ -70,6 +71,11 @@ be minified in certain cases can help highlight this.
 Read every existing `source.css` and `expected.css` in the target category. If
 an existing test already covers the same transformation, do not add a redundant
 test. Only proceed if the new test covers a meaningfully different edge case.
+
+An easy way to check if you've found something that needs a test is to try your
+sample code with the "CSSLOP" minifier. Since it has a 100% passing score,
+anything it outputs incorrectly is indicative of a missing test. If it passes
+there may *or may not* already be a test, so make sure to manually look first.
 
 
 ### 4. Determine the test number

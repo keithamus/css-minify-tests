@@ -1,4 +1,4 @@
-# Merging rules is unsafe with all:revert-layer
+# Merging rules is unsafe with `all:revert-layer`
 
 Merging `.foo{color:red}` and `.bar{all:revert-layer;color:red}` into
 `.bar,.foo{color:red}.bar{all:revert-layer}` is unsafe because

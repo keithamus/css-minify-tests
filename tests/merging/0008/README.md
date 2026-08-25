@@ -1,4 +1,4 @@
-# Non-adjacent @media merge is unsafe due to cascade
+# Non-adjacent `@media` merge is unsafe due to cascade
 
 Merging two identical `@media (width >= 1px)` blocks that have intervening
 rules between them changes the cascade order. The intervening `a{color:green}`

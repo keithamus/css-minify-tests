@@ -1,4 +1,4 @@
-# A single-quoted @charset is not an encoding declaration
+# A single-quoted `@charset` is not an encoding declaration
 
 `@charset` must use single quotes, as the byte sequence - not "tokenized" syntax
 is detected. `@charset 'gbk';` is therefore inert, and will be discarded in

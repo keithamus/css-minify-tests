@@ -24,4 +24,4 @@ Before attempting to pass this test, first pass the tests it combines:
 * `duplicates/0007` - `a{color:red}a{color:red}` -> `a{color:red}`
 * `selectors-advanced/0001` - `:is(a,b)` -> `a,b`
 * `selectors-advanced/0018` - `:where(.foo):where([bar])` -> `:where(.foo[bar])`
-* `shorthands/0041` - (`border-color` + `border-style` + `border-width` = `border`)
+* `shorthands/0041` - (`border-(color/style/width)` = `border`)

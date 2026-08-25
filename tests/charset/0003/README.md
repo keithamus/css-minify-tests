@@ -1,4 +1,4 @@
-# Move @charset to the top of documents
+# Move `@charset` to the top of documents
 
 If a `@charset` is used and set to anything besides the default `UTF-8`, it must
 be retained and placed at the start of the minified CSS file. If the `@charset`
