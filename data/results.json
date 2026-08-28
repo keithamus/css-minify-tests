@@ -3131,7 +3131,7 @@
   },
   "shorthand-values/0001": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3141,7 +3141,7 @@
   },
   "shorthand-values/0002": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3151,7 +3151,7 @@
   },
   "shorthand-values/0003": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3181,7 +3181,7 @@
   },
   "shorthand-values/0006": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -3191,7 +3191,7 @@
   },
   "shorthand-values/0007": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3201,7 +3201,7 @@
   },
   "shorthand-values/0008": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3211,7 +3211,7 @@
   },
   "shorthand-values/0009": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3221,7 +3221,7 @@
   },
   "shorthand-values/0010": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -3231,7 +3231,7 @@
   },
   "shorthand-values/0011": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -3241,7 +3241,7 @@
   },
   "shorthand-values/0012": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -3251,7 +3251,7 @@
   },
   "shorthand-values/0013": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3301,7 +3301,7 @@
   },
   "shorthand-values/0018": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3311,7 +3311,7 @@
   },
   "shorthand-values/0019": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3321,7 +3321,7 @@
   },
   "shorthand-values/0020": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -3331,7 +3331,7 @@
   },
   "shorthand-values/0021": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -3503,7 +3503,7 @@
     "clean-css": false,
     "csskit": false,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": false,
     "esbuild": false,
     "lightningcss": false,
@@ -3566,22 +3566,22 @@
     "cssnano": false,
     "csso": false,
     "esbuild": false,
-    "lightningcss": true,
+    "lightningcss": false,
     "sass": false
   },
   "shorthands/0021": {
-    "clean-css": true,
+    "clean-css": false,
     "csskit": false,
     "csslop": true,
     "cssnano": false,
     "csso": false,
     "esbuild": false,
-    "lightningcss": true,
+    "lightningcss": false,
     "sass": false
   },
   "shorthands/0022": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -3621,7 +3621,7 @@
   },
   "shorthands/0026": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -3661,7 +3661,7 @@
   },
   "shorthands/0030": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -3681,7 +3681,7 @@
   },
   "shorthands/0032": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": true,
@@ -3751,7 +3751,7 @@
   },
   "shorthands/0039": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3761,7 +3761,7 @@
   },
   "shorthands/0040": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -3771,7 +3771,7 @@
   },
   "shorthands/0041": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -3781,7 +3781,7 @@
   },
   "shorthands/0042": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3791,7 +3791,7 @@
   },
   "shorthands/0043": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3801,7 +3801,7 @@
   },
   "shorthands/0044": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -3811,7 +3811,7 @@
   },
   "shorthands/0045": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -3852,11 +3852,11 @@
   "shorthands/0049": {
     "clean-css": false,
     "csskit": false,
-    "csslop": true,
+    "csslop": false,
     "cssnano": false,
     "csso": false,
     "esbuild": false,
-    "lightningcss": true,
+    "lightningcss": false,
     "sass": false
   },
   "shorthands/0050": {
@@ -3894,6 +3894,26 @@
     "csskit": false,
     "csslop": true,
     "cssnano": true,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "shorthands/0054": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "shorthands/0055": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
     "csso": false,
     "esbuild": false,
     "lightningcss": false,
@@ -3964,7 +3984,7 @@
     "csskit": false,
     "csslop": true,
     "cssnano": false,
-    "csso": false,
+    "csso": true,
     "esbuild": false,
     "lightningcss": false,
     "sass": false
@@ -3990,14 +4010,34 @@
     "sass": true
   },
   "shorthands-unsafe/0010": {
-    "clean-css": true,
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": true,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "shorthands-unsafe/0011": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "shorthands-unsafe/0013": {
+    "clean-css": false,
     "csskit": false,
     "csslop": true,
     "cssnano": false,
     "csso": false,
     "esbuild": false,
     "lightningcss": false,
-    "sass": true
+    "sass": false
   },
   "starting-style/0001": {
     "clean-css": false,
@@ -4593,7 +4633,7 @@
     "clean-css": false,
     "csskit": false,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": false,
     "esbuild": false,
     "lightningcss": false,
@@ -4693,7 +4733,7 @@
     "clean-css": false,
     "csskit": false,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": false,
     "esbuild": false,
     "lightningcss": true,
@@ -4793,7 +4833,7 @@
     "clean-css": false,
     "csskit": false,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": false,
     "esbuild": false,
     "lightningcss": true,
@@ -4803,7 +4843,7 @@
     "clean-css": false,
     "csskit": false,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": false,
     "esbuild": false,
     "lightningcss": true,
@@ -4863,7 +4903,7 @@
     "clean-css": true,
     "csskit": true,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": true,
     "esbuild": true,
     "lightningcss": false,
@@ -5063,7 +5103,7 @@
     "clean-css": false,
     "csskit": true,
     "csslop": true,
-    "cssnano": true,
+    "cssnano": false,
     "csso": true,
     "esbuild": false,
     "lightningcss": false,
