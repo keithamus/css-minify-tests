@@ -142,7 +142,9 @@ if (!hasChanges) {
 
   const playgroundUrls = Object.fromEntries(
     await Promise.all(
-      newTests.map(async (t) => [t, await playgroundUrl(t)])
+      [...newTests, ...changedTests].map(
+        async (t) => [t, await playgroundUrl(t)]
+      )
     )
   );
   const testLabel = (t) => (
@@ -219,22 +221,23 @@ if (!hasChanges) {
   }
 
   if (changedTests.length > 0) {
-    const beforeRows = changedTests.map((t) => `\`${t}\` before`);
-    const afterRows = changedTests.map((t) => `\`${t}\` after`);
-    const allRows = beforeRows.flatMap((b, i) => [b, afterRows[i]]);
     lines.push(
       '',
       '### Changed Tests',
       '',
       mdTable({
-        test: allRows,
+        test: changedTests.map(testLabel),
         ...Object.fromEntries(
           minifiers.map((m) => [
             minifierLabel(m),
-            changedTests.flatMap((t) => [
-              passIcon(beforeResults[t][m] ?? null),
-              passIcon(afterResults[t][m] ?? null)
-            ])
+            changedTests.map((t) => {
+              const after = passIcon(afterResults[t][m] ?? null);
+              if (newMinifiers.includes(m)) {
+                return after;
+              }
+              const before = passIcon(beforeResults[t][m] ?? null);
+              return before === after ? after : `${before} ➡️ ${after}`;
+            })
           ])
         )
       })
