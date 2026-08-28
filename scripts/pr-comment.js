@@ -6,19 +6,38 @@
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import zlib from 'node:zlib';
 
 String.prototype.plural = function (c) {
   return c === 1 ? `${this}` : `${this}s`;
 };
 
-const readReadme = async (testPath) => {
+const readTestFile = async (testPath, name) => {
   try {
     return (
-      await fs.readFile(path.join('tests', testPath, 'README.md'), 'utf-8')
+      await fs.readFile(path.join('tests', testPath, name), 'utf-8')
     ).trim();
   } catch {
     return '';
   }
+};
+
+const playgroundParam = (css) =>
+  zlib.deflateSync(Buffer.from(css, 'utf-8'), { level: 9 }).toString('base64');
+
+const playgroundUrl = async (testPath) => {
+  const [source, expected] = await Promise.all([
+    readTestFile(testPath, 'source.css'),
+    readTestFile(testPath, 'expected.css')
+  ]);
+  if (!source) {
+    return '';
+  }
+  const params = new URLSearchParams({ v: playgroundParam(source) });
+  if (expected) {
+    params.set('x', playgroundParam(expected));
+  }
+  return `https://thejaredwilcurt.com/playground/?${params}`;
 };
 
 const mdTable = (columns) => {
@@ -121,13 +140,24 @@ if (!hasChanges) {
     );
   }
 
+  const playgroundUrls = Object.fromEntries(
+    await Promise.all(
+      newTests.map(async (t) => [t, await playgroundUrl(t)])
+    )
+  );
+  const testLabel = (t) => (
+    playgroundUrls[t] ? `[\`${t}\`](${playgroundUrls[t]})` : `\`${t}\``
+  );
+
   if (newTests.length > 0) {
     const count = newTests.length;
     lines.push(`**${count} new ${'test'.plural(count)} added:**`, '');
     for (const testPath of newTests) {
-      const readme = await readReadme(testPath);
+      const readme = await readTestFile(testPath, 'README.md');
       const firstLine = readme.split('\n')[0].replace(/^#+\s*/, '');
-      lines.push(`- \`${testPath}\`${firstLine ? ` — ${firstLine}` : ''}`);
+      lines.push(
+        `- ${testLabel(testPath)}${firstLine ? ` - ${firstLine}` : ''}`
+      );
     }
     lines.push('');
   }
@@ -177,7 +207,7 @@ if (!hasChanges) {
       '### New Tests',
       '',
       mdTable({
-        test: newTests.map((t) => `\`${t}\``),
+        test: newTests.map(testLabel),
         ...Object.fromEntries(
           minifiers.map((m) => [
             minifierLabel(m),
