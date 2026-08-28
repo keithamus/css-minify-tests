@@ -22,6 +22,25 @@ const readTestFile = async (testPath, name) => {
   }
 };
 
+const readAlternates = async (testPath) => {
+  let names;
+  try {
+    names = await fs.readdir(path.join('tests', testPath));
+  } catch {
+    return [];
+  }
+  names = names
+    .filter((name) => {
+      return (
+        name !== 'expected.css' &&
+        name.startsWith('expected.') &&
+        name.endsWith('.css')
+      );
+    })
+    .sort();
+  return Promise.all(names.map((name) => readTestFile(testPath, name)));
+};
+
 const playgroundParam = (css) =>
   zlib.deflateSync(Buffer.from(css, 'utf-8'), { level: 9 }).toString('base64');
 
@@ -33,7 +52,8 @@ const loadTestCss = (testPath) => {
       testPath,
       Promise.all([
         readTestFile(testPath, 'source.css'),
-        readTestFile(testPath, 'expected.css')
+        readTestFile(testPath, 'expected.css'),
+        readAlternates(testPath)
       ])
     );
   }
@@ -55,7 +75,7 @@ const playgroundUrl = async (testPath) => {
 const testDetails = async (testPaths) => {
   const blocks = [];
   for (const testPath of testPaths) {
-    const [source, expected] = await loadTestCss(testPath);
+    const [source, expected, alternates] = await loadTestCss(testPath);
     if (!source) {
       continue;
     }
@@ -74,10 +94,19 @@ const testDetails = async (testPaths) => {
       '',
       '```css',
       expected,
-      '```',
-      '',
-      '</details>'
+      '```'
     );
+    for (const alternate of alternates) {
+      blocks.push(
+        '',
+        '**Also accepted**',
+        '',
+        '```css',
+        alternate,
+        '```'
+      );
+    }
+    blocks.push('', '</details>');
   }
   return blocks;
 };
