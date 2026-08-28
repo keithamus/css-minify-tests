@@ -25,11 +25,23 @@ const readTestFile = async (testPath, name) => {
 const playgroundParam = (css) =>
   zlib.deflateSync(Buffer.from(css, 'utf-8'), { level: 9 }).toString('base64');
 
+const testCssCache = new Map();
+
+const loadTestCss = (testPath) => {
+  if (!testCssCache.has(testPath)) {
+    testCssCache.set(
+      testPath,
+      Promise.all([
+        readTestFile(testPath, 'source.css'),
+        readTestFile(testPath, 'expected.css')
+      ])
+    );
+  }
+  return testCssCache.get(testPath);
+};
+
 const playgroundUrl = async (testPath) => {
-  const [source, expected] = await Promise.all([
-    readTestFile(testPath, 'source.css'),
-    readTestFile(testPath, 'expected.css')
-  ]);
+  const [source, expected] = await loadTestCss(testPath);
   if (!source) {
     return '';
   }
@@ -38,6 +50,36 @@ const playgroundUrl = async (testPath) => {
     params.set('x', playgroundParam(expected));
   }
   return `https://thejaredwilcurt.com/playground/?${params}`;
+};
+
+const testDetails = async (testPaths) => {
+  const blocks = [];
+  for (const testPath of testPaths) {
+    const [source, expected] = await loadTestCss(testPath);
+    if (!source) {
+      continue;
+    }
+    blocks.push(
+      '',
+      '<details>',
+      `<summary><code>${testPath}</code></summary>`,
+      '',
+      '**Source**',
+      '',
+      '```css',
+      source,
+      '```',
+      '',
+      '**Expected**',
+      '',
+      '```css',
+      expected,
+      '```',
+      '',
+      '</details>'
+    );
+  }
+  return blocks;
 };
 
 const mdTable = (columns) => {
@@ -216,7 +258,8 @@ if (!hasChanges) {
             newTests.map((t) => passIcon(afterResults[t][m] ?? null))
           ])
         )
-      })
+      }),
+      ...(await testDetails(newTests))
     );
   }
 
@@ -240,7 +283,8 @@ if (!hasChanges) {
             })
           ])
         )
-      })
+      }),
+      ...(await testDetails(changedTests))
     );
   }
 }
