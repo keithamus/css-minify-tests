@@ -22,6 +22,8 @@ tests/
     <NNNN>/
       source.css       # Unminified input (formatted, 2-space indent)
       expected.css     # Canonical minified output (single line + newline)
+      expected.alt.css # Optional. Another equally acceptable output. Any
+                       # `expected.<name>.css` file is accepted as a pass.
       README.md        # 2-4 line description of the transformation
       validate.html    # For difficult to reason about tests, this can provide
                        # an test example to run in browsers, showcasing this.
@@ -101,6 +103,12 @@ colons). Some tips:
 
 The shortest correct representation that is semantically identical to the
 source. Must be a **single line terminated by a newline**.
+
+If more than one output is equally short and equally correct (for example the
+longhands of a shorthand could be written in any order), add each other
+acceptable output as `expected.<name>.css`, such as `expected.alt.css`. A
+minifier passes the test when its output matches `expected.css` or any
+`expected.*.css` files.
 
 
 ### 7. Write `README.md`

@@ -9,4 +9,6 @@ sides would result in an invalid declaration such as
 
 They can, however, be reduced to a shorter value by using the `border-width`,
 `border-style`, `border-color` syntax, which will result in overall smaller CSS.
-The parts are written in the order `border` itself takes them.
+While any order creates valid CSS, the parts should be written in grammar order
+(the order `border` itself takes them) or alphabetical, to improve the chance of
+good gzip compressibility.
