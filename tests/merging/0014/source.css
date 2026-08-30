@@ -1,0 +1,7 @@
+a {
+  mask: center / cover;
+}
+
+b {
+  mask: center / contain;
+}
