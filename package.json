@@ -18,7 +18,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@thejaredwilcurt/csslop": "^0.0.28",
+    "@thejaredwilcurt/csslop": "^0.0.29",
     "autoprefixer": "^10.5.4",
     "clean-css": "^5.3.3",
     "cross-env": "^10.1.0",
@@ -32,7 +32,7 @@
     "eslint-config-tjw-import-x": "^1.0.1",
     "eslint-config-tjw-jsdoc": "^2.0.1",
     "eslint-plugin-import-x": "^4.17.1",
-    "eslint-plugin-jsdoc": "^64.2.1",
+    "eslint-plugin-jsdoc": "^64.3.1",
     "globals": "^17.11.0",
     "http-server": "^14.1.1",
     "lightningcss": "^1.33.0",
