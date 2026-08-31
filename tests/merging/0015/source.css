@@ -1,7 +1,8 @@
 .x {
   color: #0f0;
 }
-p {
+.y {
+  background: #0f0;
   color: #00f;
 }
 #foo {
