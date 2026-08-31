@@ -51,7 +51,7 @@ jobs:
 
       - name: Prepare pages artifact
         if: github.event_name != 'pull_request'
-        run: mkdir -p _site && cp index.html style.css script.js _site/ && cp -r minified/ _site/minified/
+        run: mkdir -p _site && cp index.html style.css script.js _site/ && cp -r minified/ _site/minified/ && cp -r data/ _site/data/
 
       - name: Setup Pages
         if: github.event_name != 'pull_request'
