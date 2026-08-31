@@ -3999,6 +3999,16 @@
     "lightningcss": false,
     "sass": false
   },
+  "shorthands/0056": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "shorthands-unsafe/0001": {
     "clean-css": true,
     "csskit": true,
@@ -4102,16 +4112,6 @@
   "shorthands-unsafe/0011": {
     "clean-css": false,
     "csskit": true,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
-  },
-  "shorthands-unsafe/0013": {
-    "clean-css": false,
-    "csskit": false,
     "csslop": true,
     "cssnano": false,
     "csso": false,
