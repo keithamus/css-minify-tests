@@ -11,7 +11,7 @@
 @property --bc {
   syntax: "<color>";
   inherits: false;
-  initial-value: black;
+  initial-value: red;
 }
 a {
   border-width: var(--bw);
