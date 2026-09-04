@@ -1,6 +1,6 @@
 # Merge selectors with comma and perform advanced property shorthand
 
-Remove the comment, merge rules with identical selectors, apply font shorthand. 
+Remove the comment, merge rules with identical selectors, apply font shorthand.
 
 Combines:
 
