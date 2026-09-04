@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../validate.css">
+    <title>Validate: h1-h6 is not changed to :heading</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h2>Source (unminified)</h2>
+        <style>
+          .source {
+            h1, h2, h3, h4, h5, h6 {
+              color: red;
+            }
+            h2 {
+              color: tan;
+            }
+          }
+        </style>
+        <div class="source">
+          <h1>H1</h1>
+          <h2>H2</h2>
+          <h3>H3</h3>
+          <h4>H4</h4>
+          <h5>H5</h5>
+          <h6>H6</h6>
+        </div>
+      </div>
+      <div class="expected-container">
+        <h2>Expected (minified)</h2>
+        <style>
+          .expected{h1,h2,h3,h4,h5,h6{color:red}h2{color:tan}}
+        </style>
+        <div class="expected">
+          <h1>H1</h1>
+          <h2>H2</h2>
+          <h3>H3</h3>
+          <h4>H4</h4>
+          <h5>H5</h5>
+          <h6>H6</h6>
+        </div>
+      </div>
+    </div>
+
+    <p>
+      In this example, all the headings should be <code>red</code>, except for the H2,
+      which should be <code>tan</code>. If the <code>h1,h2,h3,h4,h5,h6</code> was
+      replaced by <code>:heading</code>, then it would override the H2's color due to
+      higher specificity.
+    </p>
+  </body>
+</html>

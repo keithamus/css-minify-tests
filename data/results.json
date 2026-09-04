@@ -3080,14 +3080,14 @@
     "sass": false
   },
   "selectors-advanced/0013": {
-    "clean-css": false,
-    "csskit": false,
+    "clean-css": true,
+    "csskit": true,
     "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
   },
   "selectors-advanced/0014": {
     "clean-css": false,
