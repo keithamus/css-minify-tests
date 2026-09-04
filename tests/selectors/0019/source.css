@@ -1,0 +1,4 @@
+:is(.x) :is(:unknown),
+.y {
+  color: red;
+}
