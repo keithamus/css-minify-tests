@@ -1049,6 +1049,26 @@
     "lightningcss": false,
     "sass": false
   },
+  "combined/0005": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "combined/0006": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "comments/0001": {
     "clean-css": true,
     "csskit": true,
@@ -2319,6 +2339,16 @@
     "lightningcss": false,
     "sass": false
   },
+  "merging/0019": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "nesting/0001": {
     "clean-css": false,
     "csskit": true,
@@ -2959,6 +2989,36 @@
     "lightningcss": true,
     "sass": true
   },
+  "selectors/0018": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": false
+  },
+  "selectors/0019": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "selectors/0020": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "selectors-advanced/0001": {
     "clean-css": false,
     "csskit": false,
@@ -3206,6 +3266,16 @@
     "cssnano": false,
     "csso": false,
     "esbuild": true,
+    "lightningcss": false,
+    "sass": false
+  },
+  "selectors-advanced/0026": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": true,
+    "esbuild": false,
     "lightningcss": false,
     "sass": false
   },
