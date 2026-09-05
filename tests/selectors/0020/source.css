@@ -1,0 +1,3 @@
+:is(:hover, :visited) {
+  color: red;
+}
