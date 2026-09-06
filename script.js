@@ -276,11 +276,16 @@ window.realModal = {
    *
    * @param  {string}          minifierName  Name of the minifier ('csso', 'sass', etc)
    * @param  {string}          fileName      Minified CSS filename ('bttn-v0.2.4.css')
+   * @param  {boolean}         reminified    If true, use the reminified folder
    * @return {Promise<string>}               The CSS as syntax highlighted markup
    */
-  getMinifiedCSS: function (minifierName, fileName) {
+  getMinifiedCSS: function (minifierName, fileName, reminified) {
+    let folder = 'minified';
+    if (reminified) {
+      folder = 'reminified';
+    }
     const url = [
-      'minified',
+      folder,
       minifierName,
       fileName
     ].join('/');
@@ -305,5 +310,17 @@ window.realModal = {
     const minifiedCSS = await this.getMinifiedCSS(minifierName, fileName);
     const preEl = this.getOutputBox();
     preEl.innerHTML = minifiedCSS;
+  },
+  /**
+   * Resets the modal, shows it, loads CSS data for the modal.
+   *
+   * @param {string} minifierName  Name of the minifier ('csso', 'sass', etc)
+   * @param {string} fileName      Minified CSS filename ('bttn-v0.2.4.css')
+   */
+  showReminifiedCSS: async function (minifierName, fileName) {
+    this.resetAndOpenModal(minifierName, fileName);
+    const reminifiedCSS = await this.getMinifiedCSS(minifierName, fileName, true);
+    const preEl = this.getOutputBox();
+    preEl.innerHTML = reminifiedCSS;
   }
 };
