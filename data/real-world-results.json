@@ -6,8 +6,8 @@
     "results": {
       "clean-css": 7406466,
       "csskit": 7625156,
-      "csslop": 6693548,
-      "cssnano": 6535285,
+      "csslop": 6693298,
+      "cssnano": 6535260,
       "csso": 7178482,
       "esbuild": 7709875,
       "lightningcss": 6594663,
@@ -67,7 +67,7 @@
       "clean-css": 19136,
       "csskit": 19609,
       "csslop": 17446,
-      "cssnano": 19049,
+      "cssnano": 19033,
       "csso": 19073,
       "esbuild": 19250,
       "lightningcss": 18996,
@@ -96,7 +96,7 @@
     "results": {
       "clean-css": 315879,
       "csskit": 338315,
-      "csslop": 314613,
+      "csslop": 314611,
       "cssnano": 310171,
       "csso": 315667,
       "esbuild": 320007,
@@ -321,7 +321,7 @@
     "results": {
       "clean-css": 102771,
       "csskit": 119600,
-      "csslop": 87748,
+      "csslop": 87743,
       "cssnano": 88317,
       "csso": 110077,
       "esbuild": 117202,
@@ -336,7 +336,7 @@
     "results": {
       "clean-css": 160082,
       "csskit": 160698,
-      "csslop": 146756,
+      "csslop": 146754,
       "cssnano": 144285,
       "csso": 160404,
       "esbuild": 161001,
@@ -351,7 +351,7 @@
     "results": {
       "clean-css": 230252,
       "csskit": 230588,
-      "csslop": 219848,
+      "csslop": 219846,
       "cssnano": 223064,
       "csso": 228303,
       "esbuild": 232385,
@@ -442,7 +442,7 @@
       "clean-css": 13671,
       "csskit": 15196,
       "csslop": 11480,
-      "cssnano": 11370,
+      "cssnano": 11368,
       "csso": 25701,
       "esbuild": 14791,
       "lightningcss": 12381,
@@ -591,7 +591,7 @@
     "results": {
       "clean-css": 46025,
       "csskit": 45438,
-      "csslop": 42316,
+      "csslop": 42312,
       "cssnano": 42306,
       "csso": 46496,
       "esbuild": 46345,
@@ -651,7 +651,7 @@
     "results": {
       "clean-css": 238475,
       "csskit": 238449,
-      "csslop": 206903,
+      "csslop": 206885,
       "cssnano": 197777,
       "csso": 201411,
       "esbuild": 240349,
@@ -846,7 +846,7 @@
     "results": {
       "clean-css": 27567,
       "csskit": 40235,
-      "csslop": 38081,
+      "csslop": 38046,
       "cssnano": 38628,
       "csso": 18840,
       "esbuild": 39370,
@@ -906,7 +906,7 @@
     "results": {
       "clean-css": 28490,
       "csskit": 38890,
-      "csslop": 36452,
+      "csslop": 36427,
       "cssnano": 36998,
       "csso": 19479,
       "esbuild": 37632,
@@ -1626,7 +1626,7 @@
     "results": {
       "clean-css": 7870,
       "csskit": 12242,
-      "csslop": 11028,
+      "csslop": 10963,
       "cssnano": 11965,
       "csso": 10017,
       "esbuild": 12156,
@@ -1851,7 +1851,7 @@
     "results": {
       "clean-css": 24203,
       "csskit": 23012,
-      "csslop": 19791,
+      "csslop": 19781,
       "cssnano": 21902,
       "csso": 22943,
       "esbuild": 24275,
@@ -1986,7 +1986,7 @@
     "results": {
       "clean-css": 64070,
       "csskit": 65457,
-      "csslop": 60789,
+      "csslop": 60786,
       "cssnano": 62013,
       "csso": 62597,
       "esbuild": 64673,
@@ -2361,7 +2361,7 @@
     "results": {
       "clean-css": 6790,
       "csskit": 6845,
-      "csslop": 3744,
+      "csslop": 3738,
       "cssnano": 3865,
       "csso": 6815,
       "esbuild": 6814,
@@ -2466,7 +2466,7 @@
     "results": {
       "clean-css": 132202,
       "csskit": 142323,
-      "csslop": 138428,
+      "csslop": 138424,
       "cssnano": 130605,
       "csso": "ERROR",
       "esbuild": 146670,
@@ -2646,7 +2646,7 @@
     "results": {
       "clean-css": 9052,
       "csskit": 12164,
-      "csslop": 7686,
+      "csslop": 7626,
       "cssnano": 92655,
       "csso": 9780,
       "esbuild": 12484,
@@ -2902,7 +2902,7 @@
       "clean-css": 16445,
       "csskit": 16710,
       "csslop": 14631,
-      "cssnano": 14688,
+      "cssnano": 14682,
       "csso": 16468,
       "esbuild": 14836,
       "lightningcss": 15516,
@@ -2946,7 +2946,7 @@
     "results": {
       "clean-css": 3397,
       "csskit": 3784,
-      "csslop": 2619,
+      "csslop": 2610,
       "cssnano": 3284,
       "csso": 3236,
       "esbuild": 3747,
@@ -3037,7 +3037,7 @@
       "clean-css": 9130,
       "csskit": 9731,
       "csslop": 8450,
-      "cssnano": 9057,
+      "cssnano": 9056,
       "csso": 8068,
       "esbuild": 9507,
       "lightningcss": 8914,

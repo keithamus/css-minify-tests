@@ -26,5 +26,5 @@ merge any identical adjacent rules.
 * `colors/0076` - `rgba(255, 0, 0, 1)`
 * `colors/0077` - `hwb(0 0 0)`
 * `comments/0001` - `a{color:red}/* comment */` -> `a{color:red}`
-* `duplicates/0007` - `a{color:red}a{color:red}` -> `a{color:red}`
+* `merging/0002` - `.a {color:red}.b{color:red}` -> `.a,.b{color:red}`
 * `whitespace/0001` - `a {\n  color: red;\n}` -> `a{color:red}`
