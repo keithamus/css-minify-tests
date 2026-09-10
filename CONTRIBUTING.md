@@ -83,7 +83,10 @@ there may *or may not* already be a test, so make sure to manually look first.
 ### 4. Determine the test number
 
 List existing directories in `tests/<category>/`. The new test number is the
-next sequential 4-digit number (e.g. if `0007` exists, use `0008`).
+next sequential 4-digit number (e.g. if `0007` exists, use `0008`). You can also
+use `npm run new-test` followed by the category name to create this
+automatically. For example `npm run new-test empty-rules`. You can set the value
+of `EDITOR` in your PATH to point to your Text Editor/IDE of choice.
 
 
 ### 5. Write `source.css`
@@ -169,9 +172,9 @@ be sync or async.
 **Sync example** (like csso):
 
 ```js
-import { minify as theirMinify } from "some-minifier";
+import { minify as theirMinify } from 'some-minifier';
 
-export default function minify(source) {
+export default function minify (source) {
   return theirMinify(source).css;
 }
 ```
@@ -179,9 +182,9 @@ export default function minify(source) {
 **Async example** (like esbuild):
 
 ```js
-import { transform } from "some-minifier";
+import { transform } from 'some-minifier';
 
-export default async function minify(source) {
+export default async function minify (source) {
   const { code } = await transform(source, { minify: true });
   return code;
 }
@@ -201,13 +204,13 @@ In `lib/loaders/loadAllMinifiers.js`:
    for version lookups and display).
 
 ```js
-import myMinifier from '../minifiers/my-minifier.js';
+import someMinifier from '../minifiers/some-minifier.js';
 
 export const registry = Object.freeze({
-  'my-minifier': {
-    title: 'My Minifier',
-    url: 'https://my-minifier.github.io/playground',
-    minify: myMinifier
+  'some-minifier': {
+    title: 'Some Minifier',
+    url: 'https://some-minifier.github.io/playground',
+    minify: someMinifier
   },
   // ...other existing minifiers
 });
@@ -225,9 +228,9 @@ in the results table. Failures are expected -- they just mean that minifier
 doesn't implement a particular optimisation yet.
 
 
-### 5. Run `npm run fmt`
+### 5. Run `npm run fix`
 
-Clean up the code by running prettier.
+Clean up the code by running ESLint and Markdownlint.
 
 
 ### 6. Open a PR
@@ -238,7 +241,7 @@ note on why it's a good addition.
 
 ## Code style
 
-No specific linter. Keep things simple and consistent with existing files.
+Keep things simple and consistent with existing files.
 
 
 ## Submitting
