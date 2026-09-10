@@ -1,6 +1,6 @@
 # Remove useless calc's in hsl(from)
 
-The calculations used here can all be resolved and simplified during runtime.
+The calculations used here can all be resolved and simplified.
 
 * `a{color:hsl(from rebeccapurple calc(h)calc(s*1)calc(l + 0)/calc(1 / 1))}`
 * `a{color:hsl(from rebeccapurple calc(h)calc(s*1)calc(l + 0)/1)}`
