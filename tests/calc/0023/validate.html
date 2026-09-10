@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../../../validate.css">
-    <title>Validate: calc constant pi</title>
+    <title>Validate: calc division folding</title>
     <style>
       .source a,
       .expected a {
@@ -19,7 +19,7 @@
         <h2>Source (unminified)</h2>
         <style>
           .source a {
-            width: calc(pi * 100px);
+            width: calc(100px / 4);
           }
         </style>
         <div class="source">
@@ -29,7 +29,7 @@
       <div>
         <h2>Expected (minified)</h2>
         <style>
-          .expected a{width:314.159px}
+          .expected a{width:25px}
         </style>
         <div class="expected">
           <a>Test element</a>

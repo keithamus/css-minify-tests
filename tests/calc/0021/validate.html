@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../../../validate.css">
     <title>Validate: calc unit canonicalization</title>
+    <style>
+      .source a,
+      .expected a {
+        display: block;
+        height: 20px;
+        background: #ccc;
+      }
+    </style>
   </head>
   <body>
     <div class="compare">
@@ -11,10 +19,7 @@
         <h2>Source (unminified)</h2>
         <style>
           .source a {
-            display: block;
             width: calc(1in + 0px);
-            height: 20px;
-            background: #ccc;
           }
         </style>
         <div class="source">
@@ -24,7 +29,7 @@
       <div>
         <h2>Expected (minified)</h2>
         <style>
-          .expected a{display:block;width:96px;height:20px;background:#ccc}
+          .expected a{width:96px}
         </style>
         <div class="expected">
           <a>Test element</a>
