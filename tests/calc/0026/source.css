@@ -1,0 +1,3 @@
+li {
+  transition-delay: calc(sibling-index() * 0.25s);
+}
