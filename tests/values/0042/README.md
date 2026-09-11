@@ -1,4 +1,3 @@
-# Calc double inversion elimination
+# margin: initial to 0
 
-Dividing by a reciprocal cancels out. `calc(1 / (1 / 50px))` simplifies back to
-`50px` because the two inversions undo each other.
+The initial value of `margin` is `0`, which is shorter than `initial`.

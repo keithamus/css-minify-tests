@@ -1,3 +1,3 @@
 a {
-  width: calc(50% + 25%);
+  width: max(10px, 20px);
 }

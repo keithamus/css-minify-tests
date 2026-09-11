@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../validate.css">
+    <title>Validate: calc constant e</title>
+    <style>
+      .source a,
+      .expected a {
+        display: block;
+        height: 20px;
+        background: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="compare">
+      <div>
+        <h2>Source (unminified)</h2>
+        <style>
+          .source a {
+            width: calc(e * 100px);
+          }
+        </style>
+        <div class="source">
+          <a>Test element</a>
+        </div>
+      </div>
+      <div>
+        <h2>Expected (minified)</h2>
+        <style>
+          .expected a{width:271.828px}
+        </style>
+        <div class="expected">
+          <a>Test element</a>
+        </div>
+      </div>
+    </div>
+    <p>Both boxes above should look identical. If they differ, the minification is invalid.</p>
+  </body>
+</html>

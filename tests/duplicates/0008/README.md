@@ -1,4 +1,4 @@
-# Vendor-prefixed duplicate can be dropped when targeting modern browsers
+# Remove duplicate scrollbar-gutter
 
-With a modern browserslist target, `-webkit-transform` is unnecessary because
-all target browsers support unprefixed `transform`. The prefix is dead code.
+If multiple `scrollbar-gutter`s are applied in the same rule, the last one will
+be used and the earlier declarations will be ignored.

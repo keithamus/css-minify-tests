@@ -1,4 +1,0 @@
-a {
-  --foo: ;
-  color: var(--foo, red);
-}

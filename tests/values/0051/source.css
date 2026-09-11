@@ -1,3 +1,6 @@
 a {
-  width: calc(e * 100px);
+  foo: bar;
+}
+b {
+  color: red;
 }

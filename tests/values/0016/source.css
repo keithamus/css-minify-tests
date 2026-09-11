@@ -1,3 +1,15 @@
-a {
-  width: calc(50px + 50px);
+.a {
+  quotes: "" "";
+}
+.b {
+  color: red;
+}
+.c {
+  quotes: '' '' '' '';
+}
+.d {
+  color: tan;
+}
+.e {
+  quotes: none;
 }

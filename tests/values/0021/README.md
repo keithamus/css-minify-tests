@@ -1,5 +1,6 @@
-# Calc division with irrational result must keep calc
+# Remove spaces from quotes declarations
 
-`calc(100% / 3)` cannot be statically resolved to a finite decimal without
-precision loss. Any truncation (e.g. `33.3333%`) introduces measurable rounding
-error. The calc wrapper must be preserved; only whitespace is removable.
+The `quotes` property allows multiple values to be defined, in pairs of 2. Each
+value must be surround in double (`"`) or single (`'`) quotes. However, you do
+not need to put spaces between these sets of values. The quotes handle the
+separation of the values, even without spaces between them.

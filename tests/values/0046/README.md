@@ -1,4 +1,4 @@
-# Calc combine like percentage terms
+# max() with known values resolves to largest
 
-Terms with the same unit are combined by adding their values. `calc(50% + 25%)`
-becomes `75%`, removing the calc() wrapper.
+When all arguments to `max()` are static comparable values, the function can be
+replaced with the largest value.

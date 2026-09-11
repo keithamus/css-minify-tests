@@ -1,3 +1,4 @@
 a {
-  width: calc(1in + 0px);
+  --foo: ;
+  color: var(--foo, red);
 }

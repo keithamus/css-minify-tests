@@ -1,7 +1,5 @@
-# Calc add zero same unit (identity)
+# Convert time lengths
 
-Adding zero of the same unit has no effect. `calc(100px + 0px)` simplifies to
-`100px`, removing the `calc()` wrapper.
-
-**Note:** A zero term can only be combined with a term of the same unit, not
-removed outright.
+A length of time can be represented in `ms` or `s`. The `s` representation is
+shorter in all cases above `99ms` and should be preferred by the minifier. A
+time length of 0 must not be unitless, and in this case `s` is shorter.

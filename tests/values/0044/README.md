@@ -1,4 +1,4 @@
-# Calc product flattening with multiple numbers
+# display: initial must not shorten
 
-When a multiplication chain contains multiple plain numbers, they are multiplied
-together first. `2 * 3` becomes `6`, then `6 * 10px` = `60px`.
+The initial value of `display` is `inline`, which is the same length as
+`initial`. No replacement saves bytes.

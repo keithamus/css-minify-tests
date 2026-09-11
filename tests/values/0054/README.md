@@ -1,4 +1,5 @@
-# Calc single term unwrap
+# Custom property values must not be color-minified
 
-`calc(100px)` contains a single numeric value with no operations. The `calc()`
-wrapper is unnecessary and should be removed, yielding `100px`.
+Custom property values may be read by JavaScript via `getComputedStyle`, where
+the serialized form matters. Converting `rgb(0 0 0)` to `#000` inside a custom
+property changes JS-visible serialization.

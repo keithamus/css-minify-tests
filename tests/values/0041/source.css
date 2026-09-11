@@ -1,4 +1,3 @@
 a {
-  margin-left: calc(-1 * (-10px));
-  margin-right: calc(-10 * (-10px));
+  background-color: initial;
 }

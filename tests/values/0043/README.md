@@ -1,5 +1,3 @@
-# Calc sum flattening across nested calc()
+# z-index: initial to auto
 
-Nested additions inside `calc()` are flattened into a single addition. Two
-nested `calc()` sums are merged and all `px` terms are combined:
-`10 + 20 + 30 + 40 = 100px`.
+The initial value of `z-index` is `auto`, which is shorter than `initial`.

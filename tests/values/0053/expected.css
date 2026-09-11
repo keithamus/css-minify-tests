@@ -1,1 +1,1 @@
-a{width:96px}
+a{--foo: ;color:var(--foo,red)}

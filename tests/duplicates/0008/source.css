@@ -1,4 +1,5 @@
-a {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+p {
+  scrollbar-gutter: auto;
+  scrollbar-gutter: stable;
+  scrollbar-gutter: stable both-edges;
 }

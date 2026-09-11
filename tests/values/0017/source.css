@@ -1,3 +1,8 @@
-a {
-  width: calc(((75.37% - 63.5px) - 900px) + (2 * 100px));
+.a {
+  quotes: "a";
+  color: red;
+}
+.b {
+  quotes: "a" "b" "c";
+  color: tan;
 }

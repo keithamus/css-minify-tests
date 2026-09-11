@@ -1,4 +1,5 @@
-# Calc constant `e` resolution
+# Unrecognized properties must not be removed
 
-`e` is Euler's number (~2.71828). `calc(e * 10px)` resolves the constant then
-multiplies, yielding `27.1828px`.
+A rule with unrecognized property names is syntactically valid CSS. Minifiers
+must not discard it -- unknown properties may be meaningful to other tools or
+future CSS specifications.

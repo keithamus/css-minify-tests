@@ -1,4 +1,6 @@
-# Calc double negation elimination
+# Shorten `background-color: initial` to use `#0000`
 
-`calc(-1 * (-10px))` negates a negative value. The product `-1 * -10px = 10px`,
-fully resolving to a plain length value.
+The initial value of `background-color` is `transparent`, which is longer than
+`initial`. So it should not be replaced with the `transparent` keyword. However,
+`transparent` is equivalent to `#0000`, which is shorter than `initial`
+(**See:** `color/0063`).

@@ -1,4 +1,3 @@
-# Calc distribute multiplication over sum
+# opacity: initial to 1
 
-Multiplication distributes over addition. `2 * (50px + 25px)` expands to
-`100px + 50px`, then the like terms combine to `150px`.
+The initial value of `opacity` is `1`, which is shorter than `initial`.

@@ -1,4 +1,5 @@
-# Calc self-subtraction resolves to zero
+# Empty content string must not be removed
 
-`calc(50px - 50px)` subtracts identical values. The same-unit terms cancel out:
-`50 - 50 = 0`. The result is `0` (unitless zero is valid for lengths).
+`content: ""` generates a pseudo-element with no text. Removing the declaration
+or changing the value to `none`/`normal` would prevent the pseudo-element from
+being generated, which is a semantic change.
