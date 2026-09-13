@@ -2,6 +2,7 @@
  * @file Client-side JS ran on the website.
  */
 
+/* eslint-disable-next-line import-x/no-unresolved */
 import { diffChars } from 'https://cdn.jsdelivr.net/npm/diff@9.0.0/libesm/diff/character.js';
 
 document.addEventListener('command', (e) => {
@@ -324,7 +325,7 @@ window.realModal = {
    * @param  {boolean}         reminified    If true, use the reminified folder
    * @return {Promise<string>}               The CSS as syntax highlighted markup
    */
-  getMinifiedCSS: function (minifierName, fileName, reminified, diff) {
+  getMinifiedCSS: function (minifierName, fileName, reminified) {
     let folder = 'minified';
     if (reminified) {
       folder = 'reminified';
@@ -339,13 +340,25 @@ window.realModal = {
         return response.text();
       });
   },
-  highlightSyntax: function (CSS) {
+  /**
+   * Applies syntax highlighting to a given string of CSS.
+   *
+   * @param  {string} css  Any string of CSS to be syntax highlighted
+   * @return {string}      A string of markup for syntax highlighted CSS
+   */
+  highlightSyntax: function (css) {
     const options = {
       language: 'css'
     };
-    const highlightedCode = window.hljs.highlight(CSS, options).value;
+    const highlightedCode = window.hljs.highlight(css, options).value;
     return highlightedCode;
   },
+  /**
+   * Finds the added/removed changes to the left and right sides of the modal.
+   * Returns an HTML fragment of DOM nodes with diff highlighting applied.
+   *
+   * @return {object} An HTML fragment with span DOM nodes.
+   */
   diffLeftRight: function () {
     const { left, right } = this.data;
     const diff = diffChars(left, right, { ignoreCase: true });
