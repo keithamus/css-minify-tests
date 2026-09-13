@@ -2,6 +2,8 @@
  * @file Client-side JS ran on the website.
  */
 
+import { diffChars } from 'https://cdn.jsdelivr.net/npm/diff@9.0.0/libesm/diff/character.js';
+
 document.addEventListener('command', (e) => {
   if (e.command === '--expand' || e.command == '--collapse') {
     const open = e.command === '--expand';
@@ -165,10 +167,26 @@ window.realModal = {
     select: 'real-select',
     close: 'real-moadal-close-button',
     pre: 'real-minified-output',
-    compareBox: 'real-comparison'
+    compareBoxContainer: 'real-comparison-container',
+    compareBoxColor: 'real-comparison-color',
+    compareBoxDiff: 'real-comparison-diff'
+    /*
+      <div class="real-outputs">
+        <pre id="real-minified-output" class="hljs"></pre>
+        <div id="real-comparison-container" class="real-hide">
+          <pre id="real-comparison-color" class="hljs"></pre>
+          <pre id="real-comparison-diff"></pre>
+        </div>
+      </div>
+    */
   },
   constants: {
     LOADING: 'Loading...'
+  },
+  // Loaded file data for the left/right sides
+  data: {
+    left: '',
+    right: ''
   },
   /**
    * Gets the Modal Container DOM node.
@@ -211,12 +229,30 @@ window.realModal = {
     return document.getElementById(this.elementsMap.pre);
   },
   /**
-   * Gets the second Modal <pre> DOM node.
+   * Gets the right-side container for the comparison <pre> DOM nodes in the
+   * modal.
    *
    * @return {HTMLElement} Reference to DOM node
    */
-  getComparisonBox: function () {
-    return document.getElementById(this.elementsMap.compareBox);
+  getComparisonBoxContainer: function () {
+    return document.getElementById(this.elementsMap.compareBoxContainer);
+  },
+  /**
+   * Gets the right-side <pre> DOM node of the modal used for syntax
+   * highlighting.
+   *
+   * @return {HTMLElement} Reference to DOM node
+   */
+  getComparisonBoxColor: function () {
+    return document.getElementById(this.elementsMap.compareBoxColor);
+  },
+  /**
+   * Gets the right-side <pre> DOM node of the modal used for diffing changes.
+   *
+   * @return {HTMLElement} Reference to DOM node
+   */
+  getComparisonBoxDiff: function () {
+    return document.getElementById(this.elementsMap.compareBoxDiff);
   },
 
   // Modal state/visibility
@@ -231,14 +267,17 @@ window.realModal = {
     const titleEl = this.getModalTitle();
     const selectEl = this.getSelect();
     const preEl = this.getOutputBox();
-    const compareBoxEl = this.getComparisonBox();
+    const compareBoxContainerEl = this.getComparisonBoxContainer();
+    const compareBoxColorEl = this.getComparisonBoxColor();
+    const compareBoxDiffEl = this.getComparisonBoxDiff();
 
     // Reset the loading state before opening
     titleEl.innerText = minifierName + '/' + fileName;
     selectEl.value = '';
     preEl.innerText = this.constants.LOADING;
-    compareBoxEl.innerText = this.constants.LOADING;
-    compareBoxEl.classList.add('real-hide');
+    compareBoxColorEl.innerText = this.constants.LOADING;
+    compareBoxDiffEl.innerText = '';
+    compareBoxContainerEl.classList.add('real-hide');
     modalEl.showModal();
   },
   /** Closes the modal. */
@@ -255,21 +294,27 @@ window.realModal = {
    */
   showComparison: async function ($event) {
     const minifierName = $event?.target?.value;
-    const compareBoxEl = this.getComparisonBox();
+    const compareBoxContainerEl = this.getComparisonBoxContainer();
+    const compareBoxColorEl = this.getComparisonBoxColor();
+    const compareBoxDiffEl = this.getComparisonBoxDiff();
     if (minifierName) {
-      compareBoxEl.classList.remove('real-hide');
+      compareBoxContainerEl.classList.remove('real-hide');
       const modalTitleEl = this.getModalTitle();
       const title = modalTitleEl.innerText;
       const fileName = title.split('/')[1];
-      const minifiedCSS = await this.getMinifiedCSS(minifierName, fileName);
-      compareBoxEl.innerHTML = minifiedCSS;
+      this.data.right = await this.getMinifiedCSS(minifierName, fileName);
+      compareBoxDiffEl.innerHTML = '';
+      compareBoxDiffEl.appendChild(this.diffLeftRight());
+      compareBoxColorEl.innerHTML = this.highlightSyntax(compareBoxDiffEl.innerText);
     } else {
-      compareBoxEl.classList.add('real-hide');
-      compareBoxEl.innerHTML = this.constants.LOADING;
+      this.data.right = '';
+      compareBoxContainerEl.classList.add('real-hide');
+      compareBoxDiffEl.innerHTML = '';
+      compareBoxColorEl.innerHTML = this.constants.LOADING;
     }
   },
 
-  // Loading data, logic composition
+  // Loading/Formatting data
   /**
    * Loads the minified CSS file for a given minifier from a network call, then
    * places the contents inside the modal with syntax highlighting.
@@ -279,7 +324,7 @@ window.realModal = {
    * @param  {boolean}         reminified    If true, use the reminified folder
    * @return {Promise<string>}               The CSS as syntax highlighted markup
    */
-  getMinifiedCSS: function (minifierName, fileName, reminified) {
+  getMinifiedCSS: function (minifierName, fileName, reminified, diff) {
     let folder = 'minified';
     if (reminified) {
       folder = 'reminified';
@@ -292,13 +337,38 @@ window.realModal = {
     return fetch(url)
       .then((response) => {
         return response.text();
-      })
-      .then((CSS) => {
-        const options = { language: 'css' };
-        const highlightedCode = window.hljs.highlight(CSS, options).value;
-        return highlightedCode;
       });
   },
+  highlightSyntax: function (CSS) {
+    const options = {
+      language: 'css'
+    };
+    const highlightedCode = window.hljs.highlight(CSS, options).value;
+    return highlightedCode;
+  },
+  diffLeftRight: function () {
+    const { left, right } = this.data;
+    const diff = diffChars(left, right, { ignoreCase: true });
+    const fragment = document.createDocumentFragment();
+    let span;
+
+    diff.forEach((part) => {
+      span = document.createElement('span');
+      if (part.added) {
+        span.classList.add('real-diff-added');
+      } else if (part.removed) {
+        span.classList.add('real-diff-removed');
+      } else {
+        span.classList.add('real-diff');
+      }
+      span.appendChild(document.createTextNode(part.value));
+      fragment.appendChild(span);
+    });
+
+    return fragment;
+  },
+
+  // Logic composition
   /**
    * Resets the modal, shows it, loads CSS data for the modal.
    *
@@ -307,9 +377,9 @@ window.realModal = {
    */
   showMinifiedCSS: async function (minifierName, fileName) {
     this.resetAndOpenModal(minifierName, fileName);
-    const minifiedCSS = await this.getMinifiedCSS(minifierName, fileName);
+    this.data.left = await this.getMinifiedCSS(minifierName, fileName);
     const preEl = this.getOutputBox();
-    preEl.innerHTML = minifiedCSS;
+    preEl.innerHTML = this.highlightSyntax(this.data.left);
   },
   /**
    * Resets the modal, shows it, loads CSS data for the modal.
@@ -319,8 +389,8 @@ window.realModal = {
    */
   showReminifiedCSS: async function (minifierName, fileName) {
     this.resetAndOpenModal(minifierName, fileName);
-    const reminifiedCSS = await this.getMinifiedCSS(minifierName, fileName, true);
+    this.data.left = await this.getMinifiedCSS(minifierName, fileName, true);
     const preEl = this.getOutputBox();
-    preEl.innerHTML = reminifiedCSS;
+    preEl.innerHTML = this.highlightSyntax(this.data.left);
   }
 };
