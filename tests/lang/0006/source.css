@@ -1,0 +1,4 @@
+:lang(tr) .foo em,
+:lang(zh-hant) .foo em {
+  color: red;
+}
