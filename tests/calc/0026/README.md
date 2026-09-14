@@ -1,4 +1,6 @@
-# Convert multiply by decimal to divide by whole number in calc
+# Convert reciprocal multiplication To division
+
+Convert multiplication by decimal to divide by whole number in `calc`.
 
 When a decimal is used for multiplication and it is between 0 and 1, take it and
 put it in a fraction over 1.
