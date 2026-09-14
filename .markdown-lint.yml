@@ -10,6 +10,19 @@ line-length:
   line_length: 80
   stern: true
 
+# MD033 - No inline html
+no-inline-html:
+  allowed_elements:
+    - img
+    - math
+    - mfrac
+    - mn
+    - mo
+    - mrow
+    - p
+    - sub
+    - sup
+
 # MD044 - Enforce capitalization of proper nouns
 proper-names:
   names:
