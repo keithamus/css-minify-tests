@@ -168,9 +168,7 @@ window.realModal = {
     select: 'real-select',
     close: 'real-moadal-close-button',
     pre: 'real-minified-output',
-    compareBoxContainer: 'real-comparison-container',
-    compareBoxColor: 'real-comparison-color',
-    compareBoxDiff: 'real-comparison-diff'
+    diffBox: 'real-comparison-diff'
   },
   constants: {
     LOADING: 'Loading...'
@@ -221,30 +219,13 @@ window.realModal = {
     return document.getElementById(this.elementsMap.pre);
   },
   /**
-   * Gets the right-side container for the comparison <pre> DOM nodes in the
-   * modal.
-   *
-   * @return {HTMLElement} Reference to DOM node
-   */
-  getComparisonBoxContainer: function () {
-    return document.getElementById(this.elementsMap.compareBoxContainer);
-  },
-  /**
    * Gets the right-side <pre> DOM node of the modal used for syntax
-   * highlighting.
+   * highlighting and diffing.
    *
    * @return {HTMLElement} Reference to DOM node
    */
-  getComparisonBoxColor: function () {
-    return document.getElementById(this.elementsMap.compareBoxColor);
-  },
-  /**
-   * Gets the right-side <pre> DOM node of the modal used for diffing changes.
-   *
-   * @return {HTMLElement} Reference to DOM node
-   */
-  getComparisonBoxDiff: function () {
-    return document.getElementById(this.elementsMap.compareBoxDiff);
+  getDiffBox: function () {
+    return document.getElementById(this.elementsMap.diffBox);
   },
 
   // Modal state/visibility
@@ -259,17 +240,14 @@ window.realModal = {
     const titleEl = this.getModalTitle();
     const selectEl = this.getSelect();
     const preEl = this.getOutputBox();
-    const compareBoxContainerEl = this.getComparisonBoxContainer();
-    const compareBoxColorEl = this.getComparisonBoxColor();
-    const compareBoxDiffEl = this.getComparisonBoxDiff();
+    const diffBoxEl = this.getDiffBox();
 
     // Reset the loading state before opening
     titleEl.innerText = minifierName + '/' + fileName;
     selectEl.value = '';
     preEl.innerText = this.constants.LOADING;
-    compareBoxColorEl.innerText = this.constants.LOADING;
-    compareBoxDiffEl.innerText = '';
-    compareBoxContainerEl.classList.add('real-hide');
+    diffBoxEl.innerText = this.constants.LOADING;
+    diffBoxEl.classList.add('real-hide');
     modalEl.showModal();
   },
   /** Closes the modal. */
@@ -286,23 +264,19 @@ window.realModal = {
    */
   showComparison: async function ($event) {
     const minifierName = $event?.target?.value;
-    const compareBoxContainerEl = this.getComparisonBoxContainer();
-    const compareBoxColorEl = this.getComparisonBoxColor();
-    const compareBoxDiffEl = this.getComparisonBoxDiff();
+    const diffBoxEl = this.getDiffBox();
     if (minifierName) {
-      compareBoxContainerEl.classList.remove('real-hide');
+      diffBoxEl.classList.remove('real-hide');
       const modalTitleEl = this.getModalTitle();
       const title = modalTitleEl.innerText;
       const fileName = title.split('/')[1];
       this.data.right = await this.getMinifiedCSS(minifierName, fileName);
-      compareBoxDiffEl.innerHTML = '';
-      compareBoxDiffEl.appendChild(this.diffLeftRight());
-      compareBoxColorEl.innerHTML = this.highlightSyntax(compareBoxDiffEl.innerText);
+      diffBoxEl.innerHTML = '';
+      diffBoxEl.appendChild(this.diffLeftRight());
     } else {
       this.data.right = '';
-      compareBoxContainerEl.classList.add('real-hide');
-      compareBoxDiffEl.innerHTML = '';
-      compareBoxColorEl.innerHTML = this.constants.LOADING;
+      diffBoxEl.classList.add('real-hide');
+      diffBoxEl.innerHTML = this.constants.LOADING;
     }
   },
 
@@ -365,7 +339,7 @@ window.realModal = {
       } else {
         span.classList.add('real-diff');
       }
-      span.appendChild(document.createTextNode(part.value));
+      span.innerHTML = this.highlightSyntax(part.value);
       fragment.appendChild(span);
     });
 
