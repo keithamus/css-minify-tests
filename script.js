@@ -171,15 +171,6 @@ window.realModal = {
     compareBoxContainer: 'real-comparison-container',
     compareBoxColor: 'real-comparison-color',
     compareBoxDiff: 'real-comparison-diff'
-    /*
-      <div class="real-outputs">
-        <pre id="real-minified-output" class="hljs"></pre>
-        <div id="real-comparison-container" class="real-hide">
-          <pre id="real-comparison-color" class="hljs"></pre>
-          <pre id="real-comparison-diff"></pre>
-        </div>
-      </div>
-    */
   },
   constants: {
     LOADING: 'Loading...'
