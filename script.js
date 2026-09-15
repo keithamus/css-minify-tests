@@ -336,8 +336,6 @@ window.realModal = {
         span.classList.add('real-diff-added');
       } else if (part.removed) {
         span.classList.add('real-diff-removed');
-      } else {
-        span.classList.add('real-diff');
       }
       span.innerHTML = this.highlightSyntax(part.value);
       fragment.appendChild(span);
