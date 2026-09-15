@@ -175,6 +175,7 @@ window.realModal = {
   },
   // Loaded file data for the left/right sides
   data: {
+    reminified: false,
     left: '',
     right: ''
   },
@@ -243,6 +244,9 @@ window.realModal = {
     const diffBoxEl = this.getDiffBox();
 
     // Reset the loading state before opening
+    this.data.reminified = false;
+    this.data.left = '';
+    this.data.right = '';
     titleEl.innerText = minifierName + '/' + fileName;
     selectEl.value = '';
     preEl.innerText = this.constants.LOADING;
@@ -326,7 +330,13 @@ window.realModal = {
    */
   diffLeftRight: function () {
     const { left, right } = this.data;
-    const diff = diffChars(left, right, { ignoreCase: true });
+    let diff;
+    const diffOptions = { ignoreCase: true };
+    if (this.data.reminified) {
+      diff = diffChars(right, left, diffOptions);
+    } else {
+      diff = diffChars(left, right, diffOptions);
+    }
     const fragment = document.createDocumentFragment();
     let span;
 
@@ -365,7 +375,12 @@ window.realModal = {
    */
   showReminifiedCSS: async function (minifierName, fileName) {
     this.resetAndOpenModal(minifierName, fileName);
-    this.data.left = await this.getMinifiedCSS(minifierName, fileName, true);
+    this.data.reminified = true;
+    this.data.left = await this.getMinifiedCSS(
+      minifierName,
+      fileName,
+      this.data.reminified
+    );
     const preEl = this.getOutputBox();
     preEl.innerHTML = this.highlightSyntax(this.data.left);
   }
