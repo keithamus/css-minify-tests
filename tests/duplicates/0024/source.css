@@ -1,0 +1,9 @@
+a {
+  border: 1px solid tan;
+  border: 1px solid var(--x);
+  color: red;
+  color: var(--y);
+  margin: var(--z);
+  margin: 10px;
+  margin: var(--z);
+}
