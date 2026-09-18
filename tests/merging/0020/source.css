@@ -1,0 +1,13 @@
+.a {
+  color: red;
+}
+.a .x {
+  color: tan;
+}
+.b {
+  color: red;
+  padding: 1px;
+}
+.b .y {
+  color: gold;
+}

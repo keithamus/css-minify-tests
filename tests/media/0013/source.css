@@ -1,0 +1,10 @@
+@media (prefers-color-scheme: dark) {
+  a {
+    color: red;
+  }
+}
+@media(prefers-color-scheme: dark) {
+  a {
+    color: red;
+  }
+}

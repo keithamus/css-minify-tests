@@ -1,4 +1,4 @@
-# Convert reciprocal multiplication To division
+# Convert reciprocal multiplication to division
 
 Convert multiplication by decimal to divide by whole number in `calc`.
 
