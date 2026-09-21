@@ -5,7 +5,7 @@
     "size": 10313682,
     "results": {
       "clean-css": 7406466,
-      "csskit": 7625156,
+      "csskit": 7624899,
       "csslop": 6511510,
       "cssnano": 6540601,
       "csso": 7178482,
@@ -470,7 +470,7 @@
     "size": 233717,
     "results": {
       "clean-css": 183378,
-      "csskit": 182970,
+      "csskit": 183156,
       "csslop": 182013,
       "cssnano": 177321,
       "csso": 183048,
@@ -1370,7 +1370,7 @@
     "size": 56509,
     "results": {
       "clean-css": 39220,
-      "csskit": 42070,
+      "csskit": 41608,
       "csslop": 21717,
       "cssnano": 20710,
       "csso": 38048,
@@ -2300,7 +2300,7 @@
     "size": 14088,
     "results": {
       "clean-css": 9654,
-      "csskit": 9824,
+      "csskit": 9843,
       "csslop": 9583,
       "cssnano": 9692,
       "csso": 9579,
