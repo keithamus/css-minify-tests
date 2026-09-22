@@ -2,4 +2,5 @@
 
 Sometimes values are indented, or add leading or trailing zeroes to make
 repetition visually line up like a table of data. Reduce numeric values
-(`-0.020em` => `-.02em`), and remove extra whitespace.
+(`-0.020em` => `-.02em`), and remove extra whitespace, while still retaining at
+least one space to represent multiple consecutive spaces/tabs/returns.
