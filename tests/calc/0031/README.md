@@ -1,4 +1,4 @@
-# Resolve calculations 
+# Resolve calculations with long decimal points rounded
 
 Replace the calculation with the result to reduce character count. To balanace
 accuracy and decimal point precision with character reduction, take the total
