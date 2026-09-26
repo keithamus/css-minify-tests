@@ -1,0 +1,7 @@
+.a { width: calc(100% / 1); }
+.b { width: calc(100% / 2); }
+.c { width: calc(100% / 4); }
+.d { width: calc(100% / 5); }
+.e { width: calc(100% / 8); }
+.f { width: calc(100% / 10); }
+.g { width: calc(100% / 16); }

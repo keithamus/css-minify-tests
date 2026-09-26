@@ -1,0 +1,6 @@
+a {
+  width: calc(5px - 10px);
+}
+b {
+  width: calc(-0.5rem);
+}

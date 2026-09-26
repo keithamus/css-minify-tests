@@ -18,7 +18,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@thejaredwilcurt/csslop": "^0.0.39",
+    "@thejaredwilcurt/csslop": "^0.0.40",
     "autoprefixer": "^10.6.1",
     "clean-css": "^5.3.3",
     "cross-env": "^10.1.0",
@@ -37,11 +37,11 @@
     "http-server": "^14.1.1",
     "lightningcss": "^1.33.0",
     "markdownlint-cli": "^0.49.1",
-    "marked": "^18.0.13",
+    "marked": "^18.0.14",
     "postcss": "^8.5.28",
     "pretty-ms": "^9.3.1",
     "real-world-css-libraries": "^1.0.8",
-    "sass": "^1.104.1",
+    "sass": "^1.105.0",
     "shiki": "^4.4.3",
     "tjw-markdownlint-rules": "^1.1.0"
   },
@@ -53,11 +53,11 @@
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "26.8.2"
+      "version": "26.10.0"
     },
     "packageManager": {
       "name": "npm",
-      "version": "12.0.2"
+      "version": "12.1.0"
     }
   }
 }
