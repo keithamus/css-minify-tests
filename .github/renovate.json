@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "corepack": true,
   "dependencyDashboard": false,
   "extends": ["config:recommended"],
   "separateMultipleMajor": true,
