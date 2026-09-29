@@ -45,6 +45,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 40px;
+}
+
 body {
   margin: 0 auto;
   max-width: 68.75rem;
