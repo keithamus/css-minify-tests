@@ -53,14 +53,39 @@ function openHash () {
 openHash();
 window.addEventListener('hashchange', openHash);
 
+function backfillHistoricalData () {
+  if (!window.historyData || window.historyData.length < 2) {
+    return;
+  }
+  const minifierNames = Array.from(
+    new Set(
+      window
+        .historyData
+        .flatMap((data) => {
+          return Object.keys(data.minifiers);
+        })
+    )
+  );
+  window.historyData.map((data) => {
+    for (const minifier of minifierNames) {
+      data.minifiers[minifier] = data.minifiers[minifier] || {
+        version: '0.0.0',
+        pass: 0,
+        total: data.testCount
+      };
+    }
+  });
+  return window.historyData;
+}
+
 // Historical trend chart
 (function () {
   const el = document.getElementById('pass-rate-chart');
   if (!el || typeof window.ApexCharts === 'undefined') {
     return;
   }
-  const data = window.historyData;
-  if (!data || data.length < 2) {
+  const data = backfillHistoricalData();
+  if (!data) {
     return;
   }
 
