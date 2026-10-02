@@ -53,6 +53,7 @@ function openHash () {
 openHash();
 window.addEventListener('hashchange', openHash);
 
+const NOT_TESTED = 'not tested';
 function backfillHistoricalData () {
   if (!window.historyData || window.historyData.length < 2) {
     return;
@@ -66,16 +67,24 @@ function backfillHistoricalData () {
         })
     )
   );
-  window.historyData.map((data) => {
+  const backfilledData = [];
+  window.historyData.forEach((data) => {
+    const newData = {
+      date: data.date,
+      testCount: data.testCount,
+      minifiers: {}
+    };
+    const dummyData = {
+      version: NOT_TESTED,
+      pass: 0,
+      total: data.testCount
+    };
     for (const minifier of minifierNames) {
-      data.minifiers[minifier] = data.minifiers[minifier] || {
-        version: '0.0.0',
-        pass: 0,
-        total: data.testCount
-      };
+      newData.minifiers[minifier] = data.minifiers[minifier] || dummyData;
     }
+    backfilledData.push(newData);
   });
-  return window.historyData;
+  return backfilledData;
 }
 
 // Historical trend chart
@@ -154,8 +163,13 @@ function backfillHistoricalData () {
           const name = w.config.series[seriesIndex].name;
           const entry = reversed[dataPointIndex];
           const m = entry && entry.minifiers[name];
-          const extra = m ? ` (${m.pass}/${m.total} v${m.version})` : '';
           const percent = ((m.pass / m.total) * 100).toFixed(1) + '%';
+          let extra = '';
+          if (m?.version === NOT_TESTED) {
+            extra = ` (${NOT_TESTED})`;
+          } else if (m) {
+            extra = ` (${m.pass}/${m.total} v${m.version})`;
+          }
           return percent + extra;
         }
       }
