@@ -25,9 +25,6 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: jdx/mise-action@9149ea85001c7435d5a66bb127d6a1b6227cb0a5 # v5.0.0
 
-      - run: git --version
-      - run: git remote update
-      - run: git fetch
       - run: node -v
       - run: npm -v
       - run: npm i
@@ -43,6 +40,7 @@ jobs:
           if_no_artifact_found: warn
           path: data
 
+      - run: git remote update # needed for npm t to have origin/main access
       - run: npm t
 
       - name: Upload PR results
