@@ -11,7 +11,7 @@
     "lint:js": "eslint *.js lib scripts",
     "lint:md:fix": "npm run lint:md -- --fix",
     "lint:js:fix": "npm run lint:js -- --fix",
-    "test": "cross-env NO_COLOR=1 node ./run-tests.js",
+    "test": "git checkout main data && cross-env NO_COLOR=1 node ./run-tests.js",
     "test:debug": "cross-env DEBUG=true node ./run-tests.js",
     "new-test": "node ./scripts/create-test.js"
   },
