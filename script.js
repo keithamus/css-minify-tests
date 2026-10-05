@@ -53,14 +53,48 @@ function openHash () {
 openHash();
 window.addEventListener('hashchange', openHash);
 
+const NOT_TESTED = 'not tested';
+function backfillHistoricalData () {
+  if (!window.historyData || window.historyData.length < 2) {
+    return;
+  }
+  const minifierNames = Array.from(
+    new Set(
+      window
+        .historyData
+        .flatMap((data) => {
+          return Object.keys(data.minifiers);
+        })
+    )
+  );
+  const backfilledData = [];
+  window.historyData.forEach((data) => {
+    const newData = {
+      date: data.date,
+      testCount: data.testCount,
+      minifiers: {}
+    };
+    const dummyData = {
+      version: NOT_TESTED,
+      pass: 0,
+      total: data.testCount
+    };
+    for (const minifier of minifierNames) {
+      newData.minifiers[minifier] = data.minifiers[minifier] || dummyData;
+    }
+    backfilledData.push(newData);
+  });
+  return backfilledData;
+}
+
 // Historical trend chart
 (function () {
   const el = document.getElementById('pass-rate-chart');
   if (!el || typeof window.ApexCharts === 'undefined') {
     return;
   }
-  const data = window.historyData;
-  if (!data || data.length < 2) {
+  const data = backfillHistoricalData();
+  if (!data) {
     return;
   }
 
@@ -129,8 +163,13 @@ window.addEventListener('hashchange', openHash);
           const name = w.config.series[seriesIndex].name;
           const entry = reversed[dataPointIndex];
           const m = entry && entry.minifiers[name];
-          const extra = m ? ` (${m.pass}/${m.total} v${m.version})` : '';
           const percent = ((m.pass / m.total) * 100).toFixed(1) + '%';
+          let extra = '';
+          if (m?.version === NOT_TESTED) {
+            extra = ` (${NOT_TESTED})`;
+          } else if (m) {
+            extra = ` (${m.pass}/${m.total} v${m.version})`;
+          }
           return percent + extra;
         }
       }
