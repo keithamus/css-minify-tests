@@ -54,21 +54,23 @@ openHash();
 window.addEventListener('hashchange', openHash);
 
 const NOT_TESTED = 'not tested';
+/**
+ * Dynamically creates any missing historical data so the graph works and we
+ * don't need to manually backfill results when adding new minifiers, or
+ * continue to test no longer maintained minifiers.
+ *
+ * @return {object[]} Array of history data with backfilled data
+ */
 function backfillHistoricalData () {
-  if (!window.historyData || window.historyData.length < 2) {
-    return;
-  }
   const minifierNames = Array.from(
     new Set(
-      window
-        .historyData
-        .flatMap((data) => {
-          return Object.keys(data.minifiers);
-        })
+      window.historyData?.flatMap((data) => {
+        return Object.keys(data.minifiers);
+      })
     )
   );
   const backfilledData = [];
-  window.historyData.forEach((data) => {
+  window.historyData?.forEach((data) => {
     const newData = {
       date: data.date,
       testCount: data.testCount,
