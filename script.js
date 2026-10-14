@@ -54,10 +54,13 @@ openHash();
 window.addEventListener('hashchange', openHash);
 
 const NOT_TESTED = 'not tested';
+/**
+ * Fills in any missing historical data with dummy values so the graph loads
+ * correctly on the site.
+ *
+ * @return {object[]} The history data, backfilled
+ */
 function backfillHistoricalData () {
-  if (!window.historyData || window.historyData.length < 2) {
-    return;
-  }
   const minifierNames = Array.from(
     new Set(
       window
@@ -90,13 +93,15 @@ function backfillHistoricalData () {
 // Historical trend chart
 (function () {
   const el = document.getElementById('pass-rate-chart');
-  if (!el || typeof window.ApexCharts === 'undefined') {
+  if (
+    !el ||
+    typeof window.ApexCharts === 'undefined' ||
+    !window.historyData ||
+    window.historyData.length < 2
+  ) {
     return;
   }
   const data = backfillHistoricalData();
-  if (!data) {
-    return;
-  }
 
   const reversed = [...data].reverse();
   const minifierNames = Object.keys(reversed[0].minifiers);
