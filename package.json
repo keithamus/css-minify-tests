@@ -24,7 +24,7 @@
     "cross-env": "^10.1.0",
     "csskit": "^0.0.35",
     "cssnano": "^9.3.1",
-    "cssnano-preset-advanced": "^9.2.1",
+    "cssnano-preset-advanced": "^10.0.0",
     "csso": "^5.0.5",
     "esbuild": "^0.28.2",
     "eslint": "^10.12.0",
