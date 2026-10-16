@@ -522,7 +522,7 @@
   "color-rounding/0001": {
     "clean-css": false,
     "csskit": false,
-    "csslop": false,
+    "csslop": true,
     "cssnano": false,
     "csso": false,
     "esbuild": false,
@@ -562,7 +562,7 @@
   "color-rounding/0005": {
     "clean-css": false,
     "csskit": false,
-    "csslop": false,
+    "csslop": true,
     "cssnano": false,
     "csso": false,
     "esbuild": false,
@@ -572,7 +572,7 @@
   "color-rounding/0006": {
     "clean-css": false,
     "csskit": false,
-    "csslop": false,
+    "csslop": true,
     "cssnano": false,
     "csso": false,
     "esbuild": false,
@@ -1382,7 +1382,7 @@
   "combined/0004": {
     "clean-css": false,
     "csskit": false,
-    "csslop": false,
+    "csslop": true,
     "cssnano": false,
     "csso": false,
     "esbuild": false,
@@ -4842,7 +4842,7 @@
   "supports/0001": {
     "clean-css": false,
     "csskit": true,
-    "csslop": false,
+    "csslop": true,
     "cssnano": true,
     "csso": false,
     "esbuild": false,
