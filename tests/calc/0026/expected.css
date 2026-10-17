@@ -1,1 +1,1 @@
-li{transition-delay:calc(sibling-index()/4s)}
+a{font-size:calc(var(--x)/4)}

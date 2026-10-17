@@ -1,0 +1,3 @@
+a {
+  transition-delay: calc(var(--x) * 0.25s);
+}
