@@ -68,3 +68,6 @@ multiplication to division.
 * `calc(var(--x)*.25)` => `calc(var(--x)/4)`
 * `calc(var(--x)*.05)` => `calc(var(--x)/20)`
 * `calc(var(--x)*.03125)` => `calc(var(--x)/32)`
+
+**Note:** This optimization can only be applied when the right-side of the
+calculation is unitless (See: `calc/0035` for more information).

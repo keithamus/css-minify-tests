@@ -305,7 +305,7 @@
     "csslop": true,
     "cssnano": false,
     "csso": false,
-    "esbuild": true,
+    "esbuild": false,
     "lightningcss": false,
     "sass": false
   },
@@ -388,6 +388,16 @@
     "esbuild": false,
     "lightningcss": true,
     "sass": false
+  },
+  "calc/0035": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": true,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": true
   },
   "charset/0001": {
     "clean-css": false,
