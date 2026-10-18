@@ -1,9 +1,8 @@
-# Use shorter color representations in SVGS in URLs
+# Use single or double quotes in URL's to avoid escapes (single-single)
 
-Colors used inside data-URI embedded SVGs should be minifed. However, there are
-caveats unique to this scenario. A pound sign must be URL-encoded for use in
-hex values (`#f00` -> `%23f00`). Because of this increase, some hex values, like
-`#0F0` are actually shorter when written out as their color keywords (`lime`
-vs `%230F0`), but other keywords are still shorter when converted to URL-encoded
-hex (`lightgoldenrodyellow` -> `%23fafad2`). Other color representations should
-be converted to URL-encoded hex or color keyword if in the sRGB color gamut.
+SVG's can be embedded directly into URL's in CSS. They will always contain
+attributes that are wrapped in quotes. However, they may use single or double
+quotes. By changing either the wrapping quotes or inner quotes, you can avoid
+the need for adding additional escape characters. This assumes the context of
+the CSS is in a stylesheet or `<style>` block. If used as part of inline-styles,
+escaping will be inevitable.
