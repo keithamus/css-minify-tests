@@ -1,0 +1,10 @@
+@media (width < 700px) {
+  .a .b {
+    width: 100%
+  }
+}
+@media (width < 700px) {
+  .a .c {
+    width: 100%
+  }
+}
