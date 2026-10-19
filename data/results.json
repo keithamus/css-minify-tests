@@ -1839,6 +1839,16 @@
     "lightningcss": false,
     "sass": false
   },
+  "duplicates/0025": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "empty-rules/0001": {
     "clean-css": true,
     "csskit": true,
@@ -2439,6 +2449,16 @@
     "lightningcss": false,
     "sass": false
   },
+  "initial/0009": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "keyframes/0001": {
     "clean-css": false,
     "csskit": false,
@@ -2527,6 +2547,16 @@
     "csso": false,
     "esbuild": false,
     "lightningcss": false,
+    "sass": false
+  },
+  "lang/0008": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": true,
+    "esbuild": false,
+    "lightningcss": true,
     "sass": false
   },
   "layer/0001": {
@@ -2939,6 +2969,36 @@
     "lightningcss": true,
     "sass": false
   },
+  "merging/0025": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "merging/0026": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "merging/0027": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "nesting/0001": {
     "clean-css": false,
     "csskit": true,
@@ -3306,6 +3366,36 @@
     "cssnano": false,
     "csso": false,
     "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0038": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0039": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0040": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": true,
     "lightningcss": false,
     "sass": false
   },
@@ -3915,6 +4005,46 @@
     "csslop": true,
     "cssnano": false,
     "csso": true,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "selectors-advanced/0027": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": true,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": false
+  },
+  "selectors-advanced/0028": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": false
+  },
+  "selectors-advanced/0029": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": true,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": false
+  },
+  "selectors-advanced/0030": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": false,
     "esbuild": false,
     "lightningcss": false,
     "sass": false
@@ -4693,7 +4823,7 @@
     "clean-css": false,
     "csskit": false,
     "csslop": true,
-    "cssnano": false,
+    "cssnano": true,
     "csso": false,
     "esbuild": false,
     "lightningcss": false,
@@ -4730,6 +4860,26 @@
     "sass": false
   },
   "shorthands/0057": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "shorthands/0058": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": false,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": false
+  },
+  "shorthands/0059": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,
@@ -5689,6 +5839,16 @@
     "lightningcss": false,
     "sass": false
   },
+  "values/0058": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "vendors/0001": {
     "clean-css": false,
     "csskit": false,
@@ -5710,6 +5870,16 @@
     "sass": false
   },
   "vendors/0003": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "vendors/0004": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,
