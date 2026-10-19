@@ -1,0 +1,15 @@
+.a {
+  border-top-color: currentcolor;
+}
+.b {
+  border-right-color: currentcolor;
+}
+.c {
+  border-bottom-color: currentcolor;
+}
+.d {
+  border-left-color: currentcolor;
+}
+.e {
+  border-color: currentcolor;
+}
