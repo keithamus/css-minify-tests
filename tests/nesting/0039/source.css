@@ -1,0 +1,6 @@
+.foo {
+  color: red;
+  &.foo.foo {
+    font-size: 16px;
+  }
+}
