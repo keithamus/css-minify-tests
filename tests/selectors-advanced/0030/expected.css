@@ -1,1 +1,1 @@
-.foo,.foo :is(blockquote,code,em,h1,pre){color:red}
+.foo{&,blockquote,code,em,h1,pre{color:red}}
