@@ -4014,9 +4014,9 @@
     "csskit": false,
     "csslop": true,
     "cssnano": false,
-    "csso": true,
+    "csso": false,
     "esbuild": false,
-    "lightningcss": true,
+    "lightningcss": false,
     "sass": false
   },
   "selectors-advanced/0028": {
@@ -4043,7 +4043,7 @@
     "clean-css": false,
     "csskit": false,
     "csslop": true,
-    "cssnano": true,
+    "cssnano": false,
     "csso": false,
     "esbuild": false,
     "lightningcss": false,
@@ -5870,16 +5870,6 @@
     "sass": false
   },
   "vendors/0003": {
-    "clean-css": false,
-    "csskit": false,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
-  },
-  "vendors/0004": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,
