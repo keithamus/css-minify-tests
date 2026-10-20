@@ -1,6 +1,5 @@
-# Combine nested selectors with same specificity using `:is` when you can't nest
+# Combine nested selectors with parent using `&`
 
-In this example, because we also want the wrapping element (`.foo`) to receive
-the same styles as it's children, we can't simple nest them. However, since all
-the children have the same level of specificity, we can wrap them in an `:is()`
-to reduce the repetition of `.foo`.
+In this example, we want the wrapping element (`.foo`) to receive the same
+styles as its children. We can nest all the children under the parent and then
+add a `&` selector to apply the same styles to the parent as well.
