@@ -1,0 +1,6 @@
+a {
+  margin-bottom: 1px;
+  & {
+    margin-right: 1px;
+  }
+}

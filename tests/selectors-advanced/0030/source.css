@@ -1,0 +1,8 @@
+.foo,
+.foo blockquote,
+.foo code,
+.foo em,
+.foo h1,
+.foo pre {
+  color: red;
+}
