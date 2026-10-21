@@ -168,6 +168,11 @@ tr:has(details) summary {
   font-size: 0.875rem;
 }
 
+#real-world-table tfoot tr:first-of-type th {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 details > h1 {
   font-size: 1.2rem;
 }
