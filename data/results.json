@@ -309,6 +309,16 @@
     "lightningcss": false,
     "sass": false
   },
+  "calc/0027": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "calc/0030": {
     "clean-css": false,
     "csskit": true,
@@ -447,16 +457,6 @@
     "csso": false,
     "esbuild": true,
     "lightningcss": true,
-    "sass": false
-  },
-  "calc/0048": {
-    "clean-css": false,
-    "csskit": false,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
     "sass": false
   },
   "calc-advanced/0001": {
