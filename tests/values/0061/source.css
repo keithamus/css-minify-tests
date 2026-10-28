@@ -1,0 +1,15 @@
+.a {
+  width: 1E3px;
+}
+.b {
+  width: 1e+3px;
+}
+.c {
+  width: 10e3px;
+}
+.d {
+  width: 1e-7px;
+}
+.e {
+  width: -0.000001px;
+}

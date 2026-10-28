@@ -1,0 +1,6 @@
+.a {
+  transition-duration: 1000000ms;
+}
+.b {
+  transition-duration: 300000000000000000000000000000ms;
+}
