@@ -2,5 +2,5 @@ a:nth-child(1000n+1000000) {
   color: red;
 }
 b:nth-child(1000000) {
-  color: red;
+  color: tan;
 }

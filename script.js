@@ -61,15 +61,27 @@ const NOT_TESTED = 'not tested';
  * @return {object[]} The history data, backfilled
  */
 function backfillHistoricalData () {
-  const minifierNames = Array.from(
-    new Set(
-      window
-        .historyData
-        .flatMap((data) => {
-          return Object.keys(data.minifiers);
-        })
+  /**
+   * Finds all unique minifier names ever used in any historical test run. Sorts
+   * them by most recent run from most to least passing tests so the hover
+   * legend visually maps to the line graph.
+   */
+  const minifierNames = (
+    Array.from(
+      new Set(
+        window
+          .historyData
+          .flatMap((data) => {
+            return Object.keys(data.minifiers);
+          })
+      )
     )
-  );
+  ).toSorted((a, b) => {
+    let A = window.historyData[0].minifiers[a]?.pass || 0;
+    let B = window.historyData[0].minifiers[b]?.pass || 0;
+    return A < B ? 1 : A > B ? -1 : 0;
+  });
+
   const backfilledData = [];
   window.historyData.forEach((data) => {
     const newData = {
