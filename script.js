@@ -56,20 +56,28 @@ window.addEventListener('hashchange', openHash);
 const NOT_TESTED = 'not tested';
 /**
  * Fills in any missing historical data with dummy values so the graph loads
- * correctly on the site.
+ * correctly on the site. Sorts them by most recent run from most to least
+ * passing tests so the hover legend visually maps to the line graph.
  *
  * @return {object[]} The history data, backfilled
  */
 function backfillHistoricalData () {
-  const minifierNames = Array.from(
-    new Set(
-      window
-        .historyData
-        .flatMap((data) => {
-          return Object.keys(data.minifiers);
-        })
+  const minifierNames = (
+    Array.from(
+      new Set(
+        window
+          .historyData
+          .flatMap((data) => {
+            return Object.keys(data.minifiers);
+          })
+      )
     )
-  );
+  ).toSorted((a, b) => {
+    let A = window.historyData[0].minifiers[a]?.pass || 0;
+    let B = window.historyData[0].minifiers[b]?.pass || 0;
+    return A < B;
+  });
+
   const backfilledData = [];
   window.historyData.forEach((data) => {
     const newData = {
