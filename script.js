@@ -56,12 +56,16 @@ window.addEventListener('hashchange', openHash);
 const NOT_TESTED = 'not tested';
 /**
  * Fills in any missing historical data with dummy values so the graph loads
- * correctly on the site. Sorts them by most recent run from most to least
- * passing tests so the hover legend visually maps to the line graph.
+ * correctly on the site.
  *
  * @return {object[]} The history data, backfilled
  */
 function backfillHistoricalData () {
+  /**
+   * Finds all unique minifier names ever used in any historical test run. Sorts
+   * them by most recent run from most to least passing tests so the hover
+   * legend visually maps to the line graph.
+   */
   const minifierNames = (
     Array.from(
       new Set(
