@@ -3971,13 +3971,13 @@
   },
   "selectors/0021": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
-    "esbuild": false,
+    "esbuild": true,
     "lightningcss": true,
-    "sass": false
+    "sass": true
   },
   "selectors-advanced/0001": {
     "clean-css": false,
