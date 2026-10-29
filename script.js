@@ -75,7 +75,7 @@ function backfillHistoricalData () {
   ).toSorted((a, b) => {
     let A = window.historyData[0].minifiers[a]?.pass || 0;
     let B = window.historyData[0].minifiers[b]?.pass || 0;
-    return A < B;
+    return A < B ? -1 : A > B ? 1 : 0;
   });
 
   const backfilledData = [];
