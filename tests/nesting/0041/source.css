@@ -1,0 +1,4 @@
+.menu .item:hover .sub-menu,
+.menu .item:focus .sub-menu {
+  display: block;
+}
