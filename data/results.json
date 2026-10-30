@@ -3609,6 +3609,26 @@
     "lightningcss": false,
     "sass": false
   },
+  "nesting/0041": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0042": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "page/0001": {
     "clean-css": true,
     "csskit": true,
@@ -4528,6 +4548,16 @@
     "esbuild": true,
     "lightningcss": true,
     "sass": true
+  },
+  "shorthand-values/0026": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
   },
   "shorthands/0001": {
     "clean-css": false,
