@@ -19,7 +19,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@thejaredwilcurt/csslop": "^0.0.48",
+    "@thejaredwilcurt/csslop": "^0.0.49",
     "autoprefixer": "^10.6.2",
     "clean-css": "^5.3.3",
     "cross-env": "^10.1.0",
@@ -28,7 +28,7 @@
     "cssnano-preset-advanced": "^10.0.0",
     "csso": "^5.0.5",
     "esbuild": "^0.28.2",
-    "eslint": "^10.13.0",
+    "eslint": "^10.14.0",
     "eslint-config-tjw-base": "^5.0.0",
     "eslint-config-tjw-import-x": "^1.0.1",
     "eslint-config-tjw-jsdoc": "^2.0.1",
@@ -41,8 +41,8 @@
     "marked": "^18.1.2",
     "postcss": "^8.5.32",
     "pretty-ms": "^10.0.0",
-    "real-world-css-libraries": "^1.0.8",
-    "sass": "^1.107.0",
+    "real-world-css-libraries": "^1.0.9",
+    "sass": "^1.107.1",
     "shiki": "^4.5.0",
     "tjw-markdownlint-rules": "^1.1.0"
   },
