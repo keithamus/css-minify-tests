@@ -1,0 +1,7 @@
+a {
+  color: red;
+}
+a b,
+a p {
+  margin: 0;
+}
