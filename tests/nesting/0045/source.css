@@ -1,0 +1,10 @@
+a {
+  color: red;
+}
+a > b,
+a > i {
+  margin: 0;
+}
+a p {
+  padding: 0;
+}
