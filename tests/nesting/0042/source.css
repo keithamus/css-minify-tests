@@ -1,0 +1,9 @@
+.a .b {
+  color: red;
+}
+.a .c {
+  color: tan;
+}
+.a:hover .c {
+  color: tan;
+}

@@ -1,0 +1,1 @@
+.menu .item{&:hover,&:focus{.sub-menu{display:block}}}
