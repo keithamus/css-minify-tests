@@ -3629,6 +3629,36 @@
     "lightningcss": false,
     "sass": false
   },
+  "nesting/0043": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0044": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0045": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "page/0001": {
     "clean-css": true,
     "csskit": true,
