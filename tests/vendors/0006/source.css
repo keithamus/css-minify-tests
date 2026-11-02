@@ -1,0 +1,6 @@
+a {
+  background-image: -moz-linear-gradient(red, tan);
+  background-image: -o-linear-gradient(red, tan);
+  background-image: -webkit-linear-gradient(red, tan);
+  background-image: linear-gradient(red, tan);
+}
