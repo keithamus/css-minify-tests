@@ -1,0 +1,10 @@
+a {
+  padding: 1px;
+}
+b {
+  color: tan;
+}
+a .y,
+a .z {
+  color: red;
+}
