@@ -1,0 +1,8 @@
+a {
+  *display: inline;
+  *zoom: 1;
+  color: red;
+}
+b {
+  *color: red;
+}
