@@ -2679,6 +2679,16 @@
     "lightningcss": false,
     "sass": false
   },
+  "initial/0010": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "keyframes/0001": {
     "clean-css": false,
     "csskit": false,
@@ -3700,6 +3710,26 @@
     "sass": false
   },
   "nesting/0046": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0047": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0048": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,
