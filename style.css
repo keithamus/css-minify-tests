@@ -22,6 +22,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --color-neutral-lightness-inc: 6.5%;
+    --color-neutral-lightness-1: 7%;
     --bg: var(--neutral-3);
     --fg-muted: var(--neutral-11);
     --thead-bg: var(--neutral-4);
