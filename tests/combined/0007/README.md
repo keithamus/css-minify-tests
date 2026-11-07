@@ -11,3 +11,10 @@ browser). In this example, the `border-radius` can be placed anywhere in the
 rule safely.
 
 * https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-color#formal_definition
+
+
+Combines:
+
+* `initial/0009` - Convert `border-color` `currentcolor` value to `initial`
+* `shorthands/0020` - Border shorthand must not clobber border-image
+* `shorthands/0059` - Border shorthand containing multiple widths
