@@ -17,8 +17,8 @@ is that this suite can do the same for minification.
 
 ## How it works
 
-The suite contains 350 tests organised by category. Each test isolates **one**
-minification technique so failures are easy to diagnose:
+The suite contains hundreds of tests organised by category. Each test isolates
+**one** minification technique so failures are easy to diagnose:
 
 ```sh
 tests/
@@ -31,11 +31,11 @@ tests/
 ```
 
 Categories include at-rules, colors, comments, duplicates, gradients, merging,
-selectors, shorthands, transforms, values, whitespace, and zero-units.
+nesting, selectors, shorthands, transforms, values, vendors, whitespace,
+zero-units, and more.
 
-Running `npm test` feeds every `source.css` through each minifier, compares the
-output to `expected.css`, and prints a summary table. `npm run test:debug` shows
-the actual vs expected diff for every mismatch.
+Running `npm t` feeds every `source.css` through each minifier, compares the
+output to `expected.css`, and prints a summary table.
 
 
 ## Tested minifiers
@@ -52,12 +52,13 @@ the actual vs expected diff for every mismatch.
 [See results](https://www.keithcirkel.co.uk/css-minify-tests)
 
 
-## Quick start
+## Running locally
 
-```sh
-npm install
-npm test
-```
+1. You'll need to be on the correct Node an npm versions defined in the
+   `package.json`. Use a tool like Proto or Mise to handle switching
+   your versions automatically.
+1. Run `npm i` to install dependencies
+1. Run `npm t` to execute the test suite
 
 
 ## Adding a minifier
@@ -67,7 +68,7 @@ Want to add your minifier to the suite? See the
 
 1. Create an adapter in `lib/minifiers/<name>.js` that exports a default
    `minify(source)` function returning the minified CSS string.
-1. Register it in `‎lib/loaders/loadAllMinifiers.js`.
+1. Register it in `lib/loaders/loadAllMinifiers.js`.
 1. Add the npm package to `devDependencies`.
 1. Run `npm test` and open a PR.
 1. Update the README to add it to the list of "Tested minifiers"
@@ -78,8 +79,8 @@ Want to add your minifier to the suite? See the
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add tests, verify
 transformations against the spec, and interpret results. In short:
 
-1. Run `npm run new-test -- section` where `section` is the name of one of the
-   sections (or a new section if you can't find an appropriate existing one).
+1. Run `npm run new-test section` where `section` is the name of one of the
+   section (or a new section if you can't find an appropriate existing one).
 1. Edit the generated files.
 1. Run `npm test` and open a PR.
 
