@@ -79,8 +79,8 @@ Want to add your minifier to the suite? See the
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add tests, verify
 transformations against the spec, and interpret results. In short:
 
-1. Run `npm run new-test section` where `section` is the name of one of the
-   section (or a new section if you can't find an appropriate existing one).
+1. Run `npm run new-test category` where `category` is the name of one of the
+   category (or a new category if you can't find an appropriate existing one).
 1. Edit the generated files.
 1. Run `npm test` and open a PR.
 
