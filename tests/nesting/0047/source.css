@@ -1,0 +1,10 @@
+.a .b .c i,
+.a .b .c p {
+  color: red;
+}
+.a .b .c q {
+  padding: 8px;
+}
+.a .d {
+  color: tan;
+}
