@@ -311,7 +311,7 @@
   },
   "calc/0027": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -691,7 +691,7 @@
   },
   "color-rounding/0001": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -731,7 +731,7 @@
   },
   "color-rounding/0005": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -741,7 +741,7 @@
   },
   "color-rounding/0006": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -1171,7 +1171,7 @@
   },
   "colors/0033": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -1620,6 +1620,16 @@
     "sass": false
   },
   "combined/0006": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "combined/0007": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,
@@ -2670,16 +2680,6 @@
     "sass": false
   },
   "initial/0009": {
-    "clean-css": false,
-    "csskit": false,
-    "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
-  },
-  "initial/0010": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,
@@ -3861,7 +3861,7 @@
   },
   "property/0009": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -5461,7 +5461,7 @@
   },
   "svg/0001": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -5471,7 +5471,7 @@
   },
   "svg/0002": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -6231,7 +6231,7 @@
   },
   "values/0058": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": false,
@@ -6251,7 +6251,7 @@
   },
   "values/0060": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -6261,7 +6261,7 @@
   },
   "values/0061": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -6271,7 +6271,7 @@
   },
   "values/0062": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": true,
@@ -6281,7 +6281,7 @@
   },
   "values/0063": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": false,
@@ -6291,7 +6291,7 @@
   },
   "values/0064": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -6311,7 +6311,7 @@
   },
   "values/0066": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": true,
     "csso": false,
