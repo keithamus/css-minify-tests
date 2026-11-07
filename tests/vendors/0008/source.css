@@ -1,0 +1,8 @@
+@media (min-width:0\0) {
+  a {
+    color: red;
+  }
+}
+a {
+  padding: 1px;
+}
