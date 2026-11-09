@@ -1,0 +1,7 @@
+@media (width >= 768px) {
+  @media (hover: hover) {
+    a {
+      color: red;
+    }
+  }
+}
