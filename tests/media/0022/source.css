@@ -1,0 +1,5 @@
+@media (40em <= width <= 600px) {
+  a {
+    color: red;
+  }
+}
