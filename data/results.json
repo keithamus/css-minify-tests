@@ -1639,6 +1639,16 @@
     "lightningcss": false,
     "sass": false
   },
+  "combined/0008": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "comments/0001": {
     "clean-css": true,
     "csskit": true,
@@ -3820,6 +3830,16 @@
     "sass": false
   },
   "nesting/0048": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0049": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,

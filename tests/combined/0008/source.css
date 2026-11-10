@@ -1,0 +1,9 @@
+#a .b {
+  > .c {
+    color: red;
+  }
+}
+/* comment */
+#a .b > .d {
+  color: tan;
+}
