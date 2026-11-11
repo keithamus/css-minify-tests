@@ -8,5 +8,5 @@ inside the queries, can be nested.
 
 Combines:
 
-* `merging/00xx` - Merge rules and media queries separated by each other
+* `merging/0031` - Merge rules and media queries separated by each other
 * `nesting/0010` - Introduce nesting
