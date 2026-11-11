@@ -1,0 +1,16 @@
+a {
+  margin: 0;
+}
+@media (width < 640px) {
+  a {
+    margin: 1px;
+  }
+}
+b {
+  padding: 0;
+}
+@media (width < 640px) {
+  b {
+    padding: 1px;
+  }
+}

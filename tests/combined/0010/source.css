@@ -1,0 +1,16 @@
+.a .b {
+  margin: 0;
+}
+@media (width < 640px) {
+  .a .b {
+    margin: 1px;
+  }
+}
+.a .b .c {
+  padding: 0;
+}
+@media (width < 640px) {
+  .a .b .c {
+    padding: 1px;
+  }
+}
