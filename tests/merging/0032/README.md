@@ -1,4 +1,4 @@
-# Merge rules containing properties of the same color with differing representation
+# Merge rules with properties of the same color but differing representations
 
 In this test, the `color` property is in both rules, and has the same value
 (`red`) but in different representations (`rgb` function and capitalized hex).
