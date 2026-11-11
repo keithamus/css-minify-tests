@@ -2,8 +2,8 @@
 
 In this test the `:is` contains a single selector of a known-safe value. It is
 therefore equivalent to unwrap the `:is`. The remaining rule is followed by a
-rule targeting the a matching selector with all of the same properties, making
-the first rule redundant and safe to remove.
+rule targeting a matching selector with all of the same properties, making the
+first rule redundant and safe to remove.
 
 Combines:
 
