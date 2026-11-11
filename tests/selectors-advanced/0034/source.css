@@ -1,0 +1,9 @@
+li {
+  color: red;
+}
+.a, li:nth-child {
+    color: tan;
+}
+.b, li:nth-child() {
+    color: green;
+}
