@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@stylistic/eslint-plugin": "^5.10.0",
+    "@stylistic/eslint-plugin": "^6.0.0",
     "@thejaredwilcurt/csslop": "^0.0.58",
     "autoprefixer": "^10.6.2",
     "clean-css": "^5.3.3",
