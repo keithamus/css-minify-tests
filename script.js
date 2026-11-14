@@ -53,166 +53,109 @@ function openHash () {
 openHash();
 window.addEventListener('hashchange', openHash);
 
-const NOT_TESTED = 'not tested';
-/**
- * Fills in any missing historical data with dummy values so the graph loads
- * correctly on the site.
- *
- * @return {object[]} The history data, backfilled
- */
-function backfillHistoricalData () {
-  /**
-   * Finds all unique minifier names ever used in any historical test run. Sorts
-   * them by most recent run from most to least passing tests so the hover
-   * legend visually maps to the line graph.
-   */
-  const minifierNames = (
-    Array.from(
-      new Set(
-        window
-          .historyData
-          .flatMap((data) => {
-            return Object.keys(data.minifiers);
-          })
-      )
-    )
-  ).toSorted((a, b) => {
-    let A = window.historyData[0].minifiers[a]?.pass || 0;
-    let B = window.historyData[0].minifiers[b]?.pass || 0;
-    return A < B ? 1 : A > B ? -1 : 0;
-  });
+const ZOOM_RADIUS = 3;
+const zoomedCharts = new WeakMap();
 
-  const backfilledData = [];
-  window.historyData.forEach((data) => {
-    const newData = {
-      date: data.date,
-      testCount: data.testCount,
-      minifiers: {}
-    };
-    const dummyData = {
-      version: NOT_TESTED,
-      pass: 0,
-      total: data.testCount
-    };
-    for (const minifier of minifierNames) {
-      newData.minifiers[minifier] = data.minifiers[minifier] || dummyData;
+/**
+ * Returns an axis range covering low to high, split into equal whole-number
+ * steps.
+ *
+ * @param  {number} low    Smallest value to show
+ * @param  {number} high   Largest value to show
+ * @param  {number} ticks  Number of steps
+ * @return {object}        The axis `min` and `max`
+ */
+function niceScale (low, high, ticks) {
+  const raw = Math.max(high - low, 1) / ticks;
+  for (let exponent = Math.max(0, Math.floor(Math.log10(raw))); ; exponent++) {
+    for (const mantissa of [1, 1.5, 2, 2.5, 3, 4, 5, 6, 8]) {
+      const step = mantissa * 10 ** exponent;
+      if (step < raw || !Number.isInteger(step)) {
+        continue;
+      }
+      const min = Math.floor(low / step) * step;
+      if (min + step * ticks >= high) {
+        return { min, max: min + step * ticks };
+      }
     }
-    backfilledData.push(newData);
-  });
-  return backfilledData;
+  }
 }
 
-// Historical trend chart
-(function () {
-  const el = document.getElementById('pass-rate-chart');
-  if (
-    !el ||
-    typeof window.ApexCharts === 'undefined' ||
-    !window.historyData ||
-    window.historyData.length < 2
-  ) {
+/**
+ * Fits a zoomed line chart's y-axis to the series shown in its legend.
+ *
+ * @param {HTMLTableElement} table  The chart
+ */
+function rescaleZoomed (table) {
+  const columns = new Set(
+    [...table.tHead.rows[0].cells]
+      .filter((cell) => cell.querySelector('input:checked'))
+      .map((cell) => cell.cellIndex)
+  );
+  const values = [];
+  for (const row of table.tBodies[0].rows) {
+    for (const cell of row.cells) {
+      const value = parseFloat(cell.style.getPropertyValue('--b'));
+      if (columns.has(cell.cellIndex) && !Number.isNaN(value)) {
+        values.push(value);
+      }
+    }
+  }
+  if (!values.length) {
     return;
   }
-  const data = backfillHistoricalData();
+  const { min, max } = niceScale(Math.min(...values), Math.max(...values), 4);
+  table.style.setProperty('--min', min);
+  table.style.setProperty('--max', max);
+}
 
-  const reversed = [...data].reverse();
-  const minifierNames = Object.keys(reversed[0].minifiers);
-
-  // Gets the largest test count and rounds up to nearest 100th
-  const max = Math.ceil(Math.max(...data.map((result) => {
-    return result.testCount;
-  })) / 100) * 100;
-
-  const series = minifierNames.map((name) => ({
-    name,
-    data: reversed
-      .map((entry) => {
-        const m = entry.minifiers[name];
-        if (!m || m.total === 0) {
-          return null;
-        }
-        return {
-          x: new Date(entry.date).getTime(),
-          y: m.pass
-        };
-      })
-      .filter(Boolean)
-  }));
-
-  const isDark =
-    window.matchMedia &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-  const chart = new window.ApexCharts(el, {
-    series,
-    chart: {
-      type: 'line',
-      height: 400,
-      background: isDark ? '#0f0f0f' : '#ffffff',
-      zoom: { enabled: true },
-      toolbar: { show: true },
-      animations: { enabled: false }
-    },
-    stroke: { curve: 'straight', width: 2 },
-    dataLabels: { enabled: false },
-    xaxis: {
-      type: 'datetime',
-      title: { text: 'Date' },
-      labels: {
-        datetimeUTC: false
-      }
-    },
-    yaxis: {
-      title: { text: 'Total Passing Tests' },
-      min: 0,
-      max,
-      decimalsInFloat: 1
-    },
-    tooltip: {
-      shared: true,
-      intersect: false,
-      x: { format: 'MMM dd, yyyy' },
-      y: {
-        formatter: function (y, { seriesIndex, dataPointIndex, w }) {
-          if (typeof y !== 'number' || isNaN(y)) {
-            return y;
-          }
-          const name = w.config.series[seriesIndex].name;
-          const entry = reversed[dataPointIndex];
-          const m = entry && entry.minifiers[name];
-          const percent = ((m.pass / m.total) * 100).toFixed(1) + '%';
-          let extra = '';
-          if (m?.version === NOT_TESTED) {
-            extra = ` (${NOT_TESTED})`;
-          } else if (m) {
-            extra = ` (${m.pass}/${m.total} v${m.version})`;
-          }
-          return percent + extra;
-        }
-      }
-    },
-    legend: { position: 'bottom' },
-    grid: {
-      borderColor: isDark ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.2)'
-    },
-    theme: isDark ? { mode: 'dark', palette: 'palette4' } : { mode: 'light' }
+/**
+ * Zooms a line chart in on the runs around a row, or back out to every run.
+ *
+ * @param {HTMLTableElement}    table  The chart
+ * @param {HTMLTableRowElement} row    The clicked run
+ */
+function toggleZoom (table, row) {
+  const tbody = table.tBodies[0];
+  const full = zoomedCharts.get(table);
+  if (full) {
+    tbody.replaceChildren(...full.rows);
+    table.style.setProperty('--min', full.min);
+    table.style.setProperty('--max', full.max);
+    zoomedCharts.delete(table);
+    delete table.dataset.zoomed;
+    return;
+  }
+  const rows = [...tbody.rows];
+  const size = ZOOM_RADIUS * 2 + 1;
+  const start = Math.max(0, Math.min(row.sectionRowIndex - ZOOM_RADIUS, rows.length - size));
+  zoomedCharts.set(table, {
+    rows,
+    min: table.style.getPropertyValue('--min'),
+    max: table.style.getPropertyValue('--max')
   });
-  chart.render();
+  tbody.replaceChildren(...rows.slice(start, start + size));
+  table.dataset.zoomed = '';
+  rescaleZoomed(table);
+}
 
-  window
-    .matchMedia('(prefers-color-scheme: dark)')
-    .addEventListener('change', (e) => {
-      const dark = e.matches;
-      chart.updateOptions({
-        chart: { background: dark ? '#0f0f0f' : '#ffffff' },
-        grid: {
-          borderColor: dark ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.2)'
-        },
-        theme: dark ? { mode: 'dark', palette: 'palette4' } : { mode: 'light' }
-      });
-    });
-})();
+document.addEventListener('click', (e) => {
+  const row = e.target.closest('.lines tbody tr');
+  if (row) {
+    toggleZoom(row.closest('.chart'), row);
+  }
+});
 
+document.addEventListener('change', (e) => {
+  const table = e.target.closest('.chart');
+  if (table && zoomedCharts.has(table)) {
+    rescaleZoomed(table);
+  }
+});
+
+for (const table of document.querySelectorAll('.lines')) {
+  table.dataset.interactive = '';
+}
 
 /* CSS Modal */
 

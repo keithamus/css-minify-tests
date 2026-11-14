@@ -18,6 +18,8 @@
   --na-bg: var(--neutral-2);
   --na-fg: var(--neutral-7);
   --link: var(--blue-8);
+  --series-lightness: var(--color-lightness-8);
+  --series-chroma: var(--color-chroma-8);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,6 +40,8 @@
     --na-bg: var(--neutral-3);
     --na-fg: var(--neutral-11);
     --link: var(--blue-5);
+    --series-lightness: var(--color-lightness-6);
+    --series-chroma: var(--color-chroma-6);
   }
 }
 
@@ -311,6 +315,260 @@ dialog[open] {
     opacity: 1;
     scale: 1;
   }
+}
+
+@property --c {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: currentColor;
+}
+@property --step {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+.chart {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  container-type: inline-size;
+  font-size: 0.875rem;
+}
+.chart caption {
+  margin: 0 0 1rem;
+  text-align: start;
+  font-weight: bold;
+}
+.chart caption small {
+  display: block;
+  font-weight: normal;
+  color: var(--fg-muted);
+}
+.chart :is(thead, tr) {
+  border: 0;
+  background: none;
+}
+.chart :is(th, td) {
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: start;
+}
+.chart :is(thead th, td) {
+  --c: oklch(var(--series-lightness) var(--series-chroma) calc(var(--color-red-base) + sibling-index() * 360 / sibling-count()));
+}
+.chart thead {
+  display: block;
+  position: static;
+  order: 1;
+}
+.chart thead tr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem 1rem;
+  padding-top: 1rem;
+  font-size: 0.95rem;
+}
+.chart thead th:first-child {
+  font-size: 0;
+}
+.chart thead th:has(input:not(:checked)) {
+  opacity: 0.5;
+}
+.chart label {
+  cursor: pointer;
+}
+.chart input {
+  margin: 0 0.3rem 0 0;
+  vertical-align: -2px;
+  accent-color: var(--c);
+}
+.chart:has(thead th:nth-child(2) input:not(:checked)) td:nth-child(2),
+.chart:has(thead th:nth-child(3) input:not(:checked)) td:nth-child(3),
+.chart:has(thead th:nth-child(4) input:not(:checked)) td:nth-child(4),
+.chart:has(thead th:nth-child(5) input:not(:checked)) td:nth-child(5),
+.chart:has(thead th:nth-child(6) input:not(:checked)) td:nth-child(6),
+.chart:has(thead th:nth-child(7) input:not(:checked)) td:nth-child(7),
+.chart:has(thead th:nth-child(8) input:not(:checked)) td:nth-child(8),
+.chart:has(thead th:nth-child(9) input:not(:checked)) td:nth-child(9),
+.chart:has(thead th:nth-child(10) input:not(:checked)) td:nth-child(10),
+.chart:has(thead th:nth-child(11) input:not(:checked)) td:nth-child(11),
+.chart:has(thead th:nth-child(12) input:not(:checked)) td:nth-child(12),
+.chart:has(thead th:nth-child(13) input:not(:checked)) td:nth-child(13),
+.chart:has(thead th:nth-child(14) input:not(:checked)) td:nth-child(14),
+.chart:has(thead th:nth-child(15) input:not(:checked)) td:nth-child(15),
+.chart:has(thead th:nth-child(16) input:not(:checked)) td:nth-child(16),
+.chart:has(thead th:nth-child(17) input:not(:checked)) td:nth-child(17) {
+  display: none;
+}
+.chart:has(thead th:nth-child(2):hover) td:not(:nth-child(2)),
+.chart:has(thead th:nth-child(3):hover) td:not(:nth-child(3)),
+.chart:has(thead th:nth-child(4):hover) td:not(:nth-child(4)),
+.chart:has(thead th:nth-child(5):hover) td:not(:nth-child(5)),
+.chart:has(thead th:nth-child(6):hover) td:not(:nth-child(6)),
+.chart:has(thead th:nth-child(7):hover) td:not(:nth-child(7)),
+.chart:has(thead th:nth-child(8):hover) td:not(:nth-child(8)),
+.chart:has(thead th:nth-child(9):hover) td:not(:nth-child(9)),
+.chart:has(thead th:nth-child(10):hover) td:not(:nth-child(10)),
+.chart:has(thead th:nth-child(11):hover) td:not(:nth-child(11)),
+.chart:has(thead th:nth-child(12):hover) td:not(:nth-child(12)),
+.chart:has(thead th:nth-child(13):hover) td:not(:nth-child(13)),
+.chart:has(thead th:nth-child(14):hover) td:not(:nth-child(14)),
+.chart:has(thead th:nth-child(15):hover) td:not(:nth-child(15)),
+.chart:has(thead th:nth-child(16):hover) td:not(:nth-child(16)),
+.chart:has(thead th:nth-child(17):hover) td:not(:nth-child(17)) {
+  opacity: 0.15;
+}
+
+.lines {
+  --h: 24rem;
+  padding-left: 3.5rem;
+}
+.lines caption {
+  margin-left: -3.5rem;
+}
+.lines tbody {
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  height: var(--h);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(var(--border) 1px, transparent 0) 0 0 / 100% calc(var(--h) / 4);
+}
+.lines tbody::before {
+  content: counter(y4) "\A" counter(y3) "\A" counter(y2) "\A" counter(y1) "\A" counter(y0);
+  counter-reset: y4 var(--max) y3 calc(var(--min) + (var(--max) - var(--min)) * 0.75) y2 calc((var(--min) + var(--max)) / 2) y1 calc(var(--min) + (var(--max) - var(--min)) / 4) y0 var(--min);
+  position: absolute;
+  right: 100%;
+  bottom: calc(var(--h) / -8);
+  padding-right: 0.5rem;
+  white-space: pre;
+  line-height: calc(var(--h) / 4);
+  text-align: end;
+  font-size: 0.8rem;
+}
+.lines tbody tr {
+  --step: calc(100cqw / (sibling-count() - 1));
+  --dx: var(--step);
+  flex: none;
+  width: var(--step);
+  position: relative;
+}
+.lines tbody tr:first-child {
+  --dx: 0px;
+  margin-left: calc(var(--step) / -2);
+}
+.lines tbody tr:first-child td {
+  --y0: var(--y1);
+}
+.lines tbody th {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: -50%;
+  padding-top: 0.4rem;
+}
+.lines:not([data-zoomed]) tbody tr:not(:hover, .tick) th,
+.lines tbody:has(tr:hover) th {
+  color: transparent;
+}
+@container (width < 40rem) {
+  .lines:not([data-zoomed]) tbody tr:not(:hover, :nth-child(4n + 1 of .tick)) th,
+  .lines[data-zoomed] tbody tr:not(:hover):nth-child(even) th {
+    color: transparent;
+  }
+}
+.lines tbody tr:hover th {
+  color: var(--fg);
+  font-weight: bold;
+}
+.lines td {
+  --y0: calc((var(--a, var(--b)) - var(--min)) / (var(--max) - var(--min)));
+  --y1: calc((var(--b) - var(--min)) / (var(--max) - var(--min)));
+  --line: linear-gradient(var(--c) 0 0) 0 50% / calc(100% - 6px) 2px no-repeat;
+  display: block;
+  font-size: 0;
+}
+.lines td::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: calc(50% - var(--dx) - 1px);
+  bottom: calc(var(--y0) * var(--h) - 6px);
+  height: 12px;
+  transform-origin: 1px 50%;
+  width: calc(hypot(var(--dx), (var(--y1) - var(--y0)) * var(--h)) + 8px);
+  rotate: atan2((var(--y0) - var(--y1)) * var(--h), var(--dx));
+  background: var(--line);
+  pointer-events: none;
+}
+.lines td::after {
+  content: attr(headers) ":";
+  order: -1;
+  font-weight: normal;
+}
+.lines tbody tr:hover {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: calc(50% + 12px) max-content;
+  align-content: start;
+}
+.lines tbody tr:hover::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0 auto 0 50%;
+  border-left: 1px dashed var(--fg-muted);
+}
+.lines tbody tr:hover td::before {
+  background: radial-gradient(circle at calc(100% - 7px) 50%, var(--c) 4px, transparent 4.5px), var(--line);
+}
+.lines tbody tr:hover td {
+  grid-column: 2;
+  display: flex;
+  gap: 0.3rem;
+  white-space: nowrap;
+  padding: 0.15rem 0.6rem 0.15rem 1.4rem;
+  border-inline: 1px solid var(--border);
+  background: radial-gradient(circle at 0.7rem 50%, var(--c) 0.3rem, transparent calc(0.3rem + 0.5px)), var(--thead-bg);
+  color: var(--fg);
+  font-size: 0.85rem;
+  font-weight: bold;
+  pointer-events: none;
+}
+.lines tbody tr:hover td:nth-child(2) {
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--border);
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+.lines tbody tr:hover td:last-child {
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0 0 0.3rem 0.3rem;
+}
+.lines:not([data-zoomed]) tbody tr.flip:hover,
+.lines[data-zoomed] tbody tr:nth-last-child(-n + 3):hover {
+  grid-template-columns: max-content calc(50% + 12px);
+  justify-content: end;
+}
+.lines:not([data-zoomed]) tbody tr.flip:hover td,
+.lines[data-zoomed] tbody tr:nth-last-child(-n + 3):hover td {
+  grid-column: 1;
+}
+.lines[data-interactive] tbody {
+  cursor: zoom-in;
+}
+.lines[data-interactive] caption small::after {
+  content: " Click the plot to zoom in.";
+}
+.lines[data-zoomed] tbody {
+  cursor: zoom-out;
+}
+.lines[data-zoomed] caption small::after {
+  content: " Click the plot to zoom out.";
 }
 
 
