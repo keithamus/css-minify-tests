@@ -87,6 +87,11 @@ thead {
   top: 0px;
 }
 
+main > section:not(:has(#summary, #historical)) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1500px;
+}
+
 h2 {
   margin-top: 3rem;
 }
