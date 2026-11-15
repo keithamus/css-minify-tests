@@ -1,0 +1,9 @@
+@media screen {
+  a {
+    color: red;
+  }
+  /* comment */
+  b {
+    color: red;
+  }
+}
