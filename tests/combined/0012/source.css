@@ -1,0 +1,7 @@
+.foo > .bar::before {
+  color: red;
+}
+.foo > .bar::after {
+  color: red;
+  padding: 10px;
+}
