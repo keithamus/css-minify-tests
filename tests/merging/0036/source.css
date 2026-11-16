@@ -1,0 +1,12 @@
+@media screen {
+  a {
+    color: red;
+  }
+}
+@supports (display: grid) {
+}
+@media screen {
+  b {
+    margin: 0;
+  }
+}
