@@ -1,4 +1,3 @@
-# Merge identical `@media` separated by a comment and an empty `@supports`
+# Merge identical `@media` separated by an empty `@supports`
 
-Remove the comment and empty `@supports`, then merge the remaining media
-queries.
+Remove the empty `@supports` then merge the remaining media queries.
