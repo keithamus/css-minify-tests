@@ -1,0 +1,4 @@
+@media(width>=1px) { .a { margin: 1px; } }
+@media(width>=1px) { .b { margin: 2px; } }
+.c { padding: 0; }
+@media(width>=1px) { .c { margin: 3px; } }

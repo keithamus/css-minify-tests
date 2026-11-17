@@ -1,0 +1,1 @@
+.foo>.bar{&:before,&:after{color:red}&:after{padding:10px}}

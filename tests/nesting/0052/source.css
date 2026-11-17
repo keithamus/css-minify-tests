@@ -1,0 +1,9 @@
+a:hover b {
+  color: red;
+}
+a:hover p {
+  color: tan;
+}
+a {
+  margin: 0;
+}

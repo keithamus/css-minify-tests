@@ -1,0 +1,12 @@
+a b {
+  color: red;
+}
+.foo p {
+  color: tan;
+}
+a .foo {
+  margin: 0;
+}
+.foo:hover {
+  padding: 0;
+}

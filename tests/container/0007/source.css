@@ -1,0 +1,12 @@
+@container sidebar (width > 700px) {
+  a {
+    color: red;
+  }
+}
+@media screen {
+}
+@container sidebar (width > 700px) {
+  b {
+    color: tan;
+  }
+}
