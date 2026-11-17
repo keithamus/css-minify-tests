@@ -84,7 +84,6 @@ const testDetails = async (testPaths) => {
     if (!source) {
       continue;
     }
-    console.log({ [testPath]: afterResults[testPath] });
     blocks.push(
       '',
       '<details>',
