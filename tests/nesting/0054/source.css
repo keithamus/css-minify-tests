@@ -1,0 +1,7 @@
+p .a .x .y,
+p .b .x .y {
+  color: red;
+}
+p .c {
+  color: tan;
+}
