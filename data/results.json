@@ -1569,6 +1569,26 @@
     "lightningcss": true,
     "sass": false
   },
+  "colors/0073": {
+    "clean-css": true,
+    "csskit": false,
+    "csslop": false,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "colors/0074": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": false,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "combined/0001": {
     "clean-css": false,
     "csskit": false,
@@ -1721,7 +1741,7 @@
   },
   "comments/0004": {
     "clean-css": true,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": true,
@@ -1731,7 +1751,7 @@
   },
   "comments/0005": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -1751,7 +1771,7 @@
   },
   "comments/0007": {
     "clean-css": false,
-    "csskit": false,
+    "csskit": true,
     "csslop": true,
     "cssnano": false,
     "csso": false,
@@ -2622,7 +2642,7 @@
   "idempotency/0001": {
     "clean-css": false,
     "csskit": false,
-    "csslop": true,
+    "csslop": false,
     "cssnano": true,
     "csso": false,
     "esbuild": false,
@@ -4049,6 +4069,26 @@
     "lightningcss": false,
     "sass": false
   },
+  "nesting/0054": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": false,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0055": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": false,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "page/0001": {
     "clean-css": true,
     "csskit": true,
@@ -4413,6 +4453,26 @@
     "clean-css": true,
     "csskit": true,
     "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
+  },
+  "selectors/0022": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": false,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
+  },
+  "selectors/0023": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": false,
     "cssnano": true,
     "csso": true,
     "esbuild": true,
