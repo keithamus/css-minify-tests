@@ -10,7 +10,7 @@ run = "npm t"
 alias = "t"
 
 [tasks.fmt]
-run = "npm run fmt"
+run = "npm run fix"
 
 [tasks.new-test]
 run = "npm run new-test"

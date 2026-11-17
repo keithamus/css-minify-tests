@@ -8,6 +8,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import zlib from 'node:zlib';
 
+import { registry } from '../lib/loaders/loadAllMinifiers.js';
+
 String.prototype.plural = function (c) {
   return c === 1 ? `${this}` : `${this}s`;
 };
@@ -41,8 +43,11 @@ const readAlternates = async (testPath) => {
   return Promise.all(names.map((name) => readTestFile(testPath, name)));
 };
 
-const playgroundParam = (css) =>
-  zlib.deflateSync(Buffer.from(css, 'utf-8'), { level: 9 }).toString('base64');
+const playgroundParam = (css) => {
+  return zlib
+    .deflateSync(Buffer.from(css, 'utf-8'), { level: 9 })
+    .toString('base64');
+}
 
 const testCssCache = new Map();
 
@@ -69,7 +74,7 @@ const playgroundUrl = async (testPath) => {
   if (expected) {
     params.set('x', playgroundParam(expected));
   }
-  return `https://thejaredwilcurt.com/playground/?${params}`;
+  return `https://TheJaredWilcurt.com/playground/?${params}`;
 };
 
 const testDetails = async (testPaths) => {
@@ -79,6 +84,7 @@ const testDetails = async (testPaths) => {
     if (!source) {
       continue;
     }
+    console.log({ [testPath]: afterResults[testPath] });
     blocks.push(
       '',
       '<details>',
@@ -106,6 +112,22 @@ const testDetails = async (testPaths) => {
         '```'
       );
     }
+    for (const minifier in afterResults[testPath]) {
+      if (
+        beforeResults[testPath]?.[minifier] &&
+        !afterResults[testPath][minifier]
+      ) {
+        let result = await registry[minifier].minify(source);
+        blocks.push(
+          '',
+          '**Changed:** (' + minifier + ')',
+          '',
+          '```css',
+          result,
+          '```'
+        );
+      }
+    }
     blocks.push('', '</details>');
   }
   return blocks;
@@ -116,7 +138,7 @@ const mdTable = (columns) => {
   const rows = Object.values(columns)[0].length;
   return [
     `| ${headers.join(' | ')} |`,
-    `| ${headers.map(() => '---').join(' | ')} |`,
+    `| ${headers.map(() => ':--').join(' | ')} |`,
     ...Array.from(
       { length: rows },
       (_, i) => `| ${headers.map((h) => columns[h][i]).join(' | ')} |`
@@ -124,9 +146,22 @@ const mdTable = (columns) => {
   ].join('\n');
 };
 
-const minifierLabel = (m) => (newMinifiers.includes(m) ? `✨ ${m}` : m);
+const minifierLabel = (minifier) => {
+  if (newMinifiers.includes(minifier)) {
+    minifier = '✨ ' + minifier;
+  }
+  return minifier;
+};
 
-const passIcon = (val) => (val === null ? 'N/A' : val ? '✅' : '❌');
+const passIcon = (value) => {
+  if (value === null) {
+    return 'N/A';
+  }
+  if (value) {
+    return '✅';
+  }
+  return '❌';
+};
 
 const totals = (results, includedMinifiers = null) => {
   const counts = {};
@@ -176,11 +211,15 @@ for (const [testPath, afterMinifierResults] of Object.entries(afterResults)) {
   } else {
     const beforeMinifierResults = beforeResults[testPath];
     const changed = minifiers
-      .filter((m) => !newMinifiers.includes(m))
-      .some((m) => (
-        (beforeMinifierResults[m] ?? null) !==
-        (afterMinifierResults[m] ?? null)
-      ));
+      .filter((minifier) => {
+        return !newMinifiers.includes(minifier);
+      })
+      .some((minifier) => {
+        return (
+          (beforeMinifierResults[minifier] ?? null) !==
+          (afterMinifierResults[minifier] ?? null)
+        );
+      });
     if (changed) {
       changedTests.push(testPath);
     }
@@ -191,17 +230,24 @@ const existingMinifiers = minifiers.filter((m) => !newMinifiers.includes(m));
 const beforeTotals = totals(beforeResults, existingMinifiers);
 const afterTotals = totals(afterResults);
 
-const totalDiff = existingMinifiers.reduce((s, m) => {
-  return s + (afterTotals[m]?.pass ?? 0) - (beforeTotals[m]?.pass ?? 0);
+const totalDiff = existingMinifiers.reduce((total, minifier) => {
+  return (
+    total +
+    (afterTotals[minifier]?.pass ?? 0) -
+    (beforeTotals[minifier]?.pass ?? 0)
+  );
 }, 0);
 
 const lines = ['<!-- pr-comment-results -->', ''];
 
-const hasChanges =
-  newTests.length > 0 || changedTests.length > 0 || newMinifiers.length > 0;
+const hasChanges = (
+  newTests.length > 0 ||
+  changedTests.length > 0 ||
+  newMinifiers.length > 0
+);
 
 if (!hasChanges) {
-  lines.push('_No new or changed tests or minifiers._');
+  lines.push('*No new or changed tests or minifiers.*');
 } else {
   if (newMinifiers.length > 0) {
     const names = newMinifiers.map((m) => `\`${m}\``).join(', ');
@@ -213,32 +259,16 @@ if (!hasChanges) {
 
   const playgroundUrls = Object.fromEntries(
     await Promise.all(
-      [...newTests, ...changedTests].map(
-        async (t) => [t, await playgroundUrl(t)]
-      )
+      [
+        ...newTests,
+        ...changedTests
+      ]
+      .map(async (test) => [test, await playgroundUrl(test)])
     )
   );
   const testLabel = (t) => (
     playgroundUrls[t] ? `[\`${t}\`](${playgroundUrls[t]})` : `\`${t}\``
   );
-
-  if (newTests.length > 0) {
-    const count = newTests.length;
-    lines.push(`**${count} new ${'test'.plural(count)} added:**`, '');
-    for (const testPath of newTests) {
-      const readme = await readTestFile(testPath, 'README.md');
-      const firstLine = readme.split('\n')[0].replace(/^#+\s*/, '');
-      lines.push(
-        `- ${testLabel(testPath)}${firstLine ? ` - ${firstLine}` : ''}`
-      );
-    }
-    lines.push('');
-  }
-
-  if (changedTests.length > 0) {
-    const count = changedTests.length;
-    lines.push(`**${count} ${'test'.plural(count)} changed.**`, '');
-  }
 
   const changeSummary =
     totalDiff > 0 ?
@@ -277,7 +307,7 @@ if (!hasChanges) {
   if (newTests.length > 0) {
     lines.push(
       '',
-      '### New Tests',
+      '### New Tests (' + newTests.length + ')',
       '',
       mdTable({
         test: newTests.map(testLabel),
@@ -295,7 +325,7 @@ if (!hasChanges) {
   if (changedTests.length > 0) {
     lines.push(
       '',
-      '### Changed Tests',
+      '### Changed Tests (' + changedTests.length + ')' ,
       '',
       mdTable({
         test: changedTests.map(testLabel),
