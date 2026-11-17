@@ -47,7 +47,7 @@ const playgroundParam = (css) => {
   return zlib
     .deflateSync(Buffer.from(css, 'utf-8'), { level: 9 })
     .toString('base64');
-}
+};
 
 const testCssCache = new Map();
 
@@ -263,7 +263,7 @@ if (!hasChanges) {
         ...newTests,
         ...changedTests
       ]
-      .map(async (test) => [test, await playgroundUrl(test)])
+        .map(async (test) => [test, await playgroundUrl(test)])
     )
   );
   const testLabel = (t) => (
@@ -325,7 +325,7 @@ if (!hasChanges) {
   if (changedTests.length > 0) {
     lines.push(
       '',
-      '### Changed Tests (' + changedTests.length + ')' ,
+      '### Changed Tests (' + changedTests.length + ')',
       '',
       mdTable({
         test: changedTests.map(testLabel),
