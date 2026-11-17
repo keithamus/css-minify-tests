@@ -1,0 +1,10 @@
+.a:hover {
+  opacity: 1;
+}
+.a {
+  opacity: 0.7;
+}
+.a:hover .b,
+.a:hover .c {
+  color: red;
+}
