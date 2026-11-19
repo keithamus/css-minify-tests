@@ -1,0 +1,12 @@
+[title="a" i] {
+  width: 1px;
+}
+[title="a" s] {
+  width: 2px;
+}
+[accept="JPG" i] {
+  width: 3px;
+}
+[accept="JPG" s] {
+  width: 4px;
+}
