@@ -6,7 +6,7 @@
     "results": {
       "clean-css": 7412473,
       "csskit": 7588490,
-      "csslop": 6236409,
+      "csslop": 6236401,
       "cssnano": 6553071,
       "csso": 7184694,
       "esbuild": 7716095,
@@ -2166,7 +2166,7 @@
     "results": {
       "clean-css": 2187,
       "csskit": 2182,
-      "csslop": 1990,
+      "csslop": 1982,
       "cssnano": 2077,
       "csso": 2155,
       "esbuild": 2180,

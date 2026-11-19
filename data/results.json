@@ -4469,16 +4469,6 @@
     "lightningcss": true,
     "sass": true
   },
-  "selectors/0023": {
-    "clean-css": false,
-    "csskit": false,
-    "csslop": true,
-    "cssnano": true,
-    "csso": true,
-    "esbuild": true,
-    "lightningcss": true,
-    "sass": true
-  },
   "selectors-advanced/0001": {
     "clean-css": false,
     "csskit": false,
@@ -4827,6 +4817,16 @@
     "csso": false,
     "esbuild": true,
     "lightningcss": true,
+    "sass": false
+  },
+  "selectors-advanced/0036": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
     "sass": false
   },
   "shorthand-values/0001": {
