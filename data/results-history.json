@@ -1,5 +1,51 @@
 [
   {
+    "date": "2026-11-19T23:40:43.093Z",
+    "testCount": 727,
+    "minifiers": {
+      "clean-css": {
+        "version": "5.3.3",
+        "pass": 213,
+        "total": 727
+      },
+      "csskit": {
+        "version": "0.0.41",
+        "pass": 339,
+        "total": 727
+      },
+      "csslop": {
+        "version": "0.0.63",
+        "pass": 727,
+        "total": 727
+      },
+      "cssnano": {
+        "version": "9.9.0",
+        "pass": 344,
+        "total": 727
+      },
+      "csso": {
+        "version": "5.0.5",
+        "pass": 221,
+        "total": 727
+      },
+      "esbuild": {
+        "version": "0.28.2",
+        "pass": 259,
+        "total": 727
+      },
+      "lightningcss": {
+        "version": "1.33.0",
+        "pass": 368,
+        "total": 727
+      },
+      "sass": {
+        "version": "1.108.2",
+        "pass": 181,
+        "total": 727
+      }
+    }
+  },
+  {
     "date": "2026-11-19T05:39:21.227Z",
     "testCount": 719,
     "minifiers": {

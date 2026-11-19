@@ -1709,6 +1709,16 @@
     "lightningcss": false,
     "sass": false
   },
+  "combined/0013": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "comments/0001": {
     "clean-css": true,
     "csskit": true,
@@ -2630,6 +2640,26 @@
     "sass": false
   },
   "gradients/0014": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "gradients/0015": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "gradients/0016": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,
@@ -4080,6 +4110,16 @@
     "sass": false
   },
   "nesting/0055": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0056": {
     "clean-css": false,
     "csskit": false,
     "csslop": true,
@@ -5689,6 +5729,16 @@
     "lightningcss": false,
     "sass": false
   },
+  "shorthands/0061": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
   "shorthands-unsafe/0001": {
     "clean-css": true,
     "csskit": true,
@@ -6759,6 +6809,26 @@
     "lightningcss": true,
     "sass": true
   },
+  "values/0068": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": false
+  },
+  "values/0069": {
+    "clean-css": false,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": false,
+    "sass": true
+  },
   "vendors/0001": {
     "clean-css": false,
     "csskit": false,
@@ -6845,6 +6915,16 @@
     "csslop": true,
     "cssnano": false,
     "csso": true,
+    "esbuild": false,
+    "lightningcss": true,
+    "sass": false
+  },
+  "vendors/0010": {
+    "clean-css": true,
+    "csskit": true,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
     "esbuild": false,
     "lightningcss": true,
     "sass": false
