@@ -18,11 +18,11 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^6.0.1",
-    "@thejaredwilcurt/csslop": "^0.0.60",
+    "@thejaredwilcurt/csslop": "^0.0.62",
     "autoprefixer": "^10.6.2",
     "clean-css": "^5.3.3",
     "cross-env": "^10.1.0",
-    "csskit": "^0.0.40",
+    "csskit": "^0.0.41",
     "cssnano": "^9.9.0",
     "cssnano-preset-advanced": "^10.0.0",
     "csso": "^5.0.5",
@@ -32,7 +32,7 @@
     "eslint-config-tjw-import-x": "^1.0.2",
     "eslint-config-tjw-jsdoc": "^2.0.1",
     "eslint-plugin-import-x": "^4.18.0",
-    "eslint-plugin-jsdoc": "^65.4.10",
+    "eslint-plugin-jsdoc": "^65.4.12",
     "globals": "^17.14.0",
     "http-server": "^14.1.1",
     "lightningcss": "^1.33.0",
@@ -57,7 +57,7 @@
     },
     "packageManager": {
       "name": "npm",
-      "version": "12.2.2"
+      "version": "12.2.3"
     }
   }
 }
