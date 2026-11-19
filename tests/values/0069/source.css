@@ -1,0 +1,6 @@
+a:after {
+  content: 'a"b';
+}
+b:before {
+  content: "c\"d";
+}
