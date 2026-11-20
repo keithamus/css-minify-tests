@@ -1,0 +1,14 @@
+.a.b {
+  border: 0;
+  color: red;
+}
+.x {
+  color: green;
+}
+.a.b:hover {
+  color: red;
+  margin: 0;
+}
+.a.b {
+  color: tan;
+}
