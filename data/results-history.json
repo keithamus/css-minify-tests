@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-11-19T23:40:43.093Z",
+    "date": "2026-11-20T01:13:59.891Z",
     "testCount": 727,
     "minifiers": {
       "clean-css": {
@@ -14,7 +14,7 @@
         "total": 727
       },
       "csslop": {
-        "version": "0.0.63",
+        "version": "0.0.64",
         "pass": 727,
         "total": 727
       },
