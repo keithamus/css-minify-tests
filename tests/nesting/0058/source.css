@@ -1,0 +1,16 @@
+@media print {
+  .foo {
+    display: flex;
+  }
+}
+.foo i a {
+  color: red;
+}
+.foo > i {
+  line-height: 1;
+}
+@media print {
+  .foo > i {
+    line-height: 2;
+  }
+}
