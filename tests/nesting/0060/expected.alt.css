@@ -1,0 +1,1 @@
+.c,.a:hover{color:gold}.a.b{&:hover,&:active{background:red}&:active{color:tan}}

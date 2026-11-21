@@ -1,0 +1,14 @@
+.a.b:hover {
+  background: red;
+}
+.a.b:active {
+  background: red;
+  color: tan;
+}
+.a:hover {
+  color: tan;
+}
+.c,
+.a:hover {
+  color: gold;
+}
