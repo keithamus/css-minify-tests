@@ -1,0 +1,10 @@
+.a .c {
+  border: 0;
+}
+.b {
+  background-color: red;
+}
+.a .c,
+.a .c .c {
+  background: inherit;
+}
