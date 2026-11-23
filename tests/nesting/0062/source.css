@@ -1,0 +1,16 @@
+.a {
+  color: red;
+}
+@media print {
+  .a {
+    color: tan;
+  }
+}
+.a:hover {
+  color: tan;
+}
+@media print {
+  .a:hover {
+    color: red;
+  }
+}

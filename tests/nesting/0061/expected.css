@@ -1,1 +1,1 @@
-a,b{color:red}a:hover{color:tan}
+.a-very-long-class{color:red;@media(width<1200px){color:tan}&:hover{color:tan;@media(width<1200px){color:red}}}

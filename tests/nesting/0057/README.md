@@ -1,6 +1,5 @@
-# Nesting across media queries that need merged (with pseudo-classes)
+# Do not nest `a:hover` with `a,b`
 
-In this test there are two rules and media queries at the top level that
-intersect. The first media query does not target the same selectors as the
-following rule, allowing them to swap places. This makes the rules and the media
-queries adjacent, and allows them to be merged and nested.
+This handles a nesting edgecase to ensure a psuedo-class like `:hover` is not
+applied to more selectors than it should be (`.b`, in this case). Nesting would
+be equivalent to `a:hover,b:hover` which is incorrect.

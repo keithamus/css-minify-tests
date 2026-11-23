@@ -1,16 +1,7 @@
-.foo {
+a,
+b {
   color: red;
 }
-@media print {
-  .foo {
-    color: tan;
-  }
-}
-.foo:hover {
+a:hover {
   color: tan;
-}
-@media print {
-  .foo:hover {
-    color: red;
-  }
 }

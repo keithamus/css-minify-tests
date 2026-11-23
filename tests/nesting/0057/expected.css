@@ -1,1 +1,1 @@
-.foo{color:red;&:hover{color:tan}}@media print{.foo{color:tan;&:hover{color:red}}}
+a,b{color:red}a:hover{color:tan}
