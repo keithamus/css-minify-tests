@@ -1,47 +1,47 @@
 [
   {
-    "date": "2026-11-21T05:28:03.612Z",
-    "testCount": 736,
+    "date": "2026-11-23T04:32:30.657Z",
+    "testCount": 737,
     "minifiers": {
       "clean-css": {
         "version": "5.3.3",
         "pass": 214,
-        "total": 736
+        "total": 737
       },
       "csskit": {
         "version": "0.0.41",
-        "pass": 340,
-        "total": 736
+        "pass": 339,
+        "total": 737
       },
       "csslop": {
-        "version": "0.0.65",
-        "pass": 736,
-        "total": 736
+        "version": "0.0.66",
+        "pass": 737,
+        "total": 737
       },
       "cssnano": {
         "version": "9.9.0",
         "pass": 345,
-        "total": 736
+        "total": 737
       },
       "csso": {
         "version": "5.0.5",
         "pass": 222,
-        "total": 736
+        "total": 737
       },
       "esbuild": {
         "version": "0.28.2",
-        "pass": 260,
-        "total": 736
+        "pass": 259,
+        "total": 737
       },
       "lightningcss": {
         "version": "1.33.0",
         "pass": 371,
-        "total": 736
+        "total": 737
       },
       "sass": {
         "version": "1.108.2",
         "pass": 182,
-        "total": 736
+        "total": 737
       }
     }
   },

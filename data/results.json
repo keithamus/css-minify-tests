@@ -3261,11 +3261,11 @@
   },
   "merging/0008": {
     "clean-css": false,
-    "csskit": true,
+    "csskit": false,
     "csslop": true,
     "cssnano": false,
     "csso": false,
-    "esbuild": true,
+    "esbuild": false,
     "lightningcss": false,
     "sass": false
   },
@@ -4150,14 +4150,14 @@
     "sass": false
   },
   "nesting/0057": {
-    "clean-css": false,
-    "csskit": false,
+    "clean-css": true,
+    "csskit": true,
     "csslop": true,
-    "cssnano": false,
-    "csso": false,
-    "esbuild": false,
-    "lightningcss": false,
-    "sass": false
+    "cssnano": true,
+    "csso": true,
+    "esbuild": true,
+    "lightningcss": true,
+    "sass": true
   },
   "nesting/0058": {
     "clean-css": false,
@@ -4190,14 +4190,24 @@
     "sass": false
   },
   "nesting/0061": {
-    "clean-css": true,
-    "csskit": true,
+    "clean-css": false,
+    "csskit": false,
     "csslop": true,
-    "cssnano": true,
-    "csso": true,
-    "esbuild": true,
-    "lightningcss": true,
-    "sass": true
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
+  },
+  "nesting/0062": {
+    "clean-css": false,
+    "csskit": false,
+    "csslop": true,
+    "cssnano": false,
+    "csso": false,
+    "esbuild": false,
+    "lightningcss": false,
+    "sass": false
   },
   "page/0001": {
     "clean-css": true,
