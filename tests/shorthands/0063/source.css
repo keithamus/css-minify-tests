@@ -1,0 +1,13 @@
+.a,
+.b {
+  background-position: 50%;
+  background-size: 1.5rem;
+}
+.a {
+  background-image: url(a.svg);
+  background-repeat: no-repeat;
+}
+.b {
+  background-image: url(b.svg);
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,10 @@
+@media print {
+  a {
+    color: red;
+    color: var(--x);
+  }
+  b {
+    color: tan;
+    color: var(--x);
+  }
+}

@@ -1,0 +1,16 @@
+.a-very-long-class {
+  color: red;
+}
+@media (width < 1200px) {
+  .a-very-long-class {
+    color: tan;
+  }
+}
+.a-very-long-class:hover {
+  color: tan;
+}
+@media (width < 1200px) {
+  .a-very-long-class:hover {
+    color: red;
+  }
+}

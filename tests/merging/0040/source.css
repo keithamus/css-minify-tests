@@ -1,0 +1,13 @@
+@media print {
+  .a .b,
+  .c {
+    color: red;
+  }
+  .a .b,
+  .a .d {
+    border-color: tan;
+  }
+  .e {
+    color: red;
+  }
+}
