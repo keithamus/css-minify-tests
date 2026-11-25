@@ -1,0 +1,8 @@
+a {
+  color: red;
+}
+@media (min-width: 900px) {
+  a {
+    color: red;
+  }
+}
