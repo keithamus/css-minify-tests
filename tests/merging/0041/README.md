@@ -1,10 +1,7 @@
-# Partial merge across adjacent selectors
+# Avoid unsafe partial font shorthand merge
 
-The `.a` and `.b` rules both contain a `background-repeat:repeat-x`. In this
-case the total combined length of the matching properties and values being
-duplicated is longer than if the partially mergable selector (`b`) was
-duplicated. So it is shorter to merge `.b` with `.a` on the first rule and
-remove the duplicate properties (`background-repeat`). Also, the
-`background-image:none` must remain, as it is possible for `.b` to be applied to
-an element with another class with a `background-image` that `.b` could
-override.
+Although the `.a` and `.b` both have a `font-weight: 700` and you could merge
+`.a,.b` together, it's actually shorter to just use a `font` shorthand in `.b`.
+Moving the font-weight out of the `font` shorthand and reusing it from the first
+rule is shorter, but incorrect as the `font-weight` would be overridden by
+`font`.
