@@ -1,0 +1,1 @@
+a{color:red;&:where(.x){color:tan}@media(width>600px){color:gold}}

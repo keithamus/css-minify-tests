@@ -1,0 +1,11 @@
+a {
+  color: red;
+}
+a:where(.x) {
+  color: tan;
+}
+@media (width > 600px) {
+  a {
+    color: gold;
+  }
+}
