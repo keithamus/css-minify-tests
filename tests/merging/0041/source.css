@@ -1,0 +1,8 @@
+.a {
+  background-repeat: repeat-x;
+}
+.b {
+  background-color: red;
+  background-image: none;
+  background-repeat: repeat-x;
+}
