@@ -1,8 +1,10 @@
 .a {
-  background-repeat: repeat-x;
+  font-weight: 700;
 }
 .b {
-  background-color: red;
-  background-image: none;
-  background-repeat: repeat-x;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  font-family: serif;
 }
