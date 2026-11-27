@@ -1,0 +1,20 @@
+.a {
+  position: relative;
+}
+.b {
+  color: red;
+}
+.b:hover {
+  outline: 0;
+}
+@media print {
+  .b {
+    color: tan;
+  }
+}
+.c {
+  margin: 0;
+}
+.a {
+  margin: 1rem;
+}
