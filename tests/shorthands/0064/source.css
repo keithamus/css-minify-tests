@@ -1,0 +1,5 @@
+a {
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 400px;
+}
