@@ -1,0 +1,8 @@
+a:before,
+b::before {
+  color: red;
+}
+.x::after,
+.y::after {
+  color: tan;
+}
