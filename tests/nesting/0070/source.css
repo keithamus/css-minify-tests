@@ -1,0 +1,20 @@
+section .a + .c,
+section .b + .c {
+  margin-top: 0;
+}
+.x h2 {
+  margin: 0;
+  line-height: 1;
+}
+section h1 {
+  margin: 0;
+  font-size: 2em;
+  color: tan;
+}
+section > h1 {
+  margin: 0;
+  font-size: 2em;
+}
+.d {
+  font-size: 2em;
+}
