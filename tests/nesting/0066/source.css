@@ -1,0 +1,8 @@
+.a .x + b:before,
+.a .y + b:before {
+  color: red;
+}
+.a .x + b:after,
+.a .y + b:after {
+  color: tan;
+}

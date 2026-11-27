@@ -2,6 +2,7 @@
 .b {
   background-position: 50%;
   background-size: 1.5rem;
+  background-attachment: scroll;
 }
 .a {
   background-image: url(a.svg);
