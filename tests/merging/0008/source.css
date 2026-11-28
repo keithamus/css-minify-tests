@@ -3,13 +3,12 @@
     color: red;
   }
 }
-
 a {
-  color: green;
+  background: red;
+  color: gold;
 }
-
 @media (width >= 1px) {
   a {
-    background: #0b0;
+    background: tan;
   }
 }

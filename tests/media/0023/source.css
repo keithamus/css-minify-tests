@@ -1,0 +1,16 @@
+@media (width < 80em) {
+  .a {
+    order: 1;
+  }
+}
+@media (width < 64em) {
+  .b {
+    order: 2;
+  }
+}
+/* comment */
+@media (width < 80em) {
+  .c {
+    display: none;
+  }
+}
